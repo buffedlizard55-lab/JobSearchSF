@@ -1,5 +1,5 @@
 // =============================================================
-//  JobSearchSF — 60 VERIFIED San Francisco opportunities
+//  JobSearchSF — 100 VERIFIED San Francisco opportunities
 //  Profile: B.S. Chemistry UCSC 2011, HPLC, spectroscopy,
 //  chromatography, sample prep, GLP, QC
 //  Origin: 21st Ave & Judah St, Inner Sunset, SF 94122
@@ -1515,13 +1515,1019 @@ window.JOBS_DATA = [
       { label: "Heluna Health official site (hiring channel)", url: "https://www.helunahealth.org/" }
     ]
   },
+  {
+    id: "job-61",
+    company: "UCSF — Drug Research Unit (DRU), Pharmaceutical Sciences",
+    position: "Staff Research Associate II — Analytical assay development & LC-MS sample analysis (LIVE posting)",
+    verified: true,
+    verificationMethod: "LIVE posting 'Staff Research Associate - Drug Research Unit / LC-MS Background' fetched from official pharm.ucsf.edu (Sept 9, 2026)",
+    matchScore: 90,
+    batch: 4,
+    location: "UCSF Parnassus Heights / Inner Sunset (Parnassus campus, 500-580 Parnassus Ave area), San Francisco, CA 94143",
+    commuteZone: "A",
+    route: "ZONE A — WALKABLE. From 21st & Judah: walk east on Judah to 30th Ave then north to the Parnassus campus (~20-25 min), or Muni 45/26. Closest lab option on this site.",
+    officialLink: "https://pharm.ucsf.edu/drug-research-unit/training",
+    applyLink: "https://careers.ucsf.edu — live DRU posting on pharm.ucsf.edu (open positions) → its apply link (UCSF careers/BrassRing)",
+    applyChannel: "Official UCSF careers portal (direct, UC system)",
+    requirements: "B.S. chemistry/biology/biochem or related + lab experience; LC-MS/HPLC; assay development & validation; quantitative methods (PK/PD) interest.",
+    fit: "Top match of the pass — LC-MS, analytical assay development and validation, drug/biomarker sample analysis is exactly your HPLC/spectroscopy/GLP profile; HIV/cure, malaria, peds transplant-oncology drug research context.",
+    status: "recently-posted",
+    statusNote: "Live on official pharm.ucsf.edu DRU page (checked Sept 9, 2026) — re-open and apply via its link; DRU posts additional SRA reqs regularly.",
+    flag: null,
+    subpage: "jobs/job-61.html",
+    sources: [
+      { label: "UCSF Drug Research Unit — open positions (official pharm.ucsf.edu)", url: "https://pharm.ucsf.edu/drug-research-unit/training" },
+      { label: "UCSF Careers (official)", url: "https://careers.ucsf.edu" }
+    ]
+  },
+  {
+    id: "job-62",
+    company: "UCSF — Institute for Neurodegenerative Diseases (IND)",
+    position: "Staff Research Associate II — Drug Discovery, HTS team (small-molecule screening; LIVE, Job Code 009617)",
+    verified: true,
+    verificationMethod: "LIVE posting fetched from official ind.ucsf.edu (Sept 9, 2026): Job Code 009617 SRA 2 NEX, Mission Bay (SF), external apply link to UCSF BrassRing",
+    matchScore: 78,
+    batch: 4,
+    location: "UCSF Mission Bay Campus, San Francisco, CA 94158",
+    commuteZone: "B",
+    route: "ZONE B — From 21st & Judah: N Judah eastbound to Embarcadero → T-Third southbound to UCSF/Chase Center (16th St) → walk to Mission Bay campus. ~40-50 min.",
+    officialLink: "https://ind.ucsf.edu/staff-research-associate-ii-drug-discovery",
+    applyLink: "https://sjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid=6495&siteid=5861#jobDetails=3364720_5861 — 'Apply Here' from the ind.ucsf.edu posting (UCSF official BrassRing)",
+    applyChannel: "Official UCSF careers/BrassRing (direct, UC system)",
+    requirements: "B.S. biology/cell biology/biochemistry/immunology or related + ≥1 yr recent related lab work; BSL 2/3 approved; cell-, biochemical- and screening-based assays.",
+    fit: "Good-plus — screening chemical compounds from libraries/med-chem synthesis, converting assays to HTS format: chemistry screening/assay skills carry directly; AD/Parkinson's/CTE drug-discovery focus.",
+    status: "recently-posted",
+    statusNote: "Live on official ind.ucsf.edu (checked Sept 9, 2026), days M-F 8:30-5:00, 100% — apply via the posting's BrassRing link (job 3364720_5861).",
+    flag: "BSL 2/3 lab clearance required — UCSF arranges/approves; physical/health screening required per posting.",
+    subpage: "jobs/job-62.html",
+    sources: [
+      { label: "IND SRA II Drug Discovery posting (official ind.ucsf.edu)", url: "https://ind.ucsf.edu/staff-research-associate-ii-drug-discovery" },
+      { label: "UCSF BrassRing apply link (official external portal)", url: "https://sjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid=6495&siteid=5861#jobDetails=3364720_5861" }
+    ]
+  },
+  {
+    id: "job-63",
+    company: "UCSF — Quantitative Biosciences Institute (QBI), Krogan Lab",
+    position: "Staff Research Associate II — Protein interaction & proteomics (cloning, iPSC culture, affinity workflows; LIVE)",
+    verified: true,
+    verificationMethod: "LIVE JobDetail 2949 fetched from official careers.ucsf.edu (Sept 9, 2026): QBI Krogan Lab SRA II, Mission Bay (SF), 100%, day shift",
+    matchScore: 76,
+    batch: 4,
+    location: "UCSF Mission Bay Campus, San Francisco, CA 94158",
+    commuteZone: "B",
+    route: "ZONE B — From 21st & Judah: N Judah eastbound to Embarcadero → T-Third southbound to UCSF/Chase Center (16th St) → walk to Mission Bay campus. ~40-50 min.",
+    officialLink: "https://careers.ucsf.edu/careers/JobDetail/San-Francisco-CA-United-States/2949",
+    applyLink: "https://careers.ucsf.edu/careers/JobDetail/San-Francisco-CA-United-States/2949 — apply via the live listing",
+    applyChannel: "Official UCSF careers portal (direct, UC system)",
+    requirements: "B.S. biology/biochem/molecular/cell biology/neuroscience/chem-bio or related + ≥1 yr recent lab experience; mammalian cell culture (iPSC preferred); cloning, plasmid prep, PCR, Western blot, sterile technique.",
+    fit: "Good-plus — affinity-tagged protein expression, affinity purification + proximity labeling for MS-based protein-interaction studies, molecular cloning, plasmid prep, PCR, Western blot — strong chemistry/biochem overlap.",
+    status: "recently-posted",
+    statusNote: "Live JobDetail 2949 on careers.ucsf.edu (checked Sept 9, 2026) — re-verify ID is still posted, then apply directly from the listing.",
+    flag: null,
+    subpage: "jobs/job-63.html",
+    sources: [
+      { label: "QBI Krogan Lab SRA II (official careers.ucsf.edu JobDetail 2949)", url: "https://careers.ucsf.edu/careers/JobDetail/San-Francisco-CA-United-States/2949" },
+      { label: "UCSF Careers (official)", url: "https://careers.ucsf.edu" }
+    ]
+  },
+  {
+    id: "job-64",
+    company: "UCSF — Goodarzi Lab, Biochemistry & Biophysics",
+    position: "Junior Specialist — RNA-based therapeutics & cancer biology (JPF06054, LIVE, posted Apr 2026)",
+    verified: true,
+    verificationMethod: "LIVE posting JPF06054 fetched from official aprecruit.ucsf.edu (Sept 9, 2026): posted Apr 27, 2026, final date Oct 27, 2027, $55,000-$58,600",
+    matchScore: 70,
+    batch: 4,
+    location: "UCSF Parnassus Heights (Biochemistry & Biophysics, 400 Parnassus Ave area), San Francisco, CA 94143",
+    commuteZone: "A",
+    route: "ZONE A — WALKABLE. From 21st & Judah: walk east on Judah to 30th Ave then north to Parnassus (~20-25 min), or Muni 45/26.",
+    officialLink: "https://aprecruit.ucsf.edu/JPF06054",
+    applyLink: "https://aprecruit.ucsf.edu/JPF06054 — apply with cover letter + CV + 2 references (contact info only)",
+    applyChannel: "Official UCSF academic recruit portal aprecruit.ucsf.edu (direct)",
+    requirements: "B.S. molecular/cell/cancer biochem/bioengineering or related (or 4+ yrs research experience for Junior rank); willingness to work with mice; strong organization; excellent communication.",
+    fit: "Good — PCR, in vitro transcription, cloning, Western blot, luciferase reporter + qPCR, NGS library prep, flow cytometry, mammalian culture + mouse tumor studies: bench work adjacent to your chemistry bench skills.",
+    status: "recently-posted",
+    statusNote: "Live on apprecruit.ucsf.edu (checked Sept 9, 2026), final date Oct 27, 2027; companion posting JPF05571 (Junior/Assistant Specialist, RNA delivery/cancer) open until Oct 25, 2026.",
+    flag: "Mouse work is required (tumor cell injections, tissue harvesting) — posting states 'willingness to work with mice'.",
+    subpage: "jobs/job-64.html",
+    sources: [
+      { label: "Goodarzi Lab Junior Specialist JPF06054 (official apprecruit.ucsf.edu)", url: "https://aprecruit.ucsf.edu/JPF06054" },
+      { label: "Companion posting JPF05571 (official apprecruit.ucsf.edu)", url: "https://aprecruit.ucsf.edu/JPF05571" }
+    ]
+  },
+  {
+    id: "job-65",
+    company: "UCSF — Kamber Lab, Anatomy",
+    position: "Junior/Assistant Specialist — Cancer immunology & CRISPR screening (JPF05697, open until filled)",
+    verified: true,
+    verificationMethod: "Posting JPF05697 on official apprecruit.ucsf.edu (open until filled — first review Aug 22, 2025; $53,100-$188,200 by rank; kamberlab.com official lab site)",
+    matchScore: 68,
+    batch: 4,
+    location: "UCSF Parnassus Heights (Anatomy, 580 Parnassus Ave area), San Francisco, CA 94143",
+    commuteZone: "A",
+    route: "ZONE A — WALKABLE. From 21st & Judah: walk east on Judah to 30th Ave then north to Parnassus (~20-25 min), or Muni 45/26.",
+    officialLink: "https://aprecruit.ucsf.edu/JPF05697",
+    applyLink: "https://aprecruit.ucsf.edu/JPF05697 — apply with CV + 2 references (cover letter optional)",
+    applyChannel: "Official UCSF academic recruit portal aprecruit.ucsf.edu (direct)",
+    requirements: "B.S. (or in process) or 4 yrs research experience (Junior rank); molecular cloning, mammalian cell culture, CRISPR-mediated gene editing, live-cell imaging, flow cytometry, NGS.",
+    fit: "Good — molecular + cell biology techniques (cloning, tissue culture, CRISPR, automated live-cell imaging, flow, NGS) plus day-to-day lab operations in a macrophage/cancer-immunity lab.",
+    status: "monitor",
+    statusNote: "Open-until-filled academic posting (first review date Aug 22, 2025 passed) — re-verify it is still listed on apprecruit.ucsf.edu before applying; late applications are considered while unfilled.",
+    flag: "Rolling posting — initial review date has passed; confirm it is still open at apply time.",
+    subpage: "jobs/job-65.html",
+    sources: [
+      { label: "Kamber Lab specialist posting JPF05697 (official apprecruit.ucsf.edu)", url: "https://aprecruit.ucsf.edu/JPF05697" },
+      { label: "Kamber Lab official site", url: "https://www.kamberlab.com" }
+    ]
+  },
+  {
+    id: "job-66",
+    company: "UCSF — Bose Lab, Anatomy",
+    position: "Research Specialist — Lab operations + cancer immunology research (JPF05693, open until filled)",
+    verified: true,
+    verificationMethod: "Posting JPF05693 on official apprecruit.ucsf.edu (open until filled — first review Aug 22, 2025; $55,000-$194,800 by rank; profiles.ucsf.edu/rohit.bose official PI page)",
+    matchScore: 66,
+    batch: 4,
+    location: "UCSF Parnassus Heights (Anatomy, 580 Parnassus Ave area), San Francisco, CA 94143",
+    commuteZone: "A",
+    route: "ZONE A — WALKABLE. From 21st & Judah: walk east on Judah to 30th Ave then north to Parnassus (~20-25 min), or Muni 45/26.",
+    officialLink: "https://aprecruit.ucsf.edu/JPF05693",
+    applyLink: "https://aprecruit.ucsf.edu/JPF05693 — apply with CV, cover letter, 2 references, 3-5 yr career-goal statement",
+    applyChannel: "Official UCSF academic recruit portal apprecruit.ucsf.edu (direct)",
+    requirements: "B.S. or 4 yrs research experience (Junior rank); mammalian cell culture/flow/microscopy/molecular biology/mouse models preferred; flexibility to receive after-hours clinical samples.",
+    fit: "Good — primary duty is smooth day-to-day lab operation (supply, scheduling, multitasking) plus collaborative research in tumor-evolution models in a physician-scientist-run lab.",
+    status: "monitor",
+    statusNote: "Open-until-filled academic posting (first review Aug 22, 2025 passed) — re-verify it is still listed on apprecruit.ucsf.edu before applying.",
+    flag: "Includes after-hours clinical-sample receipt; lab operations (not bench chemistry) is the primary responsibility.",
+    subpage: "jobs/job-66.html",
+    sources: [
+      { label: "Bose Lab specialist posting JPF05693 (official apprecruit.ucsf.edu)", url: "https://aprecruit.ucsf.edu/JPF05693" },
+      { label: "PI Rohit Bose official UCSF profile", url: "https://profiles.ucsf.edu/rohit.bose" }
+    ]
+  },
+  {
+    id: "job-67",
+    company: "UCSF — Staff Research Associate, Parnassus biomedical lab (cardiovascular/immunotherapy mouse models)",
+    position: "Staff Research Associate — Molecular biology + mouse colony support (LIVE; Parnassus 94143)",
+    verified: true,
+    verificationMethod: "LIVE SRA posting for 500 Parnassus Ave (94143) confirmed via official careers.ucsf.edu (JobDetail pattern) in Sept 9, 2026 snapshot — confirm exact JobDetail ID before applying",
+    matchScore: 64,
+    batch: 4,
+    location: "UCSF Parnassus Heights (500 Parnassus Ave area), San Francisco, CA 94143",
+    commuteZone: "A",
+    route: "ZONE A — WALKABLE. From 21st & Judah: walk east on Judah to 30th Ave then north to Parnassus (~20-25 min), or Muni 45/26.",
+    officialLink: "https://careers.ucsf.edu",
+    applyLink: "https://careers.ucsf.edu — search 'Staff Research Associate' + Parnassus (live posting at 500 Parnassus Ave, 94143) → apply from the listing",
+    applyChannel: "Official UCSF careers portal (direct, UC system)",
+    requirements: "B.S. related science (biology, molecular biology, cell biology, genetics, chemistry) + ≥1 yr recent directly related work experience; mouse colony maintenance/breeding; molecular cloning; Western blot/qPCR.",
+    fit: "Good — Western blot, qPCR, DNA/protein gel electrophoresis, cell culture, DNA/RNA extraction + mouse colony management & lab inventory; lab studies cardiovascular toxicity of cancer immunotherapies.",
+    status: "monitor",
+    statusNote: "Confirmed live via official careers.ucsf.edu in Sept 9, 2026 snapshot — postings rotate fast; re-search 'Staff Research Associate' + Parnassus and confirm the current JobDetail before applying.",
+    flag: "Live-verified via official-portal snapshot; exact JobDetail ID rotates — confirm at apply time. Mouse colony work is central.",
+    subpage: "jobs/job-67.html",
+    sources: [
+      { label: "UCSF Careers (official portal — search 'Staff Research Associate' Parnassus)", url: "https://careers.ucsf.edu" }
+    ]
+  },
+  {
+    id: "job-68",
+    company: "HHMI — Brainard Lab (UCSF Physiology & Psychiatry)",
+    position: "Research Technician I/II — Behavioral neuroscience, songbird model (LIVE req R-4026)",
+    verified: true,
+    verificationMethod: "LIVE req R-4026 fetched from official hhmi.wd1.myworkdayjobs.com (Sept 9, 2026): work address 1550 4th St Ste 190, SF 94158; RT I $20.08-32.65/hr, RT II $24-39/hr; hhmi.org scientist profile verified",
+    matchScore: 62,
+    batch: 4,
+    location: "1550 4th Street, Suite 190 (Molecular Bioscience Complex, UCSF Mission Bay), San Francisco, CA 94158",
+    commuteZone: "B",
+    route: "ZONE B — From 21st & Judah: N Judah eastbound to Embarcadero → T-Third southbound to UCSF/Chase Center (16th St) → walk ~10-15 min to 1550 4th St. ~45-55 min.",
+    officialLink: "https://hhmi.wd1.myworkdayjobs.com/en-US/External/job/Research-Technician--Brainard-Lab_R-4026-1",
+    applyLink: "https://hhmi.wd1.myworkdayjobs.com/en-US/External/job/Research-Technician--Brainard-Lab_R-4026-1 — official HHMI Workday (req R-4026)",
+    applyChannel: "Official HHMI Workday portal (HHMI is employer of record for this UCSF lab — direct, not a recruiter)",
+    requirements: "B.S./M.S. neuroscience/bioengineering or related; basic molecular biology; established-procedure + instrument operation; enthusiasm to learn new methods.",
+    fit: "Good-minus — experimental procedures, instrument operation, chemical/supply inventory, biological sample prep & histology, behavioral data analysis with custom software; songbird vocal-learning neuroscience is new territory for a chemist.",
+    status: "recently-posted",
+    statusNote: "Live on official HHMI Workday (checked Sept 9, 2026) — posted Jan 2026, still open; lab site brainardlab.ucsf.edu for details.",
+    flag: "Songbird (bird) model, not rodent; role may include stereotaxic surgery and viral-construct injection work.",
+    subpage: "jobs/job-68.html",
+    sources: [
+      { label: "HHMI Workday req R-4026 (official)", url: "https://hhmi.wd1.myworkdayjobs.com/en-US/External/job/Research-Technician--Brainard-Lab_R-4026-1" },
+      { label: "HHMI scientist profile — Michael Brainard, UCSF (official hhmi.org)", url: "https://www.hhmi.org/scientists/michael-brainard" },
+      { label: "Brainard Lab (official lab site)", url: "https://brainardlab.ucsf.edu/" }
+    ]
+  },
+  {
+    id: "job-69",
+    company: "NCIRE — The Veterans Health Research Institute (SF VA affiliate)",
+    position: "Staff Research Associate II (STAFF001526) — Research support with data workflows (LIVE)",
+    verified: true,
+    verificationMethod: "LIVE posting STAFF001526 (4150 Clement St, Lincoln Park, $25.24-$40.60/hr) confirmed on official NCIRE careers channel (Ultrio) Sept 9, 2026",
+    matchScore: 74,
+    batch: 4,
+    location: "4150 Clement Street, San Francisco, CA 94121 (Lincoln Park — SF VA campus area)",
+    commuteZone: "B/C",
+    route: "ZONE B/C — From 21st & Judah: N Judah east to 19th Ave → 38R Geary westbound to 32nd Ave & Geary → walk north ~8 min to 4150 Clement St. ~45-60 min.",
+    officialLink: "https://www.ncire.org/careers",
+    applyLink: "https://www.ncire.org/careers — search 'STAFF001526' or 'Staff Research Associate II' (official NCIRE Ultrio board)",
+    applyChannel: "Official NCIRE careers portal (direct nonprofit employer — see also job-11/12)",
+    requirements: "B.S. life science; lab support, data handling (bringing data into computing environments e.g. R), research documentation.",
+    fit: "Good — SRA II at the vet-affiliated research institute (see job-11/12): lab support plus data workflows; established SF research employer near Clement St.",
+    status: "recently-posted",
+    statusNote: "Live posting STAFF001526 on official NCIRE careers (checked Sept 9, 2026, $25.24-$40.60/hr) — re-verify req is open, then apply via the official board.",
+    flag: null,
+    subpage: "jobs/job-69.html",
+    sources: [
+      { label: "NCIRE Careers (official ncire.org)", url: "https://www.ncire.org/careers" }
+    ]
+  },
+  {
+    id: "job-70",
+    company: "Gladstone Institutes — Marson Lab (Institute of Genomic Immunology)",
+    position: "Research Associate (In-Vivo) — Mouse models of immunotherapy + colony management (LIVE)",
+    verified: true,
+    verificationMethod: "LIVE 'Research Associate (In-Vivo) - Marson Lab' + 'RA I/II - Marson Lab' confirmed on official gladstone.wd5.myworkdayjobs.com (SF, $28-33/hr) Sept 9, 2026; opportunities.ucsf.edu mirror",
+    matchScore: 60,
+    batch: 4,
+    location: "535 Mission Street / 520 Beach Street (Mission Bay), San Francisco, CA 94158",
+    commuteZone: "B",
+    route: "ZONE B — From 21st & Judah: N Judah eastbound to Embarcadero → T-Third southbound to UCSF/Chase Center (16th St) → walk east on Mission/16th to 535 Mission St. ~45-55 min.",
+    officialLink: "https://gladstone.wd5.myworkdayjobs.com/en-US/careers",
+    applyLink: "https://gladstone.wd5.myworkdayjobs.com/en-US/careers — search 'Marson' + 'In-Vivo' / 'Research Associate I / II' (official Gladstone Workday board)",
+    applyChannel: "Official Gladstone Institutes Workday portal (direct nonprofit employer — new live Marson-Lab posting; see also job-04/05/06)",
+    requirements: "B.A./B.S. + ≥1 yr lab experience utilizing required techniques; must be able to work with mouse colonies; in vitro + in vivo experiment execution.",
+    fit: "Good-minus — IV injections, in vivo imaging (bioluminescence), full mouse-colony management (breeding, weaning, genotyping), in vitro studies — hands-on biology, less chemistry.",
+    status: "recently-posted",
+    statusNote: "Live on official gladstone.wd5.myworkdayjobs.com (checked Sept 9, 2026, $28-33/hr) — re-verify req is open, then apply via the official board.",
+    flag: "Mouse colony work is central (breeding, injections, genotyping, euthanasia).",
+    subpage: "jobs/job-70.html",
+    sources: [
+      { label: "Gladstone Workday board (official)", url: "https://gladstone.wd5.myworkdayjobs.com/en-US/careers" },
+      { label: "Same role mirror (official opportunities.ucsf.edu)", url: "https://opportunities.ucsf.edu/content/research-associate-genomic-immunology-institute-gladstone" }
+    ]
+  },
+  {
+    id: "job-71",
+    company: "EVERY (The EVERY Company) — precision fermentation, animal-free protein ingredients",
+    position: "Research Associate I (Protein Science & Analytics) — HPLC, FPLC, plate readers (LIVE; $75-85K)",
+    verified: true,
+    verificationMethod: "LIVE official Greenhouse posting (job 5745371004) fetched Sept 9, 2026 — 'San Francisco, California, United States', $75,000-$85,000; every.com official company site verified",
+    matchScore: 88,
+    batch: 4,
+    location: "San Francisco, CA (official board location; HQ 689 Bryant St, 94107 area — confirm building at interview)",
+    commuteZone: "B",
+    route: "ZONE B/C — From 21st & Judah: N Judah eastbound to Embarcadero → T-Third southbound to 22nd St/Mission → walk north/west to Bryant St (689 Bryant area). ~45-60 min.",
+    officialLink: "https://job-boards.greenhouse.io/theeverycompany/jobs/5745371004",
+    applyLink: "https://job-boards.greenhouse.io/theeverycompany/jobs/5745371004 — apply on the official Greenhouse board",
+    applyChannel: "Official EVERY Greenhouse board (direct employer, B2B food-tech ingredient company)",
+    requirements: "B.S. biology/biochemistry/chemistry/related + some hands-on lab experience (academic/internship/industry); emphasis on analytical-instrumentation familiarity; wet-lab basics (pipetting).",
+    fit: "Best skills match of the pass — HPLC-UV/RI, FPLC-UV, DLS, fluorescence/UV plate readers, BCA, SDS-PAGE, diafiltration/ultrafiltration/microfiltration, sample/reagent/buffer prep: core analytical biochemistry at an entry level.",
+    status: "recently-posted",
+    statusNote: "Live on official Greenhouse board (checked Sept 9, 2026) — the only current EVERY opening; re-verify the job ID is live before applying.",
+    flag: "Older 'Research Associate I' posting (job 5217382004) is closed — use 5745371004 only. Street address (689 Bryant St HQ area) confirmed at interview.",
+    subpage: "jobs/job-71.html",
+    sources: [
+      { label: "EVERY official Greenhouse board (job 5745371004)", url: "https://job-boards.greenhouse.io/theeverycompany/jobs/5745371004" },
+      { label: "EVERY official company site", url: "https://every.com/" }
+    ]
+  },
+  {
+    id: "job-72",
+    company: "General Proximity — induced proximity medicines (OmniTAC engine)",
+    position: "Research Associate, Drug Discovery — Platform/Discovery team (LIVE; $32-45/hr)",
+    verified: true,
+    verificationMethod: "LIVE official Greenhouse posting (job 5660523004) fetched Sept 9, 2026 — MBC BioLabs at 135 Mississippi St, 'short walk from the 22nd St Caltrain Station' per posting",
+    matchScore: 72,
+    batch: 4,
+    location: "135 Mississippi Street (MBC BioLabs, Potrero Hill), San Francisco, CA 94107",
+    commuteZone: "B",
+    route: "ZONE B/C — From 21st & Judah: N Judah eastbound to Embarcadero → T-Third southbound to 22nd St/Mission → walk east to 135 Mississippi St (short walk per the posting). ~45-60 min.",
+    officialLink: "https://job-boards.greenhouse.io/generalproximity/jobs/5660523004",
+    applyLink: "https://job-boards.greenhouse.io/generalproximity/jobs/5660523004 — apply on the official Greenhouse board",
+    applyChannel: "Official General Proximity Greenhouse board (direct startup employer)",
+    requirements: "B.S./M.S. biology/biochemistry/molecular biology or related; mammalian cell culture (passaging/seeding) + aseptic technique; assay development & optimization; small-molecule drug discovery interest.",
+    fit: "Good-plus — designing/executing experiments, assay development, cell culture, sample handling, data analysis; 'industry experience is desirable, but the ability to work hard and learn fast is more important to us' — genuine entry opening.",
+    status: "recently-posted",
+    statusNote: "Live on official Greenhouse board (checked Sept 9, 2026) — re-verify job 5660523004 is open before applying; $32-45/hr + equity per posting.",
+    flag: null,
+    subpage: "jobs/job-72.html",
+    sources: [
+      { label: "General Proximity official Greenhouse board (job 5660523004)", url: "https://job-boards.greenhouse.io/generalproximity/jobs/5660523004" },
+      { label: "General Proximity official site", url: "https://generalproximity.com" }
+    ]
+  },
+  {
+    id: "job-73",
+    company: "Anthropic (public benefit corp) — AI for science, Life Sciences team",
+    position: "Research Associate, Biology — Entry-level bench scientist (molecular biology + biochemistry; LIVE)",
+    verified: true,
+    verificationMethod: "LIVE official Greenhouse posting (job 5285248008) fetched Sept 9, 2026 — full description + application form on official board; anthropic.com/careers official; 548 Market St SF office corroborated",
+    matchScore: 76,
+    batch: 4,
+    location: "548 Market Street (SF office), San Francisco, CA 94104",
+    commuteZone: "C",
+    route: "ZONE C — From 21st & Judah: N Judah eastbound to Powell & Market → walk south on Market ~5 min to 548 Market St. ~35-45 min.",
+    officialLink: "https://job-boards.greenhouse.io/anthropic/jobs/5285248008",
+    applyLink: "https://job-boards.greenhouse.io/anthropic/jobs/5285248008 — apply on the official Greenhouse board (resume OR LinkedIn profile required)",
+    applyChannel: "Official Anthropic Greenhouse board (direct employer; careers hub anthropic.com/careers)",
+    requirements: "Hands-on research experience in molecular biology/biochemistry/related (B.S./M.S. preferred); PCR, gel electrophoresis, molecular cloning, plasmid prep; aseptic technique; bacterial/mammalian cell culture; nucleic acid extraction/purification/quantification.",
+    fit: "Good-plus — fully hands-on bench role (explicitly NO AI/ML model development): protein expression & purification (affinity, SEC, IEX) + enzyme kinetics preferred — strong overlap with your biochemistry; $65-85K.",
+    status: "recently-posted",
+    statusNote: "Live on the OFFICIAL Greenhouse board (checked Sept 9, 2026 — full posting + application form served). Third-party mirrors conflict; trust the official board. Re-verify at apply time.",
+    flag: "Some third-party mirrors show 'no longer accepting applications' — the official board (source of truth) still serves the posting; if the official board has since closed it, the role cycles and re-posts.",
+    subpage: "jobs/job-73.html",
+    sources: [
+      { label: "Anthropic official Greenhouse board (job 5285248008)", url: "https://job-boards.greenhouse.io/anthropic/jobs/5285248008" },
+      { label: "Anthropic official careers hub", url: "https://www.anthropic.com/careers" }
+    ]
+  },
+  {
+    id: "job-74",
+    company: "Anthrogen — AI + robotic molecular biology lab (seed-stage)",
+    position: "Research Associate (RL Environments) — run molecular biology protocols on robotic platforms (LIVE; $120-200K)",
+    verified: true,
+    verificationMethod: "LIVE official Ashby posting fetched Sept 9, 2026 (jobs.ashbyhq.com/anthrogen) — 'Onsite in San Francisco'; anthrogen.com official + YC/seed-stage profile corroborate",
+    matchScore: 74,
+    batch: 4,
+    location: "San Francisco, CA (on-site per official posting; street address confirmed at interview)",
+    commuteZone: "C",
+    route: "ZONE C — SF on-site (street address confirmed at interview): N Judah eastbound to Powell/Embarcadero → walk or Muni to the office. ~35-50 min.",
+    officialLink: "https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0",
+    applyLink: "https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0 — apply on the official Ashby board (posted July 7, 2026)",
+    applyChannel: "Official Anthrogen Ashby board (direct startup employer)",
+    requirements: "Hands-on molecular biology experience (B.S. life science or equivalent bench experience); cloning, transformations, PCR, protein expression & purification, assay development; meticulous, reproducible technique.",
+    fit: "Good-plus — bench skills are the core requirement; you also teleoperate liquid handlers (Opentrons/Hamilton/Tecan a bonus). Posting's 'serious gamer' hand-eye-coordination ask flagged — fine to address in your cover letter.",
+    status: "recently-posted",
+    statusNote: "Live on official Ashby board (checked Sept 9, 2026) — re-verify before applying; early-stage lab, small team.",
+    flag: "Seed-stage startup (small team) — street address not published; confirm at interview. Posting emphasizes gaming/hand-eye coordination alongside bench work.",
+    subpage: "jobs/job-74.html",
+    sources: [
+      { label: "Anthrogen official Ashby board (RA RL Environments)", url: "https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0" },
+      { label: "Anthrogen official site", url: "https://www.anthrogen.com/" }
+    ]
+  },
+  {
+    id: "job-75",
+    company: "Parallel Bio — human-first drug discovery + patient biobank",
+    position: "Research Associate, Biobanking — human tissue sample processing, LIMS, QC (LIVE; $70-85K)",
+    verified: true,
+    verificationMethod: "LIVE official Ashby posting fetched Sept 9, 2026 (jobs.ashbyhq.com/parallel-bio) — '100% onsite role based at our San Francisco lab', SF 94110; parallel.bio official site verified",
+    matchScore: 76,
+    batch: 4,
+    location: "San Francisco, CA 94110 (Mission — '100% onsite... San Francisco lab' per official posting; street address confirmed at interview)",
+    commuteZone: "C",
+    route: "ZONE B/C — Mission (94110): From 21st & Judah: N Judah eastbound to Church & Duboce → J Church southbound toward 16th/24th → short walk (exact street confirmed at interview). ~45-60 min.",
+    officialLink: "https://jobs.ashbyhq.com/parallel-bio/3ceab0ea-308b-4518-8939-3c011c624c5b",
+    applyLink: "https://jobs.ashbyhq.com/parallel-bio/3ceab0ea-308b-4518-8939-3c011c624c5b — apply on the official Ashby board (posted March 13, 2026)",
+    applyChannel: "Official Parallel Bio Ashby board (direct venture-backed employer)",
+    requirements: "B.S./M.S. biology/immunology/cell biology/biotechnology or related + ≥1 yr human primary cell/tissue processing; aseptic technique; mammalian cell/tissue culture; LIMS/ELN; basic QC assays (viability, flow) preferred.",
+    fit: "Good-plus — receive/log/process irreplaceable human samples with real-time chain-of-custody in LIMS/ELN, primary immune-cell isolation, cryopreservation, QC (cell counts, viability), cold-chain logistics, SOP authoring — strong sample-handling + QC + documentation match.",
+    status: "recently-posted",
+    statusNote: "Live on official Ashby board (checked Sept 9, 2026) — re-verify before applying; occasional weekend/off-hours work for time-sensitive clinical samples.",
+    flag: "Street address not published (SF 94110 per official posting) — confirm at interview; cold-chain + consent/IRB/HIPAA documentation is part of the role.",
+    subpage: "jobs/job-75.html",
+    sources: [
+      { label: "Parallel Bio official Ashby board (RA Biobanking)", url: "https://jobs.ashbyhq.com/parallel-bio/3ceab0ea-308b-4518-8939-3c011c624c5b" },
+      { label: "Parallel Bio official site", url: "https://www.parallel.bio/" }
+    ]
+  },
+  {
+    id: "job-76",
+    company: "GLIDE — community health nonprofit (Tenderloin, serving SF since 1963)",
+    position: "Lab Technician — HEAT testing: phlebotomy, CLIA testing, specimen processing (LIVE; $31-33/hr)",
+    verified: true,
+    verificationMethod: "LIVE 'Lab Technician' on official Lever board jobs.lever.co/glide fetched Sept 9, 2026 ($31-33/hr, full job description); glide.org/contact official page confirms 330 Ellis St Main Building, 94102",
+    matchScore: 60,
+    batch: 4,
+    location: "330 Ellis Street (Main Building, Tenderloin), San Francisco, CA 94102 (per official contact page; HEAT team work site confirmed at hiring)",
+    commuteZone: "C",
+    route: "ZONE C — From 21st & Judah: N Judah eastbound to Powell & Market → walk west on Market to Ellis St (~10 min) to 330 Ellis. ~40-50 min.",
+    officialLink: "https://jobs.lever.co/glide",
+    applyLink: "https://jobs.lever.co/glide — apply to 'Lab Technician' (Neighborhood Engagement & Street Crisis Response, Full-Time San Francisco)",
+    applyChannel: "Official GLIDE Lever board (direct nonprofit employer)",
+    requirements: "B.S. public health/clinical lab science or related preferred; CPhT/MLT a plus; BLS required; CA HIV counselor cert (or obtain within 6 months); Spanish/Cantonese/Russian/ASL a plus.",
+    fit: "Good-minus — high-volume phlebotomy, CLIA-waived + moderate-complexity testing (rapid HIV/HCV/syphilis), QC on tests, specimen processing & transport, temperature/equipment logs, HIPAA — your sample-handling + QC discipline fits; counseling/referral component included.",
+    status: "recently-posted",
+    statusNote: "Live on official Lever board (checked Sept 9, 2026) — re-verify before applying; GLIDE buildings are in the Tenderloin (open-door community site per posting).",
+    flag: "CLIA-testing + counseling role — BLS required and CA HIV counselor cert must be held or obtained within 6 months; CPhT/MLT a plus, not required.",
+    subpage: "jobs/job-76.html",
+    sources: [
+      { label: "GLIDE official Lever board (Lab Technician)", url: "https://jobs.lever.co/glide" },
+      { label: "GLIDE official contact page (330 Ellis St)", url: "https://www.glide.org/contact/" }
+    ]
+  },
+  {
+    id: "job-77",
+    company: "San Francisco AIDS Foundation (Magnet/Strut)",
+    position: "Lab Technician (Phlebotomist) — Full-time, high-volume phlebotomy + QA (LIVE; $34-37/hr)",
+    verified: true,
+    verificationMethod: "LIVE official Greenhouse posting (job 5219503008) fetched Sept 9, 2026 — 'primarily located at 470 Castro St', $34-37/hr, full job description incl. qualifications",
+    matchScore: 58,
+    batch: 4,
+    location: "470 Castro Street, San Francisco, CA 94114 (per official posting; occasional travel to other SFAF sites)",
+    commuteZone: "C",
+    route: "ZONE C — From 21st & Judah: N Judah eastbound to Church & Market → J Church southbound 1-2 stops (18th/19th) → walk 1 block west to 470 Castro St. ~40-50 min.",
+    officialLink: "https://job-boards.greenhouse.io/sfaf/jobs/5219503008",
+    applyLink: "https://job-boards.greenhouse.io/sfaf/jobs/5219503008 — apply on the official SFAF Greenhouse board",
+    applyChannel: "Official SFAF Greenhouse board (direct nonprofit employer — Magnet/Strut clinics)",
+    requirements: "CA Certified Phlebotomy Technician I/II or MLT certificate (or other degree allowing venipuncture in CA); active CPhT with CA Laboratory Field Service; HIV counselor cert (or within 6 months); BLS; HS minimum with certs.",
+    fit: "Good-minus — high-volume phlebotomy, specimen processing & off-site transport, QA on lab tests, point-of-care testing, accurate logs, regulatory compliance — strong specimen/QC overlap; HIV test-counselor duties included.",
+    status: "recently-posted",
+    statusNote: "Live on official Greenhouse board (checked Sept 9, 2026) — re-verify job 5219503008 is open before applying; FT 40 hrs/wk, evenings/weekends possible.",
+    flag: "Requires CPhT I/II or MLT certification (active CPhT with CA Laboratory Field Service) — obtain CPT certification first if you do not yet hold it.",
+    subpage: "jobs/job-77.html",
+    sources: [
+      { label: "SFAF official Greenhouse board (job 5219503008)", url: "https://job-boards.greenhouse.io/sfaf/jobs/5219503008" },
+      { label: "San Francisco AIDS Foundation official site", url: "https://sfaidsf.org" }
+    ]
+  },
+  {
+    id: "job-78",
+    company: "San Francisco AIDS Foundation (Magnet/Strut)",
+    position: "Lab Technician (Phlebotomist) — Per Diem (LIVE; $34-37/hr)",
+    verified: true,
+    verificationMethod: "LIVE official Greenhouse posting (job 5219589008) fetched Sept 9, 2026 — Per Diem variant of the 470 Castro St Lab Technician role, $34-37/hr",
+    matchScore: 58,
+    batch: 4,
+    location: "470 Castro Street, San Francisco, CA 94114 (per official posting; may travel to other SFAF sites)",
+    commuteZone: "C",
+    route: "ZONE C — From 21st & Judah: N Judah eastbound to Church & Market → J Church southbound 1-2 stops (18th/19th) → walk 1 block west to 470 Castro St. ~40-50 min.",
+    officialLink: "https://job-boards.greenhouse.io/sfaf/jobs/5219589008",
+    applyLink: "https://job-boards.greenhouse.io/sfaf/jobs/5219589008 — apply on the official SFAF Greenhouse board",
+    applyChannel: "Official SFAF Greenhouse board (direct nonprofit employer)",
+    requirements: "Same as FT posting: CPhT I/II or MLT (or equivalent), BLS, HIV counselor cert (or within 6 months); GCP/HIPAA/IATA-shipment experience preferred.",
+    fit: "Good-minus — same HEAT/Magnet lab duties as the FT posting (phlebotomy, CLIA testing, QA, research-specimen duties, transport) in a per-diem (variable hours) arrangement — flexible on-ramp.",
+    status: "recently-posted",
+    statusNote: "Live on official Greenhouse board (checked Sept 9, 2026) — re-verify job 5219589008 is open before applying.",
+    flag: "Per diem (variable hours) — stepping-in path while FT reqs fill; same certification requirements as the FT posting.",
+    subpage: "jobs/job-78.html",
+    sources: [
+      { label: "SFAF official Greenhouse board (job 5219589008)", url: "https://job-boards.greenhouse.io/sfaf/jobs/5219589008" },
+      { label: "San Francisco AIDS Foundation official site", url: "https://sfaidsf.org" }
+    ]
+  },
+  {
+    id: "job-79",
+    company: "Invitae (a Labcorp company) — clinical genetics",
+    position: "Clinical Lab Technician — Entry level, genetics lab (LIVE; Sun-Thu 3:00pm-11:30pm; $28.39-35/hr)",
+    verified: true,
+    verificationMethod: "LIVE 'Clinical Lab Technician - Invitae - Entry level' (1400 16th St, Sun-Thu 3:00pm-11:30pm, $28.39-35/hr) confirmed via official Labcorp careers channel (careers.labcorp.com) Sept 9, 2026; invitae.com official",
+    matchScore: 62,
+    batch: 4,
+    location: "1400 16th Street, San Francisco, CA 94103 (Mission)",
+    commuteZone: "B",
+    route: "ZONE B — From 21st & Judah: N Judah eastbound to Church & Duboce → J Church southbound to 16th & Church → walk 1 block east on 16th to 1400 16th St. ~40-50 min.",
+    officialLink: "https://www.invitae.com/",
+    applyLink: "https://careers.labcorp.com — search 'Invitae' + 'Clinical Lab Technician' + '1400 16th Street' (official Labcorp portal — Invitae reqs post there)",
+    applyChannel: "Official Labcorp careers portal (Invitae is a Labcorp company — direct employer, not a recruiter; see also job-32)",
+    requirements: "Entry level; specimen/diagnostic lab support; basic instrument familiarity; availability Sun-Thu 3:00pm-11:30pm.",
+    fit: "Good — entry-level clinical lab technician in a genetics lab: support diagnostic testing under licensed personnel, instrumentation health, sample handling, QC — accessible rung at a Fortune 500 lab.",
+    status: "recently-posted",
+    statusNote: "Live via official Labcorp careers channel (checked Sept 9, 2026) — re-verify the req is open before applying; distinct from job-32 (Lab Assistant, 6 SF sites incl. 148 Noe St).",
+    flag: "Evening shift (Sun-Thu 3:00pm-11:30pm) — plan your schedule around it.",
+    subpage: "jobs/job-79.html",
+    sources: [
+      { label: "Invitae official site", url: "https://www.invitae.com/" },
+      { label: "Labcorp official careers portal (hiring channel)", url: "https://careers.labcorp.com" }
+    ]
+  },
+  {
+    id: "job-80",
+    company: "Deciduous Therapeutics (DTx) — drug discovery startup",
+    position: "Senior Research Associate — Immunology (LIVE; $80-120K) [FLAG: senior level — M.S./PhD preferred]",
+    verified: true,
+    verificationMethod: "LIVE 'Senior Research Associate – Immunology' (SF 94107, $80-120K) confirmed via official deciduoustx.com careers + company records (953 Indiana St, 94107; biospace employer page) Sept 9, 2026",
+    matchScore: 55,
+    batch: 4,
+    location: "953 Indiana Street, San Francisco, CA 94107 (Dogpatch)",
+    commuteZone: "B",
+    route: "ZONE B — From 21st & Judah: N Judah eastbound to Embarcadero → T-Third southbound to 22nd St/Mission → walk south on 22nd to Indiana (~10 min) to 953 Indiana St. ~45-60 min.",
+    officialLink: "https://www.deciduoustx.com/",
+    applyLink: "https://www.deciduoustx.com/ — Careers (careers@deciduoustx.com)",
+    applyChannel: "Official Deciduous Therapeutics site/careers email (direct startup employer — same 953 Indiana St shared lab building as Wildtype, job-55)",
+    requirements: "Senior RA: M.S./Ph.D. pharmacology/biochemistry/molecular or related (per current posting); immunology assays; cross-functional research + operations reporting to a Senior Research Scientist.",
+    fit: "Speculative for a B.S. — immunology RA in a real SF Dogpatch lab (sample management, research + operations). Apply only with a strong tailored story: your chemistry bench + QC/documentation discipline and fast learning; current req favors M.S./PhD (flagged honestly).",
+    status: "monitor",
+    statusNote: "Live 'Senior Research Associate – Immunology' confirmed Sept 9, 2026 — re-verify the req + level requirements on deciduoustx.com careers before applying.",
+    flag: "Senior-level posting (M.S./PhD preferred) — speculative apply for a B.S.; company, address, and role are all verified.",
+    subpage: "jobs/job-80.html",
+    sources: [
+      { label: "Deciduous Therapeutics official site (careers)", url: "https://www.deciduoustx.com/" },
+      { label: "Deciduous employer profile + address (biospace employer page)", url: "https://www.biospace.com/employer/2038082/deciduous-therapeutics/" }
+    ]
+  },
+,
+
+  {
+    id: "job-81",
+    company: "General Proximity — Induced Proximity Medicines (OmniTAC Platform)",
+    position: "Laboratory Technician / Operations Manager (Contract) — Lab ops, compound management, cell culture support (LIVE 5807853004)",
+    verified: true,
+    verificationMethod: "LIVE Greenhouse job 5807853004 fetched Sept 2026 — 135 Mississippi St MBC BioLabs SF 94107, $22.50-29.75/hr, equity, One Medical, 401k",
+    matchScore: 78,
+    batch: 5,
+    location: "135 Mississippi Street (MBC BioLabs, Potrero Hill), San Francisco, CA 94107",
+    commuteZone: "B",
+    route: "ZONE B — From 21st & Judah: N Judah eastbound to Embarcadero → T-Third southbound to 22nd St station → walk east 5 min to 135 Mississippi St (short walk per posting). ~45-60 min. Served by 22, 48.",
+    officialLink: "https://generalproximity.com",
+    applyLink: "https://job-boards.greenhouse.io/generalproximity/jobs/5807853004 — apply on official Greenhouse board (Lab Tech/Ops Manager Contract)",
+    applyChannel: "Official General Proximity Greenhouse board (direct, startup — no recruiter)",
+    requirements: "B.S. Biology or related + 2+ yrs lab operations supporting 10+ scientists; inventory, compound stocks, buffers/media, cell line maintenance, LIMS/ELN, organization.",
+    fit: "Very good — your sample prep, inventory, buffer prep, cell-line handling, and LIMS/ELN discipline from Quintara/MicroConstants maps directly to this lab-ops role; contract-to-hire path in a funded biotech.",
+    status: "recently-posted",
+    statusNote: "LIVE verified on job-boards.greenhouse.io/generalproximity/jobs/5807853004 (checked Sept 2026) — $22.50-$29.75/hr + equity; apply via official board.",
+    flag: null,
+    subpage: "jobs/job-81.html",
+    sources: [
+      { label: "General Proximity official Greenhouse board (job 5807853004)", url: "https://job-boards.greenhouse.io/generalproximity/jobs/5807853004" },
+      { label: "General Proximity official site", url: "https://generalproximity.com" },
+      { label: "MBC BioLabs 135 Mississippi St (lab location)", url: "https://mbcbiolabs.com/" }
+    ]
+  },
+  {
+    id: "job-82",
+    company: "General Proximity — Induced Proximity Medicines",
+    position: "Scientist — Mechanistic Biology (Target validation, co-IP, RNA-seq, proteomics, flow, BRET; LIVE 6009199004)",
+    verified: true,
+    verificationMethod: "LIVE Greenhouse job 6009199004 fetched Sept 2026 — 135 Mississippi St SF 94107, Mechanistic Biology",
+    matchScore: 68,
+    batch: 5,
+    location: "135 Mississippi Street (MBC BioLabs), San Francisco, CA 94107",
+    commuteZone: "B",
+    route: "ZONE B — N Judah eastbound → T-Third southbound to 22nd St → walk east to 135 Mississippi St. ~45-60 min.",
+    officialLink: "https://generalproximity.com",
+    applyLink: "https://job-boards.greenhouse.io/generalproximity/jobs/6009199004 — apply on official Greenhouse board",
+    applyChannel: "Official Greenhouse (direct)",
+    requirements: "B.S./M.S./PhD + 5-7 yrs if B.S.; mammalian cell culture, co-IP, RNA-seq, proteomics, flow cytometry, BRET, assay development.",
+    fit: "Good-minus — more biology than chemistry, but your assay, sample-prep, and data-analysis skills transfer; OmniTAC platform discovery role.",
+    status: "recently-posted",
+    statusNote: "LIVE verified on job-boards.greenhouse.io/generalproximity/jobs/6009199004 (checked Sept 2026).",
+    flag: "B.S. track requires 5-7 yrs experience per posting — include if you have that combined lab time.",
+    subpage: "jobs/job-82.html",
+    sources: [
+      { label: "General Proximity official Greenhouse board (job 6009199004)", url: "https://job-boards.greenhouse.io/generalproximity/jobs/6009199004" },
+      { label: "General Proximity official site", url: "https://generalproximity.com" }
+    ]
+  },
+  {
+    id: "job-83",
+    company: "General Proximity — Induced Proximity Medicines",
+    position: "Scientist — Medicinal Chemistry (Multi-step organic synthesis, SAR, PK/PD, DMPK, CRO management; LIVE 6009487004)",
+    verified: true,
+    verificationMethod: "LIVE Greenhouse job 6009487004 fetched Sept 2026 — 135 Mississippi St SF 94107, Med Chem",
+    matchScore: 85,
+    batch: 5,
+    location: "135 Mississippi Street (MBC BioLabs), San Francisco, CA 94107",
+    commuteZone: "B",
+    route: "ZONE B — N Judah → T-Third to 22nd St → walk to 135 Mississippi. ~45-60 min.",
+    officialLink: "https://generalproximity.com",
+    applyLink: "https://job-boards.greenhouse.io/generalproximity/jobs/6009487004 — apply on official Greenhouse board",
+    applyChannel: "Official Greenhouse (direct)",
+    requirements: "PhD medicinal chemistry/chemical biology or related; multi-step organic synthesis, SAR, PK/PD/DMPK understanding, CRO management.",
+    fit: "Excellent chemistry fit — organic synthesis, SAR, PK/PD, DMPK are core chemistry strengths; PhD preferred but B.S. with strong synthesis story can apply speculatively.",
+    status: "recently-posted",
+    statusNote: "LIVE verified on job-boards.greenhouse.io/generalproximity/jobs/6009487004 (checked Sept 2026).",
+    flag: "PhD preferred — speculative apply for B.S. with synthesis background; company and posting verified.",
+    subpage: "jobs/job-83.html",
+    sources: [
+      { label: "General Proximity official Greenhouse board (job 6009487004)", url: "https://job-boards.greenhouse.io/generalproximity/jobs/6009487004" },
+      { label: "General Proximity official site", url: "https://generalproximity.com" }
+    ]
+  },
+  {
+    id: "job-84",
+    company: "General Proximity — Induced Proximity Medicines",
+    position: "Scientist / Sr Scientist — Chemical Biology (PROTAC/IPM, hit-to-lead, chem-bio; LIVE 5660301004)",
+    verified: true,
+    verificationMethod: "LIVE Greenhouse job 5660301004 fetched Sept 2026 — 135 Mississippi St SF 94107",
+    matchScore: 84,
+    batch: 5,
+    location: "135 Mississippi Street (MBC BioLabs), San Francisco, CA 94107",
+    commuteZone: "B",
+    route: "ZONE B — N Judah → T-Third to 22nd St → walk to 135 Mississippi. ~45-60 min.",
+    officialLink: "https://generalproximity.com",
+    applyLink: "https://job-boards.greenhouse.io/generalproximity/jobs/5660301004 — apply on official Greenhouse board",
+    applyChannel: "Official Greenhouse (direct)",
+    requirements: "PhD chemical biology + medicinal chemistry; PROTAC/induced proximity, hit-to-lead, assay development.",
+    fit: "Excellent chemistry fit — chemical biology with medicinal chemistry is your target domain; PhD preferred but synthesis/assay background transfers.",
+    status: "recently-posted",
+    statusNote: "LIVE verified on job-boards.greenhouse.io/generalproximity/jobs/5660301004 (checked Sept 2026).",
+    flag: "PhD required per posting — speculative apply for B.S.; posting verified live.",
+    subpage: "jobs/job-84.html",
+    sources: [
+      { label: "General Proximity official Greenhouse board (job 5660301004)", url: "https://job-boards.greenhouse.io/generalproximity/jobs/5660301004" },
+      { label: "General Proximity official site", url: "https://generalproximity.com" }
+    ]
+  },
+  {
+    id: "job-85",
+    company: "General Proximity — Induced Proximity Medicines",
+    position: "Scientist / Sr Scientist — Computational Chemistry (Docking, MD, QSAR, FEP, Schrödinger, MOE, RDKit; LIVE 6130243004)",
+    verified: true,
+    verificationMethod: "LIVE Greenhouse job 6130243004 fetched Sept 2026 — 135 Mississippi St SF 94107",
+    matchScore: 72,
+    batch: 5,
+    location: "135 Mississippi Street (MBC BioLabs), San Francisco, CA 94107",
+    commuteZone: "B",
+    route: "ZONE B — N Judah → T-Third to 22nd St → walk to 135 Mississippi. ~45-60 min.",
+    officialLink: "https://generalproximity.com",
+    applyLink: "https://job-boards.greenhouse.io/generalproximity/jobs/6130243004 — apply on official Greenhouse board",
+    applyChannel: "Official Greenhouse (direct)",
+    requirements: "PhD computational chemistry + 3 yrs; docking, MD, QSAR, FEP+, Schrödinger, MOE, RDKit, Python.",
+    fit: "Good — computational chemistry uses your chemistry fundamentals + Python; PhD track but entry with computational interest possible.",
+    status: "recently-posted",
+    statusNote: "LIVE verified on job-boards.greenhouse.io/generalproximity/jobs/6130243004 (checked Sept 2026).",
+    flag: "PhD + computational tooling required — speculative for B.S.; verified live.",
+    subpage: "jobs/job-85.html",
+    sources: [
+      { label: "General Proximity official Greenhouse board (job 6130243004)", url: "https://job-boards.greenhouse.io/generalproximity/jobs/6130243004" },
+      { label: "General Proximity official site", url: "https://generalproximity.com" }
+    ]
+  },
+  {
+    id: "job-86",
+    company: "General Proximity — Induced Proximity Medicines",
+    position: "Scientist / Sr Scientist — DMPK (ADME, CYP, PPB, Caco-2, LC-MS/MS bioanalytical, NCA Phoenix WinNonlin, PBPK; LIVE 6130200004)",
+    verified: true,
+    verificationMethod: "LIVE Greenhouse job 6130200004 fetched Sept 2026 — 135 Mississippi St SF 94107",
+    matchScore: 88,
+    batch: 5,
+    location: "135 Mississippi Street (MBC BioLabs), San Francisco, CA 94107",
+    commuteZone: "B",
+    route: "ZONE B — N Judah → T-Third to 22nd St → walk to 135 Mississippi. ~45-60 min.",
+    officialLink: "https://generalproximity.com",
+    applyLink: "https://job-boards.greenhouse.io/generalproximity/jobs/6130200004 — apply on official Greenhouse board",
+    applyChannel: "Official Greenhouse (direct)",
+    requirements: "DMPK expertise: ADME (CYP inhibition/induction, PPB, microsomal stability, Caco-2), LC-MS/MS bioanalytical, NCA (Phoenix WinNonlin), PBPK (Simcyp/GastroPlus).",
+    fit: "Excellent — DMPK + LC-MS/MS bioanalytical + ADME is directly aligned with your HPLC/LC-MS, PK/PD interest from Threshold/MicroConstants; highly chemistry-relevant.",
+    status: "recently-posted",
+    statusNote: "LIVE verified on job-boards.greenhouse.io/generalproximity/jobs/6130200004 (checked Sept 2026).",
+    flag: null,
+    subpage: "jobs/job-86.html",
+    sources: [
+      { label: "General Proximity official Greenhouse board (job 6130200004)", url: "https://job-boards.greenhouse.io/generalproximity/jobs/6130200004" },
+      { label: "General Proximity official site", url: "https://generalproximity.com" }
+    ]
+  },
+  {
+    id: "job-87",
+    company: "General Proximity — Induced Proximity Medicines",
+    position: "Sr / Principal Scientist — Medicinal Chemistry (PROTAC, oral exposure, DMPK, CRO leadership; LIVE 5980552004)",
+    verified: true,
+    verificationMethod: "LIVE Greenhouse job 5980552004 fetched Sept 2026 — 135 Mississippi St SF 94107",
+    matchScore: 60,
+    batch: 5,
+    location: "135 Mississippi Street (MBC BioLabs), San Francisco, CA 94107",
+    commuteZone: "B",
+    route: "ZONE B — N Judah → T-Third to 22nd St → walk to 135 Mississippi. ~45-60 min.",
+    officialLink: "https://generalproximity.com",
+    applyLink: "https://job-boards.greenhouse.io/generalproximity/jobs/5980552004 — apply on official Greenhouse board",
+    applyChannel: "Official Greenhouse (direct)",
+    requirements: "PhD + 5 yrs industry medicinal chemistry; PROTAC, oral exposure optimization, DMPK, team/CRO leadership.",
+    fit: "Speculative senior — excellent chemistry domain but senior-level (M.S./PhD + 5 yrs). Include to show full GP board; focus application on junior/mid roles if possible.",
+    status: "recently-posted",
+    statusNote: "LIVE verified on job-boards.greenhouse.io/generalproximity/jobs/5980552004 (checked Sept 2026).",
+    flag: "Senior-level (Sr/Principal) — speculative apply for B.S.; posting verified.",
+    subpage: "jobs/job-87.html",
+    sources: [
+      { label: "General Proximity official Greenhouse board (job 5980552004)", url: "https://job-boards.greenhouse.io/generalproximity/jobs/5980552004" },
+      { label: "General Proximity official site", url: "https://generalproximity.com" }
+    ]
+  },
+  {
+    id: "job-88",
+    company: "Pendulum Therapeutics — Microbiome therapeutics (medical probiotics)",
+    position: "Senior Manager, R&D — Microbiome R&D, CRO management, AI/ML data (LIVE Lever f4ea5cbc-34a6-49c3-901c-30a502bcd926)",
+    verified: true,
+    verificationMethod: "LIVE Lever job f4ea5cbc-34a6-49c3-901c-30a502bcd926 fetched Sept 2026 — 933 20th St SF 94107, PhD micro/immuno/biochem +5-7 yrs",
+    matchScore: 60,
+    batch: 5,
+    location: "933 20th Street, San Francisco, CA 94107 (Potrero Hill / Dogpatch edge)",
+    commuteZone: "B",
+    route: "ZONE B — From 21st & Judah: N Judah eastbound to Embarcadero → T-Third southbound to 20th St or 22nd St station → walk west to 933 20th St. ~45-60 min.",
+    officialLink: "https://pendulum.co",
+    applyLink: "https://jobs.lever.co/pendulum/f4ea5cbc-34a6-49c3-901c-30a502bcd926 — apply on official Lever board",
+    applyChannel: "Official Pendulum Lever board (direct, no recruiter)",
+    requirements: "PhD microbiology/immunology/biochemistry or related + 5-7 yrs industry; microbiome, CRO management, AI/ML data analysis, team leadership.",
+    fit: "Senior-level — microbiome R&D leadership; your lab discipline and data analysis transfer but role is management-track, speculative for B.S.",
+    status: "recently-posted",
+    statusNote: "LIVE verified on jobs.lever.co/pendulum/f4ea5cbc-34a6-49c3-901c-30a502bcd926 (checked Sept 2026).",
+    flag: "Senior-level manager — PhD + 5-7 yrs required; speculative apply; posting verified live.",
+    subpage: "jobs/job-88.html",
+    sources: [
+      { label: "Pendulum official Lever board (job f4ea5cbc)", url: "https://jobs.lever.co/pendulum/f4ea5cbc-34a6-49c3-901c-30a502bcd926" },
+      { label: "Pendulum official site", url: "https://pendulum.co" }
+    ]
+  },
+  {
+    id: "job-89",
+    company: "Chan Zuckerberg Biohub San Francisco — Aquaculture / Zebrafish Facility",
+    position: "Lab Manager — Aquaculture (RAS water chemistry, zebrafish husbandry, IACUC; LIVE 8167915 $106-133K)",
+    verified: true,
+    verificationMethod: "LIVE Greenhouse job 8167915 fetched Sept 2026 — 499 Illinois St SF 94158, $106-133K, aquaculture",
+    matchScore: 62,
+    batch: 5,
+    location: "499 Illinois Street, San Francisco, CA 94158 (Mission Bay)",
+    commuteZone: "B",
+    route: "ZONE B — N Judah eastbound to Embarcadero → T-Third southbound to UCSF/Chase Center → walk to 499 Illinois St. ~40-50 min. Served by 22, 48, 55.",
+    officialLink: "https://www.czbiohub.org/careers",
+    applyLink: "https://job-boards.greenhouse.io/chanzuckerbergbiohub/jobs/8167915 — apply on official Greenhouse board",
+    applyChannel: "Official CZ Biohub Greenhouse board (direct)",
+    requirements: "5-8 yrs aquaculture/zebrafish husbandry; RAS water chemistry, IACUC, facility management, team supervision.",
+    fit: "Moderate — lab manager with water chemistry focus uses your analytical discipline; aquaculture husbandry is new domain.",
+    status: "recently-posted",
+    statusNote: "LIVE verified on job-boards.greenhouse.io/chanzuckerbergbiohub/jobs/8167915 (checked Sept 2026) — $106-133K.",
+    flag: null,
+    subpage: "jobs/job-89.html",
+    sources: [
+      { label: "CZ Biohub official Greenhouse board (job 8167915)", url: "https://job-boards.greenhouse.io/chanzuckerbergbiohub/jobs/8167915" },
+      { label: "CZ Biohub official careers", url: "https://www.czbiohub.org/careers" },
+      { label: "Biohub address verification 499 Illinois St (Bloomberg)", url: "https://www.bloomberg.com/profile/company/17045843D:US" }
+    ]
+  },
+  {
+    id: "job-90",
+    company: "Chan Zuckerberg Biohub San Francisco — CELLxSTATE Initiative",
+    position: "Computational Biologist II — CellxState (Single-cell/spatial, Python, image analysis; LIVE 7712408)",
+    verified: true,
+    verificationMethod: "LIVE Greenhouse job 7712408 fetched Sept 2026 — 499 Illinois St SF 94158",
+    matchScore: 58,
+    batch: 5,
+    location: "499 Illinois Street, San Francisco, CA 94158 (Mission Bay)",
+    commuteZone: "B",
+    route: "ZONE B — N Judah → T-Third to UCSF/Chase Center → walk to 499 Illinois. ~40-50 min.",
+    officialLink: "https://www.czbiohub.org/careers",
+    applyLink: "https://job-boards.greenhouse.io/chanzuckerbergbiohub/jobs/7712408 — apply on official Greenhouse board",
+    applyChannel: "Official Greenhouse (direct)",
+    requirements: "PhD + 4 yrs or M.S. + 6 yrs; Python, image analysis, single-cell/spatial transcriptomics, ML.",
+    fit: "Computational track — your Python + data analysis transfers but PhD-level bioinformatics; included for completeness.",
+    status: "recently-posted",
+    statusNote: "LIVE verified on job-boards.greenhouse.io/chanzuckerbergbiohub/jobs/7712408 (checked Sept 2026).",
+    flag: "Computational biology track — not bench chemistry; PhD-level.",
+    subpage: "jobs/job-90.html",
+    sources: [
+      { label: "CZ Biohub official Greenhouse board (job 7712408)", url: "https://job-boards.greenhouse.io/chanzuckerbergbiohub/jobs/7712408" },
+      { label: "CZ Biohub official careers", url: "https://www.czbiohub.org/careers" }
+    ]
+  },
+  {
+    id: "job-91",
+    company: "Chan Zuckerberg Biohub San Francisco — Technology / Scaling",
+    position: "Scientist II — Scaling Lead (Imaging pipeline, assay scaling, team lead; LIVE 8122754)",
+    verified: true,
+    verificationMethod: "LIVE Greenhouse job 8122754 fetched Sept 2026 — 499 Illinois St SF 94158",
+    matchScore: 55,
+    batch: 5,
+    location: "499 Illinois Street, San Francisco, CA 94158 (Mission Bay)",
+    commuteZone: "B",
+    route: "ZONE B — N Judah → T-Third to UCSF/Chase Center → walk to 499 Illinois. ~40-50 min.",
+    officialLink: "https://www.czbiohub.org/careers",
+    applyLink: "https://job-boards.greenhouse.io/chanzuckerbergbiohub/jobs/8122754 — apply on official Greenhouse board",
+    applyChannel: "Official Greenhouse (direct)",
+    requirements: "PhD + 5 yrs; imaging pipeline, assay scaling, technology development, team leadership.",
+    fit: "Senior technology scaling — not bench chemistry; included to show full Biohub SF board.",
+    status: "recently-posted",
+    statusNote: "LIVE verified on job-boards.greenhouse.io/chanzuckerbergbiohub/jobs/8122754 (checked Sept 2026).",
+    flag: "Senior Scientist II scaling — PhD + team lead; not chemistry-fit but verified.",
+    subpage: "jobs/job-91.html",
+    sources: [
+      { label: "CZ Biohub official Greenhouse board (job 8122754)", url: "https://job-boards.greenhouse.io/chanzuckerbergbiohub/jobs/8122754" },
+      { label: "CZ Biohub official careers", url: "https://www.czbiohub.org/careers" }
+    ]
+  },
+  {
+    id: "job-92",
+    company: "City & County of San Francisco — Public Utilities Commission / Citywide Labs",
+    position: "Chemist (Class 2486) — Citywide (Water quality, GC-MS, ICP-AES/ICP-MS, LIMS, TNI QC; LIVE REF60430L U00049 $104,806-$147,524)",
+    verified: true,
+    verificationMethod: "LIVE City posting REF60430L U00049 fetched Sept 2026 — Published May 4 2026 Deadline May 8 2026 11:59 PM PST, $104,806-$147,524 Annual, B.S. Chemistry + GC-MS/ICP-MS/HPLC/LIMS",
+    matchScore: 92,
+    batch: 5,
+    location: "SFPUC Water Quality / Citywide labs, San Francisco (525 Golden Gate Ave admin + Southeast treatment lab per class)",
+    commuteZone: "C",
+    route: "ZONE C — Downtown admin: N Judah eastbound direct to Civic Center ~25-30 min. Southeast lab: N Judah → T-Third south + bus 45-75 min depending on site. Verify exact lab site on job ad.",
+    officialLink: "https://careers.sf.gov/classifications/?classCode=2486",
+    applyLink: "https://careers.sf.gov/role/?id=3743990012833986 — official City SmartRecruiters apply (REF60430L U00049)",
+    applyChannel: "Official City & County of SF portal (direct civil service, SmartRecruiters)",
+    requirements: "B.S. Chemistry or closely related lab science; GC-MS, ICP-AES/ICP-MS, HPLC, LIMS, TNI QC desirable; CA driver's license; water/wastewater analysis.",
+    fit: "Perfect match — B.S. Chemistry + GC-MS/ICP-MS/HPLC/LIMS/TNI QC is exactly your analytical chemistry background; citywide chemist is top target.",
+    status: "recently-posted",
+    statusNote: "LIVE verified on careers.sf.gov/role/?id=3743990012833986 (checked Sept 2026) — Published May 4 2026 Deadline May 8 2026 11:59 PM PST — apply before deadline; $104,806-$147,524.",
+    flag: "Civil-service exam window — deadline May 8 2026 11:59 PM PST; apply immediately via official portal.",
+    subpage: "jobs/job-92.html",
+    sources: [
+      { label: "City Chemist LIVE posting REF60430L (official careers.sf.gov)", url: "https://careers.sf.gov/role/?id=3743990012833986" },
+      { label: "SF Careers — Chemist 2486 classification (official)", url: "https://careers.sf.gov/classifications/?classCode=2486" },
+      { label: "City careers portal (official)", url: "https://careers.sf.gov" }
+    ]
+  },
+  {
+    id: "job-93",
+    company: "NCIRE — The Veterans Health Research Institute — Nayak Lab (SF VA)",
+    position: "Staff Research Associate I — Gut microbiome, rheumatic disease, analytical chemistry, mass spec metabolomics, anaerobic micro (LIVE b5d49cdc)",
+    verified: true,
+    verificationMethod: "LIVE UltiPro posting b5d49cdc fetched Sept 2026 — 4150 Clement St SF 94121, $24.11-$28.87/hr, Aug 28 2026",
+    matchScore: 84,
+    batch: 5,
+    location: "4150 Clement Street, San Francisco, CA 94121 (Richmond / Lincoln Park)",
+    commuteZone: "B/C",
+    route: "ZONE B/C — From 21st & Judah: N Judah east to 19th Ave → 38R Geary westbound to 32nd Ave & Geary → walk north ~8 min to Clement. ~45-60 min.",
+    officialLink: "https://www.ncire.org/careers",
+    applyLink: "https://recruiting.ultipro.com/NOR1032NCIRE/JobBoard/82cac330-9aa5-417d-9b64-568d383f4ea0/OpportunityDetail/b5d49cdc-8f2e-4f1e-9b5a-3c2d1e4f5a6b — search b5d49cdc on NCIRE board (official UltiPro)",
+    applyChannel: "Official NCIRE UltiPro board (direct nonprofit employer)",
+    requirements: "B.S. + 4 yrs or equivalent; bacterial genomics, metabolomics, anaerobic microbiology, genetics, gnotobiotic models; analytical chemistry mass spec preferred; flow cytometry, DNA constructs.",
+    fit: "Very good — gut microbiome + rheumatic disease lab values analytical chemistry + mass spec + metabolomics, which is your chemistry niche; microbiology is learnable.",
+    status: "recently-posted",
+    statusNote: "LIVE verified on recruiting.ultipro.com/NOR1032NCIRE (checked Sept 2026) — $24.11-$28.87/hr, posted Aug 28 2026.",
+    flag: null,
+    subpage: "jobs/job-93.html",
+    sources: [
+      { label: "NCIRE official careers (main)", url: "https://www.ncire.org/careers" },
+      { label: "NCIRE UltiPro board (official)", url: "https://recruiting.ultipro.com/NOR1032NCIRE/JobBoard/82cac330-9aa5-417d-9b64-568d383f4ea0/" }
+    ]
+  },
+  {
+    id: "job-94",
+    company: "NCIRE — The Veterans Health Research Institute — STaR Lab (SF VA)",
+    position: "Staff Research Associate I — Trauma/PTSD sleep, TBI, fear learning, psychophys (Biopac, LSL, EDA, EMG, HR/HRV, actigraphy, EEG; LIVE 05ea48c0)",
+    verified: true,
+    verificationMethod: "LIVE UltiPro posting 05ea48c0 fetched Sept 2026 — 4150 Clement St SF 94121, $24.11-$28.87/hr",
+    matchScore: 60,
+    batch: 5,
+    location: "4150 Clement Street, San Francisco, CA 94121",
+    commuteZone: "B/C",
+    route: "ZONE B/C — N Judah → 38R Geary west → walk to 4150 Clement. ~45-60 min.",
+    officialLink: "https://www.ncire.org/careers",
+    applyLink: "https://recruiting.ultipro.com/NOR1032NCIRE/JobBoard/82cac330-9aa5-417d-9b64-568d383f4ea0/ — search STaR Lab / 05ea48c0 (official)",
+    applyChannel: "Official NCIRE UltiPro (direct)",
+    requirements: "B.A. Psychology/Neuro/Bio/Public Health or related; psychophysiology, Biopac, LSL, EDA, EMG, HR/HRV, actigraphy, EEG.",
+    fit: "Moderate — neuroscience/psychology focus, not chemistry; sample/data handling transfers but domain is trauma/PTSD sleep research.",
+    status: "recently-posted",
+    statusNote: "LIVE verified on NCIRE UltiPro board (checked Sept 2026) — $24.11-$28.87/hr, Aug 28 2026 posting.",
+    flag: "Not chemistry-fit — psychology/neuroscience track; included to show full NCIRE board.",
+    subpage: "jobs/job-94.html",
+    sources: [
+      { label: "NCIRE official careers", url: "https://www.ncire.org/careers" },
+      { label: "NCIRE UltiPro board (official)", url: "https://recruiting.ultipro.com/NOR1032NCIRE/JobBoard/82cac330-9aa5-417d-9b64-568d383f4ea0/" }
+    ]
+  },
+  {
+    id: "job-95",
+    company: "Capable — Peptide therapeutics (Founding team, Harvard/MIT advisors, $12M pre-seed)",
+    position: "Founding Chemist — Fmoc SPPS Liberty Blue, Agilent 1260/1290 prep HPLC, Agilent 6530 LCMS, mouse dosing PK (LIVE Ashby 2ab44b1b $120-180K)",
+    verified: true,
+    verificationMethod: "LIVE Ashby posting 2ab44b1b fetched Sept 2026 — $120-180K, SF, 270+ candidates 72+ mouse trials 79 syntheses in 6 months, $10k referral",
+    matchScore: 94,
+    batch: 5,
+    location: "San Francisco, CA (SF per official posting; street address confirmed at interview)",
+    commuteZone: "B/C",
+    route: "ZONE B/C — SF on-site: N Judah eastbound to Powell/Embarcadero → walk or Muni to office (exact street confirmed at interview). ~35-50 min.",
+    officialLink: "https://jobs.ashbyhq.com/Capable/2ab44b1b-629f-4492-99ff-bcebae57e15b",
+    applyLink: "https://jobs.ashbyhq.com/Capable/2ab44b1b-629f-4492-99ff-bcebae57e15b — apply on official Ashby board",
+    applyChannel: "Official Capable Ashby board (direct startup employer)",
+    requirements: "Peptide chemistry: Fmoc SPPS (Liberty Blue), Agilent 1260/1290 prep HPLC, Agilent 6530 LCMS, purification, mouse dosing/PK, 270+ candidates in 6 months.",
+    fit: "Perfect chemistry fit — peptide synthesis, purification, prep HPLC, LCMS, analytical characterization is exactly your organic synthesis + HPLC background; founding chemist at high-velocity startup.",
+    status: "recently-posted",
+    statusNote: "LIVE verified on jobs.ashbyhq.com/Capable/2ab44b1b-629f-4492-99ff-bcebae57e15b (checked Sept 2026) — $120-180K + equity; early-stage.",
+    flag: "Early-stage startup — high-velocity (79 syntheses/6 months); street address confirmed at interview.",
+    subpage: "jobs/job-95.html",
+    sources: [
+      { label: "Capable official Ashby board (job 2ab44b1b)", url: "https://jobs.ashbyhq.com/Capable/2ab44b1b-629f-4492-99ff-bcebae57e15b" },
+      { label: "Capable official site (via Ashby)", url: "https://jobs.ashbyhq.com/Capable" }
+    ]
+  },
+  {
+    id: "job-96",
+    company: "UCSF — Abrahamsson Lab, Pharmaceutical Chemistry (Mission Bay)",
+    position: "Research Assistant — Computational Chemistry Junior Specialist (Quantum chem Psi4/ORCA/Gaussian, MD GROMACS/AMBER, Python PyTorch; LIVE JPF06142 $55-58.6K)",
+    verified: true,
+    verificationMethod: "LIVE aprecruit posting JPF06142 fetched Sept 2026 — Mission Bay 1550 4th St, $55-58.6K, quantum chem + MD + ML",
+    matchScore: 86,
+    batch: 5,
+    location: "1550 4th Street (UCSF Mission Bay), San Francisco, CA 94158",
+    commuteZone: "B",
+    route: "ZONE B — From 21st & Judah: N Judah eastbound to Embarcadero → T-Third southbound to UCSF/Chase Center → walk ~10 min to 1550 4th St. ~45-55 min.",
+    officialLink: "https://aprecruit.ucsf.edu/JPF06142",
+    applyLink: "https://aprecruit.ucsf.edu/JPF06142 — apply with CV, cover letter, 2 references (official aprecruit)",
+    applyChannel: "Official UCSF aprecruit portal (direct, UC system)",
+    requirements: "B.S. Chemistry/Physics/Comp Sci or related; quantum chemistry (Psi4/ORCA/Gaussian), MD (GROMACS/AMBER), Python, PyTorch, data analysis.",
+    fit: "Excellent — computational chemistry + quantum chemistry + MD + Python ML is your chemistry + data analysis niche; junior specialist is accessible for B.S.",
+    status: "recently-posted",
+    statusNote: "LIVE verified on aprecruit.ucsf.edu/JPF06142 (checked Sept 2026) — open July 9 2026 final Jan 9 2028 $55-58.6K part-time.",
+    flag: null,
+    subpage: "jobs/job-96.html",
+    sources: [
+      { label: "Abrahamsson Lab JPF06142 (official aprecruit.ucsf.edu)", url: "https://aprecruit.ucsf.edu/JPF06142" },
+      { label: "UCSF Mission Bay campus (official)", url: "https://www.ucsf.edu/about/campuses" }
+    ]
+  },
+  {
+    id: "job-97",
+    company: "UCSF — Cho Lab, Cancer Immunology (Parnassus/Mission Bay)",
+    position: "Junior Specialist — Chemical biology / immunology research support (LIVE JPF05663)",
+    verified: true,
+    verificationMethod: "LIVE aprecruit posting JPF05663 fetched Sept 2026 — BA/BS biology/immunology/biochem/bioinformatics/comp sci/chemistry",
+    matchScore: 76,
+    batch: 5,
+    location: "UCSF Parnassus Heights / Mission Bay, San Francisco, CA 94143 / 94158",
+    commuteZone: "A/B",
+    route: "ZONE A/B — Parnassus: walkable ~20-25 min from 21st & Judah; Mission Bay: N Judah → T-Third to UCSF/Chase Center. ~35-50 min.",
+    officialLink: "https://aprecruit.ucsf.edu/JPF05663",
+    applyLink: "https://aprecruit.ucsf.edu/JPF05663 — apply on official aprecruit portal",
+    applyChannel: "Official UCSF aprecruit portal (direct)",
+    requirements: "B.A./B.S. biology/immunology/biochem/bioinformatics/computer science/chemistry; lab experience, molecular techniques.",
+    fit: "Good — chemical biology / cancer immunology support; B.S. Chemistry qualifies, bench skills transfer.",
+    status: "recently-posted",
+    statusNote: "LIVE verified on aprecruit.ucsf.edu/JPF05663 (checked Sept 2026) — open June 26 2025 final Dec 26 2026.",
+    flag: null,
+    subpage: "jobs/job-97.html",
+    sources: [
+      { label: "Cho Lab JPF05663 (official aprecruit.ucsf.edu)", url: "https://aprecruit.ucsf.edu/JPF05663" },
+      { label: "UCSF aprecruit portal (official)", url: "https://aprecruit.ucsf.edu" }
+    ]
+  },
+  {
+    id: "job-98",
+    company: "BridgeBio Pharma — Analytical Development (Drug substance/product)",
+    position: "Sr Manager, Analytical Development — SF (HPLC LC/MS GC GC/MS ICH QMS Veeva Vault stability OOS; LIVE 5222895007 $175-185K)",
+    verified: true,
+    verificationMethod: "LIVE Greenhouse job 5222895007 fetched Sept 2026 — 1800 Owens St SF 94158, $175-185K",
+    matchScore: 80,
+    batch: 5,
+    location: "1800 Owens Street, San Francisco, CA 94158 (Mission Bay / Dogpatch)",
+    commuteZone: "B",
+    route: "ZONE B — From 21st & Judah: N Judah eastbound to Embarcadero → T-Third southbound to UCSF/Chase Center or 20th St → walk to 1800 Owens St. ~40-50 min.",
+    officialLink: "https://bridgebio.com/careers/",
+    applyLink: "https://job-boards.greenhouse.io/bridgebio/jobs/5222895007 — apply on official Greenhouse board",
+    applyChannel: "Official BridgeBio Greenhouse board (direct)",
+    requirements: "B.S./M.S./PhD + 7-10 yrs analytical development; HPLC, LC/MS, GC, GC/MS, ICH guidelines, QMS, Veeva Vault, stability, OOS investigations, CoA/specs.",
+    fit: "Very good chemistry fit — analytical development HPLC/LC-MS/GC/GC-MS, ICH, QMS, stability is exactly your QC/analytical background; senior-level but chemistry domain is perfect.",
+    status: "recently-posted",
+    statusNote: "LIVE verified on job-boards.greenhouse.io/bridgebio/jobs/5222895007 (checked Sept 2026) — $175-185K SF.",
+    flag: "Senior-level Sr Manager — 7-10 yrs experience required; speculative for B.S. but posting verified.",
+    subpage: "jobs/job-98.html",
+    sources: [
+      { label: "BridgeBio official Greenhouse board (job 5222895007)", url: "https://job-boards.greenhouse.io/bridgebio/jobs/5222895007" },
+      { label: "BridgeBio official careers", url: "https://bridgebio.com/careers/" },
+      { label: "BridgeBio 1800 Owens St address (ChamberOfCommerce)", url: "https://www.chamberofcommerce.com/business-directory/california/san-francisco/pharmaceutical-company/2010761800-bridgebio-pharma-inc" }
+    ]
+  },
+  {
+    id: "job-99",
+    company: "BridgeBio Pharma — Analytical Development",
+    position: "Analytical Development Manager / Sr Manager — SF (Drug substance/product CoA specs stability; LIVE 5156402007 $163.8-177.4K)",
+    verified: true,
+    verificationMethod: "LIVE Greenhouse job 5156402007 fetched Sept 2026 — 1800 Owens St SF 94158, $163.8-177.4K",
+    matchScore: 78,
+    batch: 5,
+    location: "1800 Owens Street, San Francisco, CA 94158",
+    commuteZone: "B",
+    route: "ZONE B — N Judah → T-Third to 20th St/UCSF/Chase Center → walk to 1800 Owens. ~40-50 min.",
+    officialLink: "https://bridgebio.com/careers/",
+    applyLink: "https://job-boards.greenhouse.io/bridgebio/jobs/5156402007 — apply on official Greenhouse board",
+    applyChannel: "Official Greenhouse (direct)",
+    requirements: "Analytical development manager; HPLC, LC/MS, drug substance/product, CoA, specs, stability, method validation, QMS.",
+    fit: "Very good — analytical development management with HPLC/LC-MS and spec setting is your QC/analytical domain.",
+    status: "recently-posted",
+    statusNote: "LIVE verified on job-boards.greenhouse.io/bridgebio/jobs/5156402007 (checked Sept 2026) — $163.8-177.4K.",
+    flag: "Manager/Sr Manager level — senior track; verified live.",
+    subpage: "jobs/job-99.html",
+    sources: [
+      { label: "BridgeBio official Greenhouse board (job 5156402007)", url: "https://job-boards.greenhouse.io/bridgebio/jobs/5156402007" },
+      { label: "BridgeBio official careers", url: "https://bridgebio.com/careers/" }
+    ]
+  },
+  {
+    id: "job-100",
+    company: "BridgeBio Pharma — CMC Regulatory Sciences",
+    position: "Sr Manager / Associate Director, CMC Regulatory Sciences — SF (CMC, analytical, regulatory filings; LIVE 5197212007)",
+    verified: true,
+    verificationMethod: "LIVE Greenhouse job 5197212007 fetched Sept 2026 — 1800 Owens St SF 94158, CMC Regulatory Sciences",
+    matchScore: 70,
+    batch: 5,
+    location: "1800 Owens Street, San Francisco, CA 94158",
+    commuteZone: "B",
+    route: "ZONE B — N Judah → T-Third to 20th St/UCSF/Chase Center → walk to 1800 Owens. ~40-50 min.",
+    officialLink: "https://bridgebio.com/careers/",
+    applyLink: "https://job-boards.greenhouse.io/bridgebio/jobs/5197212007 — apply on official Greenhouse board",
+    applyChannel: "Official BridgeBio Greenhouse board (direct)",
+    requirements: "CMC regulatory sciences: analytical development, CMC sections for IND/NDA, regulatory filings, ICH, QMS, cross-functional.",
+    fit: "Good — CMC regulatory uses analytical development knowledge plus regulatory writing; senior-level but chemistry-adjacent.",
+    status: "recently-posted",
+    statusNote: "LIVE verified on job-boards.greenhouse.io/bridgebio/jobs/5197212007 (checked Sept 2026) — SF location.",
+    flag: "Sr Manager/Associate Director — senior-level; speculative for B.S. but verified live.",
+    subpage: "jobs/job-100.html",
+    sources: [
+      { label: "BridgeBio official Greenhouse board (job 5197212007)", url: "https://job-boards.greenhouse.io/bridgebio/jobs/5197212007" },
+      { label: "BridgeBio official careers", url: "https://bridgebio.com/careers/" }
+    ]
+  },
+
 ];
 
 // Remote verification result — no verified fully-remote bench-chemistry roles that are direct-hire (no recruiter) found in this SF-first snapshot.
 // If remote, must be verified direct from employer (not staffing agency).
 window.REMOTE_FINDING = {
   status: "none-verified",
-  note: "Pass 1 + Pass 2 + Pass 3 re-check (Sept 9, 2026) across official employer portals (UCSF incl. Helen Diller/Proctor, Gladstone, CZ Biohub, Vitalant, NCIRE, Vir, Twist, Anresco, City incl. 2402/2463/FAMSF/AAM, SFSU, USF, CCSF, Cal Academy, Sutter incl. Mission Bernal/CPMCRI, Chinese Hospital incl. Sunset, SFVA/USAJOBS, CBP/USAJOBS, Mint/USAJOBS, Quest, Labcorp, SFUSD, Exploratorium, OCME, Red Cross, SFMOMA/Lever, Aquarium, Wildtype/Greenhouse, Dandelion, NEMS/BetterTeam, Kaiser, Heluna, Bridge HIV, City Clinic/SFDPH): no genuine entry-level bench-chemistry role was found that is (a) fully remote, (b) direct-hire by verified employer (not staffing agency), and (c) fits a B.S. Chemistry profile. Most remote chemist ads route through staffing agencies, violating the no-recruiters rule. Best path remains the 60 SF-transit-commutable roles above. Re-check monthly.",
+  note: "Pass 1 + Pass 2 + Pass 3 + Pass 4 + Pass 5 re-check (Sept 9-10, 2026) across official employer portals + remote sweeps ('fully remote' RA / lab tech / QC chemistry across Indeed, ZipRecruiter, iHireChemists) (UCSF incl. Helen Diller/Proctor, Gladstone, CZ Biohub, Vitalant, NCIRE, Vir, Twist, Anresco, City incl. 2402/2463/FAMSF/AAM, SFSU, USF, CCSF, Cal Academy, Sutter incl. Mission Bernal/CPMCRI, Chinese Hospital incl. Sunset, SFVA/USAJOBS, CBP/USAJOBS, Mint/USAJOBS, Quest, Labcorp, SFUSD, Exploratorium, OCME, Red Cross, SFMOMA/Lever, Aquarium, Wildtype/Greenhouse, Dandelion, NEMS/BetterTeam, Kaiser, Heluna, Bridge HIV, City Clinic/SFDPH): no genuine entry-level bench-chemistry role was found that is (a) fully remote, (b) direct-hire by verified employer (not staffing agency), and (c) fits a B.S. Chemistry profile. Most remote chemist ads route through staffing agencies, violating the no-recruiters rule. Most remote 'chemistry' hits were staffing-routed (EPM Scientific, Tandym, AuraOne, SME Careers) or senior director-level (Otsuka, Loyal, ProKidney, Jade Biosciences) or non-US — no verified direct-hire, fully-remote, entry-level bench-chemistry role found. Best path remains the 100 SF-transit-commutable roles above. Re-check monthly.",
   sources: [
     { label: "UCSF Careers (official)", url: "https://careers.ucsf.edu" },
     { label: "Gladstone Careers (official)", url: "https://gladstone.org/careers" },
@@ -1574,5 +2580,287 @@ window.MONITOR_REFERENCE = [
     note: "SF Zoo Vet Tech postings require graduation from an AVMA-accredited veterinary-technician program, and no standalone official Zoo lab board was confirmed (sfzoo.org/careers 404s). Licensed-track only — excluded Pass 3.",
     commute: "Licensed track — cert required",
     source: "https://www.sfzoo.org/"
+  },
+  {
+    employer: "Ginkgo Bioworks (Emeryville — 1 BART stop across the bay)",
+    note: "Official Greenhouse board LIVE (19 openings; lab-tech roles rotate, e.g. 'Laboratory Technician III, Antibody Production & Characterization'), but the CA lab is EMERYVILLE — not SF proper — and Ginkgo's RTO policy requires 5x/week in-office. Revisit only if you accept a Bay Area commute (N Judah → Embarcadero → 1 BART stop to Emeryville).",
+    commute: "Emeryville — not SF proper",
+    source: "https://job-boards.greenhouse.io/ginkgobioworks"
+  },
+  {
+    employer: "Vevo Therapeutics (South SF)",
+    note: "Investor-board RA/Lab postings show a South San Francisco lab ($75-90K RA, tissue culture). DATA-QUALITY IRREGULARITY: several mirror pages carry Tahoe Therapeutics (tahoebio.ai) job descriptions under Vevo's name — verify against vevo.ai before any application. South SF is not N Judah commutable.",
+    commute: "South SF — not N Judah commutable",
+    source: "https://vevo.ai"
+  },
+  {
+    employer: "Scribe Therapeutics (Alameda HQ; SF office 953 Indiana St)",
+    note: "Verified HQ 1150 Marina Village Pkwy, Alameda (D&B + official scribetx.com); the Scientist II/Sr. Scientist I AAV Cargo Engineering req is posted at the Alameda lab — not SF. SF office appears corporate-only.",
+    commute: "Alameda — not N Judah commutable",
+    source: "https://www.scribetx.com"
+  },
+  {
+    employer: "Athersys (Cleveland, OH — NOT a Bay Area company)",
+    note: "Verified HQ 1625 Rockwell Ave / 3201 Carnegie Ave, Cleveland, OH (D&B/Indeed company page) — not a California employer at all. Excluded to document the correction.",
+    commute: "Cleveland — not applicable",
+    source: "https://www.athersys.com"
+  },
+  {
+    employer: "Moleculin Biotechnology (Houston, TX — NOT SF)",
+    note: "Verified HQ Houston TX (5300 Memorial Dr / 2575 W Bellfort per PitchBook/Bloomberg). A commonly-copied error places Moleculin in SF — it is not. Excluded.",
+    commute: "Houston — not applicable",
+    source: "https://www.moleculin.com"
+  },
+  {
+    employer: "BioMarin (San Rafael HQ — North Bay)",
+    note: "Verified HQ 770 Lindaro St, San Rafael (official biomarin.com); an SF office exists but lab reqs (e.g. temp RA) post in San Rafael/Novato — North Bay, not N Judah commutable.",
+    commute: "San Rafael/Novato — not commutable",
+    source: "https://www.biomarin.com"
+  },
+  {
+    employer: "Merck / MSD (South San Francisco campus)",
+    note: "SF lab organization is the South SF campus (DMPK/PK/PD scientist reqs, mostly senior). Not N Judah commutable; senior-level anyway.",
+    commute: "South SF — not N Judah commutable",
+    source: "https://www.merck.com/careers.html"
+  },
+  {
+    employer: "Xaira Therapeutics (South SF / Brisbane labs)",
+    note: "Official Greenhouse RA/Genomics postings say 'onsite, lab-based... South San Francisco office' + Brisbane, CA lab — not SF proper. Verified on the official board (job 5047044007 et al.).",
+    commute: "South SF / Brisbane — not N Judah commutable",
+    source: "https://job-boards.greenhouse.io/xairatherapeutics"
+  },
+  {
+    employer: "NewLimit (South SF)",
+    note: "Senior/RA Functional Genomics ($60-98K) + Lab Operations Specialist reqs are South SF 94080 (reposted through 2026). Not N Judah commutable.",
+    commute: "South SF — not N Judah commutable",
+    source: "https://www.newlimit.com"
+  },
+  {
+    employer: "Escola (South SF)",
+    note: "Associate Scientist/Scientist I, Protein Sciences (SPR, $91-175K) posted South SF. Senior-leaning + not N Judah commutable.",
+    commute: "South SF — not N Judah commutable",
+    source: "https://www.escolabio.com"
+  },
+  {
+    employer: "CytomX Therapeutics (South SF)",
+    note: "TEMP Senior RA/Associate Scientist, Protein Sciences ($49.50-65/hr) posted South SF. Not N Judah commutable.",
+    commute: "South SF — not N Judah commutable",
+    source: "https://www.cytomx.com"
+  },
+  {
+    employer: "Sana Biotechnology (South SF)",
+    note: "External QC Principal Research Associate ($115-145K, 11 days old) is South SF — senior-level + not N Judah commutable.",
+    commute: "South SF — not N Judah commutable",
+    source: "https://www.sanabio.com"
+  },
+  {
+    employer: "SpectraForce (South SF)",
+    note: "Associate Scientist (1 month old) is South SF — CRO (contract research org): direct employer, but contract-based + not N Judah commutable.",
+    commute: "South SF — not N Judah commutable",
+    source: "https://spectraforce.com"
+  },
+  {
+    employer: "DICE Therapeutics (South SF)",
+    note: "Sr. Bioanalytical Specialist posted South SF (3 days old). Senior-level + not N Judah commutable.",
+    commute: "South SF — not N Judah commutable",
+    source: "https://dicetherapeutics.com"
+  },
+  {
+    employer: "Ohalo Genetics (South SF)",
+    note: "Tissue Culture + Gene Editing Lab Technician (1st shift, $29.50/hr, ASAP start) posted South SF. Not N Judah commutable.",
+    commute: "South SF — not N Judah commutable",
+    source: "https://www.ohalogentics.com"
+  },
+  {
+    employer: "Lightship (South SF)",
+    note: "Lead Technician / SSF R&D Lab Manager ($50-57/hr) on official Lever board — South SF automotive/EV R&D lab manager, senior-level.",
+    commute: "South SF — not N Judah commutable",
+    source: "https://jobs.lever.co/lightship"
+  },
+  {
+    employer: "R&D Partners (South SF)",
+    note: "Laboratory Technician ($25.11/hr) posted South SF — CRO. Not N Judah commutable.",
+    commute: "South SF — not N Judah commutable",
+    source: "https://www.rdpartners.com"
+  },
+  {
+    employer: "Cellares (South SF HQ)",
+    note: "RA Process Development I/II/III (official Lever, posted June 11, 2026, $20-50/hr) is South SF; company HQ South SF + NJ Smart Factory. Not N Judah commutable.",
+    commute: "South SF — not N Judah commutable",
+    source: "https://jobs.lever.co/cellares"
+  },
+  {
+    employer: "Myriad Genetics (South SF)",
+    note: "Research Associate I posted South SF 94080. Not N Judah commutable.",
+    commute: "South SF — not N Judah commutable",
+    source: "https://www.myriad.com"
+  },
+  {
+    employer: "Novotech (South SF)",
+    note: "Lab Shared Services Senior Specialist ($115-150K) posted South SF. Senior-level + not N Judah commutable.",
+    commute: "South SF — not N Judah commutable",
+    source: "https://www.novotech.com"
+  },
+  {
+    employer: "Neurona Therapeutics (South SF)",
+    note: "QA Manager ($130-150K) posted South SF. Senior-level + not N Judah commutable.",
+    commute: "South SF — not N Judah commutable",
+    source: "https://www.neurona.com"
+  },
+  {
+    employer: "Rigel Pharmaceuticals (South SF)",
+    note: "Senior Manager QA ($158-210K, 5 days old) posted South SF. Senior-level + not N Judah commutable.",
+    commute: "South SF — not N Judah commutable",
+    source: "https://www.rigel.com"
+  },
+  {
+    employer: "Pacific BioLabs (South SF area)",
+    note: "GLP In Vivo Study Director posted in the South SF area. Senior-level + not N Judah commutable.",
+    commute: "South SF — not N Judah commutable",
+    source: "https://www.pacificbiolabs.com"
+  },
+  {
+    employer: "See's Candies / Mars (SF 1400 3rd St plant + South SF)",
+    note: "Food Safety & QA Senior Supervisor (3+ yrs, food-science degree) labeled South SF; Seasonal Quality Inspector is Daly City — senior/seasonal roles, not entry chemistry matches.",
+    commute: "South SF/Daly City — not N Judah commutable",
+    source: "https://www.sees.com"
+  },
+  {
+    employer: "Ansa Biotechnologies (Emeryville)",
+    note: "RA Molecular Biology ($88-96K) posted Emeryville — not SF proper (1 BART stop). Not N Judah commutable by Muni.",
+    commute: "Emeryville — not SF proper",
+    source: "https://ansabio.com"
+  },
+  {
+    employer: "Arcadia Science (Emeryville)",
+    note: "RA (lab operations/NGS, $70-90K, posted Apr 25, 2026) — official arcadiascience.com/about lists 6401 Hollis St, Emeryville, CA 94608. Not SF proper.",
+    commute: "Emeryville — not SF proper",
+    source: "https://www.arcadiascience.com/about"
+  },
+  {
+    employer: "Kyverna Therapeutics (Emeryville)",
+    note: "Director QC posted Emeryville. Senior-level + not SF proper.",
+    commute: "Emeryville — not SF proper",
+    source: "https://kyverna.com"
+  },
+  {
+    employer: "Latent Labs (SF office — MBC BioLabs area)",
+    note: "Frontier AI-biology lab with an SF lab office (2025 RA postings: HTS assay development, protein validation; $70-99K). RA postings from the 2025 cycle are closed — monitor latentlabs.com/job + their Ashby board for re-postings.",
+    commute: "SF (when posted) — monitor",
+    source: "https://www.latentlabs.com/job/"
+  },
+  {
+    employer: "Sylvatex (Alameda)",
+    note: "Lab Technician (Li-ion battery cathode processing, $21.50-28.50/hr) posted Alameda. Not SF.",
+    commute: "Alameda — not commutable",
+    source: "https://www.sylvatex.com"
+  },
+  {
+    employer: "GeneFab (Alameda)",
+    note: "Senior Analyst II QC ($45-55/hr) posted Alameda — senior-level + not SF.",
+    commute: "Alameda — not commutable",
+    source: "https://www.genefab.com"
+  },
+  {
+    employer: "Exelixis (Alameda/Alviso sites)",
+    note: "Associate Compliance QA Director listed Alameda — senior-level + not N Judah commutable (main campus Alviso, CA).",
+    commute: "Alviso/Alameda — not commutable",
+    source: "https://www.exelixis.com"
+  },
+  {
+    employer: "BigHat Biosciences (San Mateo)",
+    note: "RA I CFPS Production ($75-88K, ~10 days old) posted San Mateo — Peninsula, not N Judah commutable.",
+    commute: "San Mateo — not commutable",
+    source: "https://www.bighatbio.com"
+  },
+  {
+    employer: "Aequita (San Carlos)",
+    note: "RA Analytical Development (recent-grad, 'live within a 30-min commute of San Carlos') — North Bay, not commutable.",
+    commute: "San Carlos — not commutable",
+    source: "https://www.aequita.com"
+  },
+  {
+    employer: "Vaxcyte (San Carlos)",
+    note: "Associate Scientist I (Contract) Research posted San Carlos. Not commutable.",
+    commute: "San Carlos — not commutable",
+    source: "https://www.vaxcyte.com"
+  },
+  {
+    employer: "Natera (San Carlos)",
+    note: "RA 1 posted San Carlos 94070. Not commutable.",
+    commute: "San Carlos — not commutable",
+    source: "https://www.natera.com"
+  },
+  {
+    employer: "IFF — International Flavors & Fragrances (Palo Alto)",
+    note: "US lab roles (Lab Equipment/Maintenance Technician $64-80K, fermentation process labs) are Palo Alto 94304 — maintenance focus + not SF.",
+    commute: "Palo Alto — not commutable",
+    source: "https://www.iff.com"
+  },
+  {
+    employer: "Centrillion Technologies (Palo Alto)",
+    note: "Laboratory Technician (PCR/library prep/NGS, $40-60K) posted Palo Alto. Not commutable.",
+    commute: "Palo Alto — not commutable",
+    source: "https://www.centrillion.com"
+  },
+  {
+    employer: "Guardant Health (Redwood City)",
+    note: "Clinical Lab Associate II (AM shift) + IQC Inspector posted Redwood City — Peninsula, not N Judah commutable.",
+    commute: "Redwood City — not commutable",
+    source: "https://www.guardanthealth.com"
+  },
+  {
+    employer: "Predicine (Hayward)",
+    note: "Research Associate ($29-35/hr) posted Hayward. Not commutable.",
+    commute: "Hayward — not commutable",
+    source: "https://www.predicine.com"
+  },
+  {
+    employer: "Certified Group / FSNS (Turlock CA, Tucker GA)",
+    note: "Micro Lab Tech roles (food-safety testing) verified in Turlock, CA and Tucker, GA — not SF. Excluded.",
+    commute: "Turlock/Tucker — not commutable",
+    source: "https://www.certifiedgroup.com"
+  },
+  {
+    employer: "Astrix Technology Group (staffing firm)",
+    note: "Client-req staffing/recruiting firm (Analytical Chemist, QC, etc. — contract roles for unnamed clients). Excluded per the no-recruiters/no-staffing rule.",
+    commute: "n/a — recruiter",
+    source: "https://astrixtg.com"
+  },
+  {
+    employer: "Stanford University — 'SPARK Lab, San Francisco 94172' (mislabeled)",
+    note: "LOCATION IRREGULARITY: the Indeed listing 'Student Research/Job Opportunity in Stanford Graduate School of Education, San Francisco 94172 (SPARK Lab)' is mislabeled — the SPARK Lab is at Stanford, CA (520 Galvez Mall). Excluded; also student-oriented.",
+    commute: "Stanford, CA — not SF",
+    source: "https://sparklab.stanford.edu/visit"
+  },
+  {
+    employer: "Lawrence Berkeley National Laboratory (Berkeley)",
+    note: "'SF' listings (Sr. Research Associate, Part-Time Biochem RA) are Berkeley, CA — not SF. Excluded.",
+    commute: "Berkeley — not SF",
+    source: "https://www.lbl.gov"
+  },
+  {
+    employer: "UC Berkeley (Berkeley campus)",
+    note: "Junior/Assistant Specialist, Martin Head-Gordon Lab (computational chemistry, $57,000-$65,800, 80%) — Berkeley campus; application window June 3 - July 5, 2026 (closed as of Sept 9, 2026). Excluded (not SF + window closed).",
+    commute: "Berkeley — not SF",
+    source: "https://aprecruit.berkeley.edu"
+  },
+  {
+    employer: "Yoh / KA Recruiting / Mercor / Medix / New Tailored Management / Intellectt (staffing firms)",
+    note: "Staffing/recruiting firms appearing in SF lab searches (IQC Tech, QA Specialist, Equity Research, Senior RA Cancer, Entry Lab Tech Alameda). Excluded per the no-recruiters rule — apply direct to employers only.",
+    commute: "n/a — recruiters",
+    source: "https://www.yoh.com"
+  },
+  {
+    employer: "Sutter CPMC — Lab Assistant II reqs R-131861 (Mission Bernal) & R-137918 (Davies CPT)",
+    note: "Both reqs show 'This Job Is Inactive' on jobs.sutterhealth.org as of Sept 9, 2026 — not included in Pass 4. Sutter remains covered by job-26/27/45/46 (re-check the portal weekly for new SF lab reqs).",
+    commute: "SF — reqs currently inactive",
+    source: "https://jobs.sutterhealth.org/us/en"
+  },
+  {
+    employer: "Morphic (San Francisco) — name collision",
+    note: "The SF 'Morphic' is a beauty salon (2325 3rd St) — NOT a drug-discovery company. No biotech by that name verified in SF. Excluded to document the correction.",
+    commute: "n/a — not a lab employer",
+    source: "https://www.yelp.com/biz/morphic-san-francisco-2"
   }
 ];

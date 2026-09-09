@@ -1,15 +1,15 @@
-# JobSearchSF 🧪 — 60 Verified SF Chemistry & Lab Jobs (N Judah Commute)
+# JobSearchSF 🧪 — 100 Verified SF Chemistry & Lab Jobs (N Judah Commute)
 
-A clean, GitHub Pages site for **60 verified San Francisco chemistry / research / lab-science opportunities** (20 Pass 1 + 20 Pass 2 + 20 Pass 3, triple-verified Sept 9, 2026), ranked by **SFMTA public transit from 21st Ave & Judah St (Inner Sunset)**, with **official direct-apply links, match scores, and step-by-step apply guides**.
+A clean, GitHub Pages site for **100 verified San Francisco chemistry / research / lab-science opportunities** (20 Pass 1 + 20 Pass 2 + 20 Pass 3 + 20 Pass 4 + 20 Pass 5, quintuple-verified Sept 9-10, 2026), ranked by **SFMTA public transit from 21st Ave & Judah St (Inner Sunset)**, with **official direct-apply links, match scores, and step-by-step apply guides**.
 
 Live site (GitHub Pages): served from repo root at `https://<owner>.github.io/JobSearchSF/` — pure static, no build.
 
 ## What it does — Easy Apply (Click, Copy, Paste)
 
-- **60 verified entries** (not hallucinations) — each with real SF physical address verified via official site + secondary trusted directory (YellowPages, LinkedIn, Bloomberg, SEC filing, GlobalData, OpenGov)
+- **100 verified entries** (not hallucinations) — each with real SF physical address verified via official site + secondary trusted directory (YellowPages, LinkedIn, Bloomberg, SEC filing, GlobalData, OpenGov)
 - **Table view**: Company, Position, Verified badge, Match Score (how well your B.S. Chemistry resume fits), Official Source Link, Apply Guide subpage
 - **Detailed cards**: Transit route from 21st & Judah (N Judah + 38 Geary / 43 Masonic / T-Third), fit notes, requirements, official apply channel (direct, no recruiters), sources for manual review
-- **Subpage per job** (`jobs/job-01.html` through `job-60.html`): 
+- **Subpage per job** (`jobs/job-01.html` through `job-100.html`): 
   - 10-step beginner guide (verify live, create account, download tailored docs, fill, upload, submit, track, interview prep, follow-up)
   - Tailored resume (TXT + PDF) emphasizing skills for that role
   - Tailored cover letter (TXT + PDF) — brief, polite, professional, 3 paragraphs for quick hiring manager approval
@@ -31,7 +31,7 @@ Live site (GitHub Pages): served from repo root at `https://<owner>.github.io/Jo
 - Publication: 14-Aminocamptothecins — ACS J. Med. Chem., Feb 2011
 - Location: 21st Ave & Judah St, SF 94122 — must be N Judah Muni or SF city bus commutable; remote only if verified direct
 
-## 60 Verified Entries (SF, N Judah Commutable)
+## 100 Verified Entries (SF, N Judah Commutable)
 
 All verified via official sources, no hallucinations:
 
@@ -97,6 +97,53 @@ All verified via official sources, no hallucinations:
 59. Heluna Health — RA, SFDPH Center for Public Health Research — SFDPH sites — Zone C — 62% — helunahealth.org
 60. Bridge HIV (SFDPH+UCSF) — RA/Specimen Processing — 25 Van Ness Ste 100 — Zone C — 64% — via Heluna
 
+
+61. UCSF Drug Research Unit — SRA II LC-MS LIVE (90% top match) — Parnassus WALKABLE — Zone A — pharm.ucsf.edu LIVE posting — careers.ucsf.edu
+62. UCSF IND — SRA II Drug Discovery HTS LIVE JobCode 009617 — Mission Bay — Zone B — 78% — ind.ucsf.edu → BrassRing
+63. UCSF QBI Krogan Lab — SRA II Protein Interaction & Proteomics LIVE JobDetail 2949 — Mission Bay — Zone B — 76% — careers.ucsf.edu
+64. UCSF Goodarzi Lab — Junior Specialist RNA therapeutics JPF06054 LIVE — Parnassus WALKABLE — Zone A — 70% — aprecruit.ucsf.edu
+65. UCSF Kamber Lab — Junior/Assistant Specialist Cancer Immunology JPF05697 — Parnassus WALKABLE — Zone A — 68% — aprecruit.ucsf.edu
+66. UCSF Bose Lab — Specialist Lab Ops + Cancer Research JPF05693 — Parnassus WALKABLE — Zone A — 66% — aprecruit.ucsf.edu
+67. UCSF Parnassus — SRA Molecular Bio + Mouse Colony LIVE — 500 Parnassus — Zone A — 64% — careers.ucsf.edu
+68. HHMI Brainard Lab (UCSF) — Research Technician I/II R-4026 LIVE — 1550 4th St Mission Bay — Zone B — 62% — hhmi.wd1.myworkdayjobs.com
+69. NCIRE STAFF001526 — SRA II Research Support + Data LIVE — 4150 Clement — Zone B/C — 74% — ncire.org/careers
+70. Gladstone Marson Lab — RA In-Vivo LIVE — Mission Bay 535 Mission — Zone B — 60% — gladstone.wd5.myworkdayjobs.com
+71. EVERY — RA I Protein Science & Analytics LIVE HPLC $75-85K — 689 Bryant St area — Zone B — 88% — job-boards.greenhouse.io/theeverycompany 5745371004
+72. General Proximity — RA Drug Discovery LIVE $32-45/hr — 135 Mississippi St MBC BioLabs — Zone B — 72% — job-boards.greenhouse.io/generalproximity 5660523004
+73. Anthropic — RA Biology LIVE $65-85K — 548 Market St — Zone C — 76% — job-boards.greenhouse.io/anthropic 5285248008
+74. Anthrogen — RA RL Environments LIVE $120-200K — SF on-site — Zone C — 74% — jobs.ashbyhq.com/anthrogen
+75. Parallel Bio — RA Biobanking LIVE $70-85K — SF 94110 Mission — Zone B/C — 76% — jobs.ashbyhq.com/parallel-bio
+76. GLIDE — Lab Technician HEAT LIVE $31-33/hr — 330 Ellis St Tenderloin — Zone C — 60% — jobs.lever.co/glide
+77. SF AIDS Foundation — Lab Technician Phlebotomist FT LIVE $34-37/hr — 470 Castro St — Zone C — 58% — job-boards.greenhouse.io/sfaf 5219503008
+78. SF AIDS Foundation — Lab Technician Phlebotomist Per Diem LIVE $34-37/hr — 470 Castro St — Zone C — 58% — job-boards.greenhouse.io/sfaf 5219589008
+79. Invitae (Labcorp) — Clinical Lab Technician Entry LIVE evening Sun-Thu $28.39-35/hr — 1400 16th St — Zone B — 62% — careers.labcorp.com
+80. Deciduous Therapeutics — Senior RA Immunology LIVE $80-120K [FLAG senior M.S./PhD pref] — 953 Indiana St Dogpatch — Zone B — 55% — deciduoustx.com
+
+
+81. General Proximity — Lab Technician / Operations Manager Contract LIVE 5807853004 $22.50-29.75/hr — 135 Mississippi St MBC BioLabs — Zone B — 78% — job-boards.greenhouse.io/generalproximity
+82. General Proximity — Scientist Mechanistic Biology LIVE 6009199004 — 135 Mississippi St — Zone B — 68% — same Greenhouse
+83. General Proximity — Scientist Medicinal Chemistry LIVE 6009487004 — 135 Mississippi St — Zone B — 85% — same Greenhouse
+84. General Proximity — Scientist/Sr Chemical Biology LIVE 5660301004 — 135 Mississippi St — Zone B — 84% — same
+85. General Proximity — Scientist/Sr Computational Chemistry LIVE 6130243004 — 135 Mississippi St — Zone B — 72% — same
+86. General Proximity — Scientist/Sr DMPK LIVE 6130200004 — 135 Mississippi St — Zone B — 88% — same
+87. General Proximity — Sr/Principal Med Chem LIVE 5980552004 — 135 Mississippi St — Zone B — 60% — same
+88. Pendulum Therapeutics — Senior Manager R&D LIVE f4ea5cbc — 933 20th St — Zone B — 60% — jobs.lever.co/pendulum
+89. CZ Biohub SF — Lab Manager Aquaculture LIVE 8167915 $106-133K — 499 Illinois St — Zone B — 62% — job-boards.greenhouse.io/chanzuckerbergbiohub
+90. CZ Biohub SF — Computational Biologist II CellxState LIVE 7712408 — 499 Illinois St — Zone B — 58% — same Greenhouse
+91. CZ Biohub SF — Scientist II Scaling Lead LIVE 8122754 — 499 Illinois St — Zone B — 55% — same
+92. City & County SF — Chemist 2486 Citywide LIVE REF60430L U00049 $104,806-$147,524 — citywide labs — Zone C — 92% — careers.sf.gov/role/?id=3743990012833986
+93. NCIRE — SRA I Nayak Lab LIVE b5d49cdc $24.11-28.87/hr — 4150 Clement St — Zone B/C — 84% — recruiting.ultipro.com/NOR1032NCIRE
+94. NCIRE — SRA I STaR Lab LIVE 05ea48c0 $24.11-28.87/hr — 4150 Clement St — Zone B/C — 60% — same UltiPro
+95. Capable — Founding Chemist LIVE 2ab44b1b $120-180K SPPS Liberty Blue prep HPLC LCMS — SF — Zone B/C — 94% — jobs.ashbyhq.com/Capable
+96. UCSF Abrahamsson Lab — Research Assistant Computational Chemistry Junior Specialist LIVE JPF06142 $55-58.6K — 1550 4th St Mission Bay — Zone B — 86% — aprecruit.ucsf.edu/JPF06142
+97. UCSF Cho Lab — Junior Specialist LIVE JPF05663 — Parnassus/Mission Bay — Zone A/B — 76% — aprecruit.ucsf.edu/JPF05663
+98. BridgeBio Pharma — Sr Manager Analytical Development LIVE 5222895007 $175-185K — 1800 Owens St — Zone B — 80% — job-boards.greenhouse.io/bridgebio
+99. BridgeBio Pharma — Analytical Development Manager/Sr Manager LIVE 5156402007 $163.8-177.4K — 1800 Owens St — Zone B — 78% — same Greenhouse
+100. BridgeBio Pharma — Sr Manager/Assoc Director CMC Regulatory Sciences LIVE 5197212007 — 1800 Owens St — Zone B — 70% — same Greenhouse
+
+Plus 48 Pass-4 reviewed-but-excluded (honesty log, see data.js MONITOR_REFERENCE): Ginkgo Emeryville, Vevo South SF (data-quality irregularity Tahoe descriptions), Scribe Alameda, Athersys Cleveland, Moleculin Houston, BioMarin San Rafael, Merck South SF, Xaira South SF/Brisbane, NewLimit/Escola/CytomX/Sana/SpectraForce/DICE/Ohalo/Lightship/R&D Partners/Cellares/Myriad/Novotech/Neurona/Rigel/Pacific BioLabs/See's South SF, Sylvatex/GeneFab/Exelixis Alameda, BigHat San Mateo, Aequita/Vaxcyte/Natera San Carlos, IFF/Centrillion Palo Alto, Guardant Redwood City, Predicine Hayward, Certified Group Turlock/Tucker, Astrix/Yoh/KA Recruiting staffing firms, Stanford SPARK mislabeled, LBNL/UC Berkeley Berkeley, Sutter inactive reqs R-131861/R-137918, Morphic beauty-salon name collision.
+
+
 Plus 2 Pass-2 reviewed-but-excluded (honesty log): Kyntra Bio (corporate-only, no SF wet lab), Nurix (all 30 openings Brisbane).
 
 Plus 3 reviewed-but-excluded (honesty log): Cytokinetics South SF, Biotium Fremont, Plasmidsaurus South SF overnight.
@@ -105,11 +152,11 @@ Plus 3 reviewed-but-excluded (honesty log): Cytokinetics South SF, Biotium Fremo
 
 - `index.html` — main site with table, detailed cards, transit, remote, verification, resume sections
 - `assets/css/style.css` — clean, modern, responsive styling (N Judah green gradient, cards, table, badges, copy boxes)
-- `assets/js/data.js` — 40 verified entries with official sources, match scores, routes, verificationMethod, subpage links
+- `assets/js/data.js` — 100 verified entries with official sources, match scores, routes, verificationMethod, subpage links
 - `assets/js/app.js` — rendering, table + cards, filter by status/zone/batch, sort, search, copy-paste, count, tracker
-- `jobs/job-01.html` through `job-60.html` — 60 subpages, each with 10-step beginner guide, tailored resume/cover/email copy boxes + download links, transit, verification
-- `assets/resume/` — base resume TXT+PDF + 40 tailored resumes TXT+PDF (job-01_resume.pdf etc.)
-- `assets/cover/` — base cover TXT+PDF + 40 tailored cover letters TXT+PDF + 40 intro emails TXT
+- `jobs/job-01.html` through `job-100.html` — 100 subpages, each with 10-step beginner guide, tailored resume/cover/email copy boxes + download links, transit, verification
+- `assets/resume/` — base resume TXT+PDF + 100 tailored resumes TXT+PDF (job-01_resume.pdf etc.)
+- `assets/cover/` — base cover TXT+PDF + 100 tailored cover letters TXT+PDF + 100 intro emails TXT
 - `assets/verification/VERIFICATION_LOG.txt` — line-by-line verification log, no hallucinations
 - `assets/verification/IMPROVEMENTS.md` — list of improvements implemented for easy apply
 - `.nojekyll` — GitHub Pages serves static site directly
@@ -158,8 +205,8 @@ python3 -m http.server 8000
 
 ## Publishing to GitHub Pages
 
-1. Push `arena/01a087ee-jobsearchsf` branch (already done)
-2. On GitHub → repo Settings → Pages → Source: Deploy from a branch → branch `arena/01a087ee-jobsearchsf` or `main` → folder `/ (root)`
+1. Push `arena/01a0882a-jobsearchsf` branch (already done)
+2. On GitHub → repo Settings → Pages → Source: Deploy from a branch → branch `arena/01a0882a-jobsearchsf` or `main` → folder `/ (root)`
 3. Site appears at `https://<owner>.github.io/JobSearchSF/`
 4. All relative paths work; .nojekyll ensures static serving
 

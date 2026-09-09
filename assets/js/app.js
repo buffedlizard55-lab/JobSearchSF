@@ -1,4 +1,4 @@
-/* JobSearchSF — rendering & filtering (pure client-side) — 60 verified entries */
+/* JobSearchSF — rendering & filtering (pure client-side) — 100 verified entries */
 (function () {
   const STATUS_META = {
     "recently-posted": { cls: "badge recently-posted", label: "Recently posted" },
@@ -31,7 +31,9 @@
   }
   var lastList = [];
   function batchBadge(j) {
-    if (j.batch === 3) return ' <span class="badge batch3">New in Pass 3</span>';
+    if (j.batch === 5) return ' <span class="badge batch5">New in Pass 5</span>';
+    if (j.batch === 4) return ' <span class="badge batch4">Pass 4</span>';
+    if (j.batch === 3) return ' <span class="badge batch3">Pass 3</span>';
     if (j.batch === 2) return ' <span class="badge batch2">Pass 2</span>';
     return "";
   }
