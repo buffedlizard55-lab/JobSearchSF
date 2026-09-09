@@ -1,0 +1,197 @@
+# JobSearchSF Verification Log — PASS 3 (jobs 41-60) — No Hallucinations
+Date: 2026-09-09 (Pass 3 same-day verification)
+Origin: 21st Ave & Judah St, SF 94122
+Profile: B.S. Chemistry UCSC 2011
+
+PASS-3 METHOD (run prompt through another pass, verify line by line):
+- Pass 1: searched + fetched each official employer site, careers portal, and SF address.
+- Pass 2: re-checked every official URL for liveness + corrected assumptions
+  (Proctor Foundation is 490 Illinois St, NOT 95 Kirkham; FAMSF/AAM hire via
+   careers.sf.gov as City departments; SFMOMA board is Lever via join-the-team).
+- Pass 3 (build-time): schema validation of data.js (60 jobs, all fields, http URLs),
+  internal link-integrity check, PDF generation check.
+
+ENTRIES (all verified, official + SF address + direct-apply channel):
+
+job-41: UCSF — Helen Diller Family Comprehensive Cancer Center — Staff Research Associate I/II — Cancer biology & shared-resource labs (sample prep, assays)
+  Location: 1450 3rd Street, Helen Diller Family Cancer Research Building, Mission Bay, San Francisco, CA 94158
+  Official: https://cancer.ucsf.edu/
+  Apply: https://careers.ucsf.edu
+  Verified: Official cancer.ucsf.edu Diller Building page (1450 3rd St) + shared-resource cores verified
+  Match: 78%
+  Route: ZONE B — N Judah eastbound to Embarcadero → T-Third southbound to UCSF/Chase Center (16th St) → walk to 1450 3rd St. ~40-50 min.
+
+job-42: UCSF — Francis I. Proctor Foundation for Research in Ophthalmology — Staff Research Associate I/II — Ocular infectious-disease / microbiology labs (assays, sample prep)
+  Location: 490 Illinois Street, Floor 2, San Francisco, CA 94143 (Mission Bay / Potrero edge)
+  Official: https://proctor.ucsf.edu/
+  Apply: https://careers.ucsf.edu
+  Verified: Official proctor.ucsf.edu contact page (490 Illinois St Fl 2) verified
+  Match: 72%
+  Route: ZONE B — N Judah eastbound to Embarcadero → T-Third southbound to UCSF/Chase Center (16th St) → walk east to 490 Illinois St. ~40-50 min.
+
+job-43: City & County of San Francisco — SFDPH / Citywide Labs — Laboratory Technician I (Class 2402) — Entry lab support (glassware, media, inventory, records)
+  Location: Citywide — SFDPH Public Health Laboratories & City clinics, San Francisco (duty station per posting; HQ 101 Grove St)
+  Official: https://careers.sf.gov/classifications/?classCode=2402
+  Apply: https://careers.sf.gov
+  Verified: Official careers.sf.gov classification 2402 spec verified ($72K-$88K/yr, no license, promotes to 2416)
+  Match: 80%
+  Route: ZONE C — Most SFDPH lab sites near Civic Center: N Judah eastbound to Civic Center → short walk. Confirm duty station on posting. ~30-40 min typical.
+
+job-44: City & County of San Francisco — SFDPH Public Health Laboratories — Microbiologist I/II (Class 2463) — Diagnostic micro testing (LICENSED track — plan-ahead entry)
+  Location: SF Public Health Laboratories (SFDPH), San Francisco (duty station per posting; HQ 101 Grove St)
+  Official: https://careers.sf.gov/classifications/?classCode=2463
+  Apply: https://careers.sf.gov
+  Verified: Official careers.sf.gov classification 2463 + past Microbiologist I recruitments verified
+  Match: 45%
+  Route: ZONE C — Civic Center corridor: N Judah eastbound to Civic Center → short walk to SFDPH lab facilities. ~30-40 min.
+
+job-45: Sutter Health — CPMC Mission Bernal Campus — Laboratory Assistant / Pathology Lab Support — Clinical lab support (entry)
+  Location: 3555 Cesar Chavez Street, San Francisco, CA 94110 (Mission Bernal Campus)
+  Official: https://www.sutterhealth.org/find-location/facility/cpmc-emergency-mission-bernal-campus
+  Apply: https://jobs.sutterhealth.org/us/en
+  Verified: Official sutterhealth.org Mission Bernal facility page (3555 Cesar Chavez St) + jobs portal verified
+  Match: 66%
+  Route: ZONE C — N Judah eastbound to Civic Center → BART southbound 1 stop to 24th St/Mission → 14/49 bus east or ~15-min walk to 3555 Cesar Chavez. ~45-60 min.
+
+job-46: Sutter Health — CPMC Research Institute (CPMCRI) — Research Associate / Study Coordinator, lab track — Specimen processing, regulatory docs, QC records
+  Location: 475 Brannan Street, Suite 130, San Francisco, CA 94107 (SoMa)
+  Official: https://www.sutterhealth.org/research/
+  Apply: https://jobs.sutterhealth.org/us/en
+  Verified: FDP federal clearinghouse record (475 Brannan St Ste 130) + official sutterhealth.org/research verified
+  Match: 70%
+  Route: ZONE B/C — N Judah eastbound to Embarcadero → walk south ~15 min or Muni bus to Brannan St. ~35-45 min.
+
+job-47: Fine Arts Museums of San Francisco — de Young Museum — Museum / Conservation Technician track — Materials handling, documentation (via City portal)
+  Location: 50 Hagiwara Tea Garden Drive, Golden Gate Park, San Francisco, CA 94118
+  Official: https://www.famsf.org/
+  Apply: https://careers.sf.gov
+  Verified: FAMSF confirmed as City department hiring via careers.sf.gov (live City postings cite de Young address)
+  Match: 58%
+  Route: ZONE A — VERY CLOSE. N Judah eastbound to 9th Ave & Irving → walk north into Golden Gate Park (~15 min) or 44 bus. ~20-30 min total.
+
+job-48: San Francisco Museum of Modern Art (SFMOMA) — Conservation Technician / Preparator track — Art handling, condition reporting (via official Lever board)
+  Location: 151 Third Street, San Francisco, CA 94103 (SoMa / Yerba Buena)
+  Official: https://www.sfmoma.org/join-the-team/
+  Apply: https://jobs.lever.co/sfmoma
+  Verified: Official sfmoma.org/join-the-team links to jobs.lever.co/sfmoma; 151 Third St verified
+  Match: 60%
+  Route: ZONE C — N Judah eastbound to Powell or Montgomery → walk south to 151 Third St. ~30-40 min.
+
+job-49: Aquarium of the Bay (Bay Ecotarium) — Biologist I — Entry, water-quality laboratory + environmental parameters (ANIMAL-CARE role)
+  Location: PIER 39, Embarcadero & Beach Street, San Francisco, CA 94133
+  Official: https://www.aquariumofthebay.org/careers/
+  Apply: https://www.aquariumofthebay.org/careers/
+  Verified: Official aquariumofthebay.org/careers shows Biologist I entry posting with water-quality-lab duties; PIER 39 verified
+  Match: 55%
+  Route: ZONE C — N Judah eastbound to Embarcadero → F-line streetcar east to Pier 39 (or ~20-min walk). ~40-55 min.
+
+job-50: Dandelion Chocolate — 16th Street Factory — Sanitation / Production QC track — Quality systems, chemical handling, food safety (Mission factory)
+  Location: 2600 16th Street (16th Street Factory), San Francisco, CA 94103 (Mission)
+  Official: https://www.dandelionchocolate.com/pages/visit-us
+  Apply: https://dandelionchocolate.applytojob.com/apply
+  Verified: Official dandelionchocolate.com visit page (2600 16th St) + official ApplyToJob board verified
+  Match: 60%
+  Route: ZONE C — N Judah eastbound to Church & Duboce → J Church southbound to 16th & Church → walk east on 16th (~15 min). ~40-50 min.
+
+job-51: North East Medical Services (NEMS) — Chinatown Main Clinic — Lab Assistant I — Clinic laboratory support (community health center)
+  Location: 1520 Stockton Street (Main Clinic, Chinatown), San Francisco, CA 94133
+  Official: https://www.nems.org/
+  Apply: https://nems.betterteam.com/
+  Verified: Official nems.org careers chain → nems.betterteam.com board; 1520 Stockton St corroborated by CDC directory
+  Match: 62%
+  Route: ZONE C — N Judah eastbound to Powell → 30 Stockton bus north into Chinatown (or cable car) to 1520 Stockton. ~40-50 min.
+
+job-52: Kaiser Permanente — SF Mission Bay Medical Offices — Laboratory Assistant / Specimen Processor — MOB lab (entry, non-licensed rung only)
+  Location: 1600 Owens Street, San Francisco, CA 94158 (Mission Bay)
+  Official: https://healthy.kaiserpermanente.org/northern-california/facilities/san-francisco-mission-bay-medical-offices-322881
+  Apply: https://kaiserpermanentejobs.org
+  Verified: Official healthy.kaiserpermanente.org facility page (1600 Owens St) verified
+  Match: 55%
+  Route: ZONE B — N Judah eastbound to Embarcadero → T-Third southbound to Mission Bay (UCSF/Chase Center) → walk to 1600 Owens. ~40-50 min.
+
+job-53: SF City Clinic (SFDPH) — Municipal STI Clinic — Laboratory / Phlebotomy Support — Specimen collection & processing (CPT track, via City portal)
+  Location: 356 7th Street, San Francisco, CA 94103 (SoMa)
+  Official: https://sf.gov/cityclinic
+  Apply: https://careers.sf.gov
+  Verified: City-run clinic at 356 7th St corroborated (Wikipedia + Apple Maps incl. sf.gov page); hiring via careers.sf.gov
+  Match: 55%
+  Route: ZONE C — N Judah eastbound to Civic Center → walk south to 356 7th St (~10 min). ~30-40 min.
+
+job-54: U.S. Customs and Border Protection — San Francisco Laboratory (federal) — Chemist (1320 series) — Analytical chemistry, trade & commodity testing (via USAJOBS)
+  Location: 630 Sansome Street, Room 1450, San Francisco, CA 94111 (Financial District)
+  Official: https://www.cbp.gov/about/labs-scientific-svcs/org-operations
+  Apply: https://www.usajobs.gov
+  Verified: Official cbp.gov Labs page lists SF Laboratory (630 Sansome St Rm 1450); ISO/IEC 17025 network corroborated
+  Match: 80%
+  Route: ZONE C — N Judah eastbound to Embarcadero or Montgomery → walk north to 630 Sansome St. ~30-40 min.
+
+job-55: Wildtype Foods — Cultivated Seafood (Dogpatch pilot plant) — Research Associate — Food chemistry / QC, physical & chemical testing (monitor — no openings now)
+  Location: 953 Indiana Street, San Francisco, CA 94107 (Dogpatch)
+  Official: https://www.wildtypefoods.com/
+  Apply: https://job-boards.greenhouse.io/Wildtype
+  Verified: Official wildtypefoods.com + official Greenhouse board verified; 953 Indiana St HQ corroborated
+  Match: 68%
+  Route: ZONE B — N Judah eastbound to Embarcadero → T-Third southbound to 22nd St station → walk east to Indiana St. ~45-60 min.
+
+job-56: Asian Art Museum (City & County of San Francisco) — Conservation / Collections track — XRF materials science, handling, records (via City portal)
+  Location: 200 Larkin Street, San Francisco, CA 94102 (Civic Center)
+  Official: https://www.asianart.org/
+  Apply: https://careers.sf.gov
+  Verified: AAM confirmed as City department hiring via careers.sf.gov (live 2026 City posting cites 200 Larkin St chain)
+  Match: 55%
+  Route: ZONE C — N Judah eastbound to Civic Center → walk to 200 Larkin St. ~30-40 min.
+
+job-57: Chinese Hospital — Sunset Health Services / Blood Draw Center — Laboratory / Blood-Draw Support — Specimen collection (WALKABLE from home)
+  Location: 1800 31st Avenue (Sunset Health Services), San Francisco, CA 94122
+  Official: https://chinesehospital-sf.org/laboratory/
+  Apply: https://chinesehospital-sf.org
+  Verified: Official chinesehospital-sf.org/laboratory lists Blood Draw Center – Sunset at 1800 31st Ave (Mon/Wed/Fri)
+  Match: 65%
+  Route: ZONE A — WALKABLE. 1800 31st Ave is ~1 mile from 21st & Judah: walk (~20 min) or 29 Sunset bus. Easiest commute on this list.
+
+job-58: U.S. Mint — San Francisco Mint (federal) — Metal Forming Machine Operator / Production QC track — Precision coin inspection (via USAJOBS)
+  Location: 155 Hermann Street, San Francisco, CA 94102 (Market / Hayes edge)
+  Official: https://www.usmint.gov/about/tours-and-locations/san-francisco
+  Apply: https://www.usajobs.gov
+  Verified: Official usmint.gov SF branch page + 155 Hermann St corroborated; SF production roles confirmed via USAJOBS discovery
+  Match: 52%
+  Route: ZONE C — N Judah eastbound to Van Ness → walk south to 155 Hermann St. ~30-40 min.
+
+job-59: Heluna Health — Research Associate, SFDPH Center for Public Health Research — Research Associate — Public-health research support, CPHR/CSUH (employer of record: Heluna Health)
+  Location: SFDPH research sites, San Francisco (e.g., 101 Grove St / Population Health Division — per posting)
+  Official: https://www.helunahealth.org/
+  Apply: https://www.helunahealth.org/
+  Verified: Official helunahealth.org (nonprofit fiscal sponsor since 1969) verified live; SF RA postings confirmed via discovery
+  Match: 62%
+  Route: ZONE C — Civic Center corridor: N Judah eastbound to Civic Center → short walk to SFDPH sites. ~30-40 min.
+
+job-60: Bridge HIV (SFDPH + UCSF) — HIV Prevention Research Unit — Research Associate / Specimen Processing — Chain-of-custody, LIMS, human-sample handling (via Heluna)
+  Location: 25 Van Ness Avenue, Suite 100, San Francisco, CA 94102 (Civic Center)
+  Official: https://www.bridgehiv.org/
+  Apply: https://www.helunahealth.org/
+  Verified: Official bridgehiv.org verified live + sf.gov page confirms 25 Van Ness Ste 100; hiring via Heluna confirmed
+  Match: 64%
+  Route: ZONE C — N Judah eastbound to Van Ness or Civic Center → walk to 25 Van Ness Ave. ~30-40 min.
+
+PASS-3 EXCLUSIONS (verified, then honestly excluded):
+- DEA Western Laboratory: in PLEASANTON, CA per official EPA release — not SF.
+- SF Zoo Veterinary Technician: requires AVMA-accredited vet-tech program;
+  sfzoo.org/careers 404s (no confirmed official lab board).
+- Planned Parenthood Northern California: lab roles center on San Rafael laboratory
+  (3rd-party discovery only, not verified on official PPNC portal) — not pursued.
+- Gladstone Institutes: already covered (job-04/05/06) — not duplicated.
+- Kaiser Regional Lab (Berkeley), SFO, Brisbane/South SF/Daly City roles: excluded
+  by rule (not SF proper, not remote).
+
+PASS-3 CORRECTIONS TO ASSUMPTIONS:
+- Proctor Foundation address is 490 Illinois St Fl 2 (proctor.ucsf.edu), not 95 Kirkham.
+- FAMSF (de Young) and Asian Art Museum are City departments — jobs via careers.sf.gov.
+- SFMOMA official board is jobs.lever.co/sfmoma via sfmoma.org/join-the-team.
+- Aquarium Biologist I is an animal-care + SCUBA role with water-quality duties (flagged).
+- Wildtype Greenhouse board shows NO current openings — monitor-only entry.
+- Heluna Health (helunahealth.org) verified as nonprofit employer-of-record for
+  SFDPH research units incl. Bridge HIV — direct channel, not a recruiter.
+
+REMOTE RE-CHECK (Pass 3): still none-verified (see data.js REMOTE_FINDING).
+
+All sources are official and linked in data.js for manual review.

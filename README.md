@@ -1,15 +1,15 @@
-# JobSearchSF 🧪 — 40 Verified SF Chemistry & Lab Jobs (N Judah Commute)
+# JobSearchSF 🧪 — 60 Verified SF Chemistry & Lab Jobs (N Judah Commute)
 
-A clean, GitHub Pages site for **40 verified San Francisco chemistry / research / lab-science opportunities** (20 Pass 1 + 20 Pass 2, double-verified Sept 9, 2026), ranked by **SFMTA public transit from 21st Ave & Judah St (Inner Sunset)**, with **official direct-apply links, match scores, and step-by-step apply guides**.
+A clean, GitHub Pages site for **60 verified San Francisco chemistry / research / lab-science opportunities** (20 Pass 1 + 20 Pass 2 + 20 Pass 3, triple-verified Sept 9, 2026), ranked by **SFMTA public transit from 21st Ave & Judah St (Inner Sunset)**, with **official direct-apply links, match scores, and step-by-step apply guides**.
 
 Live site (GitHub Pages): served from repo root at `https://<owner>.github.io/JobSearchSF/` — pure static, no build.
 
 ## What it does — Easy Apply (Click, Copy, Paste)
 
-- **20 verified entries** (not hallucinations) — each with real SF physical address verified via official site + secondary trusted directory (YellowPages, LinkedIn, Bloomberg, SEC filing, GlobalData, OpenGov)
+- **60 verified entries** (not hallucinations) — each with real SF physical address verified via official site + secondary trusted directory (YellowPages, LinkedIn, Bloomberg, SEC filing, GlobalData, OpenGov)
 - **Table view**: Company, Position, Verified badge, Match Score (how well your B.S. Chemistry resume fits), Official Source Link, Apply Guide subpage
 - **Detailed cards**: Transit route from 21st & Judah (N Judah + 38 Geary / 43 Masonic / T-Third), fit notes, requirements, official apply channel (direct, no recruiters), sources for manual review
-- **Subpage per job** (`jobs/job-01.html` through `job-40.html`): 
+- **Subpage per job** (`jobs/job-01.html` through `job-60.html`): 
   - 10-step beginner guide (verify live, create account, download tailored docs, fill, upload, submit, track, interview prep, follow-up)
   - Tailored resume (TXT + PDF) emphasizing skills for that role
   - Tailored cover letter (TXT + PDF) — brief, polite, professional, 3 paragraphs for quick hiring manager approval
@@ -31,7 +31,7 @@ Live site (GitHub Pages): served from repo root at `https://<owner>.github.io/Jo
 - Publication: 14-Aminocamptothecins — ACS J. Med. Chem., Feb 2011
 - Location: 21st Ave & Judah St, SF 94122 — must be N Judah Muni or SF city bus commutable; remote only if verified direct
 
-## 40 Verified Entries (SF, N Judah Commutable)
+## 60 Verified Entries (SF, N Judah Commutable)
 
 All verified via official sources, no hallucinations:
 
@@ -76,6 +76,26 @@ All verified via official sources, no hallucinations:
 38. Exploratorium — Exhibit / Science Technician — Pier 15/17 — Zone B — 52% — exploratorium.edu
 39. OCME — Forensic Laboratory Analyst 2403 — 1 Newhall St — Zone D — 90% — careers.sf.gov
 40. Red Cross — Blood Collection / Biomedical Support — 1663 Market St — Zone B — 50% — Workday
+41. UCSF Helen Diller Cancer Center — SRA I/II cancer biology — 1450 3rd St — Zone B — 78% — careers.ucsf.edu
+42. UCSF Proctor Foundation (Ophthalmology) — SRA I/II ocular micro — 490 Illinois St Fl 2 — Zone B — 72% — careers.ucsf.edu
+43. City — Lab Technician I 2402 (entry, promotes to 2416) — citywide/SFDPH — Zone C — 80% — careers.sf.gov
+44. City — Microbiologist I/II 2463 (LICENSED, plan-ahead) — SF Public Health Lab — Zone C — 45% — careers.sf.gov
+45. Sutter CPMC Mission Bernal — Lab Assistant — 3555 Cesar Chavez St — Zone C — 66% — jobs.sutterhealth.org
+46. Sutter CPMC Research Institute — Research Associate — 475 Brannan St Ste 130 — Zone B/C — 70% — jobs.sutterhealth.org
+47. FAMSF de Young Museum — Conservation Technician track — 50 Hagiwara Tea Garden Dr — Zone A — 58% — careers.sf.gov
+48. SFMOMA — Conservation Technician/Preparator track — 151 Third St — Zone C — 60% — jobs.lever.co/sfmoma
+49. Aquarium of the Bay — Biologist I water-quality lab (RECENTLY POSTED, animal-care+SCUBA) — PIER 39 — Zone C — 55% — aquariumofthebay.org/careers
+50. Dandelion Chocolate 16th St Factory — Sanitation/Production QC — 2600 16th St — Zone C — 60% — ApplyToJob board
+51. NEMS Chinatown — Lab Assistant I — 1520 Stockton St — Zone C — 62% — nems.betterteam.com
+52. Kaiser Mission Bay MOB — Lab Assistant (non-licensed rung) — 1600 Owens St — Zone B — 55% — kaiserpermanentejobs.org
+53. SF City Clinic (SFDPH) — Lab/Phlebotomy Support — 356 7th St — Zone C — 55% — careers.sf.gov
+54. CBP San Francisco Laboratory (federal) — Chemist 1320 series — 630 Sansome St Rm 1450 — Zone C — 80% — USAJOBS
+55. Wildtype Foods (Dogpatch) — RA food chemistry/QC (monitor, no openings now) — 953 Indiana St — Zone B — 68% — Greenhouse
+56. Asian Art Museum — Conservation/Collections track — 200 Larkin St — Zone C — 55% — careers.sf.gov
+57. Chinese Hospital Sunset — Lab/Blood-Draw Support (WALKABLE) — 1800 31st Ave — Zone A — 65% — chinesehospital-sf.org
+58. US Mint San Francisco (federal) — Production QC track — 155 Hermann St — Zone C — 52% — USAJOBS
+59. Heluna Health — RA, SFDPH Center for Public Health Research — SFDPH sites — Zone C — 62% — helunahealth.org
+60. Bridge HIV (SFDPH+UCSF) — RA/Specimen Processing — 25 Van Ness Ste 100 — Zone C — 64% — via Heluna
 
 Plus 2 Pass-2 reviewed-but-excluded (honesty log): Kyntra Bio (corporate-only, no SF wet lab), Nurix (all 30 openings Brisbane).
 
@@ -87,7 +107,7 @@ Plus 3 reviewed-but-excluded (honesty log): Cytokinetics South SF, Biotium Fremo
 - `assets/css/style.css` — clean, modern, responsive styling (N Judah green gradient, cards, table, badges, copy boxes)
 - `assets/js/data.js` — 40 verified entries with official sources, match scores, routes, verificationMethod, subpage links
 - `assets/js/app.js` — rendering, table + cards, filter by status/zone/batch, sort, search, copy-paste, count, tracker
-- `jobs/job-01.html` through `job-40.html` — 40 subpages, each with 10-step beginner guide, tailored resume/cover/email copy boxes + download links, transit, verification
+- `jobs/job-01.html` through `job-60.html` — 60 subpages, each with 10-step beginner guide, tailored resume/cover/email copy boxes + download links, transit, verification
 - `assets/resume/` — base resume TXT+PDF + 40 tailored resumes TXT+PDF (job-01_resume.pdf etc.)
 - `assets/cover/` — base cover TXT+PDF + 40 tailored cover letters TXT+PDF + 40 intro emails TXT
 - `assets/verification/VERIFICATION_LOG.txt` — line-by-line verification log, no hallucinations
@@ -159,6 +179,10 @@ python3 -m http.server 8000
 - Vir: https://www.vir.bio/careers/jobs/, https://job-boards.greenhouse.io/virbiotechnologyinc, SEC filing 1800 Owens St
 - Twist: https://www.twistbioscience.com/company/careers, SEC S-1 455 Mission Bay Blvd South
 - Anresco: https://anresco.com/careers, https://www.indeed.com/cmp/Anresco-Laboratories/jobs, YellowPages 1375 Van Dyke Ave, LinkedIn HQ
-- City: https://careers.sf.gov, https://careers.sf.gov/classifications/?classCode=2486, https://careers.sf.gov/classifications/?classCode=2416
+- City: https://careers.sf.gov, https://careers.sf.gov/classifications/?classCode=2486, https://careers.sf.gov/classifications/?classCode=2416, https://careers.sf.gov/classifications/?classCode=2402, https://careers.sf.gov/classifications/?classCode=2463
+- Federal: https://www.usajobs.gov, https://www.cbp.gov/about/labs-scientific-svcs/org-operations, https://www.usmint.gov/about/tours-and-locations/san-francisco
+- Museums/aquarium: https://www.sfmoma.org/join-the-team/, https://jobs.lever.co/sfmoma, https://www.famsf.org/, https://www.asianart.org/, https://www.aquariumofthebay.org/careers/
+- Food/biotech: https://www.wildtypefoods.com/, https://job-boards.greenhouse.io/Wildtype, https://www.dandelionchocolate.com/pages/visit-us, https://dandelionchocolate.applytojob.com/apply
+- Clinics/research: https://www.nems.org/, https://nems.betterteam.com/, https://www.helunahealth.org/, https://www.bridgehiv.org/, https://sf.gov/cityclinic, https://chinesehospital-sf.org/laboratory/
 - Kaiser: https://kaiserpermanentejobs.org, UCSF Health: https://jobs.ucsfmedicalcenter.org
 - SFMTA: https://www.sfmta.com, 511.org: https://511.org

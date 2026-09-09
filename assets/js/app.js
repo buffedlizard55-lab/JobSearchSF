@@ -1,4 +1,4 @@
-/* JobSearchSF — rendering & filtering (pure client-side) — 40 verified entries */
+/* JobSearchSF — rendering & filtering (pure client-side) — 60 verified entries */
 (function () {
   const STATUS_META = {
     "recently-posted": { cls: "badge recently-posted", label: "Recently posted" },
@@ -29,8 +29,11 @@
     if (score >= 70) return '<span class="badge score-mid">' + esc(score) + '% match</span>';
     return '<span class="badge score-low">' + esc(score) + '% match</span>';
   }
+  var lastList = [];
   function batchBadge(j) {
-    return (j.batch === 2) ? ' <span class="badge batch2">New in Pass 2</span>' : "";
+    if (j.batch === 3) return ' <span class="badge batch3">New in Pass 3</span>';
+    if (j.batch === 2) return ' <span class="badge batch2">Pass 2</span>';
+    return "";
   }
   function sourcesHtml(arr) {
     if (!arr || !arr.length) return "";
@@ -90,6 +93,7 @@
   }
 
   function render(list) {
+    lastList = list || [];
     const tableBody = document.getElementById("jobs-table-body");
     const container = document.getElementById("jobs");
     const countEl = document.getElementById("count");
@@ -117,6 +121,14 @@
       const r = window.REMOTE_FINDING;
       const src = r.sources ? r.sources.map(function(s){ return '<li>' + esc(s.label) + ' — <a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.url) + '</a></li>'; }).join("") : "";
       remoteContainer.innerHTML = '<div class="callout red"><strong>Remote finding: ' + esc(r.status) + '</strong><br>' + esc(r.note) + '</div>' + (src ? '<div class="sources"><strong>Sources checked:</strong><ul>' + src + '</ul></div>' : '');
+    }
+
+    const top10 = document.getElementById("top10-list");
+    if (top10 && window.JOBS_DATA) {
+      const best = window.JOBS_DATA.slice().sort(function (a, b) { return (b.matchScore || 0) - (a.matchScore || 0); }).slice(0, 10);
+      top10.innerHTML = best.map(function (j, i) {
+        return '<li><a href="' + esc(j.subpage) + '"><strong>' + esc(j.company) + '</strong> — ' + esc(j.position.split(" — ")[0]) + '</a> <span class="badge score-high">' + esc(j.matchScore) + '%</span></li>';
+      }).join("");
     }
   }
 
@@ -201,6 +213,25 @@
     const sortSel = document.getElementById("sort-select");
     if (sortSel) {
       sortSel.addEventListener("change", applyFilters);
+    }
+    const csvBtn = document.getElementById("export-csv");
+    if (csvBtn) {
+      csvBtn.addEventListener("click", function () {
+        const rows = [["id", "company", "position", "matchScore", "zone", "status", "location", "officialLink", "applyLink", "subpage"]];
+        (lastList || []).forEach(function (j) {
+          rows.push([j.id, j.company, j.position, j.matchScore, j.commuteZone, j.status, j.location, j.officialLink, j.applyLink, j.subpage]);
+        });
+        const csv = "\uFEFF" + rows.map(function (r) {
+          return r.map(function (c) { return '"' + String(c == null ? "" : c).replace(/"/g, '""') + '"'; }).join(",");
+        }).join("\r\n");
+        const blob = new Blob([csv], { type: "text/csv;charset=utf-8" });
+        const a = document.createElement("a");
+        a.href = URL.createObjectURL(blob);
+        a.download = "jobsearchsf-export.csv";
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+      });
     }
     const el = document.getElementById("today");
     if (el) el.textContent = new Date().toISOString().slice(0, 10);
