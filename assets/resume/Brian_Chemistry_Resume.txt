@@ -1,6 +1,5 @@
 Brian
-San Francisco, CA 94122
-(707) 596-8503 | Brian.j1274@gmail.com
+San Francisco, CA 94122 | (707) 596-8503 | Brian.j1274@gmail.com
 
 PROFESSIONAL SUMMARY
 Dedicated chemist with B.S. in Chemistry (UC Santa Cruz, 2011) and hands-on lab experience in HPLC, spectroscopy, chromatography, and GLP quality control. Seeking entry-level Research Associate position in biotech to leverage analytical skills and passion for science. Strong organizational and budget management skills from property management, transferable to lab operations.
@@ -10,34 +9,28 @@ B.S. in Chemistry — University of California, Santa Cruz — Sep 2007 - May 20
 - Research Assistant, Yat Li's Lab: Synthesized gallium nitride cells via chemical vapor deposition for solar cell nanomaterials; sample preparation, characterization, data analysis.
 
 PROFESSIONAL EXPERIENCE
-Property Manager (Contract) — San Francisco, CA — May 2012 - Present
+Property Manager (Contract) — San Francisco, CA — May 2012-Present
 - Managed property operations, tenant relations, leasing, compliance
 - Oversaw budgets, expenses, maintenance coordination, vendor management
 - Developed strong organizational, analytical, and financial tracking skills transferable to lab inventory, compliance, and data management
 
-Lab Assistant — Quintara Biosciences — SF Bay Area, CA — Jan 2012 - May 2012
+Lab Assistant — Quintara Biosciences — SF Bay Area, CA — Jan 2012-May 2012
 - Performed lab procedures following Good Laboratory Practices (GLP): sample preparation, data recording
 - Conducted QC processes, maintained lab equipment, ensured safety protocol compliance
 
-Lab Intern — Microconstants — San Diego, CA — Aug 2011 - Dec 2011
+Lab Intern — MicroConstants — San Diego, CA — Aug 2011-Dec 2011
 - Executed sample extraction, chromatography, spectroscopic analysis
 - Assisted transitioning lab records to electronic systems, contributed to QC efforts
 
-Summer Medicinal Chemistry Intern — Threshold Pharmaceuticals — SF Bay Area, CA — Jun 2011 - Aug 2011
+Summer Medicinal Chemistry Intern — Threshold Pharmaceuticals — SF Bay Area, CA — Jun 2011-Aug 2011
 - Synthesized and purified organic compounds for drug development using NMR and HPLC
 - Collaborated on experimental design, troubleshooting, data interpretation
 
 SKILLS
 - Laboratory Techniques: HPLC, Spectroscopy (NMR, UV-Vis), Chromatography, Sample Preparation, Titration, Wet Chemistry
 - Quality Control & Data Analysis, GLP, Lab Safety & Compliance
-- Microsoft Office Suite (Excel, Word) — data tracking, reports
-- Organizational & Financial Management (transferable: inventory, budgeting, vendor coordination)
+- Microsoft Office Suite (Excel, Word)
+- Organizational & Financial Management
 
-PUBLICATIONS
+PUBLICATION
 - 14-Aminocamptothecins: Their Synthesis, Preclinical Activity, and Potential Use for Cancer Treatment — ACS Journal of Medicinal Chemistry, Feb 2011
-
-COMMUTE
-- Based at 21st Ave & Judah St, Inner Sunset, SF 94122 — N Judah Muni Metro + SFMTA bus accessible
-- Available for on-site SF roles with public transit commute
-
-REFERENCES — Available upon request
