@@ -130,3 +130,90 @@ Goal: Make applying as easy as click, copy, paste, with no manual input, organiz
 8. Track via official portal
 
 All official verified sources are linked for manual review. No hallucinations. Flag irregularities.
+
+---
+
+# PASS 2 — Improvements Implemented (Sept 9, 2026 — second verification pass, 20 NEW entries)
+
+Goal of Pass 2: run the whole prompt through another pass — 20 NEW verified SF entries (jobs 21-40),
+re-verify every official link line by line, fix bugs found, and add features that make applying easier.
+
+## New entries (21-40) — all verified, no hallucinations
+- 21 SFSU Chemistry (82%) · 22 USF Chemistry (80%) · 23 CCSF sciences (78%) · 24 Cal Academy IBSS (68%)
+- 25 UCSF Stanyan Hospital lab (66%) · 26 CPMC Davies pathology (70%) · 27 CPMC Van Ness lab (66%)
+- 28 Chinese Hospital CLT Req #12756 — LIVE posting, flagged CPT-required (48%)
+- 29 UCSF at ZSFG SRA (76%) · 30 SFVA federal tech via USAJOBS (68)
+- 31 Quest (55%) · 32 Labcorp (55%) — both flagged: verify SF site per posting
+- 33 SFPUC Water Quality Tech 2481 (87%) · 34 SFPD Criminalist I Chemical Analysis (84%)
+- 35 Laguna Honda lab (64%) · 36 UCSF Hyde Hospital lab (64%) · 37 SFUSD science (58%)
+- 38 Exploratorium tech (52%, bridge) · 39 OCME Forensic Lab Analyst 2403 (90%)
+- 40 Red Cross biomedical (50%, bridge)
+- Each has: table row + detailed card + subpage + tailored resume/cover/email + transit + verification.
+- Proof of honesty: Kyntra Bio + Nurix verified then EXCLUDED (see honesty log); Chinese Hospital
+  live posting included at 48% with license flag rather than hidden.
+
+## Bugs fixed in Pass 2
+1. **Broken apply-link hrefs in table/cards (Pass-1 bug):** `applyLink` text ("URL — search …")
+   was used raw as `href`, producing invalid URLs. Fixed with `cleanUrl()` extraction in app.js —
+   buttons now open the clean official portal URL.
+2. **Compound commute zones fell back to Zone C (Pass-1 bug):** `ZONE_META` lacked "A/B" and "B/C",
+   so Vitalant/Kaiser/NCIRE rows rendered as Zone C. Added both + zone filter matches base letters.
+3. **Wrong branch name in README/footer:** `arena/01a087a8-jobsearchsf` → `arena/01a087ee-jobsearchsf`.
+4. **Stale employer assumption corrected:** St. Mary's + Saint Francis are now UCSF Health hospitals
+   (Stanyan + Hyde) — apply via jobs.ucsfmedicalcenter.org, not Dignity/CommonSpirit.
+5. **FibroGen renamed:** now Kyntra Bio (corporate-only) — excluded instead of listed.
+
+## Features added in Pass 2
+6. **Sort control:** Match score ↓ (default) · Shortest commute (Zone A→D) · Company A–Z.
+7. **Zone filter:** All zones / A / B / C / D (compound zones match both letters).
+8. **Batch filter:** Pass 1 (1-20) / Pass 2 (21-40) + "New in Pass 2" badges on rows, cards, subpages.
+9. **Application tracker (localStorage, device-only):** per-job status select in the table
+   (Not started / Applied / Interview / Follow-up / Offer / Closed), progress summary bar,
+   and a per-subpage widget with a 7-step checklist. Nothing uploaded anywhere.
+10. **Print checklist button** on every subpage + print-friendly CSS (hides nav/buttons).
+11. **Transit table expanded:** +13 destination rows (GG Park, USF, Stanyan, Forest Hill, CCSF Ocean,
+    Castro/Duboce, 15th&Noe, Pier 15, Market&Gough, Nob Hill, Chinatown, Hayes Valley, Evans/Newhall).
+12. **Remote finding re-checked** across all 20 Pass-2 portals — still none-verified (documented).
+13. **Verification logs:** VERIFICATION_LOG_PASS2.txt added; data.js schema-validated
+    (40 jobs × required fields × http URLs) + internal link-integrity check script.
+14. **sitemap.xml** for GitHub Pages (index + 40 subpages).
+
+## Pass-2 verification method (three passes, no hallucinations)
+- Pass 1: official site + careers portal + SF address fetched per employer.
+- Pass 2: every official URL re-checked live; assumptions corrected (see bugs 4-5).
+- Pass 3 (build): automated schema + link + file-existence checks before publish.
+
+## Pass 3 — 20 new entries (jobs 41-60), triple-verified Sept 9, 2026
+
+New this pass: UCSF Helen Diller SRA (41), UCSF Proctor SRA (42), City 2402 Lab Tech I (43),
+City 2463 Microbiologist plan-ahead (44), Sutter Mission Bernal lab (45), CPMC Research Institute (46),
+FAMSF de Young conservation-tech (47), SFMOMA conservation-tech (48), Aquarium Biologist I water-quality (49),
+Dandelion Chocolate production QC (50), NEMS lab assistant (51), Kaiser Mission Bay lab (52),
+SF City Clinic lab/CPT (53), CBP SF Laboratory Chemist federal (54), Wildtype RA (55),
+Asian Art Museum conservation (56), Chinese Hospital Sunset walkable (57), US Mint production QC (58),
+Heluna Health RA (59), Bridge HIV RA/specimen (60).
+
+Bugs/process fixed in Pass 3:
+- Parallel edit_file calls to the SAME file race (read-modify-write): only the last write
+  fully persists and tails can corrupt. Rule: same-file edits go in ONE sequential script
+  with asserts (add_batch3.py / update_site_batch3.py pattern). Never parallelize same-file edits.
+- Proctor Foundation is 490 Illinois St Fl 2 (verified), not 95 Kirkham as first assumed.
+- FAMSF + Asian Art Museum hire through careers.sf.gov (City departments), not standalone boards.
+- DEA Western Laboratory is Pleasanton CA (excluded); SF Zoo vet-tech is licensed-track (excluded).
+
+## Features added in Pass 3
+15. **Batch filter extended:** Pass 3 (41-60) + "New in Pass 3" green badges on rows, cards, subpages, transit table.
+16. **Top-10-by-match box** on the homepage (auto-rendered from data.js) — start-here shortlist.
+17. **CSV export button** — downloads the currently filtered/sorted list (id, company, role, score, zone, links) with UTF-8 BOM for Excel.
+18. **Transit table expanded:** +18 destination rows (Helen Diller, Proctor, Kaiser Mission Bay, Dogpatch,
+    Brannan, de Young, Sunset 31st Ave, Sansome/CBP, Civic Center City labs, Larkin/AAM, 25 Van Ness,
+    Mint/Hermann, City Clinic, SFMOMA, Dandelion 16th, Mission Bernal, NEMS/Stockton, PIER 39).
+19. **Remote finding re-checked #3** across all Pass-3 portals — still none-verified (documented).
+20. **Verification logs:** VERIFICATION_LOG_PASS3.txt added; data.js schema-validated
+    (60 jobs × required fields × http URLs) + internal link-integrity check script.
+21. **sitemap.xml** extended (index + 60 subpages). README entries 41-60 + new official sources.
+
+## Pass-3 verification method (three passes, no hallucinations)
+- Pass 1: official site + careers portal + SF address fetched per employer.
+- Pass 2: every official URL re-checked live; assumptions corrected (see above).
+- Pass 3 (build): automated schema + link + file-existence checks before publish.

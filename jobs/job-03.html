@@ -21,7 +21,7 @@
         <div class="tag">Junior Specialist — Research Assistant, Chemistry-adjacent translational research<br>📍 505 Parnassus Ave & 1500 Owens St, San Francisco, CA 94143 / 94158<br>Match Score: 75% — B.S. + lab internships qualify; organizational skills from property management valuable for data/budget tracking.</div>
       </div>
       <div class="meta">
-        <a href="../index.html" style="color:#fff;text-decoration:underline">← Back to all 20 jobs</a><br>
+        <a href="../index.html" style="color:#fff;text-decoration:underline">← Back to all 60 jobs</a><br>
         ID: job-03<br>
         Verified: ✓ Official site + SF address<br>
         <a href="https://aprecruit.ucsf.edu" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline">https://aprecruit.ucsf.edu</a>
@@ -37,6 +37,7 @@
       <a href="#email">Intro Email</a>
       <a href="#transit">Transit</a>
       <a href="#verify">Verification</a>
+      <a href="#tracker">Tracker</a>
     </div>
   </nav>
 
@@ -74,6 +75,7 @@
         <div class="callout blue">
           <strong>Click-Copy-Paste Tip:</strong> Use the Copy buttons below for resume, cover letter, email. Paste directly into application fields. All docs are tailored to UCSF — Neurology / Memory and Aging Center — Junior Specialist — Research Assistant, Chemistry-adjacent translational research with match score 75%.
         </div>
+        <p><button class="btn" onclick="window.print()">🖨️ Print this checklist</button></p>
       </div>
     </section>
 
@@ -263,17 +265,27 @@ Note: Night/off-peak service thinner; confirm first/last N Judah times for your 
         <div class="callout red">
           <strong>Flag irregularities:</strong> If official link is broken, address not found, or posting asks for money, flag for review. This entry is marked verified but re-verify live before applying — postings rotate daily.
         </div>
-        <p><a href="../index.html" class="btn">← Back to all 20 jobs</a> <a href="https://aprecruit.ucsf.edu" target="_blank" rel="noopener" class="btn btn-primary">Open Official Careers →</a></p>
+        <p><a href="../index.html" class="btn">← Back to all 60 jobs</a> <a href="https://aprecruit.ucsf.edu" target="_blank" rel="noopener" class="btn btn-primary">Open Official Careers →</a></p>
       </div>
     </section>
 
+
+    <section class="block" id="tracker">
+      <div class="card">
+        <h2 class="sec">My application tracker (saved on this device)</h2>
+        <p class="sec-sub">Track your progress for this job. Saved in your browser only — nothing leaves your device.</p>
+        <div id="tracker-widget-job-03"></div>
+      </div>
+    </section>
     <footer>
       <p>JobSearchSF — job-03 — UCSF — Neurology / Memory and Aging Center — Verified SF job, N Judah commute from 21st & Judah. Research snapshot <span id="today"></span>. Apply directly via official portal only. No recruiters. No hallucinations.</p>
       <p><a href="../index.html">← Back to main list</a> | <a href="https://aprecruit.ucsf.edu" target="_blank" rel="noopener">Official Site</a> | <a href="https://aprecruit.ucsf.edu" target="_blank" rel="noopener">Apply Direct</a></p>
     </footer>
   </main>
+  <script src="../assets/js/tracker.js"></script>
   <script>
     document.getElementById('today').textContent = new Date().toISOString().slice(0,10);
+    JobTracker.mount('tracker-widget-job-03', 'job-03');
   </script>
 </body>
 </html>

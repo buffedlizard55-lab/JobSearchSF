@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>JobSearchSF — 20 Verified SF Chemistry & Lab Jobs (N Judah Commute)</title>
-  <meta name="description" content="20 verified San Francisco chemistry & lab-science opportunities reachable by SFMTA public transit from 21st Ave & Judah St (N Judah), with official direct-apply links, match scores, and step-by-step apply guides. No recruiters, no hallucinations.">
+  <title>JobSearchSF — 60 Verified SF Chemistry & Lab Jobs (N Judah Commute)</title>
+  <meta name="description" content="60 verified San Francisco chemistry & lab-science opportunities reachable by SFMTA public transit from 21st Ave & Judah St (N Judah), with official direct-apply links, match scores, and step-by-step apply guides. No recruiters, no hallucinations.">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧪</text></svg>">
 </head>
@@ -14,14 +14,14 @@
   <header class="topbar">
     <div class="wrap">
       <div>
-        <h1>JobSearchSF 🧪 — 20 Verified SF Jobs</h1>
-        <div class="tag">For B.S. Chemistry (UCSC 2011) — HPLC, spectroscopy, chromatography, GLP, QC. <strong>Only SF jobs you can reach by N Judah Muni + SFMTA bus from 21st Ave & Judah.</strong> Every employer verified by official website + SF address. Apply directly, no recruiters.</div>
+        <h1>JobSearchSF 🧪 — 60 Verified SF Jobs</h1>
+        <div class="tag">For B.S. Chemistry (UCSC 2011) — HPLC, spectroscopy, chromatography, GLP, QC. <strong>Only SF jobs you can reach by N Judah Muni + SFMTA bus from 21st Ave & Judah.</strong> Every employer verified by official website + SF address. Apply directly, no recruiters. <span class="badge batch2">20 in Pass 2</span> <span class="badge batch3">20 new in Pass 3</span></div>
       </div>
       <div class="meta">
         Origin: <strong>21st Ave & Judah St</strong> (Inner Sunset, SF 94122)<br>
         Profile: <strong>B.S. Chemistry</strong> · Research Associate / Lab Chemist<br>
         Transit: <strong>N Judah + 38 Geary / 43 Masonic / T-Third</strong><br>
-        Verified: <strong>20 entries + official sources</strong>
+        Verified: <strong>60 entries + official sources</strong>
       </div>
     </div>
   </header>
@@ -46,7 +46,7 @@
         <h2 class="sec">Overview — what this is and how to use it</h2>
         <p class="sec-sub">Built for Brian in SF, 21st Ave & Judah. Honest, no-hallucination job search.</p>
         <div class="callout ok">
-          <strong>This page lists 20 verified, SF-located lab-science opportunities</strong> that fit a B.S. Chemist targeting entry Research Associate / Lab Chemist roles. Each row shows: <strong>real SF physical address, SFMTA route from 21st & Judah, official employer careers portal (apply directly), verified badge, match score, official source links for manual review, and a subpage with step-by-step apply guide + tailored resume/cover letter downloads.</strong>
+          <strong>This page lists 60 verified, SF-located lab-science opportunities</strong> (20 Pass 1 + 20 Pass 2 + 20 new in Pass 3, triple-verified Sept 9, 2026) that fit a B.S. Chemist targeting entry Research Associate / Lab Chemist roles. Each row shows: <strong>real SF physical address, SFMTA route from 21st & Judah, official employer careers portal (apply directly), verified badge, match score, official source links for manual review, and a subpage with step-by-step apply guide + tailored resume/cover letter downloads.</strong>
         </div>
         <div class="callout red">
           <strong>Read before applying:</strong> Job postings rotate daily. This site does <em>not</em> claim “this exact job is open today.” It gives you the <em>verified employer, role type to search for, official apply channel, and commute plan</em>. Always re-open the employer’s own careers page and confirm the live req before applying. Status labels: <span class="badge recently-posted">Recently posted</span> = seen in 2026 snapshot (re-verify live), <span class="badge monitor">Monitor</span> = posts periodically, check weekly.
@@ -65,18 +65,45 @@
       </div>
     </section>
 
+    <!-- TOP 10 -->
+    <section class="block" id="top10">
+      <div class="card">
+        <h2 class="sec">Top 10 by match score — start here</h2>
+        <p class="sec-sub">Highest chemistry-fit across all 60 verified entries. Click any row to open its step-by-step apply guide.</p>
+        <ol id="top10-list" style="line-height:1.9"></ol>
+      </div>
+    </section>
+
     <!-- TABLE -->
     <section class="block" id="table">
-      <h2 class="sec">Verified opportunities — sortable table (20 jobs)</h2>
+      <h2 class="sec">Verified opportunities — sortable table (60 jobs)</h2>
       <p class="sec-sub">Company, position, verified badge, match score, official source link, subpage with apply guide. Click “Apply guide” for step-by-step.</p>
 
       <div class="filters">
-        <button class="f-status active" data-status="all">All 20</button>
+        <button class="f-status active" data-status="all">All 60</button>
         <button class="f-status" data-status="recently-posted">Recently posted</button>
         <button class="f-status" data-status="monitor">Monitor</button>
+        <button class="f-batch active" data-batch="all">Pass 1+2+3</button>
+        <button class="f-batch" data-batch="1">Pass 1 (1-20)</button>
+        <button class="f-batch" data-batch="2">Pass 2 (21-40)</button>
+        <button class="f-batch" data-batch="3">New: Pass 3 (41-60)</button>
+      </div>
+      <div class="filters">
+        <button class="f-zone active" data-zone="all">All zones</button>
+        <button class="f-zone" data-zone="A">Zone A</button>
+        <button class="f-zone" data-zone="B">Zone B</button>
+        <button class="f-zone" data-zone="C">Zone C</button>
+        <button class="f-zone" data-zone="D">Zone D</button>
+        <select id="sort-select" aria-label="Sort jobs">
+          <option value="match" selected>Sort: Match score ↓</option>
+          <option value="zone">Sort: Shortest commute</option>
+          <option value="company">Sort: Company A–Z</option>
+        </select>
         <input id="search-input" type="text" placeholder="Search company, role, HPLC, chemistry, etc.">
+        <button id="export-csv" class="btn btn-sm" title="Download the currently filtered list as CSV">⬇ Export CSV</button>
         <span class="count" id="count"></span>
       </div>
+      <div class="callout blue" id="tracker-summary" style="margin-bottom:18px"><strong>My progress:</strong> loading…</div>
 
       <div class="legend">
         <span class="chip"><span class="zone" style="color:#1e7e45">Zone A</span> Shortest (Inner Sunset/Parnassus)</span>
@@ -96,6 +123,7 @@
               <th>Match Score</th>
               <th>Official Source Link</th>
               <th>Apply Guide (subpage)</th>
+              <th>My Status</th>
             </tr>
           </thead>
           <tbody id="jobs-table-body"></tbody>
@@ -202,6 +230,192 @@
               <td><span class="badge zoneD">D</span></td>
               <td>60-80 min</td>
             </tr>
+            <tr>
+              <td><strong>Golden Gate Park — Cal Academy (55 Music Concourse Dr)</strong> — Lab / collections support <span class="badge batch2">New</span></td>
+              <td>N Judah east to 9th Ave & Irving → walk north on 9th Ave into the park to Music Concourse (~15 min) or 44 bus north. Very close to home.</td>
+              <td><span class="badge zoneA">A</span></td>
+              <td>20-30 min</td>
+            </tr>
+            <tr>
+              <td><strong>USF Hilltop (2130 Fulton St)</strong> — Chemistry lab manager <span class="badge batch2">New</span></td>
+              <td>N Judah east to 9th Ave & Irving → northbound bus on 9th Ave (44 O'Shaughnessy) to Fulton St → walk east to 2130 Fulton (Harney Science Center).</td>
+              <td><span class="badge zoneA">A/B</span></td>
+              <td>30-40 min</td>
+            </tr>
+            <tr>
+              <td><strong>Cole Valley — UCSF Stanyan Hospital (450 Stanyan St)</strong> — Lab Assistant <span class="badge batch2">New</span></td>
+              <td>N Judah east to 9th Ave & Irving → 7 Haight bus eastbound to Stanyan St → short walk north to 450 Stanyan.</td>
+              <td><span class="badge zoneA">A/B</span></td>
+              <td>25-35 min</td>
+            </tr>
+            <tr>
+              <td><strong>Forest Hill — Laguna Honda Hospital (375 Laguna Honda Blvd)</strong> — Lab support <span class="badge batch2">New</span></td>
+              <td>N Judah east to 9th Ave & Irving → 43 Masonic southbound toward Forest Hill → walk/bus to hospital (hilly area).</td>
+              <td><span class="badge zoneA">A/B</span></td>
+              <td>30-45 min</td>
+            </tr>
+            <tr>
+              <td><strong>CCSF Ocean Campus (50 Frida Kahlo Way)</strong> — Lab technician <span class="badge batch2">New</span></td>
+              <td>N Judah east to 19th Ave station → M Ocean View southbound to Ocean Ave/CCSF, or 29 Sunset bus southbound to Ocean Campus.</td>
+              <td><span class="badge zoneB">B</span></td>
+              <td>30-40 min</td>
+            </tr>
+            <tr>
+              <td><strong>Castro/Duboce — CPMC Davies (45 Castro St)</strong> — Pathology lab assistant <span class="badge batch2">New</span></td>
+              <td>N Judah eastbound to Church & Duboce station → short walk or J Church/bus to Castro & Duboce.</td>
+              <td><span class="badge zoneB">B</span></td>
+              <td>20-30 min</td>
+            </tr>
+            <tr>
+              <td><strong>15th & Noe — Quest (2198 15th St) / Labcorp (148 Noe St)</strong> — Specimen/lab support <span class="badge batch2">New</span></td>
+              <td>N Judah east to Church & Duboce → J Church south 1-2 stops or short walk to 15th & Noe.</td>
+              <td><span class="badge zoneB">B</span></td>
+              <td>20-30 min</td>
+            </tr>
+            <tr>
+              <td><strong>Embarcadero — Exploratorium (Pier 15/17)</strong> — Science technician <span class="badge batch2">New</span></td>
+              <td>N Judah eastbound DIRECT to Embarcadero station (no transfer, ~24 min) → walk to Pier 15/17. Simplest commute on the list.</td>
+              <td><span class="badge zoneB">B</span></td>
+              <td>30-40 min</td>
+            </tr>
+            <tr>
+              <td><strong>Market & Gough — Red Cross (1663 Market St)</strong> — Blood/biomedical support <span class="badge batch2">New</span></td>
+              <td>N Judah eastbound in the Market St subway to Church station → short walk to 1663 Market. No transfer.</td>
+              <td><span class="badge zoneB">B</span></td>
+              <td>20-30 min</td>
+            </tr>
+            <tr>
+              <td><strong>Nob Hill — UCSF Hyde Hospital (900 Hyde St)</strong> — Lab Assistant <span class="badge batch2">New</span></td>
+              <td>N Judah east to Civic Center → 19 Polk northbound (or Powell-Mason cable car from Powell) toward Hyde/Bush → short walk. Hilly.</td>
+              <td><span class="badge zoneC">C</span></td>
+              <td>35-45 min</td>
+            </tr>
+            <tr>
+              <td><strong>Chinatown — Chinese Hospital (845 Jackson St)</strong> — Clinical lab tech <span class="badge batch2">New</span></td>
+              <td>N Judah east to Powell → 30 Stockton bus or cable car north to Jackson St → walk to 845 Jackson.</td>
+              <td><span class="badge zoneC">C</span></td>
+              <td>40-50 min</td>
+            </tr>
+            <tr>
+              <td><strong>Hayes Valley — SFUSD (555 Franklin St)</strong> — Science support <span class="badge batch2">New</span></td>
+              <td>N Judah eastbound direct to Civic Center → short walk to 555 Franklin. School sites vary — check posting.</td>
+              <td><span class="badge zoneC">C</span></td>
+              <td>25-35 min</td>
+            </tr>
+            <tr>
+              <td><strong>Bayview — SFPD Crime Lab (1995 Evans Ave) + OCME Lab (1 Newhall St)</strong> — Criminalist / Forensic analyst <span class="badge batch2">New</span></td>
+              <td>LONGEST: N Judah east → T-Third southbound to Evans Ave area → bus/walk. Same Bayview cluster as Anresco. ~60-80 min.</td>
+              <td><span class="badge zoneD">D</span></td>
+              <td>60-80 min</td>
+            </tr>
+            <tr>
+              <td><strong>Mission Bay — Helen Diller (1450 3rd St)</strong> — SRA cancer labs <span class="badge batch3">New</span></td>
+              <td>N Judah eastbound to Embarcadero → T-Third southbound to UCSF/Chase Center (16th St) → walk to 1450 3rd St.</td>
+              <td><span class="badge zoneB">B</span></td>
+              <td>40-50 min</td>
+            </tr>
+            <tr>
+              <td><strong>Mission Bay/Potrero — Proctor Foundation (490 Illinois St)</strong> — SRA eye-research labs <span class="badge batch3">New</span></td>
+              <td>N Judah eastbound to Embarcadero → T-Third southbound to UCSF/Chase Center → walk east to 490 Illinois St.</td>
+              <td><span class="badge zoneB">B</span></td>
+              <td>40-50 min</td>
+            </tr>
+            <tr>
+              <td><strong>Mission Bay — Kaiser MOB (1600 Owens St)</strong> — Lab assistant <span class="badge batch3">New</span></td>
+              <td>N Judah eastbound to Embarcadero → T-Third southbound to Mission Bay → walk to 1600 Owens St.</td>
+              <td><span class="badge zoneB">B</span></td>
+              <td>40-50 min</td>
+            </tr>
+            <tr>
+              <td><strong>Dogpatch — Wildtype (953 Indiana St)</strong> — RA food chemistry <span class="badge batch3">New</span></td>
+              <td>N Judah eastbound to Embarcadero → T-Third southbound to 22nd St station → walk east to Indiana St.</td>
+              <td><span class="badge zoneB">B</span></td>
+              <td>45-60 min</td>
+            </tr>
+            <tr>
+              <td><strong>SoMa — CPMC Research Institute (475 Brannan St)</strong> — Research associate <span class="badge batch3">New</span></td>
+              <td>N Judah eastbound to Embarcadero → walk south ~15 min or Muni bus to Brannan St.</td>
+              <td><span class="badge zoneB">B/C</span></td>
+              <td>35-45 min</td>
+            </tr>
+            <tr>
+              <td><strong>GG Park — de Young Museum (50 Hagiwara Tea Garden Dr)</strong> — Conservation tech <span class="badge batch3">New</span></td>
+              <td>N Judah eastbound to 9th Ave & Irving → walk north into the park (~15 min) or 44 bus.</td>
+              <td><span class="badge zoneA">A</span></td>
+              <td>20-30 min</td>
+            </tr>
+            <tr>
+              <td><strong>Sunset — Chinese Hospital Sunset (1800 31st Ave)</strong> — Blood-draw support <span class="badge batch3">New</span></td>
+              <td>WALKABLE: ~1 mile from 21st & Judah — walk (~20 min) or 29 Sunset bus. Easiest commute on this list.</td>
+              <td><span class="badge zoneA">A</span></td>
+              <td>15-20 min</td>
+            </tr>
+            <tr>
+              <td><strong>FiDi — CBP Laboratory (630 Sansome St, Rm 1450)</strong> — Chemist (federal) <span class="badge batch3">New</span></td>
+              <td>N Judah eastbound to Embarcadero or Montgomery → walk north to 630 Sansome St.</td>
+              <td><span class="badge zoneC">C</span></td>
+              <td>30-40 min</td>
+            </tr>
+            <tr>
+              <td><strong>Civic Center — City lab postings (101 Grove St area)</strong> — 2402/2463 classes <span class="badge batch3">New</span></td>
+              <td>N Judah eastbound to Civic Center → short walk. Duty station varies — confirm on posting.</td>
+              <td><span class="badge zoneC">C</span></td>
+              <td>30-40 min</td>
+            </tr>
+            <tr>
+              <td><strong>Civic Center — Asian Art Museum (200 Larkin St)</strong> — Conservation/collections <span class="badge batch3">New</span></td>
+              <td>N Judah eastbound to Civic Center → walk to 200 Larkin St.</td>
+              <td><span class="badge zoneC">C</span></td>
+              <td>30-40 min</td>
+            </tr>
+            <tr>
+              <td><strong>Civic Center — Bridge HIV (25 Van Ness Ave)</strong> — RA specimen processing <span class="badge batch3">New</span></td>
+              <td>N Judah eastbound to Van Ness or Civic Center → walk to 25 Van Ness Ave.</td>
+              <td><span class="badge zoneC">C</span></td>
+              <td>30-40 min</td>
+            </tr>
+            <tr>
+              <td><strong>Market/Hayes — US Mint (155 Hermann St)</strong> — Production QC (federal) <span class="badge batch3">New</span></td>
+              <td>N Judah eastbound to Van Ness → walk south to 155 Hermann St.</td>
+              <td><span class="badge zoneC">C</span></td>
+              <td>30-40 min</td>
+            </tr>
+            <tr>
+              <td><strong>SoMa — City Clinic (356 7th St)</strong> — Lab/phlebotomy support <span class="badge batch3">New</span></td>
+              <td>N Judah eastbound to Civic Center → walk south to 356 7th St (~10 min).</td>
+              <td><span class="badge zoneC">C</span></td>
+              <td>30-40 min</td>
+            </tr>
+            <tr>
+              <td><strong>SoMa — SFMOMA (151 Third St)</strong> — Conservation tech <span class="badge batch3">New</span></td>
+              <td>N Judah eastbound to Powell or Montgomery → walk south to 151 Third St.</td>
+              <td><span class="badge zoneC">C</span></td>
+              <td>30-40 min</td>
+            </tr>
+            <tr>
+              <td><strong>Mission — Dandelion Chocolate (2600 16th St)</strong> — Production QC <span class="badge batch3">New</span></td>
+              <td>N Judah eastbound to Church & Duboce → J Church southbound to 16th & Church → walk east on 16th (~15 min).</td>
+              <td><span class="badge zoneC">C</span></td>
+              <td>40-50 min</td>
+            </tr>
+            <tr>
+              <td><strong>Mission/Bernal — CPMC Mission Bernal (3555 Cesar Chavez)</strong> — Lab assistant <span class="badge batch3">New</span></td>
+              <td>N Judah eastbound to Civic Center → BART southbound 1 stop to 24th St/Mission → 14/49 bus east or ~15-min walk.</td>
+              <td><span class="badge zoneC">C</span></td>
+              <td>45-60 min</td>
+            </tr>
+            <tr>
+              <td><strong>Chinatown — NEMS (1520 Stockton St)</strong> — Lab assistant <span class="badge batch3">New</span></td>
+              <td>N Judah eastbound to Powell → 30 Stockton bus north into Chinatown (or cable car) to 1520 Stockton.</td>
+              <td><span class="badge zoneC">C</span></td>
+              <td>40-50 min</td>
+            </tr>
+            <tr>
+              <td><strong>Fisherman's Wharf — Aquarium of the Bay (PIER 39)</strong> — Biologist I water quality <span class="badge batch3">New</span></td>
+              <td>N Judah eastbound to Embarcadero → F-line streetcar east to Pier 39 (or ~20-min walk).</td>
+              <td><span class="badge zoneC">C</span></td>
+              <td>40-55 min</td>
+            </tr>
           </tbody>
         </table>
         <p style="font-size:.84rem;color:var(--muted)">*Times are directional estimates from 21st & Judah, not measured, based on SFMTA schedules. Confirm live via <a href="https://www.sfmta.com" target="_blank" rel="noopener">SFMTA</a> / <a href="https://511.org" target="_blank" rel="noopener">511.org</a> / Google Maps transit directions from “21st Ave & Judah St, San Francisco, CA” + destination. Night/off-peak service is thinner; confirm first/last N Judah times for your shift.</p>
@@ -237,7 +451,8 @@
         <p class="sec-sub">How every row was verified, no hallucinations.</p>
         <ul class="clean">
           <li><strong>✓ Verified = official website + SF physical address checked this session.</strong> Every employer was checked against its official website and a verifiable SF address (sources on each card).</li>
-          <li><strong>✓ Official apply channel only:</strong> UCSF careers.ucsf.edu / aprecruit.ucsf.edu, Gladstone gladstone.wd503.myworkdayjobs.com, CZ Biohub job-boards.greenhouse.io/biohub, Vitalant vitalant.wd12.myworkdayjobs.com, NCIRE recruiting.ultipro.com, Vir job-boards.greenhouse.io/virbiotechnologyinc, Twist twistbioscience.com/company/careers, Anresco anresco.com/careers → Indeed company page (employer-managed, not recruiter), City careers.sf.gov, Kaiser kaiserpermanentejobs.org, UCSF Health jobs.ucsfmedicalcenter.org.</li>
+          <li><strong>✓ Official apply channel only (Pass 1):</strong> UCSF careers.ucsf.edu / aprecruit.ucsf.edu, Gladstone gladstone.wd503.myworkdayjobs.com, CZ Biohub job-boards.greenhouse.io/biohub, Vitalant vitalant.wd12.myworkdayjobs.com, NCIRE recruiting.ultipro.com, Vir job-boards.greenhouse.io/virbiotechnologyinc, Twist twistbioscience.com/company/careers, Anresco anresco.com/careers → Indeed company page (employer-managed, not recruiter), City careers.sf.gov, Kaiser kaiserpermanentejobs.org, UCSF Health jobs.ucsfmedicalcenter.org.</li>
+          <li><strong>✓ Official apply channel only (Pass 2, new):</strong> SFSU careers.pageuppeople.com/873/sf, USF usfca.wd5.myworkdayjobs.com/USF_Staff, CCSF jobs.ccsf.edu, Cal Academy job-boards.greenhouse.io/californiaacademyofsciences, Sutter jobs.sutterhealth.org, Chinese Hospital chinesehospital-sf.org (direct), SFVA via usajobs.gov, Quest careers.questdiagnostics.com, Labcorp careers.labcorp.com, SFUSD via jobs.redroverk12.com/org/sfusd (official district ATS), Exploratorium exploratorium.edu/about/jobs/current-openings, Red Cross americanredcross.wd1.myworkdayjobs.com, plus City careers.sf.gov (classes 2403, 2481, 8259) and UCSF Health jobs.ucsfmedicalcenter.org (Stanyan + Hyde hospitals).</li>
           <li><strong>✓ No recruiters / 3rd-party “easy apply” as apply channel:</strong> Aggregator sites (Indeed, ZipRecruiter, Glassdoor) used only for discovery, never as official apply link (except Anresco’s own Indeed company page which is employer-managed and linked from anresco.com).</li>
           <li><strong>✓ Physical SF address verification:</strong> Anresco 1375 Van Dyke Ave SF 94124 (YellowPages, LinkedIn, Bloomberg), Vir 1800 Owens St Ste 900 SF 94158 (SEC filing, Bloomberg, GlobalData), Twist 455 Mission Bay Blvd South SF 94158 (SEC S-1, OpenGov, CA SOS), Gladstone 1650 Owens St SF 94158, UCSF 505 Parnassus & 600 16th St SF, Vitalant 270 Masonic Ave SF 94118, NCIRE 4150 Clement St SF 94121, etc.</li>
           <li><strong>✓ Match score:</strong> Calculated from your resume (HPLC, NMR, spectroscopy, chromatography, sample prep, GLP, QC, synthesis) vs role requirements.</li>
@@ -274,7 +489,9 @@
           <li><strong>Tailored cover letter:</strong> Brief (3 short paragraphs), polite, professional, references SF location and N Judah commute, explains why you’re a good fit, asks for interview.</li>
           <li><strong>Official links only:</strong> No recruiters; apply button goes to official employer site.</li>
         </ul>
-        <p><strong>All 20 subpages:</strong> <a href="jobs/job-01.html">job-01</a> · <a href="jobs/job-02.html">job-02</a> · <a href="jobs/job-03.html">job-03</a> · <a href="jobs/job-04.html">job-04</a> · <a href="jobs/job-05.html">job-05</a> · <a href="jobs/job-06.html">job-06</a> · <a href="jobs/job-07.html">job-07</a> · <a href="jobs/job-08.html">job-08</a> · <a href="jobs/job-09.html">job-09</a> · <a href="jobs/job-10.html">job-10</a> · <a href="jobs/job-11.html">job-11</a> · <a href="jobs/job-12.html">job-12</a> · <a href="jobs/job-13.html">job-13</a> · <a href="jobs/job-14.html">job-14</a> · <a href="jobs/job-15.html">job-15</a> · <a href="jobs/job-16.html">job-16</a> · <a href="jobs/job-17.html">job-17</a> · <a href="jobs/job-18.html">job-18</a> · <a href="jobs/job-19.html">job-19</a> · <a href="jobs/job-20.html">job-20</a></p>
+        <p><strong>All 60 subpages — Pass 1:</strong> <a href="jobs/job-01.html">job-01</a> · <a href="jobs/job-02.html">job-02</a> · <a href="jobs/job-03.html">job-03</a> · <a href="jobs/job-04.html">job-04</a> · <a href="jobs/job-05.html">job-05</a> · <a href="jobs/job-06.html">job-06</a> · <a href="jobs/job-07.html">job-07</a> · <a href="jobs/job-08.html">job-08</a> · <a href="jobs/job-09.html">job-09</a> · <a href="jobs/job-10.html">job-10</a> · <a href="jobs/job-11.html">job-11</a> · <a href="jobs/job-12.html">job-12</a> · <a href="jobs/job-13.html">job-13</a> · <a href="jobs/job-14.html">job-14</a> · <a href="jobs/job-15.html">job-15</a> · <a href="jobs/job-16.html">job-16</a> · <a href="jobs/job-17.html">job-17</a> · <a href="jobs/job-18.html">job-18</a> · <a href="jobs/job-19.html">job-19</a> · <a href="jobs/job-20.html">job-20</a></p>
+        <p><strong>Pass 2:</strong> <a href="jobs/job-21.html">job-21</a> · <a href="jobs/job-22.html">job-22</a> · <a href="jobs/job-23.html">job-23</a> · <a href="jobs/job-24.html">job-24</a> · <a href="jobs/job-25.html">job-25</a> · <a href="jobs/job-26.html">job-26</a> · <a href="jobs/job-27.html">job-27</a> · <a href="jobs/job-28.html">job-28</a> · <a href="jobs/job-29.html">job-29</a> · <a href="jobs/job-30.html">job-30</a> · <a href="jobs/job-31.html">job-31</a> · <a href="jobs/job-32.html">job-32</a> · <a href="jobs/job-33.html">job-33</a> · <a href="jobs/job-34.html">job-34</a> · <a href="jobs/job-35.html">job-35</a> · <a href="jobs/job-36.html">job-36</a> · <a href="jobs/job-37.html">job-37</a> · <a href="jobs/job-38.html">job-38</a> · <a href="jobs/job-39.html">job-39</a> · <a href="jobs/job-40.html">job-40</a></p>
+        <p><strong>Pass 3 (new):</strong> <a href="jobs/job-41.html">job-41</a> · <a href="jobs/job-42.html">job-42</a> · <a href="jobs/job-43.html">job-43</a> · <a href="jobs/job-44.html">job-44</a> · <a href="jobs/job-45.html">job-45</a> · <a href="jobs/job-46.html">job-46</a> · <a href="jobs/job-47.html">job-47</a> · <a href="jobs/job-48.html">job-48</a> · <a href="jobs/job-49.html">job-49</a> · <a href="jobs/job-50.html">job-50</a> · <a href="jobs/job-51.html">job-51</a> · <a href="jobs/job-52.html">job-52</a> · <a href="jobs/job-53.html">job-53</a> · <a href="jobs/job-54.html">job-54</a> · <a href="jobs/job-55.html">job-55</a> · <a href="jobs/job-56.html">job-56</a> · <a href="jobs/job-57.html">job-57</a> · <a href="jobs/job-58.html">job-58</a> · <a href="jobs/job-59.html">job-59</a> · <a href="jobs/job-60.html">job-60</a></p>
       </div>
     </section>
 
@@ -289,7 +506,7 @@
 
     <footer>
       <p>
-        Built for JobSearchSF · Research snapshot <span id="today"></span> · Branch <code>arena/01a087a8-jobsearchsf</code> · 20 verified SF entries, each with official sources.<br>
+        Built for JobSearchSF · Research snapshot <span id="today"></span> (Pass 1 + Pass 2 + Pass 3 triple-verified Sept 9, 2026) · Branch <code>arena/01a087ee-jobsearchsf</code> · 60 verified SF entries, each with official sources.<br>
         Origin: 21st Ave & Judah St, SF 94122 (N Judah Muni). All routes estimated — confirm live via SFMTA / 511 / Google Transit.<br>
         Apply directly via official employer portals only. No recruiters. Re-verify live postings before applying. No hallucinations — every employer checked against official site + SF address this session.
       </p>
@@ -297,6 +514,7 @@
   </main>
 
   <script src="assets/js/data.js"></script>
+  <script src="assets/js/tracker.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>
