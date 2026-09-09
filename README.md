@@ -1,6 +1,6 @@
-# JobSearchSF 🧪 — 20 Verified SF Chemistry & Lab Jobs (N Judah Commute)
+# JobSearchSF 🧪 — 40 Verified SF Chemistry & Lab Jobs (N Judah Commute)
 
-A clean, GitHub Pages site for **20 verified San Francisco chemistry / research / lab-science opportunities**, ranked by **SFMTA public transit from 21st Ave & Judah St (Inner Sunset)**, with **official direct-apply links, match scores, and step-by-step apply guides**.
+A clean, GitHub Pages site for **40 verified San Francisco chemistry / research / lab-science opportunities** (20 Pass 1 + 20 Pass 2, double-verified Sept 9, 2026), ranked by **SFMTA public transit from 21st Ave & Judah St (Inner Sunset)**, with **official direct-apply links, match scores, and step-by-step apply guides**.
 
 Live site (GitHub Pages): served from repo root at `https://<owner>.github.io/JobSearchSF/` — pure static, no build.
 
@@ -9,7 +9,7 @@ Live site (GitHub Pages): served from repo root at `https://<owner>.github.io/Jo
 - **20 verified entries** (not hallucinations) — each with real SF physical address verified via official site + secondary trusted directory (YellowPages, LinkedIn, Bloomberg, SEC filing, GlobalData, OpenGov)
 - **Table view**: Company, Position, Verified badge, Match Score (how well your B.S. Chemistry resume fits), Official Source Link, Apply Guide subpage
 - **Detailed cards**: Transit route from 21st & Judah (N Judah + 38 Geary / 43 Masonic / T-Third), fit notes, requirements, official apply channel (direct, no recruiters), sources for manual review
-- **Subpage per job** (`jobs/job-01.html` through `job-20.html`): 
+- **Subpage per job** (`jobs/job-01.html` through `job-40.html`): 
   - 10-step beginner guide (verify live, create account, download tailored docs, fill, upload, submit, track, interview prep, follow-up)
   - Tailored resume (TXT + PDF) emphasizing skills for that role
   - Tailored cover letter (TXT + PDF) — brief, polite, professional, 3 paragraphs for quick hiring manager approval
@@ -31,7 +31,7 @@ Live site (GitHub Pages): served from repo root at `https://<owner>.github.io/Jo
 - Publication: 14-Aminocamptothecins — ACS J. Med. Chem., Feb 2011
 - Location: 21st Ave & Judah St, SF 94122 — must be N Judah Muni or SF city bus commutable; remote only if verified direct
 
-## 20 Verified Entries (SF, N Judah Commutable)
+## 40 Verified Entries (SF, N Judah Commutable)
 
 All verified via official sources, no hallucinations:
 
@@ -56,17 +56,40 @@ All verified via official sources, no hallucinations:
 19. Kaiser Permanente SF Medical Center — Lab Assistant — 2425 Geary Blvd 94115 — Zone A/B — 65% — kaiserpermanentejobs.org
 20. UCSF Medical Center / UCSF Health — Lab Assistant / Helper — 505 Parnassus & Mission Bay — Zone A — 70% — jobs.ucsfmedicalcenter.org
 
+21. SFSU Chemistry & Biochemistry — Instructional Support Technician — 1600 Holloway Ave — Zone A — 82% — PageUp
+22. USF Chemistry — Lab Manager / Research Technician — 2130 Fulton St — Zone A/B — 80% — Workday
+23. CCSF Sciences — Lab Technician / Instructional Aide — 50 Frida Kahlo Way — Zone B — 78% — jobs.ccsf.edu
+24. Cal Academy IBSS — Research Lab / Collections Support — 55 Music Concourse Dr — Zone A — 68% — Greenhouse
+25. UCSF Health Stanyan Hospital (fka St. Mary's) — Lab Assistant — 450 Stanyan St — Zone A/B — 66% — jobs.ucsfmedicalcenter.org
+26. Sutter CPMC Davies — Pathology Lab Assistant II — Castro & Duboce — Zone B — 70% — jobs.sutterhealth.org
+27. Sutter CPMC Van Ness — Lab Assistant — 1101 Van Ness Ave — Zone B — 66% — jobs.sutterhealth.org
+28. Chinese Hospital — Clinical Lab Technician Req #12756 (LIVE, CPT required — flagged) — 845 Jackson St — Zone C — 48% — chinesehospital-sf.org
+29. UCSF at ZSFG — Staff Research Associate — 1001 Potrero Ave — Zone C — 76% — careers.ucsf.edu
+30. SFVA federal — Bio Science / Medical Technician — 4150 Clement St — Zone B/C — 68% — usajobs.gov
+31. Quest Diagnostics — Specimen Processor / Lab Assistant — 2198 15th St — Zone B — 55% — careers.questdiagnostics.com
+32. Labcorp — Lab Assistant (6 SF sites) — 148 Noe St+ — Zone B — 55% — careers.labcorp.com
+33. City SFPUC — Water Quality Technician 2481 — SFPUC labs — Zone C — 87% — careers.sf.gov
+34. SFPD Crime Lab — Criminalist I 8259 Chemical Analysis — 1995 Evans Ave — Zone D — 84% — careers.sf.gov
+35. Laguna Honda Hospital — Lab / Clinical Support — 375 Laguna Honda Blvd — Zone A/B — 64% — careers.sf.gov
+36. UCSF Health Hyde Hospital (fka Saint Francis) — Lab Assistant — 900 Hyde St — Zone C — 64% — jobs.ucsfmedicalcenter.org
+37. SFUSD — Science Lab / Classroom Support — 555 Franklin St — Zone C — 58% — Red Rover (official)
+38. Exploratorium — Exhibit / Science Technician — Pier 15/17 — Zone B — 52% — exploratorium.edu
+39. OCME — Forensic Laboratory Analyst 2403 — 1 Newhall St — Zone D — 90% — careers.sf.gov
+40. Red Cross — Blood Collection / Biomedical Support — 1663 Market St — Zone B — 50% — Workday
+
+Plus 2 Pass-2 reviewed-but-excluded (honesty log): Kyntra Bio (corporate-only, no SF wet lab), Nurix (all 30 openings Brisbane).
+
 Plus 3 reviewed-but-excluded (honesty log): Cytokinetics South SF, Biotium Fremont, Plasmidsaurus South SF overnight.
 
 ## Files
 
 - `index.html` — main site with table, detailed cards, transit, remote, verification, resume sections
 - `assets/css/style.css` — clean, modern, responsive styling (N Judah green gradient, cards, table, badges, copy boxes)
-- `assets/js/data.js` — 20 verified entries with official sources, match scores, routes, verificationMethod, subpage links
-- `assets/js/app.js` — rendering, table + cards, filter by status, search, copy-paste, count
-- `jobs/job-01.html` through `job-20.html` — 20 subpages, each with 10-step beginner guide, tailored resume/cover/email copy boxes + download links, transit, verification
-- `assets/resume/` — base resume TXT+PDF + 20 tailored resumes TXT+PDF (job-01_resume.pdf etc.)
-- `assets/cover/` — base cover TXT+PDF + 20 tailored cover letters TXT+PDF + 20 intro emails TXT
+- `assets/js/data.js` — 40 verified entries with official sources, match scores, routes, verificationMethod, subpage links
+- `assets/js/app.js` — rendering, table + cards, filter by status/zone/batch, sort, search, copy-paste, count, tracker
+- `jobs/job-01.html` through `job-40.html` — 40 subpages, each with 10-step beginner guide, tailored resume/cover/email copy boxes + download links, transit, verification
+- `assets/resume/` — base resume TXT+PDF + 40 tailored resumes TXT+PDF (job-01_resume.pdf etc.)
+- `assets/cover/` — base cover TXT+PDF + 40 tailored cover letters TXT+PDF + 40 intro emails TXT
 - `assets/verification/VERIFICATION_LOG.txt` — line-by-line verification log, no hallucinations
 - `assets/verification/IMPROVEMENTS.md` — list of improvements implemented for easy apply
 - `.nojekyll` — GitHub Pages serves static site directly
@@ -115,8 +138,8 @@ python3 -m http.server 8000
 
 ## Publishing to GitHub Pages
 
-1. Push `arena/01a087a8-jobsearchsf` branch (already done)
-2. On GitHub → repo Settings → Pages → Source: Deploy from a branch → branch `arena/01a087a8-jobsearchsf` or `main` → folder `/ (root)`
+1. Push `arena/01a087ee-jobsearchsf` branch (already done)
+2. On GitHub → repo Settings → Pages → Source: Deploy from a branch → branch `arena/01a087ee-jobsearchsf` or `main` → folder `/ (root)`
 3. Site appears at `https://<owner>.github.io/JobSearchSF/`
 4. All relative paths work; .nojekyll ensures static serving
 

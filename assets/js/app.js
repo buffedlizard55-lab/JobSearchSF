@@ -1,4 +1,4 @@
-/* JobSearchSF — rendering & filtering (pure client-side) — 20 verified entries */
+/* JobSearchSF — rendering & filtering (pure client-side) — 40 verified entries */
 (function () {
   const STATUS_META = {
     "recently-posted": { cls: "badge recently-posted", label: "Recently posted" },
@@ -6,21 +6,31 @@
     "flag":             { cls: "badge flag", label: "Flagged" }
   };
   const ZONE_META = {
-    A: { cls: "badge zoneA", label: "Zone A — Shortest (~Inner Sunset/Parnassus)" },
-    B: { cls: "badge zoneB", label: "Zone B — Good (Mission Bay via N→T)" },
-    C: { cls: "badge zoneC", label: "Zone C — Moderate" },
-    D: { cls: "badge zoneD", label: "Zone D — Longest (Bayview)" },
+    A:   { cls: "badge zoneA", label: "Zone A — Shortest (~Inner Sunset/Parnassus)" },
+    "A/B": { cls: "badge zoneA", label: "Zone A/B — Short (Inner Sunset + nearby)" },
+    B:   { cls: "badge zoneB", label: "Zone B — Good (Mission Bay via N→T / direct N)" },
+    "B/C": { cls: "badge zoneB", label: "Zone B/C — Good-Moderate" },
+    C:   { cls: "badge zoneC", label: "Zone C — Moderate" },
+    D:   { cls: "badge zoneD", label: "Zone D — Longest (Bayview)" },
     Flagged: { cls: "badge zoneFlagged", label: "Flagged" }
   };
+  const ZONE_ORDER = { A: 0, "A/B": 1, B: 2, "B/C": 3, C: 4, D: 5 };
 
   function esc(s) {
     return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
-  function linkify(url) { return '<a href="' + esc(url) + '" target="_blank" rel="noopener">' + esc(url) + '</a>'; }
+  // applyLink fields contain "URL — search instructions"; extract clean URL for href
+  function cleanUrl(s) {
+    const m = String(s || "").match(/https?:\/\/[^\s\u2014\u2013>\"\]]+/);
+    return m ? m[0] : "#";
+  }
   function scoreBadge(score) {
     if (score >= 85) return '<span class="badge score-high">' + esc(score) + '% match</span>';
     if (score >= 70) return '<span class="badge score-mid">' + esc(score) + '% match</span>';
     return '<span class="badge score-low">' + esc(score) + '% match</span>';
+  }
+  function batchBadge(j) {
+    return (j.batch === 2) ? ' <span class="badge batch2">New in Pass 2</span>' : "";
   }
   function sourcesHtml(arr) {
     if (!arr || !arr.length) return "";
@@ -30,18 +40,24 @@
     }).join("");
     return '<div class="sources"><strong>Sources for manual review (official verified):</strong><ul>' + items + "</ul></div>";
   }
+  function trackerCell(j) {
+    if (window.JobTracker) return window.JobTracker.selectHtml(j.id);
+    return "";
+  }
 
   function jobRow(j) {
     const st = STATUS_META[j.status] || STATUS_META.monitor;
     const zm = ZONE_META[j.commuteZone] || ZONE_META.C;
     const verifiedBadge = j.verified ? '<span class="badge verified">✓ Verified</span>' : '<span class="badge flag">Unverified</span>';
+    const applyUrl = cleanUrl(j.applyLink);
     return (
       '<tr data-id="' + esc(j.id) + '">' +
-        '<td><div class="company">' + esc(j.company) + '</div><div class="role">' + esc(j.position) + '</div><div style="margin-top:6px"><span class="' + st.cls + '">' + esc(st.label) + '</span> <span class="' + zm.cls + '">' + esc(zm.label.split(" — ")[0]) + '</span></div></td>' +
+        '<td><div class="company">' + esc(j.company) + '</div><div class="role">' + esc(j.position) + '</div><div style="margin-top:6px"><span class="' + st.cls + '">' + esc(st.label) + '</span> <span class="' + zm.cls + '">' + esc(zm.label.split(" — ")[0]) + '</span>' + batchBadge(j) + '</div></td>' +
         '<td>' + verifiedBadge + '<div style="margin-top:6px;font-size:.78rem;color:#5f6f81">' + esc(j.verificationMethod || "Official site + address") + '</div></td>' +
         '<td>' + scoreBadge(j.matchScore || 0) + '<div style="margin-top:6px;font-size:.80rem">' + esc(j.fit ? j.fit.slice(0,90) + "..." : "") + '</div></td>' +
-        '<td><a href="' + esc(j.officialLink) + '" target="_blank" rel="noopener" class="btn btn-sm">Official site</a><div style="margin-top:6px;font-size:.78rem"><a href="' + esc(j.applyLink) + '" target="_blank" rel="noopener">' + esc(j.applyLink.slice(0,55)) + '...</a></div></td>' +
+        '<td><a href="' + esc(j.officialLink) + '" target="_blank" rel="noopener" class="btn btn-sm">Official site</a><div style="margin-top:6px;font-size:.78rem"><a href="' + esc(applyUrl) + '" target="_blank" rel="noopener">Apply direct →</a><br>' + esc(String(j.applyLink).slice(0,60)) + '...</div></td>' +
         '<td><a href="' + esc(j.subpage) + '" class="btn btn-sm btn-primary">Apply guide →</a><div style="margin-top:6px;font-size:.78rem">📍 ' + esc(j.location) + '</div></td>' +
+        '<td>' + trackerCell(j) + '</td>' +
       '</tr>'
     );
   }
@@ -50,12 +66,13 @@
     const st = STATUS_META[j.status] || STATUS_META.monitor;
     const zm = ZONE_META[j.commuteZone] || ZONE_META.C;
     const verifiedBadge = j.verified ? '<span class="badge verified">✓ Verified — official site + SF address</span>' : '';
+    const applyUrl = cleanUrl(j.applyLink);
     let flag = "";
     if (j.flag) flag = '<div class="flag-note">⚠ ' + esc(j.flag) + "</div>";
     return (
       '<article class="job" data-id="' + esc(j.id) + '" id="' + esc(j.id) + '">' +
         "<div>" +
-          '<h4>' + esc(j.company) + ' ' + verifiedBadge + '</h4>' +
+          '<h4>' + esc(j.company) + ' ' + verifiedBadge + batchBadge(j) + '</h4>' +
           '<div class="role">' + esc(j.position) + "</div>" +
           '<div class="meta-row"><span><span class="' + st.cls + '">' + esc(st.label) + '</span> <span class="' + zm.cls + '">' + esc(zm.label) + '</span> ' + scoreBadge(j.matchScore) + '</span></div>' +
           '<div class="meta-row"><span>📍 ' + esc(j.location) + '</span><span>🏢 ' + esc(j.company) + '</span></div>' +
@@ -64,7 +81,7 @@
           '<div class="field"><div class="lbl">Status & verification</div><div class="val">' + esc(j.statusNote) + '<br><br><strong>Verified:</strong> ' + esc(j.verificationMethod) + '</div></div>' +
           '<div class="field"><div class="lbl">Transit from ~21st & Judah (N Judah + bus)</div><div class="val">' + esc(j.route) + '</div></div>' +
           '<div class="field"><div class="lbl">Fit & requirements</div><div class="val"><strong>Match:</strong> ' + esc(j.matchScore) + '% — ' + esc(j.fit) + '<br><br><strong>Req:</strong> ' + esc(j.requirements) + '</div></div>' +
-          '<div class="field apply"><div class="lbl">Apply directly (official)</div><div class="val"><strong>' + esc(j.applyChannel) + '</strong><br><a href="' + esc(j.applyLink) + '" target="_blank" rel="noopener">' + esc(j.applyLink) + '</a><br><br><a href="' + esc(j.subpage) + '" class="btn btn-primary btn-sm">Open step-by-step apply guide →</a><br><br><a href="' + esc(j.officialLink) + '" target="_blank" rel="noopener">' + esc(j.officialLink) + '</a></div></div>' +
+          '<div class="field apply"><div class="lbl">Apply directly (official)</div><div class="val"><strong>' + esc(j.applyChannel) + '</strong><br><a href="' + esc(applyUrl) + '" target="_blank" rel="noopener">Apply direct →</a><br>' + esc(j.applyLink) + '<br><br><a href="' + esc(j.subpage) + '" class="btn btn-primary btn-sm">Open step-by-step apply guide →</a><br><br><a href="' + esc(j.officialLink) + '" target="_blank" rel="noopener">' + esc(j.officialLink) + '</a></div></div>' +
         "</div>" +
         flag +
         sourcesHtml(j.sources) +
@@ -85,6 +102,7 @@
     }
     if (countEl) countEl.textContent = list.length + " verified rows (re-verify live postings before applying)";
     if (tableCountEl) tableCountEl.textContent = list.length + " jobs";
+    if (window.JobTracker) window.JobTracker.renderSummary();
 
     const refContainer = document.getElementById("monitor-ref");
     if (refContainer && window.MONITOR_REFERENCE) {
@@ -102,16 +120,51 @@
     }
   }
 
-  function filterBy(status, searchTerm) {
+  function currentFilters() {
+    const activeStatus = document.querySelector(".f-status.active");
+    const activeZone = document.querySelector(".f-zone.active");
+    const activeBatch = document.querySelector(".f-batch.active");
+    const sortSel = document.getElementById("sort-select");
+    const searchInput = document.getElementById("search-input");
+    return {
+      status: activeStatus ? activeStatus.dataset.status : "all",
+      zone: activeZone ? activeZone.dataset.zone : "all",
+      batch: activeBatch ? activeBatch.dataset.batch : "all",
+      sort: sortSel ? sortSel.value : "match",
+      term: searchInput ? searchInput.value : ""
+    };
+  }
+
+  function applyFilters() {
+    const f = currentFilters();
     let list = window.JOBS_DATA || [];
-    if (status && status !== "all") {
-      list = list.filter(function (j) { return j.status === status; });
+    if (f.status && f.status !== "all") {
+      list = list.filter(function (j) { return j.status === f.status; });
     }
-    if (searchTerm) {
-      const q = searchTerm.toLowerCase();
+    if (f.zone && f.zone !== "all") {
+      // Zone filter matches base letter: A matches A and A/B; B matches B, A/B, B/C; etc.
+      list = list.filter(function (j) {
+        return String(j.commuteZone || "").split("/").indexOf(f.zone) !== -1;
+      });
+    }
+    if (f.batch && f.batch !== "all") {
+      const b = parseInt(f.batch, 10);
+      list = list.filter(function (j) { return (j.batch || 1) === b; });
+    }
+    if (f.term) {
+      const q = f.term.toLowerCase();
       list = list.filter(function (j) {
         return (j.company + " " + j.position + " " + j.location + " " + j.fit + " " + j.requirements).toLowerCase().includes(q);
       });
+    }
+    // sort (copy first)
+    list = list.slice();
+    if (f.sort === "match") {
+      list.sort(function (a, b) { return (b.matchScore || 0) - (a.matchScore || 0); });
+    } else if (f.sort === "zone") {
+      list.sort(function (a, b) { return (ZONE_ORDER[a.commuteZone] ?? 9) - (ZONE_ORDER[b.commuteZone] ?? 9) || (b.matchScore - a.matchScore); });
+    } else if (f.sort === "company") {
+      list.sort(function (a, b) { return String(a.company).localeCompare(String(b.company)); });
     }
     render(list);
     const empty = document.getElementById("jobs-empty");
@@ -119,24 +172,35 @@
   }
 
   window.addEventListener("DOMContentLoaded", function () {
-    const list = window.JOBS_DATA || [];
-    render(list);
-    // filters
+    applyFilters();
     document.querySelectorAll(".f-status").forEach(function (b) {
       b.addEventListener("click", function () {
         document.querySelectorAll(".f-status").forEach(function (x) { x.classList.remove("active"); });
         b.classList.add("active");
-        const term = document.getElementById("search-input") ? document.getElementById("search-input").value : "";
-        filterBy(b.dataset.status, term);
+        applyFilters();
+      });
+    });
+    document.querySelectorAll(".f-zone").forEach(function (b) {
+      b.addEventListener("click", function () {
+        document.querySelectorAll(".f-zone").forEach(function (x) { x.classList.remove("active"); });
+        b.classList.add("active");
+        applyFilters();
+      });
+    });
+    document.querySelectorAll(".f-batch").forEach(function (b) {
+      b.addEventListener("click", function () {
+        document.querySelectorAll(".f-batch").forEach(function (x) { x.classList.remove("active"); });
+        b.classList.add("active");
+        applyFilters();
       });
     });
     const searchInput = document.getElementById("search-input");
     if (searchInput) {
-      searchInput.addEventListener("input", function () {
-        const activeBtn = document.querySelector(".f-status.active");
-        const status = activeBtn ? activeBtn.dataset.status : "all";
-        filterBy(status, searchInput.value);
-      });
+      searchInput.addEventListener("input", applyFilters);
+    }
+    const sortSel = document.getElementById("sort-select");
+    if (sortSel) {
+      sortSel.addEventListener("change", applyFilters);
     }
     const el = document.getElementById("today");
     if (el) el.textContent = new Date().toISOString().slice(0, 10);
