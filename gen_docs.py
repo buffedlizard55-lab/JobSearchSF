@@ -124,6 +124,7 @@ def rank_lines(hay):
 def clean_company(company):
     c = re.split(r"\s+[-\u2014]\s+", company)[0].strip()
     c = re.sub(r"\s*\((?:[^)]*)\)\s*$", "", c).strip()
+    c = re.sub(r",?\s+(?:Inc\.?|LLC|L\.L\.C\.?|Ltd\.?|Corp\.?|Corporation|Company|Co\.)$", "", c).strip()
     return c or company
 
 
@@ -137,7 +138,21 @@ def role_type(job):
     base = re.split(r"\s+[-\u2014]\s+", pos)[0].strip()
     base = re.sub(r"\s*\((?:[^()]*?(?:LIVE|JPF\d+|REF\d+|\d{7,}|\$)[^()]*?)\)\s*", "", base).strip()
     base = re.sub(r"\s*[-\u2014]\s*(?:SF|San Francisco)\s*$", "", base).strip()
-    base = re.sub(r"\s*\(class \d+\)\s*", " ", base).strip(" .,-")
+    base = re.sub(r"\s*\((?:class\s*)?\d{3,6}\)\s*", " ", base).strip(" .,-")
+    # pipe-separated worksite / salary noise: keep the head, keep a descriptive parenthetical
+    if "|" in base:
+        head, _, tail = base.partition("|")
+        head = head.strip(" .,-")
+        paren = re.search(r"\([^()]*\)\s*$", tail)
+        base = head + (" " + paren.group(0).strip() if paren else "")
+    base = re.sub(r"\s+\(SF,? (?:on-?site|hybrid|remote)[^)]*\)$", "", base, flags=re.I).strip()
+    # drop parentheticals that carry a job id, a class number or a city - noise in a resume line
+    base = re.sub(r"\s*\((?:[^()]*?(?:JPF\d+|REF\w+|PBT-\w+|RTF\w+|class \d+|\d{6,}|South San Francisco|San Francisco|SF)[^()]*?)\)\s*", " ", base).strip(" .,-")
+    # "Junior / Assistant / Associate / Full Specialist" -> "Junior Specialist"
+    parts = [x.strip() for x in re.split(r"\s*/\s*", base) if x.strip()]
+    if len(parts) > 1 and all(len(x.split()) <= 3 for x in parts):
+        first, noun = parts[0], parts[-1].split()[-1]
+        base = first if noun.lower() in first.lower() else "%s %s" % (first, noun)
     base = re.sub(r"\s+", " ", base)
     if len(base) < 3:
         base = pos[:60]
@@ -221,8 +236,9 @@ def resume_text(job=None):
         art = "an" if rt[:1].lower() in "aeiou" else "a"
         labels = [lower_first(p.split(":")[0].strip()) for p in ordered[:3]]
         focus_txt = (", ".join(labels[:-1]) + " and " + labels[-1]) if len(labels) > 1 else (labels[0] if labels else "")
-        mission = ("Seeking %s %s position in San Francisco, ideally in a lab where %s are part of the "
-                   "weekly routine." % (art, rt, focus_txt or "analytical chemistry and QC work"))
+        place = ("the San Francisco Bay Area" if str(job.get("commuteZone", "")) == "Flagged" else "San Francisco")
+        mission = ("Seeking %s %s position in %s, ideally in a lab where %s are part of the "
+                   "weekly routine." % (art, rt, place, focus_txt or "analytical chemistry and QC work"))
     summary = ("B.S. Chemistry (UC Santa Cruz, 2011) with hands-on bench experience in analytical and "
                "preparative chemistry: HPLC and chromatographic purification, NMR and UV-Vis "
                "characterization, sample preparation and extraction, and QC documentation under GLP. " + mission)
@@ -278,6 +294,15 @@ def order_experience(hay):
     return sorted(ALL_ROLES, key=lambda r: -score(r))
 
 
+def clip(text, n=260):
+    """Trim to n characters without cutting a word in half."""
+    text = text.strip()
+    if len(text) <= n:
+        return text
+    cut = text[:n].rsplit(" ", 1)[0].rstrip(" ,;.:")
+    return cut + "..."
+
+
 def wrap(text, width=92, cont=""):
     """Greedy wrap with an explicit continuation indent (keeps TXT aligned)."""
     words, lines, cur = text.split(), [], ""
@@ -304,10 +329,11 @@ def lower_first(phrase):
 def core_focus(job):
     """Short, honest description of what the role actually involves (not the quals list)."""
     req = re.sub(r"\s*\(per (posting|the posting)[^)]*\)", "", job.get("requirements", "")).strip()
-    first = re.split(r"[.;]", req)[0].strip()
+    first = re.split(r"[.;](?=\s|$)", req)[0].strip()
     low = first.lower()
-    if not first or re.search(r"(baccalaureate|b\.s\.|minimum|requires|years of|degree|qualification)", low):
-        return "steady bench throughput and documentation that holds up"
+    if (not first or len(first) < 20
+            or re.search(r"(baccalaureate|b\.s\.|m\.s\.|minimum|requires|years of|degree|qualification|diploma)", low)):
+        return "steady bench throughput and careful documentation"
     if len(first) > 86:
         cut = first[:86].rsplit(" ", 1)[0].rstrip(" ,;.:")
         first = cut + "..."
@@ -356,6 +382,10 @@ def cover_text(job):
              "request. Thank you for your time.")
     out = []
     A = out.append
+    if job.get("status") == "flag":
+        A("INTERNAL NOTE FOR BRIAN - DO NOT SEND THIS ONE YET: %s"
+          % clip(" ".join((job.get("flag") or "see the row's verification note").split()), 260))
+        A("")
     A("Brian")
     A("San Francisco, CA 94122")
     A("(707) 596-8503 | Brian.j1274@gmail.com")
@@ -441,6 +471,10 @@ def email_text(job):
           "suits you, and I can start on short notice.")
     out = []
     A = out.append
+    if job.get("status") == "flag":
+        A("INTERNAL NOTE FOR BRIAN - DO NOT SEND THIS ONE YET: %s"
+          % clip(" ".join((job.get("flag") or "see the row's verification note").split()), 260))
+        A("")
     A(subject)
     A("")
     A("Dear %s," % sal)

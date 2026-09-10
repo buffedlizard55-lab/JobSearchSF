@@ -5,9 +5,9 @@ SUMMARY
 B.S. Chemistry (UC Santa Cruz, 2011) with hands-on bench experience in analytical and
 preparative chemistry: HPLC and chromatographic purification, NMR and UV-Vis
 characterization, sample preparation and extraction, and QC documentation under GLP.
-Seeking a Staff Research Associate II (STAFF001526) position in San Francisco, ideally in
-a lab where records & data, research support and chromatography & purification are part of
-the weekly routine.
+Seeking a Staff Research Associate II position in San Francisco, ideally in a lab where
+records & data, research support and chromatography & purification are part of the weekly
+routine.
 
 CORE LABORATORY SKILLS
 - Records & data: electronic lab records, LIMS-style data entry, Excel summaries,

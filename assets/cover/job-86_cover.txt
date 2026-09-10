@@ -9,11 +9,11 @@ General Proximity
 
 Hiring Manager,
 
-I am writing to apply for the Scientist / Sr Scientist position at General Proximity. I
-hold a B.S. in Chemistry from UC Santa Cruz (2011), with bench experience in
-chromatography & purification and wet chemistry from roles at Threshold Pharmaceuticals,
-MicroConstants and Quintara Biosciences, and a peer-reviewed publication in the ACS
-Journal of Medicinal Chemistry (February 2011).
+I am writing to apply for the Scientist position at General Proximity. I hold a B.S. in
+Chemistry from UC Santa Cruz (2011), with bench experience in chromatography &
+purification and wet chemistry from roles at Threshold Pharmaceuticals, MicroConstants and
+Quintara Biosciences, and a peer-reviewed publication in the ACS Journal of Medicinal
+Chemistry (February 2011).
 
 The heart of your posting is DMPK expertise: ADME (CYP inhibition/induction, PPB,
 microsomal stability, Caco-2).... That is close to work I have actually done: running HPLC

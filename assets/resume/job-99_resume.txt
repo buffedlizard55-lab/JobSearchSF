@@ -5,9 +5,9 @@ SUMMARY
 B.S. Chemistry (UC Santa Cruz, 2011) with hands-on bench experience in analytical and
 preparative chemistry: HPLC and chromatographic purification, NMR and UV-Vis
 characterization, sample preparation and extraction, and QC documentation under GLP.
-Seeking an Analytical Development Manager / Sr Manager position in San Francisco, ideally
-in a lab where chromatography & purification, QC & compliance and spectroscopy &
-characterization are part of the weekly routine.
+Seeking an Analytical Development Manager position in San Francisco, ideally in a lab
+where chromatography & purification, QC & compliance and spectroscopy & characterization
+are part of the weekly routine.
 
 CORE LABORATORY SKILLS
 - Chromatography & purification: HPLC runs, column and flash purification, fraction
