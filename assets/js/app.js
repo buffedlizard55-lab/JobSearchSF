@@ -31,7 +31,8 @@
   }
   var lastList = [];
   function batchBadge(j) {
-    if (j.batch === 5) return ' <span class="badge batch5">New in Pass 5</span>';
+    if (j.batch === 6) return ' <span class="badge batch6">New in Pass 6</span>';
+    if (j.batch === 5) return ' <span class="badge batch5">Pass 5</span>';
     if (j.batch === 4) return ' <span class="badge batch4">Pass 4</span>';
     if (j.batch === 3) return ' <span class="badge batch3">Pass 3</span>';
     if (j.batch === 2) return ' <span class="badge batch2">Pass 2</span>';
@@ -151,7 +152,7 @@
 
   function applyFilters() {
     const f = currentFilters();
-    let list = window.JOBS_DATA || [];
+    let list = (window.JOBS_DATA || []).filter(function (j) { return !!j && !!j.id; });
     if (f.status && f.status !== "all") {
       list = list.filter(function (j) { return j.status === f.status; });
     }

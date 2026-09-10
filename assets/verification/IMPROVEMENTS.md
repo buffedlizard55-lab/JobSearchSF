@@ -371,3 +371,40 @@ Each has: table row + detailed card + subpage + tailored clean resume (no commut
 - **BridgeBio senior levels:** Sr Manager / Manager/Sr Manager / Assoc Director — 7-10 yrs experience — flagged senior but chemistry domain perfect.
 - **Capable street address:** not published — stated as SF per official posting — address confirmed at interview — not hallucinated.
 
+## Pass 6 (2026-09-09) — documents fixed, site repaired, 20 verified entries added
+
+Implemented:
+
+1. **All 120 resumes, cover letters and intro emails rewritten** by one writer (`gen_docs.py`) instead of the
+   five per-batch generators that had drifted apart. 362 TXT/PDF files regenerated: no transit text, no
+   "tailored" self-description, no tracker metadata, no placeholders, no requirements pasted into experience
+   claims, one page per resume, US spelling, dated with the real audit date.
+2. **All 120 subpages regenerated from a single template** so the step lists, download links, copy buttons,
+   verification lists and status callouts are identical in structure across passes; transit stays only in the
+   "Getting there" section.
+3. **Master resume + base cover letter rewritten** (the base letter had "I live at 21st Ave & Judah St and
+   commute via N Judah" plus `[Date]`/`[Company Name]` placeholders).
+4. **20 new entries (job-101 … job-120)** added to `data.js`: 14 live UCSF AP Recruit recruitments read from
+   the official open-recruitments list with their published windows, 3 City of SF laboratory classes
+   (2402 / 2416 / 2463) with their exam-window reality stated, and 3 live-but-flagged alternates
+   (Plasmidsaurus, Addition Therapeutics x2) whose worksites are South San Francisco.
+5. **Two stale claims corrected from earlier passes**: job-73 (Anthropic RA, Biology) is withdrawn on the
+   official board; job-92 (City Chemist 2486) closed its filing window 2026-05-08 and its fit text no longer
+   implies GC-MS/ICP-MS/LIMS experience.
+6. **`data.js` array elision removed** (a stray `,` after job-80 was silently producing an `undefined`
+   121st row, making on-page counters disagree with the table and breaking any sort/reduce over the array),
+   plus a defensive falsy-row filter in `app.js` so the class of bug cannot return.
+7. **UI updated for six passes**: Pass 6 badge, `Pass 1+2+3+4+5+6` filter chip, `New: Pass 6 (101-120)`
+   filter, `All 120` status chip, `.badge.batch6` style, 120 counts in the title/headers/subpage nav,
+   sitemap extended to 120 job URLs, Pass-6 subpage link list, Pass-6 rows in the transit cluster table.
+8. **Mechanical audit wired up**: `write_logs.py` re-scans every generated document for transit words, zone
+   labels, placeholder tokens and tracker meta and writes the result into
+   `assets/verification/VERIFICATION_LOG_PASS6.txt` (currently 0 violations / 362 documents), and records
+   per-row official sources, dates, corrections and the deliberately-not-added employer list.
+
+Known limits (deliberate, not oversights): UCSF postings state a campus, not a street address, so those rows
+say "see posting"; salary appears only where the posting printed it; JS-only employer portals (Kaiser, Sutter,
+Chinese Hospital, Vitalant, Quest) could not be re-verified this pass, so no new rows were invented for them;
+and ten of the 14 UCSF rows are past their printed review date, which is stated in each row's status note
+rather than smoothed over.
+

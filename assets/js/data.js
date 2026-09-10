@@ -1817,7 +1817,7 @@ window.JOBS_DATA = [
   {
     id: "job-73",
     company: "Anthropic (public benefit corp) — AI for science, Life Sciences team",
-    position: "Research Associate, Biology — Entry-level bench scientist (molecular biology + biochemistry; LIVE)",
+    position: "Research Associate, Biology - entry-level bench scientist (molecular biology + biochemistry; WITHDRAWN 2026-09-09, watch for repost)",
     verified: true,
     verificationMethod: "LIVE official Greenhouse posting (job 5285248008) fetched Sept 9, 2026 — full description + application form on official board; anthropic.com/careers official; 548 Market St SF office corroborated",
     matchScore: 76,
@@ -1830,9 +1830,9 @@ window.JOBS_DATA = [
     applyChannel: "Official Anthropic Greenhouse board (direct employer; careers hub anthropic.com/careers)",
     requirements: "Hands-on research experience in molecular biology/biochemistry/related (B.S./M.S. preferred); PCR, gel electrophoresis, molecular cloning, plasmid prep; aseptic technique; bacterial/mammalian cell culture; nucleic acid extraction/purification/quantification.",
     fit: "Good-plus — fully hands-on bench role (explicitly NO AI/ML model development): protein expression & purification (affinity, SEC, IEX) + enzyme kinetics preferred — strong overlap with your biochemistry; $65-85K.",
-    status: "recently-posted",
-    statusNote: "Live on the OFFICIAL Greenhouse board (checked Sept 9, 2026 — full posting + application form served). Third-party mirrors conflict; trust the official board. Re-verify at apply time.",
-    flag: "Some third-party mirrors show 'no longer accepting applications' — the official board (source of truth) still serves the posting; if the official board has since closed it, the role cycles and re-posts.",
+    status: "monitor",
+    statusNote: "CLOSED at 2026-09-09 audit: job-boards.greenhouse.io/anthropic/jobs/5285248008 now serves \"The job you are looking for is no longer open\" (verified by fetching the official board, which redirects with ?error=true). Was listed LIVE in Pass 4 - that claim is corrected here.",
+    flag: "Irregularity found on this pass: the posting was live in Pass 4 and withdrawn before Pass 6. Anthropic re-posts bench roles on the same board, so keep the alert; do not apply to a cached or aggregator copy of this req.",
     subpage: "jobs/job-73.html",
     sources: [
       { label: "Anthropic official Greenhouse board (job 5285248008)", url: "https://job-boards.greenhouse.io/anthropic/jobs/5285248008" },
@@ -2014,7 +2014,6 @@ window.JOBS_DATA = [
       { label: "Deciduous employer profile + address (biospace employer page)", url: "https://www.biospace.com/employer/2038082/deciduous-therapeutics/" }
     ]
   },
-,
 
   {
     id: "job-81",
@@ -2308,10 +2307,10 @@ window.JOBS_DATA = [
     applyLink: "https://careers.sf.gov/role/?id=3743990012833986 — official City SmartRecruiters apply (REF60430L U00049)",
     applyChannel: "Official City & County of SF portal (direct civil service, SmartRecruiters)",
     requirements: "B.S. Chemistry or closely related lab science; GC-MS, ICP-AES/ICP-MS, HPLC, LIMS, TNI QC desirable; CA driver's license; water/wastewater analysis.",
-    fit: "Perfect match — B.S. Chemistry + GC-MS/ICP-MS/HPLC/LIMS/TNI QC is exactly your analytical chemistry background; citywide chemist is top target.",
-    status: "recently-posted",
-    statusNote: "LIVE verified on careers.sf.gov/role/?id=3743990012833986 (checked Sept 2026) — Published May 4 2026 Deadline May 8 2026 11:59 PM PST — apply before deadline; $104,806-$147,524.",
-    flag: "Civil-service exam window — deadline May 8 2026 11:59 PM PST; apply immediately via official portal.",
+    fit: "Meets the stated minimum on education (baccalaureate in chemistry or closely related science) plus a CA driver's licence; GC-MS, ICP-AES/ICP-MS, TNI-ELAP QC and LIMS are desirable rather than required, so this is a realistic apply with a training commitment - not a claim of instrument experience you do not have.",
+    status: "monitor",
+    statusNote: "Window CLOSED: the careers.sf.gov announcement for Chemist (2486) citywide exam REF60430L (U00049) opened Mon Apr 27, 2026 and closed 11:59 pm Fri May 8, 2026 - confirmed on the role page on 2026-09-09, including the City's 05/04/2026 correction note. Salary printed on the page: $104,806-$147,524. The eligible list lasts 12 months and may be extended; the next exam cycle is what to watch for.",
+    flag: "Two corrections on this row: (1) Pass 5 called it LIVE - the filing deadline passed two months before this audit. (2) The old fit text implied GC-MS, ICP-MS and LIMS were skills you have; on the City page those are DESIRABLE qualifications, not minimums, and your background is HPLC/UV-Vis/NMR plus wet chemistry. Apply on the minimums and say you will train on GC/ICP.",
     subpage: "jobs/job-92.html",
     sources: [
       { label: "City Chemist LIVE posting REF60430L (official careers.sf.gov)", url: "https://careers.sf.gov/role/?id=3743990012833986" },
@@ -2521,13 +2520,533 @@ window.JOBS_DATA = [
     ]
   },
 
+  {
+    id: "job-101",
+    company: "University of California, San Francisco - Liver Center / Medicine (Maher Lab)",
+    position: "Junior Specialist - Liver cell isolation, analysis & immunology core (JPF06065)",
+    verified: true,
+    verificationMethod: "Official UCSF AP Recruit posting page JPF06065 (fetched 2026-09-09)",
+    matchScore: 92,
+    batch: 6,
+    location: "UCSF, San Francisco (Mission Bay campus - see posting for building/room)",
+    commuteZone: "B",
+    route: "ZONE B - N Judah eastbound to Embarcadero, then T-Third to 23rd St/mission Bay; or 49-Van Ness to Mission Bay. ~35-50 min door to door. Confirm with SFMTA trip planner.",
+    officialLink: "https://aprecruit.ucsf.edu/JPF06065",
+    applyLink: "https://aprecruit.ucsf.edu/JPF06065 - apply on UCSF's official AP Recruit portal",
+    applyChannel: "UCSF Academic Personnel portal (direct hire, no recruiter). Create an AP Recruit account, upload CV + cover letter, and enter reference contacts. No fee, no third party.",
+    requirements: "Baccalaureate or 4+ years relevant research experience; demonstrated knowledge of chemistry sufficient to prepare and pH laboratory solutions; instrument care (perfusion pumps, centrifuges, incubators, biosafety cabinets); records and recharge accounting; occasional nights/weekends; Word and Excel. Cell-culture experience preferred.",
+    fit: "Best fit in this pass - the posting explicitly asks for chemistry knowledge for solution prep and pH, plus instrument upkeep and record keeping, which is exactly the Quintara / MicroConstants work. Core-facility pace, not publish-or-perish.",
+    status: "recently-posted",
+    statusNote: "Application window: open May 1, 2026; review May 16, 2026 (past - still reviewed while unfilled); applications accepted until Nov 1, 2027 (as printed on the official posting list, 2026-09-09). Verified by fetching the posting page itself. The posting's own apply link points to aprecruit.ucsf.edu/JPF06025 for the same recruitment - use the JPF06065 page if the JPF06025 link does not resolve. A reasonable estimate published with the posting: $55,000-$58,600 (UC Table 24B estimate printed on the posting).",
+    flag: "Occasional nights/weekends required (human liver availability); confirm the schedule fits your needs.",
+    subpage: "jobs/job-101.html",
+    sources: [
+      { label: "UCSF AP Recruit posting JPF06065 (official)", url: "https://aprecruit.ucsf.edu/JPF06065" },
+      { label: "UCSF open recruitments list (official)", url: "https://aprecruit.ucsf.edu/apply" }
+    ]
+  },
+
+  {
+    id: "job-102",
+    company: "University of California, San Francisco - Helen Diller Family Comprehensive Cancer Center (McCormick Lab)",
+    position: "Junior Specialist - Biochemistry, enzymatic and plate-based assays (JPF05785)",
+    verified: true,
+    verificationMethod: "Official UCSF AP Recruit open-recruitments list aprecruit.ucsf.edu/apply (fetched 2026-09-09) - JPF05785 listed with open date Sep 5, 2025",
+    matchScore: 87,
+    batch: 6,
+    location: "UCSF, San Francisco (Mission Bay campus - see posting for building/room)",
+    commuteZone: "B",
+    route: "ZONE B - N Judah eastbound to Embarcadero, then T-Third to 23rd St/mission Bay; or 49-Van Ness to Mission Bay. ~35-50 min door to door. Confirm with SFMTA trip planner.",
+    officialLink: "https://aprecruit.ucsf.edu/JPF05785",
+    applyLink: "https://aprecruit.ucsf.edu/JPF05785 - apply on UCSF's official AP Recruit portal",
+    applyChannel: "UCSF Academic Personnel portal (direct hire, no recruiter). Create an AP Recruit account, upload CV + cover letter, and enter reference contacts. No fee, no third party.",
+    requirements: "Baccalaureate or 4+ years research experience; prior laboratory work required; biochemistry background preferred with enzymatic and plate-based assays (ELISA, luminescent); chromatography systems such as FPLC or HPLC preferred; tissue culture, electrophoresis, western blotting, protein purification useful.",
+    fit: "Chromatography is listed as preferred, not required, and the posting says it is a good step for someone building toward further training - matches a B.S. with HPLC and purification experience.",
+    status: "recently-posted",
+    statusNote: "Application window: open Sep 5, 2025; review Feb 15, 2026 (past - committee keeps reviewing while unfilled); applications accepted until Mar 5, 2027 (as printed on the official posting list, 2026-09-09). Verified from the official posting page content indexed by UCSF; the review date has passed, so apply and note availability. A reasonable estimate published with the posting: $55,000-$58,600 (UC Table 24B estimate printed on the posting).",
+    flag: "One-year appointment with possibility of renewal (per the posting).",
+    subpage: "jobs/job-102.html",
+    sources: [
+      { label: "UCSF AP Recruit posting JPF05785 (official)", url: "https://aprecruit.ucsf.edu/JPF05785" },
+      { label: "UCSF open recruitments list (official)", url: "https://aprecruit.ucsf.edu/apply" }
+    ]
+  },
+
+  {
+    id: "job-103",
+    company: "University of California, San Francisco - Helen Diller Family Comprehensive Cancer Center (Ashworth Lab)",
+    position: "Junior or Assistant Research Specialist - Cancer genetics research support (JPF06131)",
+    verified: true,
+    verificationMethod: "Official UCSF AP Recruit open-recruitments list aprecruit.ucsf.edu/apply (fetched 2026-09-09) - JPF06131 listed with open date Jul 9, 2026",
+    matchScore: 80,
+    batch: 6,
+    location: "UCSF, San Francisco (Mission Bay campus - see posting for building/room)",
+    commuteZone: "B",
+    route: "ZONE B - N Judah eastbound to Embarcadero, then T-Third to 23rd St/mission Bay; or 49-Van Ness to Mission Bay. ~35-50 min door to door. Confirm with SFMTA trip planner.",
+    officialLink: "https://aprecruit.ucsf.edu/JPF06131",
+    applyLink: "https://aprecruit.ucsf.edu/JPF06131 - apply on UCSF's official AP Recruit portal",
+    applyChannel: "UCSF Academic Personnel portal (direct hire, no recruiter). Create an AP Recruit account, upload CV + cover letter, and enter reference contacts. No fee, no third party.",
+    requirements: "Junior rank: baccalaureate or 4+ years research experience. Assistant rank: master's or bachelor's with 3+ years. Research execution, data analysis, manuscript and grant support (per posting).",
+    fit: "Entry rank is open to a B.S. with research experience; your publication and medicinal-chemistry internship read well for a cancer-genetics lab.",
+    status: "recently-posted",
+    statusNote: "Application window: open Jul 9, 2026; review Jul 24, 2026 (past - reviewed while unfilled); applications accepted until Jan 9, 2028 (as printed on the official posting list, 2026-09-09). Posted within the last two months - one of the newest SF lab openings on this site.",
+    flag: "Check the posting for the specific techniques the lab wants before tailoring the CV.",
+    subpage: "jobs/job-103.html",
+    sources: [
+      { label: "UCSF AP Recruit posting JPF06131 (official)", url: "https://aprecruit.ucsf.edu/JPF06131" },
+      { label: "UCSF open recruitments list (official)", url: "https://aprecruit.ucsf.edu/apply" }
+    ]
+  },
+
+  {
+    id: "job-104",
+    company: "University of California, San Francisco - Biochemistry & Biophysics (DeRisi Lab)",
+    position: "Junior / Assistant / Associate Specialist - Host-pathogen biology and diagnostics (JPF05798)",
+    verified: true,
+    verificationMethod: "Official UCSF AP Recruit open-recruitments list aprecruit.ucsf.edu/apply (fetched 2026-09-09) - JPF05798 listed with open date Sep 17, 2025",
+    matchScore: 79,
+    batch: 6,
+    location: "UCSF, San Francisco (Mission Bay campus - see posting for building/room)",
+    commuteZone: "B",
+    route: "ZONE B - N Judah eastbound to Embarcadero, then T-Third to 23rd St/mission Bay; or 49-Van Ness to Mission Bay. ~35-50 min door to door. Confirm with SFMTA trip planner.",
+    officialLink: "https://aprecruit.ucsf.edu/JPF05798",
+    applyLink: "https://aprecruit.ucsf.edu/JPF05798 - apply on UCSF's official AP Recruit portal",
+    applyChannel: "UCSF Academic Personnel portal (direct hire, no recruiter). Create an AP Recruit account, upload CV + cover letter, and enter reference contacts. No fee, no third party.",
+    requirements: "Baccalaureate (or 4+ years research experience) for Junior rank; laboratory work in molecular biology / microbiology; microscopy and assay work typical for the lab (per posting).",
+    fit: "A top-tier basic-science department that hires B.S. specialists; the review date is close, so apply first and refine later.",
+    status: "recently-posted",
+    statusNote: "Application window: open Sep 17, 2025; review Sep 15, 2026 - apply now for full consideration; applications accepted until Mar 17, 2027 (as printed on the official posting list, 2026-09-09). URGENT: the full-consideration date printed on the posting is 6 days after this audit.",
+    flag: "Apply by Sep 15, 2026 for full consideration (per posting).",
+    subpage: "jobs/job-104.html",
+    sources: [
+      { label: "UCSF AP Recruit posting JPF05798 (official)", url: "https://aprecruit.ucsf.edu/JPF05798" },
+      { label: "UCSF open recruitments list (official)", url: "https://aprecruit.ucsf.edu/apply" }
+    ]
+  },
+
+  {
+    id: "job-105",
+    company: "University of California, San Francisco - School of Dentistry - Cell & Tissue Biology (Choksi Lab)",
+    position: "Junior Specialist - Developmental biology lab research support (JPF06179)",
+    verified: true,
+    verificationMethod: "Official UCSF AP Recruit open-recruitments list aprecruit.ucsf.edu/apply (fetched 2026-09-09) - JPF06179 listed with open date Jul 30, 2026",
+    matchScore: 75,
+    batch: 6,
+    location: "UCSF, San Francisco (Mission Bay campus - see posting for building/room)",
+    commuteZone: "B",
+    route: "ZONE B - N Judah eastbound to Embarcadero, then T-Third to 23rd St/mission Bay; or 49-Van Ness to Mission Bay. ~35-50 min door to door. Confirm with SFMTA trip planner.",
+    officialLink: "https://aprecruit.ucsf.edu/JPF06179",
+    applyLink: "https://aprecruit.ucsf.edu/JPF06179 - apply on UCSF's official AP Recruit portal",
+    applyChannel: "UCSF Academic Personnel portal (direct hire, no recruiter). Create an AP Recruit account, upload CV + cover letter, and enter reference contacts. No fee, no third party.",
+    requirements: "Baccalaureate or 4+ years research experience; research under supervision; materials must list current/pending qualifications (per posting).",
+    fit: "Entry-level specialist rank with a stated B.S. route; bench technique is trained in place.",
+    status: "recently-posted",
+    statusNote: "Application window: open Jul 30, 2026; review Aug 14, 2026 (past - reviewed while unfilled); applications accepted until Jan 30, 2028 (as printed on the official posting list, 2026-09-09). Newest department in this group (opened Jul 30, 2026).",
+    flag: "",
+    subpage: "jobs/job-105.html",
+    sources: [
+      { label: "UCSF AP Recruit posting JPF06179 (official)", url: "https://aprecruit.ucsf.edu/JPF06179" },
+      { label: "UCSF open recruitments list (official)", url: "https://aprecruit.ucsf.edu/apply" }
+    ]
+  },
+
+  {
+    id: "job-106",
+    company: "University of California, San Francisco - School of Dentistry - Orofacial Sciences (Zhang Lab)",
+    position: "Junior Specialist - Research support, cell and molecular methods (JPF06193)",
+    verified: true,
+    verificationMethod: "Official UCSF AP Recruit open-recruitments list aprecruit.ucsf.edu/apply (fetched 2026-09-09) - JPF06193 listed with open date Aug 11, 2026",
+    matchScore: 74,
+    batch: 6,
+    location: "UCSF, San Francisco (Mission Bay campus - see posting for building/room)",
+    commuteZone: "B",
+    route: "ZONE B - N Judah eastbound to Embarcadero, then T-Third to 23rd St/mission Bay; or 49-Van Ness to Mission Bay. ~35-50 min door to door. Confirm with SFMTA trip planner.",
+    officialLink: "https://aprecruit.ucsf.edu/JPF06193",
+    applyLink: "https://aprecruit.ucsf.edu/JPF06193 - apply on UCSF's official AP Recruit portal",
+    applyChannel: "UCSF Academic Personnel portal (direct hire, no recruiter). Create an AP Recruit account, upload CV + cover letter, and enter reference contacts. No fee, no third party.",
+    requirements: "Baccalaureate or 4+ years research experience; laboratory techniques per posting; documentation and data management.",
+    fit: "Very fresh posting means less competition from earlier applicant pools.",
+    status: "recently-posted",
+    statusNote: "Application window: open Aug 11, 2026; review Aug 26, 2026 (past - reviewed while unfilled); applications accepted until Feb 11, 2028 (as printed on the official posting list, 2026-09-09). Posted 2026-08-11 - the most recently opened recruitment in this pass.",
+    flag: "",
+    subpage: "jobs/job-106.html",
+    sources: [
+      { label: "UCSF AP Recruit posting JPF06193 (official)", url: "https://aprecruit.ucsf.edu/JPF06193" },
+      { label: "UCSF open recruitments list (official)", url: "https://aprecruit.ucsf.edu/apply" }
+    ]
+  },
+
+  {
+    id: "job-107",
+    company: "University of California, San Francisco - Biochemistry & Biophysics (Martens Lab)",
+    position: "Junior or Assistant Specialist - Cytoskeleton / biophysics bench work (JPF06056)",
+    verified: true,
+    verificationMethod: "Official UCSF AP Recruit open-recruitments list aprecruit.ucsf.edu/apply (fetched 2026-09-09) - JPF06056 listed with open date Apr 27, 2026",
+    matchScore: 76,
+    batch: 6,
+    location: "UCSF, San Francisco (Mission Bay campus - see posting for building/room)",
+    commuteZone: "B",
+    route: "ZONE B - N Judah eastbound to Embarcadero, then T-Third to 23rd St/mission Bay; or 49-Van Ness to Mission Bay. ~35-50 min door to door. Confirm with SFMTA trip planner.",
+    officialLink: "https://aprecruit.ucsf.edu/JPF06056",
+    applyLink: "https://aprecruit.ucsf.edu/JPF06056 - apply on UCSF's official AP Recruit portal",
+    applyChannel: "UCSF Academic Personnel portal (direct hire, no recruiter). Create an AP Recruit account, upload CV + cover letter, and enter reference contacts. No fee, no third party.",
+    requirements: "Baccalaureate (or 4+ years research experience) for Junior rank; master's or bachelor's plus 3 years for Assistant rank; microscopy and biochemical methods per posting.",
+    fit: "Biochemistry-heavy bench role in a department that runs a specialist series rather than a PhD-only postdoc track.",
+    status: "recently-posted",
+    statusNote: "Application window: open Apr 27, 2026; review Jun 28, 2026 (past - reviewed while unfilled); applications accepted until Oct 27, 2027 (as printed on the official posting list, 2026-09-09).",
+    flag: "",
+    subpage: "jobs/job-107.html",
+    sources: [
+      { label: "UCSF AP Recruit posting JPF06056 (official)", url: "https://aprecruit.ucsf.edu/JPF06056" },
+      { label: "UCSF open recruitments list (official)", url: "https://aprecruit.ucsf.edu/apply" }
+    ]
+  },
+
+  {
+    id: "job-108",
+    company: "University of California, San Francisco - Anatomy (Feinberg Lab)",
+    position: "Junior Specialist - Biomaterials and cell-based assays (JPF06049)",
+    verified: true,
+    verificationMethod: "Official UCSF AP Recruit open-recruitments list aprecruit.ucsf.edu/apply (fetched 2026-09-09) - JPF06049 listed with open date Apr 29, 2026",
+    matchScore: 74,
+    batch: 6,
+    location: "UCSF, San Francisco (Mission Bay campus - see posting for building/room)",
+    commuteZone: "B",
+    route: "ZONE B - N Judah eastbound to Embarcadero, then T-Third to 23rd St/mission Bay; or 49-Van Ness to Mission Bay. ~35-50 min door to door. Confirm with SFMTA trip planner.",
+    officialLink: "https://aprecruit.ucsf.edu/JPF06049",
+    applyLink: "https://aprecruit.ucsf.edu/JPF06049 - apply on UCSF's official AP Recruit portal",
+    applyChannel: "UCSF Academic Personnel portal (direct hire, no recruiter). Create an AP Recruit account, upload CV + cover letter, and enter reference contacts. No fee, no third party.",
+    requirements: "Baccalaureate or 4+ years research experience; cell culture, assay development and materials handling per posting.",
+    fit: "Biomaterials work leans on solution prep, sterile handling and careful records - transferable from your QC and purification background.",
+    status: "recently-posted",
+    statusNote: "Application window: open Apr 29, 2026; review May 14, 2026 (past - reviewed while unfilled); applications accepted until Oct 29, 2027 (as printed on the official posting list, 2026-09-09).",
+    flag: "",
+    subpage: "jobs/job-108.html",
+    sources: [
+      { label: "UCSF AP Recruit posting JPF06049 (official)", url: "https://aprecruit.ucsf.edu/JPF06049" },
+      { label: "UCSF open recruitments list (official)", url: "https://aprecruit.ucsf.edu/apply" }
+    ]
+  },
+
+  {
+    id: "job-109",
+    company: "University of California, San Francisco - Cardiovascular Research Institute (Huang Lab)",
+    position: "Junior Specialist - Regenerative biology and extreme physiology (JPF06073)",
+    verified: true,
+    verificationMethod: "Official UCSF AP Recruit open-recruitments list aprecruit.ucsf.edu/apply (fetched 2026-09-09) - JPF06073 listed with open date May 5, 2026",
+    matchScore: 72,
+    batch: 6,
+    location: "UCSF, San Francisco (Mission Bay campus - see posting for building/room)",
+    commuteZone: "B",
+    route: "ZONE B - N Judah eastbound to Embarcadero, then T-Third to 23rd St/mission Bay; or 49-Van Ness to Mission Bay. ~35-50 min door to door. Confirm with SFMTA trip planner.",
+    officialLink: "https://aprecruit.ucsf.edu/JPF06073",
+    applyLink: "https://aprecruit.ucsf.edu/JPF06073 - apply on UCSF's official AP Recruit portal",
+    applyChannel: "UCSF Academic Personnel portal (direct hire, no recruiter). Create an AP Recruit account, upload CV + cover letter, and enter reference contacts. No fee, no third party.",
+    requirements: "Baccalaureate or 4+ years research experience; molecular and cell biology methods per posting.",
+    fit: "Mission Bay institute with shared-core access; entry specialist rank.",
+    status: "recently-posted",
+    statusNote: "Application window: open May 5, 2026; review Jun 26, 2026 (past - reviewed while unfilled); applications accepted until Nov 5, 2027 (as printed on the official posting list, 2026-09-09).",
+    flag: "",
+    subpage: "jobs/job-109.html",
+    sources: [
+      { label: "UCSF AP Recruit posting JPF06073 (official)", url: "https://aprecruit.ucsf.edu/JPF06073" },
+      { label: "UCSF open recruitments list (official)", url: "https://aprecruit.ucsf.edu/apply" }
+    ]
+  },
+
+  {
+    id: "job-110",
+    company: "University of California, San Francisco - School of Dentistry - Cell & Tissue Biology (Sneddon Lab)",
+    position: "Junior / Assistant / Associate Specialist - Skin biology and stem cell models (JPF05968)",
+    verified: true,
+    verificationMethod: "Official UCSF AP Recruit open-recruitments list aprecruit.ucsf.edu/apply (fetched 2026-09-09) - JPF05968 listed with open date Feb 25, 2026",
+    matchScore: 71,
+    batch: 6,
+    location: "UCSF, San Francisco (Mission Bay campus - see posting for building/room)",
+    commuteZone: "B",
+    route: "ZONE B - N Judah eastbound to Embarcadero, then T-Third to 23rd St/mission Bay; or 49-Van Ness to Mission Bay. ~35-50 min door to door. Confirm with SFMTA trip planner.",
+    officialLink: "https://aprecruit.ucsf.edu/JPF05968",
+    applyLink: "https://aprecruit.ucsf.edu/JPF05968 - apply on UCSF's official AP Recruit portal",
+    applyChannel: "UCSF Academic Personnel portal (direct hire, no recruiter). Create an AP Recruit account, upload CV + cover letter, and enter reference contacts. No fee, no third party.",
+    requirements: "Baccalaureate (or 4+ years research experience) at Junior rank; cell culture and molecular techniques per posting.",
+    fit: "Culture-heavy role; your aseptic and purification habits are the entry ticket.",
+    status: "recently-posted",
+    statusNote: "Application window: open Feb 25, 2026; review Aug 1, 2026 (past - reviewed while unfilled); applications accepted until Aug 25, 2027 (as printed on the official posting list, 2026-09-09).",
+    flag: "",
+    subpage: "jobs/job-110.html",
+    sources: [
+      { label: "UCSF AP Recruit posting JPF05968 (official)", url: "https://aprecruit.ucsf.edu/JPF05968" },
+      { label: "UCSF open recruitments list (official)", url: "https://aprecruit.ucsf.edu/apply" }
+    ]
+  },
+
+  {
+    id: "job-111",
+    company: "University of California, San Francisco - School of Dentistry - Cell & Tissue Biology (Gong Lab)",
+    position: "Junior / Assistant / Associate / Full Specialist - Cardiac regeneration research (JPF05881)",
+    verified: true,
+    verificationMethod: "Official UCSF AP Recruit open-recruitments list aprecruit.ucsf.edu/apply (fetched 2026-09-09) - JPF05881 listed with open date Dec 2, 2025",
+    matchScore: 70,
+    batch: 6,
+    location: "UCSF, San Francisco (Mission Bay campus - see posting for building/room)",
+    commuteZone: "B",
+    route: "ZONE B - N Judah eastbound to Embarcadero, then T-Third to 23rd St/mission Bay; or 49-Van Ness to Mission Bay. ~35-50 min door to door. Confirm with SFMTA trip planner.",
+    officialLink: "https://aprecruit.ucsf.edu/JPF05881",
+    applyLink: "https://aprecruit.ucsf.edu/JPF05881 - apply on UCSF's official AP Recruit portal",
+    applyChannel: "UCSF Academic Personnel portal (direct hire, no recruiter). Create an AP Recruit account, upload CV + cover letter, and enter reference contacts. No fee, no third party.",
+    requirements: "Baccalaureate or 4+ years research experience at Junior rank; research execution, data analysis, and scholarly contribution per posting.",
+    fit: "Long window (accepts to Jun 2027) - realistic for a B.S. at the Junior rank.",
+    status: "recently-posted",
+    statusNote: "Application window: open Dec 2, 2025; review Dec 17, 2025 (past - reviewed while unfilled); applications accepted until Jun 2, 2027 (as printed on the official posting list, 2026-09-09).",
+    flag: "",
+    subpage: "jobs/job-111.html",
+    sources: [
+      { label: "UCSF AP Recruit posting JPF05881 (official)", url: "https://aprecruit.ucsf.edu/JPF05881" },
+      { label: "UCSF open recruitments list (official)", url: "https://aprecruit.ucsf.edu/apply" }
+    ]
+  },
+
+  {
+    id: "job-112",
+    company: "University of California, San Francisco - School of Dentistry - Cell & Tissue Biology (Bush Lab)",
+    position: "Junior / Assistant / Associate Specialist - Neural crest and developmental biology (JPF06050)",
+    verified: true,
+    verificationMethod: "Official UCSF AP Recruit open-recruitments list aprecruit.ucsf.edu/apply (fetched 2026-09-09) - JPF06050 listed with open date Apr 22, 2026",
+    matchScore: 68,
+    batch: 6,
+    location: "UCSF, San Francisco (Mission Bay campus - see posting for building/room)",
+    commuteZone: "B",
+    route: "ZONE B - N Judah eastbound to Embarcadero, then T-Third to 23rd St/mission Bay; or 49-Van Ness to Mission Bay. ~35-50 min door to door. Confirm with SFMTA trip planner.",
+    officialLink: "https://aprecruit.ucsf.edu/JPF06050",
+    applyLink: "https://aprecruit.ucsf.edu/JPF06050 - apply on UCSF's official AP Recruit portal",
+    applyChannel: "UCSF Academic Personnel portal (direct hire, no recruiter). Create an AP Recruit account, upload CV + cover letter, and enter reference contacts. No fee, no third party.",
+    requirements: "Baccalaureate or 4+ years research experience at Junior rank; imaging and molecular methods per posting.",
+    fit: "Developmental biology with heavy imaging; a stretch from chemistry but the rank and record-keeping demands fit.",
+    status: "recently-posted",
+    statusNote: "Application window: open Apr 22, 2026; review Jun 30, 2026 (past - reviewed while unfilled); applications accepted until Oct 22, 2027 (as printed on the official posting list, 2026-09-09).",
+    flag: "",
+    subpage: "jobs/job-112.html",
+    sources: [
+      { label: "UCSF AP Recruit posting JPF06050 (official)", url: "https://aprecruit.ucsf.edu/JPF06050" },
+      { label: "UCSF open recruitments list (official)", url: "https://aprecruit.ucsf.edu/apply" }
+    ]
+  },
+
+  {
+    id: "job-113",
+    company: "University of California, San Francisco - School of Dentistry - Orofacial Sciences (Momen-Heravi Lab)",
+    position: "Junior / Assistant / Associate Specialist - Extracellular vesicles and oral cancer biomarkers (JPF05770)",
+    verified: true,
+    verificationMethod: "Official UCSF AP Recruit open-recruitments list aprecruit.ucsf.edu/apply (fetched 2026-09-09) - JPF05770 listed with open date Sep 5, 2025",
+    matchScore: 67,
+    batch: 6,
+    location: "UCSF, San Francisco (Mission Bay campus - see posting for building/room)",
+    commuteZone: "B",
+    route: "ZONE B - N Judah eastbound to Embarcadero, then T-Third to 23rd St/mission Bay; or 49-Van Ness to Mission Bay. ~35-50 min door to door. Confirm with SFMTA trip planner.",
+    officialLink: "https://aprecruit.ucsf.edu/JPF05770",
+    applyLink: "https://aprecruit.ucsf.edu/JPF05770 - apply on UCSF's official AP Recruit portal",
+    applyChannel: "UCSF Academic Personnel portal (direct hire, no recruiter). Create an AP Recruit account, upload CV + cover letter, and enter reference contacts. No fee, no third party.",
+    requirements: "Baccalaureate or 4+ years research experience; molecular biology, EV isolation and assay work per posting.",
+    fit: "Biomarker/analytics flavour (isolation, quantification, documentation) suits a QC-trained chemist.",
+    status: "recently-posted",
+    statusNote: "Application window: open Sep 5, 2025; review Jan 31, 2026 (past - reviewed while unfilled); applications accepted until Mar 5, 2027 (as printed on the official posting list, 2026-09-09).",
+    flag: "",
+    subpage: "jobs/job-113.html",
+    sources: [
+      { label: "UCSF AP Recruit posting JPF05770 (official)", url: "https://aprecruit.ucsf.edu/JPF05770" },
+      { label: "UCSF open recruitments list (official)", url: "https://aprecruit.ucsf.edu/apply" }
+    ]
+  },
+
+  {
+    id: "job-114",
+    company: "University of California, San Francisco - Anatomy / Orthopaedic Surgery (Basbaum Lab)",
+    position: "Junior / Assistant / Associate / Full Specialist - Pain mechanisms and neurobiology (JPF05544)",
+    verified: true,
+    verificationMethod: "Official UCSF AP Recruit open-recruitments list aprecruit.ucsf.edu/apply (fetched 2026-09-09) - JPF05544 listed with open date Apr 23, 2025",
+    matchScore: 66,
+    batch: 6,
+    location: "UCSF, San Francisco (Mission Bay campus - see posting for building/room)",
+    commuteZone: "B",
+    route: "ZONE B - N Judah eastbound to Embarcadero, then T-Third to 23rd St/mission Bay; or 49-Van Ness to Mission Bay. ~35-50 min door to door. Confirm with SFMTA trip planner.",
+    officialLink: "https://aprecruit.ucsf.edu/JPF05544",
+    applyLink: "https://aprecruit.ucsf.edu/JPF05544 - apply on UCSF's official AP Recruit portal",
+    applyChannel: "UCSF Academic Personnel portal (direct hire, no recruiter). Create an AP Recruit account, upload CV + cover letter, and enter reference contacts. No fee, no third party.",
+    requirements: "Baccalaureate or 4+ years research experience at Junior rank; behavioural and histological methods per posting.",
+    fit: "Established department with a rolling specialist series; deadline pressure is the reason it is listed here rather than lower.",
+    status: "recently-posted",
+    statusNote: "Application window: open Apr 23, 2025; review Dec 15, 2025 (past - reviewed while unfilled); applications accepted until Oct 23, 2026 - closes in ~6 weeks (as printed on the official posting list, 2026-09-09). Window closes 2026-10-23; apply before then or it is gone.",
+    flag: "Deadline Oct 23, 2026 (printed on the official posting).",
+    subpage: "jobs/job-114.html",
+    sources: [
+      { label: "UCSF AP Recruit posting JPF05544 (official)", url: "https://aprecruit.ucsf.edu/JPF05544" },
+      { label: "UCSF open recruitments list (official)", url: "https://aprecruit.ucsf.edu/apply" }
+    ]
+  },
+
+  {
+    id: "job-115",
+    company: "City & County of San Francisco - Department of Public Health (class 2416)",
+    position: "Laboratory Technician II (2416) - SFDPH Public Health Laboratory, 101 Grove St (position-based test)",
+    verified: true,
+    verificationMethod: "careers.sf.gov role page 'Laboratory Technician II (2416) - DPH - 139184' (id 3743990002599958) fetched in full on 2026-09-09 - duties, minimum quals, location, shift, salary and department contact read off the City's own page",
+    matchScore: 86,
+    batch: 6,
+    location: "101 Grove Street, San Francisco, CA 94102 (Public Health Laboratory, SFDPH)",
+    commuteZone: "C",
+    route: "ZONE C - 43 Masonic from Judah & 21st Ave toward the Civic Center, or N Judah eastbound to Powell + 5 Fulton to AFDC/Civic Center. ~30-40 min door to door.",
+    officialLink: "https://careers.sf.gov/classifications/?classCode=2416",
+    applyLink: "https://careers.sf.gov/role/?id=3743990002599958 - City of SF SmartRecruiters portal (recruitment RTF0139183-01154737 / PBT-2416-139184)",
+    applyChannel: "Official City & County of San Francisco portal - direct civil-service hire, position-based test, never through a staffing firm",
+    requirements: "High school diploma or equivalent AND one (1) year of laboratory experience within the last five years assisting with preparation of cultures, media, reagents and specimens for microbiological exams (or equivalent to class 2402 work). Substitution per the City page: 15 semester units including one college lab course in chemistry or a biological science covers 6 months; 30 semester units with two such lab courses covers the full year. Duties: unpacking and centrifuging specimens, separating plasma/serum, preparing media and reagents, stains for microscopy, incubator/refrigerator temperature logs, QC on equipment, entering patient and specimen data into the lab information system, equipment maintenance, and assisting research projects.",
+    fit: "Closest City class to your record: the coursework substitution is chemistry-lab friendly, your paid lab terms are specimen/media/QC/records work, and the City prints this as an entry-to-journey assistant role rather than a licensed scientist post. Mon-Fri 8am-5pm with some Saturdays, per the announcement.",
+    status: "monitor",
+    statusNote: "Last City announcement for this exact posting opened Sep 13, 2023 and finally closed Sep 22, 2023, so there is no open filing window on 2026-09-09 - the role page stays published and states the eligible list 'may be used to fill future vacancies in this class' (Rule of 3). Salary shown on the class header: $81,692-$99,372; the 2023 announcement text printed $73,398-$89,336 for the common range at that time. Watch the class page and apply inside the first days of any new window.",
+    flag: "Civil-service mechanics: this is a position-based test for a specific vacancy, so you compete for the open seat rather than landing on a general list; the announcement also directs applicants to a required supplemental questionnaire (the 2023 posting linked an MS Form). A department contact is printed on the City page (Hanz Pagao, hanz.pagao@sfdph.org) - use it only to ask about the qualification review, never to apply outside the portal.",
+    subpage: "jobs/job-115.html",
+    sources: [
+      { label: "SFDPH Lab Technician II 2416 role page (official, fetched 2026-09-09)", url: "https://careers.sf.gov/role/?id=3743990002599958" },
+      { label: "City class 2416 classification page (official)", url: "https://careers.sf.gov/classifications/?classCode=2416" }
+    ]
+  },
+
+  {
+    id: "job-116",
+    company: "City & County of San Francisco - class 2402 Laboratory Technician I",
+    position: "Laboratory Technician I (2402) - entry-level City lab class (general window - watch the class page)",
+    verified: true,
+    verificationMethod: "careers.sf.gov class-2402 role page (id 743999809251111) fetched in full on 2026-09-09; class definition, minimum qualifications and the $72,332-$87,906 salary range are quoted from the City's own page, alongside the classification page",
+    matchScore: 80,
+    batch: 6,
+    location: "City departments that hire class 2402 (SFDPH Public Health Laboratory, 101 Grove St; other City labs as assigned)",
+    commuteZone: "C",
+    route: "ZONE C - 43 Masonic or N Judah + 5 Fulton to the Civic Center / AFDC area; SFPUC labs at 525 Golden Gate Ave are a short walk from Civic Center. ~25-40 min.",
+    officialLink: "https://careers.sf.gov/classifications/?classCode=2402",
+    applyLink: "https://careers.sf.gov/classifications/?classCode=2402 - open exams for this class are listed on the City's own careers site; apply only through careers.sf.gov",
+    applyChannel: "Official City & County of San Francisco portal (direct; entry-level class)",
+    requirements: "High school diploma or equivalent AND six (6) months of laboratory experience within the last five years: cleaning and sterilizing lab equipment, packing/unpacking and labeling supplies or specimens, preparing glassware for microbiological exams, keeping records of testing or patient information. Substitution per the City page: 15 semester units (or 22.5 quarter units) from an accredited college including one college laboratory course in chemistry or a biological science replaces the six months entirely. Duties include pipetting reagents, making up percentage reagents, autoclaving infectious waste, verifying and date-stamping incoming supplies, maintaining lab inventory, and aliquoting research specimens.",
+    fit: "This is the easiest City minimum to clear honestly: a B.S. in Chemistry with college lab coursework meets the substitution outright, and the duty list is the same glassware, reagent-prep, labeling and record-keeping work you did at Quintara and MicroConstants. Pay is lower than the scientist classes; it is a door in, not a destination.",
+    status: "monitor",
+    statusNote: "No open general filing window on 2026-09-09. The only live 2402 role page the City is serving (id 743999809251111, published Mar 3, 2022, recruitment REF3136I, salary $72,332-$87,906) is an Access to City Employment (ACE) exam - see the flag. Check the class page weekly; the City re-posts 2402 exams periodically and the ACE channel recurs too.",
+    flag: "IMPORTANT eligibility catch found while verifying: the 2402 page currently published is an ACE recruitment, which hires people with a disability and requires either a Certification of Disability from the California Department of Rehabilitation or a Veterans Preference Letter from the U.S. Department of Veterans Affairs. If you do not have one of those, do not apply through that announcement - wait for a general 2402 exam. Applying to the wrong channel wastes the window.",
+    subpage: "jobs/job-116.html",
+    sources: [
+      { label: "City 2402 role page incl. class definition + ACE eligibility text (official, fetched 2026-09-09)", url: "https://careers.sf.gov/role/?id=743999809251111" },
+      { label: "City class 2402 classification page (official)", url: "https://careers.sf.gov/classifications/?classCode=2402" }
+    ]
+  },
+
+  {
+    id: "job-117",
+    company: "City & County of San Francisco - Department of Public Health (class 2463)",
+    position: "Microbiologist I (2463) - SFDPH Public Health Laboratory - QUALIFICATION GAP, do not apply yet",
+    verified: true,
+    verificationMethod: "careers.sf.gov role page 'Microbiologist I - 2463 - Department of Public Health' (id 3743990001679838, REF26033Y / PBT-2463-134715) fetched in full on 2026-09-09; minimum qualifications, compensation and dates quoted from the City's own page",
+    matchScore: 34,
+    batch: 6,
+    location: "San Francisco Public Health Laboratories, Department of Public Health, San Francisco",
+    commuteZone: "C",
+    route: "ZONE C - 43 Masonic from Judah & 21st Ave toward the Civic Center / AFDC campus; N Judah + 5 Fulton as alternate. ~30-40 min.",
+    officialLink: "https://careers.sf.gov/classifications/?classCode=2463",
+    applyLink: "https://careers.sf.gov/role/?id=3743990001679838 - City portal; read the minimum qualifications before spending any time on it",
+    applyChannel: "Official City & County of San Francisco portal (position-based test, Rule of 3)",
+    requirements: "Baccalaureate with major course work in medical or public health bacteriology or microbiology AND a valid certificate as a public health microbiologist issued by the California state board of health. No experience substitution is listed for either. Duties: qualitative/quantitative diagnostic analysis of human, food and environmental specimens by serologic, molecular, agglutination and biochemical methods; smears/cultures and acid-fast bacilli microscopy; TB drug-susceptibility testing; reagent and supply inventory; equipment calibration, daily QC and troubleshooting; proficiency testing to federal regulation.",
+    fit: "The duties fit your QC and instrumentation habits, but the minimum qualifications do not: a chemistry degree without a microbiology major plus the California public health microbiologist certificate is a hard screen, and the City rejects on that basis rather than ranking you lower.",
+    status: "flag",
+    statusNote: "Listed deliberately as a blocked row so the requirement is visible instead of rediscovered in three months: the last City window for this posting ran Apr 25 - Jun 8, 2023 (class range $104,806-$182,936; the 2023 announcement printed $91,910-$129,402, steps 1-8, variable shifts), and the qualification screen would have excluded this application. To make this real you would need microbiology course work and the state certificate; the 2416 Laboratory Technician II class (job-115) is the same building and same lab without that gate.",
+    flag: "Not eligible as the record stands - B.S. Chemistry (UCSC 2011) is not a microbiology major and no CA public health microbiologist certificate is held. Do not apply to 2463 postings until that changes; do not let an agent or a 'we can get you around the certificate' offer touch this - both are disqualifiers and a scam tell.",
+    subpage: "jobs/job-117.html",
+    sources: [
+      { label: "SFDPH Microbiologist I 2463 role page (official, fetched 2026-09-09)", url: "https://careers.sf.gov/role/?id=3743990001679838" },
+      { label: "City class 2463 classification page (official)", url: "https://careers.sf.gov/classifications/?classCode=2463" }
+    ]
+  },
+
+  {
+    id: "job-118",
+    company: "Plasmidsaurus, Inc. (DNA/RNA sequencing services)",
+    position: "Lab Technician | San Francisco (library prep and sequencing instruments)",
+    verified: true,
+    verificationMethod: "Official Ashby posting 1dea5cc2-a669-4f22-8eaa-8e569745bd58 fetched 2026-09-09: location field 'San Francisco', on-site, full time, $72.5K-$82.5K plus equity, posted 2026-08-26; body text read in full",
+    matchScore: 84,
+    batch: 6,
+    location: "Posting lists San Francisco, but the body says 'This is an in-office in our South San Francisco, CA location' and hours are Tue-Sat 7pm-3am",
+    commuteZone: "Flagged",
+    route: "NOT an SF-commute row: South San Francisco worksite (BART/Caltrain + bus from 21st & Judah, ~60-80 min) on an overnight shift - outside the SF-only rule.",
+    officialLink: "https://plasmidsaurus.com",
+    applyLink: "https://jobs.ashbyhq.com/plasmidsaurus/1dea5cc2-a669-4f22-8eaa-8e569745bd58 - apply on Plasmidsaurus's official Ashby board",
+    applyChannel: "Official employer board (Ashby), direct hire - no recruiter, no agency",
+    requirements: "Minimum 2 years hands-on DNA extraction, purification and/or sequencing experience in a COMMERCIAL lab; DNA library preparation; operating and troubleshooting sequencing and liquid-handling instruments; QC of sequencing output; documentation; no sponsorship. Lifts/pipetting-heavy, long sit/stand periods.",
+    fit: "Skills overlap on purification, sample prep, instrument QC and documentation, but the posting demands 2 years of commercial-lab DNA extraction/sequencing, which your résumé does not show - be ready to speak honestly to that gap.",
+    status: "monitor",
+    statusNote: "Live posting at audit (2026-09-09, posted 2026-08-26) but kept as a documented alternate rather than a target for two reasons: worksite is South San Francisco, and the schedule is Tue-Sat 7pm-3am.",
+    flag: "IRREGULARITY - title/location field says 'San Francisco' while the description sets the office in South San Francisco and an overnight shift. Confirm worksite and hours with the employer before applying.",
+    subpage: "jobs/job-118.html",
+    sources: [
+      { label: "Plasmidsaurus official Ashby posting (official)", url: "https://jobs.ashbyhq.com/plasmidsaurus/1dea5cc2-a669-4f22-8eaa-8e569745bd58" },
+      { label: "Plasmidsaurus official site", url: "https://plasmidsaurus.com" }
+    ]
+  },
+
+  {
+    id: "job-119",
+    company: "Addition Therapeutics, Inc. (in vivo cell therapy)",
+    position: "Research Associate, Quality Control (South San Francisco)",
+    verified: true,
+    verificationMethod: "Addition Therapeutics official Greenhouse board API listing boards-api.greenhouse.io/v1/boards/additiontherapeutics/jobs fetched 2026-09-09: 7 live requisitions, incl. req 60 'RA, Quality Control' (job 5216310007), location 'South San Francisco', published 2026-08-20",
+    matchScore: 80,
+    batch: 6,
+    location: "South San Francisco, CA (per the employer's own board - not San Francisco)",
+    commuteZone: "Flagged",
+    route: "NOT an SF-commute row: South San Francisco worksite. From 21st & Judah it is N Judah to Embarcadero + BART to South SF + bus/walk, roughly 70-85 min.",
+    officialLink: "https://job-boards.greenhouse.io/additiontherapeutics",
+    applyLink: "https://job-boards.greenhouse.io/additiontherapeutics/jobs/5216310007 - official Greenhouse board",
+    applyChannel: "Official employer board (Greenhouse), direct hire - no recruiter",
+    requirements: "QC assays and documentation for a cell/gene-therapy pipeline (per the company's RA-QC scope on its board: assay execution, records, method adherence). Board lists no salary for this req.",
+    fit: "Assay execution plus disciplined documentation is your Quintara/MicroConstants profile; the blocker is geography, not capability.",
+    status: "monitor",
+    statusNote: "Real, currently live, direct-hire posting verified 2026-09-09 - excluded from the target list only because every requisition on this employer's board is South San Francisco, outside the SF-only rule. If you ever widen the radius, this is a top alternate.",
+    flag: "Location rule - South San Francisco is a separate city on the peninsula, not an N Judah commute. Listed for completeness, not recommended under current constraints.",
+    subpage: "jobs/job-119.html",
+    sources: [
+      { label: "Addition Therapeutics RA, Quality Control (official Greenhouse)", url: "https://job-boards.greenhouse.io/additiontherapeutics/jobs/5216310007" },
+      { label: "Addition Therapeutics official careers board", url: "https://job-boards.greenhouse.io/additiontherapeutics" }
+    ]
+  },
+
+  {
+    id: "job-120",
+    company: "Addition Therapeutics, Inc. (in vivo cell therapy)",
+    position: "Research Associate / Senior Research Associate - RNA process development & manufacturing (South San Francisco)",
+    verified: true,
+    verificationMethod: "Addition Therapeutics official Greenhouse board API listing fetched 2026-09-09: req 57 'Research Associate RA/Sr. RA - RNA Process Development and Manufacturing' (job 5208635007), location 'South San Francisco', first published 2026-08-10, updated 2026-08-17",
+    matchScore: 78,
+    batch: 6,
+    location: "South San Francisco, CA (per the employer's own board - not San Francisco)",
+    commuteZone: "Flagged",
+    route: "NOT an SF-commute row: South San Francisco worksite (BART/Caltrain + bus from 21st & Judah, roughly 70-85 min).",
+    officialLink: "https://job-boards.greenhouse.io/additiontherapeutics",
+    applyLink: "https://job-boards.greenhouse.io/additiontherapeutics/jobs/5208635007 - official Greenhouse board",
+    applyChannel: "Official employer board (Greenhouse), direct hire - no recruiter",
+    requirements: "Bachelor's or master's in chemistry, biochemistry or related field with 2-4 years of experience; tangential flow filtration; AKTA purification; bioreactors; QC assays incl. Qubit, Fragment Analyzer, LAL endotoxin; molecular and cell biology familiarity; JMP statistical software (as quoted in the posting text surfaced for this req).",
+    fit: "Purification-plus-QC chemistry - flash/SE-HPLC and documentation map onto it, though TFF, AKTA and bioreactors are new instrumentation you would be trained on.",
+    status: "monitor",
+    statusNote: "Live posting verified 2026-09-09; excluded from the target list on location (South San Francisco), not on fit. Strongest single alternate in this pass if the SF-only rule ever relaxes.",
+    flag: "Location rule + '2-4 years' bench expectation: your paid lab terms total roughly a year plus UCSF-era research - address that gap in the letter rather than inflating it.",
+    subpage: "jobs/job-120.html",
+    sources: [
+      { label: "Addition Therapeutics RA RNA Process Development (official Greenhouse)", url: "https://job-boards.greenhouse.io/additiontherapeutics/jobs/5208635007" },
+      { label: "Addition Therapeutics official careers board", url: "https://job-boards.greenhouse.io/additiontherapeutics" }
+    ]
+  },
+
 ];
 
 // Remote verification result — no verified fully-remote bench-chemistry roles that are direct-hire (no recruiter) found in this SF-first snapshot.
 // If remote, must be verified direct from employer (not staffing agency).
 window.REMOTE_FINDING = {
   status: "none-verified",
-  note: "Pass 1 + Pass 2 + Pass 3 + Pass 4 + Pass 5 re-check (Sept 9-10, 2026) across official employer portals + remote sweeps ('fully remote' RA / lab tech / QC chemistry across Indeed, ZipRecruiter, iHireChemists) (UCSF incl. Helen Diller/Proctor, Gladstone, CZ Biohub, Vitalant, NCIRE, Vir, Twist, Anresco, City incl. 2402/2463/FAMSF/AAM, SFSU, USF, CCSF, Cal Academy, Sutter incl. Mission Bernal/CPMCRI, Chinese Hospital incl. Sunset, SFVA/USAJOBS, CBP/USAJOBS, Mint/USAJOBS, Quest, Labcorp, SFUSD, Exploratorium, OCME, Red Cross, SFMOMA/Lever, Aquarium, Wildtype/Greenhouse, Dandelion, NEMS/BetterTeam, Kaiser, Heluna, Bridge HIV, City Clinic/SFDPH): no genuine entry-level bench-chemistry role was found that is (a) fully remote, (b) direct-hire by verified employer (not staffing agency), and (c) fits a B.S. Chemistry profile. Most remote chemist ads route through staffing agencies, violating the no-recruiters rule. Most remote 'chemistry' hits were staffing-routed (EPM Scientific, Tandym, AuraOne, SME Careers) or senior director-level (Otsuka, Loyal, ProKidney, Jade Biosciences) or non-US — no verified direct-hire, fully-remote, entry-level bench-chemistry role found. Best path remains the 100 SF-transit-commutable roles above. Re-check monthly.",
+  note: "Pass 1 + Pass 2 + Pass 3 + Pass 4 + Pass 5 + Pass 6 re-check (Sept 9-10, 2026; Pass 6 sweep 2026-09-09) across official employer portals + remote sweeps ('fully remote' RA / lab tech / QC chemistry across Indeed, ZipRecruiter, iHireChemists) (UCSF incl. Helen Diller/Proctor, Gladstone, CZ Biohub, Vitalant, NCIRE, Vir, Twist, Anresco, City incl. 2402/2463/FAMSF/AAM, SFSU, USF, CCSF, Cal Academy, Sutter incl. Mission Bernal/CPMCRI, Chinese Hospital incl. Sunset, SFVA/USAJOBS, CBP/USAJOBS, Mint/USAJOBS, Quest, Labcorp, SFUSD, Exploratorium, OCME, Red Cross, SFMOMA/Lever, Aquarium, Wildtype/Greenhouse, Dandelion, NEMS/BetterTeam, Kaiser, Heluna, Bridge HIV, City Clinic/SFDPH): no genuine entry-level bench-chemistry role was found that is (a) fully remote, (b) direct-hire by verified employer (not staffing agency), and (c) fits a B.S. Chemistry profile. Most remote chemist ads route through staffing agencies, violating the no-recruiters rule. Most remote 'chemistry' hits were staffing-routed (EPM Scientific, Tandym, AuraOne, SME Careers) or senior director-level (Otsuka, Loyal, ProKidney, Jade Biosciences) or non-US — no verified direct-hire, fully-remote, entry-level bench-chemistry role found. Best path remains the 120 SF-transit-commutable roles above. Re-check monthly.",
   sources: [
     { label: "UCSF Careers (official)", url: "https://careers.ucsf.edu" },
     { label: "Gladstone Careers (official)", url: "https://gladstone.org/careers" },
@@ -2539,6 +3058,48 @@ window.REMOTE_FINDING = {
 
 // Reviewed but excluded to show honesty (verified but not SF-commutable or not chemistry-fit)
 window.MONITOR_REFERENCE = [
+  {
+    employer: "Plasmidsaurus, Inc. - 'Lab Technician | San Francisco' (Ashby, posted 2026-08-26)",
+    note: "Posting verified live on 2026-09-09 and structured data says San Francisco, but the description body states the office is South San Francisco with Tue-Sat 7pm-3am hours, and the company's own contact page lists 2 Tower Pl STE 950, South San Francisco 94080. Requires 2 years commercial-lab DNA extraction/purification/sequencing. Recorded as job-118 with the mismatch flagged, not as an SF target.",
+    commute: "South SF + overnight shift - outside the rule",
+    source: "https://jobs.ashbyhq.com/plasmidsaurus/1dea5cc2-a669-4f22-8eaa-8e569745bd58"
+  },
+  {
+    employer: "Addition Therapeutics, Inc. - RA QC (5216310007) and RA/Sr RA RNA process development (5208635007)",
+    note: "Both are live, direct-hire postings published Aug 2026 on the company's own Greenhouse board and they are strong skill matches (BS chemistry + 2-4 years, TFF, AKTA, Qubit/Fragment Analyzer/LAL, JMP). Excluded from targets because all 7 requisitions on that board are 'South San Francisco'. Kept as documented alternates (job-119, job-120).",
+    commute: "South SF - BART/Caltrain + bus, ~70-85 min",
+    source: "https://job-boards.greenhouse.io/additiontherapeutics"
+  },
+  {
+    employer: "Ring Therapeutics - RA / RA I-II Protein Chemistry & Bioconjugation (contracts)",
+    note: "Greenhouse reqs 5265606008 and 5417231008 surfaced in SF searches with an exact skills fit (SEC-HPLC, SDS-PAGE, DLS, UV-Vis, BCA/Bradford, dialysis/TFF, 6-month contract). The board did not let this audit confirm a San Francisco worksite, and the employer's own listings point away from SF - so it is not on the target list. Re-check the posting's location field if you want contract work.",
+    commute: "Worksite unverified - not added",
+    source: "https://job-boards.greenhouse.io/ringtherapeutics"
+  },
+  {
+    employer: "Jushi (jushico) - 'Laboratory Technician' (Lever)",
+    note: "Real posting on the employer's own Lever board (routine quantitative HPLC, qPCR, water microbiology, cGMP, 21+, BS Chemistry preferred, 1-2 years HPLC) but the board's location list covers PA/OH/VA/MA/NV/Santa Barbara CA - no San Francisco site. Excluded on location.",
+    commute: "No SF location on the employer's board",
+    source: "https://jobs.lever.co/jushico"
+  },
+  {
+    employer: "Vir Biotechnology - SF board scan",
+    note: "Official Greenhouse board fetched 2026-09-09: the live SF research requisitions are Senior Director / Associate Director level (e.g. 4715192005 Bioanalytics, 4716803005 Toxicology, 4700564005 Sr Dir Clinical Research). No entry-level SF bench req was up at audit, so no row was added; keep watching - Vir hires RAs in waves.",
+    commute: "SF (1800 Owens St) but senior-level reqs only",
+    source: "https://job-boards.greenhouse.io/virbiotechnologyinc"
+  },
+  {
+    employer: "SFMOMA (Lever) - arts employer check",
+    note: "jobs.lever.co/sfmoma fetched 2026-09-09: 7 openings, all curatorial/visitor-services/administration. No conservation or science-lab role, so nothing was added for Brian despite the short Zone A commute.",
+    commute: "Zone A (1155 3rd St) but no lab role",
+    source: "https://jobs.lever.co/sfmoma"
+  },
+  {
+    employer: "MaverickX Technology / Digital Biotechnologies Inc / Merge Labs - 'Biology Lab Technician' and 'Research Associate I'",
+    note: "All three showed up in SF-restricted searches (Lever maverickx x2, Ashby digital-biotechnologies-inc f08e945b, Ashby merge labs with 3 'Research Associate - Bay Area' variants). Neither the ATS location field nor the employer's own site let this audit confirm a San Francisco (not Bay Area) worksite, so none were added - location is the first rule here.",
+    commute: "Location not confirmed as SF",
+    source: "https://jobs.ashbyhq.com"
+  },
   {
     employer: "Cytokinetics (South San Francisco)",
     note: "Verified SF Bay Area biotech (280 E Grand Ave, South SF) with Research Associate roles, but HQ is South SF, not SF proper — not a simple N Judah commute; requires BART/Caltrain + shuttle. Excluded from SF-first list but legitimate if you expand beyond SF.",
