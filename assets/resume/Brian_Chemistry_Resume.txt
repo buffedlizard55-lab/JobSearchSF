@@ -1,36 +1,60 @@
-Brian
-San Francisco, CA 94122 | (707) 596-8503 | Brian.j1274@gmail.com
+BRIAN
+San Francisco, CA 94122  |  (707) 596-8503  |  Brian.j1274@gmail.com
 
-PROFESSIONAL SUMMARY
-Dedicated chemist with B.S. in Chemistry (UC Santa Cruz, 2011) and hands-on lab experience in HPLC, spectroscopy, chromatography, and GLP quality control. Seeking entry-level Research Associate position in biotech to leverage analytical skills and passion for science. Strong organizational and budget management skills from property management, transferable to lab operations.
+SUMMARY
+B.S. Chemistry (UC Santa Cruz, 2011) with hands-on bench experience in analytical and
+preparative chemistry: HPLC and chromatographic purification, NMR and UV-Vis
+characterization, sample preparation and extraction, and QC documentation under GLP.
+Seeking an entry-level Research Associate or laboratory technician position in a San
+Francisco area lab, where measurement, purification and documentation discipline are the
+core of the job.
+
+CORE LABORATORY SKILLS
+- Chromatography & purification: HPLC runs, column and flash purification, fraction
+  collection
+- Spectroscopy & characterization: NMR, UV-Vis; reviewing and reporting instrument
+  output
+- Sample handling: receipt, preparation, extraction, aliquoting, labeling and tracking
+- QC & compliance: GLP documentation, control records, out-of-spec flags, safety
+  protocols
+- Wet chemistry: titration, buffer and reagent preparation, solution making and pH
+  adjustment
+- Instrument care: routine upkeep, calibration checks and first-line troubleshooting
+- Education: B.S. Chemistry, UC Santa Cruz (2011); ACS J. Med. Chem. publication (Feb
+  2011)
+- Availability: San Francisco-based, on-site laboratory work, short notice
+
+LABORATORY EXPERIENCE
+Lab Assistant - Quintara Biosciences, San Francisco Bay Area - Jan 2012 to May 2012
+- Ran laboratory procedures under Good Laboratory Practice, including sample preparation
+  and accurate data recording.
+- Carried out quality-control checks and documented results for review.
+- Maintained laboratory equipment and kept safety-protocol compliance current.
+
+Lab Intern - MicroConstants, San Diego, CA - Aug 2011 to Dec 2011
+- Prepared samples by extraction and ran chromatography on the QC bench.
+- Performed spectroscopic analysis, then recorded and interpreted the output.
+- Helped move paper lab records into electronic systems and supported QC efforts.
+
+Summer Medicinal Chemistry Intern - Threshold Pharmaceuticals, San Francisco Bay Area - Jun 2011 to Aug 2011
+- Synthesized organic compounds for a drug-development program.
+- Purified compounds and followed purity by HPLC and NMR.
+- Contributed to experimental design, reaction troubleshooting and data interpretation.
+
+ADDITIONAL EXPERIENCE
+Property Manager (contract) - San Francisco, CA - May 2012 to present
+- Run the paperwork side of residential operations: compliance records, contracts,
+  receipts and reporting.
+- Track budgets and expenses, and keep vendor, maintenance and supply schedules current.
+- Handle tenant and contractor communication in writing and by phone, with a paper trail
+  for every decision.
 
 EDUCATION
-B.S. in Chemistry — University of California, Santa Cruz — Sep 2007 - May 2011
-- Research Assistant, Yat Li's Lab: Synthesized gallium nitride cells via chemical vapor deposition for solar cell nanomaterials; sample preparation, characterization, data analysis.
-
-PROFESSIONAL EXPERIENCE
-Property Manager (Contract) — San Francisco, CA — May 2012-Present
-- Managed property operations, tenant relations, leasing, compliance
-- Oversaw budgets, expenses, maintenance coordination, vendor management
-- Developed strong organizational, analytical, and financial tracking skills transferable to lab inventory, compliance, and data management
-
-Lab Assistant — Quintara Biosciences — SF Bay Area, CA — Jan 2012-May 2012
-- Performed lab procedures following Good Laboratory Practices (GLP): sample preparation, data recording
-- Conducted QC processes, maintained lab equipment, ensured safety protocol compliance
-
-Lab Intern — MicroConstants — San Diego, CA — Aug 2011-Dec 2011
-- Executed sample extraction, chromatography, spectroscopic analysis
-- Assisted transitioning lab records to electronic systems, contributed to QC efforts
-
-Summer Medicinal Chemistry Intern — Threshold Pharmaceuticals — SF Bay Area, CA — Jun 2011-Aug 2011
-- Synthesized and purified organic compounds for drug development using NMR and HPLC
-- Collaborated on experimental design, troubleshooting, data interpretation
-
-SKILLS
-- Laboratory Techniques: HPLC, Spectroscopy (NMR, UV-Vis), Chromatography, Sample Preparation, Titration, Wet Chemistry
-- Quality Control & Data Analysis, GLP, Lab Safety & Compliance
-- Microsoft Office Suite (Excel, Word)
-- Organizational & Financial Management
+B.S. in Chemistry - University of California, Santa Cruz - 2007 to 2011
+- Undergraduate research assistant, Yat Li's laboratory: grew gallium nitride films by
+  chemical vapor deposition for dye-sensitized solar cells; prepared samples, ran
+  characterization and analyzed the data.
 
 PUBLICATION
-- 14-Aminocamptothecins: Their Synthesis, Preclinical Activity, and Potential Use for Cancer Treatment — ACS Journal of Medicinal Chemistry, Feb 2011
+- "14-Aminocamptothecins: Their Synthesis, Preclinical Activity, and Potential Use for
+  Cancer Treatment", ACS Journal of Medicinal Chemistry, February 2011.

@@ -1,19 +1,20 @@
-# JobSearchSF 🧪 — 100 Verified SF Chemistry & Lab Jobs (N Judah Commute)
+# JobSearchSF 🧪 — 120 Verified SF Chemistry & Lab Jobs (N Judah Commute)
 
-A clean, GitHub Pages site for **100 verified San Francisco chemistry / research / lab-science opportunities** (20 Pass 1 + 20 Pass 2 + 20 Pass 3 + 20 Pass 4 + 20 Pass 5, quintuple-verified Sept 9-10, 2026), ranked by **SFMTA public transit from 21st Ave & Judah St (Inner Sunset)**, with **official direct-apply links, match scores, and step-by-step apply guides**.
+A clean, GitHub Pages site for **120 verified San Francisco chemistry / research / lab-science opportunities** (20 Pass 1 + 20 Pass 2 + 20 Pass 3 + 20 Pass 4 + 20 Pass 5 + 20 Pass 6, verified against official employer sources Sept 9-10, 2026), ranked by **SFMTA public transit from 21st Ave & Judah St (Inner Sunset)**, with **official direct-apply links, match scores, and step-by-step apply guides**.
 
 Live site (GitHub Pages): served from repo root at `https://<owner>.github.io/JobSearchSF/` — pure static, no build.
 
 ## What it does — Easy Apply (Click, Copy, Paste)
 
-- **100 verified entries** (not hallucinations) — each with real SF physical address verified via official site + secondary trusted directory (YellowPages, LinkedIn, Bloomberg, SEC filing, GlobalData, OpenGov)
+- **120 verified entries** (not hallucinations) — each with real SF physical address verified via official site + secondary trusted directory (YellowPages, LinkedIn, Bloomberg, SEC filing, GlobalData, OpenGov)
 - **Table view**: Company, Position, Verified badge, Match Score (how well your B.S. Chemistry resume fits), Official Source Link, Apply Guide subpage
 - **Detailed cards**: Transit route from 21st & Judah (N Judah + 38 Geary / 43 Masonic / T-Third), fit notes, requirements, official apply channel (direct, no recruiters), sources for manual review
-- **Subpage per job** (`jobs/job-01.html` through `job-100.html`): 
-  - 10-step beginner guide (verify live, create account, download tailored docs, fill, upload, submit, track, interview prep, follow-up)
-  - Tailored resume (TXT + PDF) emphasizing skills for that role
-  - Tailored cover letter (TXT + PDF) — brief, polite, professional, 3 paragraphs for quick hiring manager approval
-  - Intro email (TXT) — ready to copy-paste, subject + body matching job posting directly
+- **Subpage per job** (`jobs/job-01.html` through `job-120.html`): 
+  - 10-step beginner guide (confirm status, read quals, create portal account, download docs, fill, upload, screening questions, references, submit + confirmation, interview prep + follow-up)
+  - Resume (TXT + PDF) — one page, real experience only, ordered so the techniques the posting leads with come first
+  - Cover letter (TXT + PDF) — brief, polite, 3 paragraphs, written for a hiring manager who skim-reads
+  - Intro email (TXT) — subject + short body for a portal message box or a listed contact address
+  - **Documents carry no transportation content and no meta-language** (Pass 6 rule; see "Document rules" below)
   - Copy buttons (one-click) + Download buttons
   - Transit copy-paste box + verification + official links
 - **Transit built out**: Zone A (shortest, Inner Sunset/Parnassus walk), B (good, Mission Bay via N→T), C (moderate), D (longest, Bayview) — with step-by-step from Judah & 21st Ave N Judah stop, estimated times, official planners (SFMTA, 511.org)
@@ -31,9 +32,9 @@ Live site (GitHub Pages): served from repo root at `https://<owner>.github.io/Jo
 - Publication: 14-Aminocamptothecins — ACS J. Med. Chem., Feb 2011
 - Location: 21st Ave & Judah St, SF 94122 — must be N Judah Muni or SF city bus commutable; remote only if verified direct
 
-## 100 Verified Entries (SF, N Judah Commutable)
+## 120 Verified Entries (SF, N Judah Commutable)
 
-All verified via official sources, no hallucinations:
+All verified via official sources, no hallucinations. Passes 1-5 are listed below; Pass 6 (job-101 to job-120) is at the end of this file.
 
 1. UCSF — Dept Pharmaceutical Chemistry — SRA I/II Drug Metabolism & Pharmacokinetics — 600 16th St & 505 Parnassus — Zone A — 92% match — careers.ucsf.edu
 2. UCSF — Dept Cellular & Molecular Pharmacology — SRA I Chemical Biology — 600 16th St — Zone B — 90% — careers.ucsf.edu
@@ -141,6 +142,31 @@ All verified via official sources, no hallucinations:
 99. BridgeBio Pharma — Analytical Development Manager/Sr Manager LIVE 5156402007 $163.8-177.4K — 1800 Owens St — Zone B — 78% — same Greenhouse
 100. BridgeBio Pharma — Sr Manager/Assoc Director CMC Regulatory Sciences LIVE 5197212007 — 1800 Owens St — Zone B — 70% — same Greenhouse
 
+### Pass 6 (added 2026-09-09) — 14 live UCSF recruitments, 3 City of SF lab classes, 3 flagged alternates
+
+101. UCSF Liver Center (Maher Lab) — Junior Specialist, liver cell isolation core JPF06065 $55-58.6K — Mission Bay — Zone B — 92% — aprecruit.ucsf.edu/JPF06065
+102. UCSF Helen Diller Cancer Center (McCormick Lab) — Junior Specialist JPF05785 (HPLC/FPLC preferred) — Mission Bay — Zone B — 87% — aprecruit.ucsf.edu/JPF05785
+103. UCSF Cancer Center (Ashworth Lab) — Junior/Assistant Research Specialist JPF06131 — Zone B — 80% — aprecruit.ucsf.edu/JPF06131
+104. UCSF Biochemistry & Biophysics (DeRisi Lab) — Junior/Assistant/Associate Specialist JPF05798 — Zone B — 79% — apply by Sep 15, 2026
+105. UCSF Cell & Tissue Biology (Choksi Lab) — Junior Specialist JPF06179 (opened Jul 30, 2026) — Zone B — 75%
+106. UCSF Orofacial Sciences (Zhang Lab) — Junior Specialist JPF06193 (opened Aug 11, 2026 — newest) — Zone B — 74%
+107. UCSF Biochemistry & Biophysics (Martens Lab) — Junior/Assistant Specialist JPF06056 — Zone B — 76%
+108. UCSF Anatomy (Feinberg Lab) — Junior Specialist JPF06049 — Zone A/B — 74%
+109. UCSF Cardiovascular Research Institute (Huang Lab) — Junior Specialist JPF06073 — Zone B — 72%
+110. UCSF Cell & Tissue Biology (Sneddon Lab) — Junior/Assistant/Associate Specialist JPF05968 — Zone B — 71%
+111. UCSF Cell & Tissue Biology (Gong Lab) — Specialist series JPF05881 — Zone B — 70%
+112. UCSF Cell & Tissue Biology (Bush Lab) — Junior/Assistant/Associate Specialist JPF06050 — Zone B — 68%
+113. UCSF Orofacial Sciences (Momen-Heravi Lab) — Junior/Assistant/Associate Specialist JPF05770 — Zone B — 67%
+114. UCSF Anatomy / Orthopaedic Surgery (Basbaum Lab) — Specialist series JPF05544 — Zone A/B — 66% — closes Oct 23, 2026
+115. City & County SF — **Laboratory Technician II (class 2416)** — SFDPH Public Health Lab, 101 Grove St — class range $81,692-$99,372 — monitor (last window closed 2023-09-22) — Zone C — 86% — careers.sf.gov/role/?id=3743990002599958
+116. City & County SF — **Laboratory Technician I (class 2402)** — entry class, $72,332-$87,906 — monitor — **the only live 2402 page is an ACE (disability-hire) exam**, so wait for a general window — Zone C — 80% — careers.sf.gov/role/?id=743999809251111
+117. City & County SF — Microbiologist I (class 2463, SFDPH) — **FLAGGED, do not apply**: needs a microbiology major + CA public health microbiologist certificate — Zone C — 34% — careers.sf.gov/role/?id=3743990001679838
+118. Plasmidsaurus — Lab Technician | San Francisco (Ashby, posted 2026-08-26, $72.5-82.5K) — **FLAGGED**: body says South San Francisco office, Tue-Sat 7pm-3am — 84%
+119. Addition Therapeutics — RA, Quality Control (Greenhouse 5216310007, Aug 2026) — **FLAGGED**: South San Francisco — 80%
+120. Addition Therapeutics — RA/Sr RA, RNA process development & manufacturing (Greenhouse 5208635007, Aug 2026) — **FLAGGED**: South San Francisco — 78%
+
+Corrections made while verifying Pass 6 (not additions): the three City rows were first drafted from search snippets and then rewritten after reading each role page in full (ACE eligibility gate on 2402, closed 2023 window on 2416, hard microbiology+certificate screen on 2463);  job-73 Anthropic "Research Associate, Biology" is no longer on the official board (status → monitor); job-92 City Chemist 2486 REF60430L filing window closed 11:59 p.m. May 8, 2026 (status → monitor) and its fit text no longer implies GC-MS/ICP-MS/LIMS experience Brian does not have; a stray comma in `data.js` (array elision at the job-80/job-81 boundary) was silently creating a phantom 121st row — removed, and `app.js` now filters falsy rows.
+
 Plus 48 Pass-4 reviewed-but-excluded (honesty log, see data.js MONITOR_REFERENCE): Ginkgo Emeryville, Vevo South SF (data-quality irregularity Tahoe descriptions), Scribe Alameda, Athersys Cleveland, Moleculin Houston, BioMarin San Rafael, Merck South SF, Xaira South SF/Brisbane, NewLimit/Escola/CytomX/Sana/SpectraForce/DICE/Ohalo/Lightship/R&D Partners/Cellares/Myriad/Novotech/Neurona/Rigel/Pacific BioLabs/See's South SF, Sylvatex/GeneFab/Exelixis Alameda, BigHat San Mateo, Aequita/Vaxcyte/Natera San Carlos, IFF/Centrillion Palo Alto, Guardant Redwood City, Predicine Hayward, Certified Group Turlock/Tucker, Astrix/Yoh/KA Recruiting staffing firms, Stanford SPARK mislabeled, LBNL/UC Berkeley Berkeley, Sutter inactive reqs R-131861/R-137918, Morphic beauty-salon name collision.
 
 
@@ -152,11 +178,11 @@ Plus 3 reviewed-but-excluded (honesty log): Cytokinetics South SF, Biotium Fremo
 
 - `index.html` — main site with table, detailed cards, transit, remote, verification, resume sections
 - `assets/css/style.css` — clean, modern, responsive styling (N Judah green gradient, cards, table, badges, copy boxes)
-- `assets/js/data.js` — 100 verified entries with official sources, match scores, routes, verificationMethod, subpage links
+- `assets/js/data.js` — 120 verified entries with official sources, match scores, routes, verificationMethod, subpage links, `MONITOR_REFERENCE` exclusion log (61 records)
 - `assets/js/app.js` — rendering, table + cards, filter by status/zone/batch, sort, search, copy-paste, count, tracker
-- `jobs/job-01.html` through `job-100.html` — 100 subpages, each with 10-step beginner guide, tailored resume/cover/email copy boxes + download links, transit, verification
-- `assets/resume/` — base resume TXT+PDF + 100 tailored resumes TXT+PDF (job-01_resume.pdf etc.)
-- `assets/cover/` — base cover TXT+PDF + 100 tailored cover letters TXT+PDF + 100 intro emails TXT
+- `jobs/job-01.html` through `job-120.html` — 120 subpages, each with a 10-step beginner guide, resume/cover/email copy boxes + download links, a "Getting there" transit section, and the verification record for that row
+- `assets/resume/` — base resume TXT+PDF + 120 per-job resumes TXT+PDF (job-01_resume.pdf etc.)
+- `assets/cover/` — base cover TXT+PDF + 120 cover letters TXT+PDF + 120 intro emails TXT
 - `assets/verification/VERIFICATION_LOG.txt` — line-by-line verification log, no hallucinations
 - `assets/verification/IMPROVEMENTS.md` — list of improvements implemented for easy apply
 - `.nojekyll` — GitHub Pages serves static site directly
@@ -170,12 +196,13 @@ See `assets/verification/IMPROVEMENTS.md` for full list. Key:
 - Verified badge + verificationMethod + sources for manual review
 - Official direct-apply only, no recruiters
 - Transit routes built out from 21st & Judah (N Judah + 38 Geary / 43 Masonic / T-Third), Zone A-D, estimated times, official planners
-- Subpage per job with 10-step beginner guide, tailored resume/cover/email, copy buttons, download links
-- Tailored resume & cover per job (brief, polite, professional for quick approval)
+- Subpage per job with 10-step beginner guide, resume/cover/email, copy buttons, download links
+- Resume & cover letter per job written as ordinary application documents (brief, polite, professional for quick approval)
 - Intro email matching job posting directly, ready to copy-paste
 - Click-copy-paste UX (navigator.clipboard)
 - Search & filter, clean UI, responsive, GitHub Pages ready
 - Remote finding honest, reviewed-but-excluded log, verification log, anti-scam checklist
+- Pass 6: every document regenerated for all 120 rows (no transit, no "this is tailored" meta, no placeholders, no pasted job requirements), all 120 subpages regenerated from one template, two stale "LIVE" claims corrected, phantom data row fixed
 
 ## How to Use — Click, Copy, Paste (No Manual Input Needed)
 
@@ -233,3 +260,28 @@ python3 -m http.server 8000
 - Clinics/research: https://www.nems.org/, https://nems.betterteam.com/, https://www.helunahealth.org/, https://www.bridgehiv.org/, https://sf.gov/cityclinic, https://chinesehospital-sf.org/laboratory/
 - Kaiser: https://kaiserpermanentejobs.org, UCSF Health: https://jobs.ucsfmedicalcenter.org
 - SFMTA: https://www.sfmta.com, 511.org: https://511.org
+
+## Document rules (applied to all 120 rows on 2026-09-09)
+
+The resume, cover letter and intro email on every job page follow four rules, because the earlier
+auto-generated versions broke them:
+
+1. **No transportation content.** The old documents said "I live at 21st Ave & Judah St and commute via
+   N Judah" and carried a `Transit:` footer. Real applications do not. Transit is researched and shown on
+   the site ("Getting there" on each subpage, plus the transit section on the main page) so Brian can plan,
+   but it never appears in a document a hiring manager reads.
+2. **No self-description.** Nothing says "tailored resume", "Match Score 86%", "Verified: official site" or
+   "see JobSearchSF" inside a document. Those are tracker labels for Brian, not application content.
+3. **Only real experience.** Documents reuse the résumé facts (UCSC B.S. 2011; Threshold synthesis + HPLC/NMR;
+   MicroConstants extraction, chromatography, spectroscopy, electronic records; Quintara GLP/QC/equipment;
+   the ACS J. Med. Chem. publication; property-management years for the record-keeping/inventory angle) and
+   re-order / re-label them to match the posting's language. Posting requirements are never pasted into an
+   experience bullet, and techniques Brian has not done (GC-MS, ICP-MS, LIMS, cell culture, animal work) are
+   not claimed anywhere.
+4. **No placeholders.** No `[Insert Date]`, `[Add if you have]`, `[Company Name]` or `https://[owner].github.io/...`.
+   Letters are dated with the audit date; the one generic base letter on the main page is company-neutral and
+   the instructions say to add the employer line before sending.
+
+Mechanical check: `python3 write_logs.py` regenerates
+`assets/verification/VERIFICATION_LOG_PASS6.txt`, which greps all 362 generated documents for transit words,
+zone labels, placeholder tokens and tracker meta. Current result: **0 violations**.
