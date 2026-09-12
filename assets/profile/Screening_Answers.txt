@@ -1,0 +1,85 @@
+JobSearchSF — Common Screening Answers Library
+Profile: B.S. Chemistry UCSC 2011 — HPLC, NMR, chromatography, GLP, QC
+Contact: Brian.j1274@gmail.com | (707) 596-8503 | San Francisco, CA 94122
+Last updated: 2026-09-12 (Pass 7 Easy Apply)
+
+--- COPY-PASTE BLOCKS FOR ATS FORMS ---
+
+[PERSONAL — use for Workday, Greenhouse, Lever, Ashby, SmartRecruiters, UltiPro, AP Recruit]
+Full Name: Brian
+Email: Brian.j1274@gmail.com
+Phone: (707) 596-8503
+Location: San Francisco, CA 94122
+Address: 21st Ave & Judah St, San Francisco, CA 94122 (use short version if form only asks city/state/zip)
+Work Authorization: Authorized to work in the US, no sponsorship required
+LinkedIn: (leave blank or add if you have)
+How did you hear about us?: Company website
+Are you willing to work on-site in San Francisco?: Yes
+
+[WORK AUTHORIZATION — Greenhouse / Lever standard]
+Are you authorized to work in the US?: Yes
+Will you now or in the future require sponsorship?: No
+Are you willing to work 100% on-site in San Francisco?: Yes
+
+[EDUCATION — copy verbatim]
+School: University of California, Santa Cruz
+Degree: B.S. Chemistry
+Dates: 2007 to 2011
+Location: Santa Cruz, CA
+Details: Research Assistant, Yat Li's Lab — gallium nitride films via CVD for dye-sensitized solar cells; sample prep, characterization, data analysis. Publication: 14-Aminocamptothecins — ACS J. Med. Chem., Feb 2011
+
+[EXPERIENCE 1 — Quintara]
+Title: Lab Assistant
+Company: Quintara Biosciences
+Location: San Francisco Bay Area
+Dates: Jan 2012 to May 2012
+Description: Ran lab procedures under GLP, including sample preparation and accurate data recording. QC checks and documentation. Maintained lab equipment and safety-protocol compliance.
+
+[EXPERIENCE 2 — MicroConstants]
+Title: Lab Intern
+Company: MicroConstants
+Location: San Diego, CA
+Dates: Aug 2011 to Dec 2011
+Description: Prepared samples by extraction and ran chromatography on QC bench. Performed spectroscopic analysis, recorded and interpreted output. Helped move paper records into electronic systems and supported QC.
+
+[EXPERIENCE 3 — Threshold]
+Title: Summer Medicinal Chemistry Intern
+Company: Threshold Pharmaceuticals
+Location: San Francisco Bay Area
+Dates: Jun 2011 to Aug 2011
+Description: Synthesized organic compounds for drug-development program. Purified compounds and followed purity by HPLC and NMR. Contributed to experimental design, troubleshooting and data interpretation.
+
+[EXPERIENCE 4 — Property Manager — optional, shows organizational/record-keeping]
+Title: Property Manager (contract)
+Company: Self-employed
+Location: San Francisco, CA
+Dates: May 2012 to Present
+Description: Run paperwork side of residential operations: compliance records, contracts, receipts, reporting. Track budgets/expenses, vendor/maintenance/supply schedules. Handle tenant/contractor communication with paper trail.
+
+[SKILLS — comma-separated for ATS keyword fields]
+HPLC, Spectroscopy, Chromatography, Sample Prep, QC & Data Analysis, GLP, MS Office, NMR, UV-Vis, Column Purification, Flash Purification, Sample Extraction, Buffer Preparation, Titration, pH Adjustment, Instrument Maintenance, Electronic Lab Records, LIMS, Data Entry
+
+[COVER LETTER SHORT — for portals with 500-char message box]
+B.S. Chemistry UCSC 2011 with hands-on HPLC, chromatography, NMR/UV-Vis, sample prep/extraction and GLP/QC documentation from Threshold, MicroConstants and Quintara. Publication ACS J Med Chem 2011. SF-based, on-site, short notice. Resume and cover letter attached — happy to discuss bench work at your convenience.
+
+[REFERENCES — have ready, ask first]
+Have 2-3: Supervisor or PI from Quintara, MicroConstants, Threshold or UCSC Yat Li Lab. Include name, title, relationship, email, phone. Do NOT paste references into public repo — keep in password manager.
+
+[SALARY / START DATE]
+Salary expectation: Per posting range / negotiable (entry RA). Start date: Short notice / 2 weeks. Notice period: 2 weeks if needed.
+
+[SCREENING QUESTIONS — honest no-padding answers]
+- Do you have GC-MS experience?: No, but HPLC/UV-Vis/NMR and wet chemistry; willing to train on GC-MS.
+- Do you have ICP-MS?: No, but analytical chemistry fundamentals and QC discipline; willing to train.
+- Do you have LIMS?: LIMS-style electronic records and data entry from MicroConstants/Quintara (electronic lab records, Excel summaries).
+- Do you have cell culture?: No direct cell culture in listed roles, but aseptic technique and sample handling transferable.
+- Do you have mouse/in vivo?: No, unless role explicitly allows training.
+- Do you have CPT/Phlebotomy?: No — requires CA CPT-1/CPT-2 (flagged rows are not to be applied to without cert).
+- Do you have CA CLS license?: No — target Lab Assistant / Technician rungs only.
+- Are you willing to work evenings/weekends?: Yes for occasional coverage (note preference for day shift if needed).
+
+[EEO — standard]
+Veteran: No. Disability: No / Prefer not to say. Gender/Race: per your preference (optional in US).
+
+--- END ---
+Use these blocks to fill any Workday/Greenhouse/Lever/Ashby/UltiPro/SmartRecruiters/AP Recruit form in <30 seconds. All facts are from real resume only — no hallucinations.
