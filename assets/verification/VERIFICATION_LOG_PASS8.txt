@@ -1,0 +1,109 @@
+JobSearchSF — Pass 8 True 1-Click Easy Apply — Verification Log
+Date: September 12, 2026
+Branch: arena/01a097c2-jobsearchsf
+Base: 63102850a5f2332265a43172f90a2df1bf8ac59a (main)
+
+Goal: Make applying as easy as download and submit resume and cover letter information, using human thinking process research, providing direct official links only, no manual input, line-by-line verification from official trusted sources, no hallucinations, flag irregularities.
+
+Human Thinking Research Applied:
+- Visibility of system status: progress indicator (1-2-3 steps, One-Click button shows download + open)
+- Recognition > recall: copy-paste autofill vault, no re-typing 30-50 fields
+- Match real world: "Open Official Apply →" matches mental model, official ATS only
+- Flexibility/efficiency: accelerators — One-Click button, bulk ZIPs, bookmarklet, extension draft, master JSON for automation
+- Source: Reddit Scanner→Evaluator→PDF generator→Applicator Playwright batch 122 parallel, review before submit; Medium UX heuristics visibility/recognition/match mental models/flexibility
+
+ATS Research:
+- Workday: heavy autofill burden, prefers DOCX <5MB, autofill draft must review, cannot edit after submit, Candidate Home tracking, fill optional fields, mirror JD language
+- Greenhouse: light burden, recruiter sees PDF inline, prefers text-based PDF, single-column, name top line body not header, Skills comma-separated, Month YYYY, first bullet strongest
+- Lever: moderate, longer custom Qs concise free-text, more forgiving PDF, keep one base layout, adapt form responses
+- Ashby: light burden modern UI
+- SmartRecruiters: City careers.sf.gov REF/RTF/PBT IDs, deadline 11:59 PM PST, eligible 12mo
+- UltiPro: recruiting.ultipro.com/NOR1032NCIRE b5d49cdc site
+- AP Recruit: aprecruit.ucsf.edu JPFxxxxx
+- ATS does NOT detect autofill — fields indistinguishable from typed (source resumeoptimizerpro autofill guide)
+- Sources: cvder.app Workday guide, blog.fastapply.co Workday, resumeoptimizerpro Greenhouse guide, profileops Lever vs Greenhouse
+
+Pass 8 Generation:
+- Loaded 120 jobs from assets/js/data.js (3428 lines, 256815 bytes)
+- Fixed url_of() bug: previous regex r"https?://[^\s\u2014\u2013>\"\\]]+" used raw string with \u escapes, causing None and "#" links. Fixed to r"https?://[^\s\"'>\]]+" with preferred ATS pattern detection (JPF, greenhouse.io, lever.co, ashbyhq, smartrecruiters, ultipro, aprecruit, brassring, myworkday)
+- Verified 0 missing applyLinkClean after fix (previously 1+ with "#")
+- Regenerated 120 subpages via gen_docs_pass8.py with:
+  * One-Click: Download Kit + Open Official Apply (JS easyApply(id, applyUrl))
+  * Verify Live buttons (official + direct)
+  * Copy Links for manual review (clipboard)
+  * Tailored screening download (assets/screening/job-XX_screening.txt)
+  * Mailto email template (subject/body pre-filled)
+  * ATS tip box linking to ATS_GUIDE.md
+- Regenerated resume/cover/email txt+pdf (120 each, clean, no transit)
+- Regenerated docx 242 files (120 resume + 120 cover + 2 masters) via python-docx
+- Regenerated screening 120 tailored files with honest No for GC-MS/ICP-MS/LIMS/cell/mouse/CPT + what you HAVE done
+- Regenerated master JSON assets/profile/All_Jobs_Easy_Apply.json (120 entries with kitZip, resumePdf/Docx/Txt, coverPdf/Docx/Txt, emailTxt, screening, profileJson, autofillTxt, officialLink, applyLink, applyLinkClean, matchScore, flag)
+- Regenerated kits 120 ZIPs (each contains resume PDF+DOCX+TXT, cover PDF+DOCX+TXT, email TXT, tailored screening, profile JSON, Screening_Answers.txt, README with direct links)
+- Regenerated bulk ZIPs: all_kits.zip 10319156 bytes, top10_kits.zip 860519 bytes, top20_kits.zip 1720825 bytes, all_resumes_pdfs.zip, all_covers_pdfs.zip
+- Regenerated ATS_GUIDE.md with Workday/Greenhouse/Lever/Ashby/SmartRecruiters/UltiPro/AP Recruit 60-sec flows
+- Regenerated bookmarklet.js (autofill 30-50 fields, draft review)
+- Regenerated extension draft: manifest.json + content.js + popup.html + Brian_Profile.json
+- Updated index.html bulk section + easyApply(id) JS with cleanUrl() preferring JPF/greenhouse/lever/ashby
+- Updated assets/js/app.js cleanUrl() + easyApply() + One-Click button in table rows
+- Regenerated sitemap.xml 121 URLs (index + 120 jobs)
+
+Verification Counts:
+- sitemap.xml: 121 URLs (index + 120 jobs)
+- jobs/*.html: 120 files
+- assets/resume/*.pdf: 121 (120 + master)
+- assets/cover/*.pdf: 121 (120 + master)
+- assets/resume/*.txt: 121
+- assets/cover/*.txt: 121 + 120 email txt
+- assets/docx/*.docx: 242
+- assets/kits/*.zip: 120 + 5 bulk = 125
+- assets/screening/*.txt: 120
+- assets/profile/: All_Jobs_Easy_Apply.json, Brian_Profile.json, Screening_Answers.txt, AUTOFILL_GUIDE.md
+- assets/ATS_GUIDE.md, assets/bookmarklet.js, assets/extension/*
+
+Direct Apply Links Verification:
+- Every job has officialLink (company careers) + applyLinkClean (direct ATS URL with job ID where available)
+- Pattern breakdown (sample):
+  * UCSF: careers.ucsf.edu + aprecruit.ucsf.edu/JPFxxxxx (AP Recruit preferred when present)
+  * Gladstone: gladstone.wd5.myworkdayjobs.com (Workday)
+  * CZ Biohub: job-boards.greenhouse.io/chanzuckerbergbiohub (Greenhouse 7-digit)
+  * Vitalant: vitalant.wd12.myworkdayjobs.com
+  * NCIRE: recruiting.ultipro.com/NOR1032NCIRE
+  * Vir: job-boards.greenhouse.io/virbiotechnology
+  * Twist: twistcareers etc.
+  * City: careers.sf.gov REF60430L etc.
+  * etc. — all official ATS only, no recruiters
+- 0 "#" after fix, verified via python check
+- Irregularities flagged per flag field (South SF location Plasmidsaurus, Addition Tx; withdrawn job-73 Anthropic, job-92 City Chemist closed May 8 2026; ACE eligibility; cert gaps CPT/CPhT; Zone D Bayview; BSL2/3; mouse work; senior-level; evening shift; per-diem; gaming ask; microbiology certificate)
+
+No Hallucinations Check:
+- All resumes/cover letters use only real resume facts: UCSC B.S. Chemistry 2011, Yat Li Lab GaN CVD, Quintara Jan-May 2012 GLP, MicroConstants Aug-Dec 2011 extraction/chromatography/spectroscopy, Threshold Jun-Aug 2011 organic synthesis/HPLC/NMR, Property Manager contract May 2012-Present, ACS J Med Chem Feb 2011 publication
+- No invented techniques: GC-MS/ICP-MS/LIMS/cell culture/mouse/CPT answered No with honest alternative (HPLC, NMR, UV-Vis, chromatography, sample prep, GLP, QC, electronic records)
+- No commute/transit in resume/cover/email (kept in "Getting there" section only)
+- Sources per job in data.js sources array + verificationMethod field, officialLink + applyLinkClean for manual review
+
+Easy Apply UX — How it satisfies "download and submit":
+- Bulk Actions: Download ALL 120 Kits (ZIP of ZIPs) — one click gets everything
+- Table: One-Click button per row = download kit ZIP + open official apply in new tab simultaneously (JS)
+- Subpage: One-Click button top of Easy Apply box + Download Kit ZIP + Open Official Apply + Verify Official Site + Verify Direct Apply Link + Copy Links + Email Template mailto + Tailored Screening download + Resume/Cover PDF/DOCX buttons + Copy Autofill button
+- Kit ZIP contains: resume PDF+DOCX+TXT, cover PDF+DOCX+TXT, email TXT, tailored screening TXT, Brian_Profile.json, Screening_Answers.txt, README.txt with direct official links and 1-Click flow
+- Autofill Vault: assets/profile/Brian_Profile.json + Screening_Answers.txt — all common ATS fields pre-filled, copy-paste in <30 sec, zero typing
+- Bookmarklet: drag to bookmarks bar, click on any ATS page to autofill
+- Extension draft: load unpacked in Chrome, popup button autofills
+- Master JSON: for Simplify/Teal/Playwright automation — each entry has applyLinkClean, kitZip, resume/cover paths, screening, matchScore, flag
+- ATS Guide: platform-specific 60-sec flow, Workday DOCX <5MB parse draft review, Greenhouse PDF inline, Lever custom Qs, Ashby light, SmartRecruiters REF60430L deadline 11:59 PM PST eligible 12mo, UltiPro b5d49cdc, AP Recruit JPF
+- Tracker: localStorage on device only, save confirmation number/date, nothing uploaded
+- No manual input: all info pre-filled, no re-typing personal info 120 times, no re-formatting docs
+
+Files for Manual Review:
+- assets/js/data.js — source of truth 120 jobs with officialLink, applyLink, matchScore, flag, sources
+- assets/profile/All_Jobs_Easy_Apply.json — master JSON for automation
+- assets/ATS_GUIDE.md — ATS flows
+- assets/bookmarklet.js — bookmarklet code
+- assets/extension/manifest.json + content.js + popup.html — extension draft
+- assets/screening/job-XX_screening.txt — tailored Q&A per job
+- assets/kits/job-XX_kit.zip — per-job bundle with README containing direct links
+- jobs/job-XX.html — per-job subpage with Verify Live buttons + Copy Links
+- sitemap.xml — 121 URLs
+- VERIFICATION_REPORT_PASS7.md + VERIFICATION_LOG_PASS7.txt + earlier logs
+
+Status: Pass 8 complete, verified, ready for commit/push

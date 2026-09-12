@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "JobSearchSF Easy Apply Autofill (Draft)",
+  "version": "0.8.0",
+  "description": "Draft extension to autofill ATS fields from Brian profile \u2014 manual review required, does not auto-submit",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}

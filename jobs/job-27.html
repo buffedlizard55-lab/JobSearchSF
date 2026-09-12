@@ -11,6 +11,9 @@
     .copy-box { background:#f8fafc; border:1px solid #e3e9f0; border-radius:12px; padding:14px; margin:10px 0; position:relative; }
     .copy-box pre { white-space:pre-wrap; word-wrap:break-word; font-size:.86rem; margin:0; font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
     .copy-btn { position:absolute; top:10px; right:10px; }
+    .easy-box { background: linear-gradient(135deg, #f0fdf4, #ecfdf5); border: 2px solid #16a34a; border-radius: 16px; padding: 20px 22px; margin-bottom: 20px; box-shadow: 0 8px 28px rgba(22,163,74,0.12); }
+    .easy-box h3 { margin: 0 0 10px; color: #14532d; font-size: 1.15rem; }
+    .easy-grid { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0; }
   </style>
   <script>
   function copyText(id, btn) {
@@ -18,8 +21,9 @@
     if (!box) { return; }
     var text = box.innerText;
     function feedback(ok) {
-      btn.setAttribute('data-label', btn.textContent);
-      btn.textContent = ok ? 'Copied' : 'Press Ctrl+C';
+      var orig = btn.getAttribute('data-label') || btn.textContent;
+      btn.setAttribute('data-label', orig);
+      btn.textContent = ok ? 'Copied ✓' : 'Press Ctrl+C';
       setTimeout(function () { btn.textContent = btn.getAttribute('data-label') || 'Copy'; }, 2000);
     }
     function legacy() {
@@ -38,6 +42,16 @@
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(function () { feedback(true); }, legacy);
     } else { legacy(); }
+  }
+  function easyApply(id, applyUrl){
+    const kitUrl = '../assets/kits/'+id+'_kit.zip';
+    const a = document.createElement('a');
+    a.href = kitUrl;
+    a.download = id+'_kit.zip';
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(()=>{ a.remove(); }, 500);
+    if(applyUrl && applyUrl!=='#') window.open(applyUrl, '_blank', 'noopener');
   }
   </script>
 </head>
@@ -59,6 +73,7 @@
 
   <nav class="pills">
     <div class="wrap">
+      <a href="#easy">⚡ Easy Apply</a>
       <a href="#apply">How to apply</a>
       <a href="#resume">Resume</a>
       <a href="#cover">Cover letter</a>
@@ -70,10 +85,80 @@
   </nav>
 
   <main class="wrap">
+
+    <section class="block" id="easy">
+      <div class="easy-box">
+        <h3>⚡ Easy Apply — Download & Submit in 1 Click (Pass 8)</h3>
+        <p style="margin:0 0 8px"><strong>Goal:</strong> No typing, no re-formatting. One ZIP = everything you need. Direct official link only, no recruiters. One-Click downloads Kit + opens official apply.</p>
+        <div class="callout ok" style="margin:10px 0"><strong>Direct Apply (official, verified):</strong> <a href="https://jobs.sutterhealth.org/us/en" target="_blank" rel="noopener"><strong>https://jobs.sutterhealth.org/us/en</strong></a><br>Channel: Official Sutter Health jobs portal (direct)<br>Official site: <a href="https://www.sutterhealth.org/find-location/facility/cpmc-van-ness-campus-1043247265" target="_blank" rel="noopener">https://www.sutterhealth.org/find-location/facility/cpmc-van-ness-campus-1043247265</a></div>
+        <div class="easy-grid">
+          <button class="btn btn-primary" onclick="easyApply('job-27', 'https://jobs.sutterhealth.org/us/en')" style="background:#16a34a">⚡ One-Click: Download Kit + Open Official Apply</button>
+          <a href="../assets/kits/job-27_kit.zip" class="btn btn-primary" download>📦 Download Kit ZIP</a>
+          <a href="https://jobs.sutterhealth.org/us/en" target="_blank" rel="noopener" class="btn btn-primary">🚀 Open Official Apply →</a>
+        </div>
+        <div class="easy-grid">
+          <a href="../assets/resume/job-27_resume.pdf" class="btn" download>📄 Resume PDF</a>
+          <a href="../assets/cover/job-27_cover.pdf" class="btn" download>✉️ Cover PDF</a>
+          <a href="../assets/docx/job-27_resume.docx" class="btn" download>📝 Resume DOCX</a>
+          <a href="../assets/docx/job-27_cover.docx" class="btn" download>📝 Cover DOCX</a>
+          <a href="../assets/screening/job-27_screening.txt" class="btn" download>📋 Tailored Screening</a>
+        </div>
+        <div class="easy-grid">
+          <a href="../assets/profile/Screening_Answers.txt" class="btn btn-sm" download>📋 Autofill Answers TXT</a>
+          <a href="../assets/profile/Brian_Profile.json" class="btn btn-sm" download>👤 Profile JSON</a>
+          <a href="../assets/resume/job-27_resume.txt" class="btn btn-sm" download>Resume TXT</a>
+          <a href="../assets/cover/job-27_cover.txt" class="btn btn-sm" download>Cover TXT</a>
+          <a href="../assets/cover/job-27_email.txt" class="btn btn-sm" download>Email TXT</a>
+        </div>
+        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px">
+          <a href="https://www.sutterhealth.org/find-location/facility/cpmc-van-ness-campus-1043247265" target="_blank" rel="noopener" class="btn btn-sm">🔍 Verify Official Site</a>
+          <a href="https://jobs.sutterhealth.org/us/en" target="_blank" rel="noopener" class="btn btn-sm btn-primary">🔍 Verify Direct Apply Link</a>
+          <button class="btn btn-sm" onclick="navigator.clipboard.writeText('https://www.sutterhealth.org/find-location/facility/cpmc-van-ness-campus-1043247265'+'\n'+'https://jobs.sutterhealth.org/us/en')">📋 Copy Links for Manual Review</button>
+          <a href="mailto:?subject=Application for Laboratory Assistant at Sutter Health&body=Hello Hiring Manager,%0D%0A%0D%0AI am applying for Laboratory Assistant at Sutter Health.%0D%0APlease find attached resume and cover letter from my Kit ZIP job-27_kit.zip.%0D%0AOfficial apply link: https://jobs.sutterhealth.org/us/en%0D%0A%0D%0AThank you,%0D%0ABrian%0D%0A(707) 596-8503%0D%0ABrian.j1274@gmail.com" class="btn btn-sm">✉️ Email Template (mailto)</a>
+        </div>
+        <div class="callout blue" style="margin:10px 0"><strong>1-Click Flow:</strong> Click One-Click → Kit ZIP downloads + official ATS opens (Greenhouse/Lever/Ashby/Workday/SmartRecruiters/UltiPro/AP Recruit) → Upload PDFs/DOCXs from ZIP + copy-paste from Tailored Screening → Submit. Save confirmation in tracker below. ATS does NOT detect autofill — fields indistinguishable from typed.</div>
+        <div class="copy-box">
+          <button class="btn btn-sm copy-btn" onclick="copyText('autofill-text', this)">Copy Autofill</button>
+          <pre id="autofill-text">BRIAN — AUTOFILL VAULT (copy-paste for ATS)
+Name: Brian
+Email: Brian.j1274@gmail.com
+Phone: (707) 596-8503
+Location: San Francisco, CA 94122
+Address: 21st Ave &amp; Judah St, San Francisco, CA 94122
+Work Auth: Authorized to work in US, no sponsorship
+How heard: Company website
+On-site SF: Yes
+
+EDUCATION:
+UC Santa Cruz — B.S. Chemistry 2007-2011 — Research Assistant Yat Li Lab (GaN CVD) — Publication ACS J Med Chem Feb 2011
+
+EXPERIENCE:
+- Lab Assistant, Quintara Biosciences, Jan-May 2012 — GLP, sample prep, data recording, QC, equipment maintenance
+- Lab Intern, MicroConstants, Aug-Dec 2011 — sample extraction, chromatography, spectroscopy, electronic records, QC
+- Summer Med Chem Intern, Threshold Pharmaceuticals, Jun-Aug 2011 — organic synthesis, purification, NMR, HPLC
+- Property Manager contract, SF, May 2012-Present — compliance records, budgets, vendor schedules, paper trail
+
+SKILLS: HPLC, Spectroscopy (NMR, UV-Vis), Chromatography, Sample Prep, QC &amp; Data Analysis, GLP, MS Office, Buffer Prep, Titration, Instrument Maintenance, Electronic Lab Records / LIMS-style
+
+APPLYING TO: Sutter Health — Laboratory Assistant
+Official: https://www.sutterhealth.org/find-location/facility/cpmc-van-ness-campus-1043247265
+Direct Apply: https://jobs.sutterhealth.org/us/en
+Match: 66% — Moderate-good — entry lab assistant fits your GLP/sample-prep background; licensed roles do not (flag).
+
+SCREENING ANSWERS (honest):
+- GC-MS/ICP-MS/LIMS/cell culture/mouse/CPT? No, but HPLC/NMR/UV-Vis/chromatography/sample prep/GLP/QC/electronic records; willing to train fast.
+- Salary: Per posting range / negotiable. Start: Short notice / 2 weeks.
+- Driver license: Yes if required.
+</pre>
+        </div>
+        <p style="font-size:.82rem;color:var(--muted);margin:8px 0 0">No hallucinations — all docs use real resume facts only. If screening asks about GC-MS/ICP-MS/LIMS/cell culture/mouse/CPT you haven't done, answer No and mention what you HAVE done (HPLC, NMR, UV-Vis, chromatography, sample prep, GLP, QC, electronic records). Kit includes everything, so applying is download + submit.</p>
+      </div>
+    </section>
+
     <section class="block" id="apply">
       <div class="card">
         <h2 class="sec">How to apply - step by step (self-apply, no recruiter)</h2>
-        <p class="sec-sub">Ten short steps. Everything is click, copy, paste. You never pay anything and you never need an agency.</p>
+        <p class="sec-sub">One-Click makes it download + submit, but steps below show what's happening for manual review.</p>
         <div class="callout"><strong>Status: monitor.</strong> Sutter portal verified live; Van Ness lab-support roles post periodically — search location &#x27;San Francisco&#x27;.</div>
         <div class="callout ok">
           <strong>Official apply channel (direct employer):</strong><br>
@@ -83,20 +168,17 @@
         </div>
         <ol style="line-height:1.7">
           <li><strong>Read the status note before you invest any time (2 min).</strong> This employer and the official source are verified, but at audit time there was no live opening here that you should apply to today (see the note above and on the main table). Open the official careers page, search &quot;Laboratory Assistant&quot;, and confirm a live requisition exists. If nothing matches yet, save the page and re-check weekly - and never apply through a third-party site.</li>
-          <li><strong>Read the qualifications once, slowly (3 min).</strong> Highlight what you have done (instrument names, sample types, documentation habits) and what you have not. Being honest about the second list in an interview is worth far more than padding the CV.</li>
-          <li><strong>Create an account on the official portal (3 min).</strong> Use Brian.j1274@gmail.com and a password manager entry named for this employer. Legitimate domains here: job-boards.greenhouse.io, jobs.ashbyhq.com, jobs.lever.co, aprecruit.ucsf.edu, careers.sf.gov, recruiting.ultipro.com.</li>
-          <li><strong>Download the resume and cover letter (1 min).</strong> Buttons are in the Resume and Cover letter sections below; each also has a one-click Copy button if the form only accepts pasted text.</li>
-          <li><strong>Fill the personal details (5 min).</strong> Name, San Francisco CA 94122, (707) 596-8503, Brian.j1274@gmail.com. For &quot;How did you hear about us?&quot; choose &quot;Company website&quot; or &quot;Other&quot;. Work authorization: authorized to work in the US; no sponsorship required.</li>
-          <li><strong>Upload documents (2 min).</strong> Upload the PDF resume, then the cover letter if the form asks. Keep the file names as they are - they identify you cleanly.</li>
-          <li><strong>Answer screening questions truthfully (5 min).</strong> The role&#39;s stated core is: Entry lab support. If a question asks about a technique you have not run, answer no and mention what you have run instead - a clean &#39;I have not, but I learn instruments fast&#39; beats a padded yes.</li>
-          <li><strong>Add references (2 min).</strong> Two or three: a supervisor or PI (Quintara, MicroConstants, Threshold or the UC Santa Cruz research lab) with name, title, relationship, email and phone. Ask each person first - a short email is fine.</li>
-          <li><strong>Submit and save the confirmation (1 min).</strong> Screenshot or note the confirmation number and date in the tracker at the bottom of this page. The reply you get should come from the employer's own email domain.</li>
-          <li><strong>Prepare and follow up.</strong> Rehearse a 30-second pitch: B.S. Chemistry UCSC 2011, HPLC and purification work at Threshold, QC and records discipline at MicroConstants and Quintara, the ACS J. Med. Chem. publication. Then two specific examples of careful work and two questions about the lab's instruments and volume. If nothing comes back in 7-10 business days, send the short intro email below or one polite portal message.</li>
+          <li><strong>Use Easy Apply box above (1 min).</strong> Click 'Download Kit ZIP' or 'One-Click' — it contains resume PDF+TXT+DOCX, cover PDF+TXT+DOCX, email TXT, tailored screening, autofill answers, profile JSON, README with direct link. No extra formatting needed.</li>
+          <li><strong>Open Official Apply (1 min).</strong> Click 'Open Official Apply →' or One-Click — official employer ATS only (Greenhouse, Lever, Ashby, Workday, SmartRecruiters, UltiPro, AP Recruit). Verify live.</li>
+          <li><strong>Fill personal details via autofill (1 min).</strong> Copy from Easy Apply autofill box or Screening_Answers.txt. Name, SF CA 94122, (707) 596-8503, Brian.j1274@gmail.com. How heard: Company website. Work auth: authorized US, no sponsorship.</li>
+          <li><strong>Upload documents (1 min).</strong> Upload Resume PDF (or DOCX if portal requires DOCX) + Cover PDF from Kit ZIP. File names already identify you cleanly.</li>
+          <li><strong>Answer screening honestly (2 min).</strong> Role core: Entry lab support. If technique not done, answer No and mention what you HAVE done — HPLC, NMR, UV-Vis, chromatography, sample prep, GLP, QC, electronic records. Use tailored screening file.</li>
+          <li><strong>Add references (2 min).</strong> 2-3: supervisor/PI (Quintara, MicroConstants, Threshold or UCSC Yat Li Lab) with name, title, relationship, email, phone. Ask each person first.</li>
+          <li><strong>Submit and save confirmation (1 min).</strong> Screenshot or note confirmation number/date in tracker below. Reply should come from employer's own domain.</li>
+          <li><strong>Prepare and follow up.</strong> 30-sec pitch: B.S. Chemistry UCSC 2011, HPLC/purification at Threshold, QC/records at MicroConstants/Quintara, ACS J Med Chem publication. Two examples of careful work, two questions about lab instruments/volume. Follow up 7-10 business days via intro email below or portal message.</li>
         </ol>
         <div class="callout blue">
-          <strong>Copy-paste tip:</strong> use the Copy button on each document below, then paste straight into the
-          application form. The resume and cover letter are ordinary application documents - they do not mention how
-          you get to work or this website.
+          <strong>ATS tip (Pass 8):</strong> Workday prefers DOCX, Greenhouse prefers text-based PDF, Lever is forgiving. Kit provides both. See <a href="../assets/ATS_GUIDE.md">ATS_GUIDE.md</a> for platform-specific flow. Upload resume DOCX first on Workday — it triggers Autofill with Resume, then review every field (parse is draft, can't edit after submit).
         </div>
         <p><button class="btn" onclick="window.print()">Print this checklist</button></p>
       </div>
@@ -105,10 +187,12 @@
     <section class="block" id="resume">
       <div class="card">
         <h2 class="sec">Resume for this application</h2>
-        <p class="sec-sub">One page. Download the PDF, or copy the text if the form only takes plain text.</p>
+        <p class="sec-sub">One page. Download PDF, DOCX, or copy TXT if the form only takes plain text. Kit ZIP includes all formats.</p>
         <p>
           <a href="../assets/resume/job-27_resume.pdf" class="btn btn-primary" download>Download resume PDF</a>
-          <a href="../assets/resume/job-27_resume.txt" class="btn" download>Resume as TXT</a>
+          <a href="../assets/docx/job-27_resume.docx" class="btn btn-primary" download>Resume DOCX (for Workday etc.)</a>
+          <a href="../assets/resume/job-27_resume.txt" class="btn" download>Resume TXT</a>
+          <a href="../assets/kits/job-27_kit.zip" class="btn" download>📦 Kit ZIP (all docs)</a>
           <a href="../assets/resume/Brian_Chemistry_Resume.pdf" class="btn" download>Generic master resume PDF</a>
         </p>
         <div class="copy-box">
@@ -181,10 +265,12 @@ PUBLICATION
     <section class="block" id="cover">
       <div class="card">
         <h2 class="sec">Cover letter</h2>
-        <p class="sec-sub">Three short paragraphs - long enough to be taken seriously, short enough to be read.</p>
+        <p class="sec-sub">Three short paragraphs. Kit ZIP includes PDF+TXT+DOCX.</p>
         <p>
           <a href="../assets/cover/job-27_cover.pdf" class="btn btn-primary" download>Download cover letter PDF</a>
-          <a href="../assets/cover/job-27_cover.txt" class="btn" download>Cover letter as TXT</a>
+          <a href="../assets/docx/job-27_cover.docx" class="btn btn-primary" download>Cover DOCX</a>
+          <a href="../assets/cover/job-27_cover.txt" class="btn" download>Cover TXT</a>
+          <a href="../assets/kits/job-27_kit.zip" class="btn" download>📦 Kit ZIP</a>
         </p>
         <div class="copy-box">
           <button class="btn btn-sm copy-btn" onclick="copyText('cover-text', this)">Copy</button>
@@ -192,7 +278,7 @@ PUBLICATION
 San Francisco, CA 94122
 (707) 596-8503 | Brian.j1274@gmail.com
 
-September 9, 2026
+September 12, 2026
 
 Sutter Health
 San Francisco, CA
@@ -227,8 +313,8 @@ Brian
     <section class="block" id="email">
       <div class="card">
         <h2 class="sec">Intro email</h2>
-        <p class="sec-sub">Use only if the official posting lists a contact address, or if the portal has a message box. Otherwise the portal application is enough.</p>
-        <p><a href="../assets/cover/job-27_email.txt" class="btn" download>Download email as TXT</a></p>
+        <p class="sec-sub">Use only if official posting lists a contact address or portal has a message box. Kit includes this file. Mailto button above pre-fills subject/body.</p>
+        <p><a href="../assets/cover/job-27_email.txt" class="btn" download>Download email TXT</a> <a href="../assets/kits/job-27_kit.zip" class="btn" download>📦 Kit ZIP</a></p>
         <div class="copy-box">
           <button class="btn btn-sm copy-btn" onclick="copyText('email-text', this)">Copy</button>
           <pre id="email-text">Subject: Consideration for Laboratory Assistant - Brian, B.S. Chemistry (UC Santa Cruz)
@@ -261,17 +347,17 @@ Brian.j1274@gmail.com
 
     <section class="block" id="transit">
       <div class="card">
-        <h2 class="sec">Getting there from 21st Ave &amp; Judah St</h2>
-        <p class="sec-sub">SFMTA only - kept off the resume on purpose. This section is for you, not the hiring manager.</p>
+        <h2 class="sec">Getting there from 21st Ave & Judah St</h2>
+        <p class="sec-sub">SFMTA only - kept off the resume on purpose.</p>
         <div class="callout">
-          <strong>Home:</strong> 21st Ave &amp; Judah St, Inner Sunset, San Francisco 94122 (Judah &amp; 21st Ave stop, N Judah)<br>
+          <strong>Home:</strong> 21st Ave & Judah St, Inner Sunset, SF 94122 (Judah & 21st Ave stop, N Judah)<br>
           <strong>Destination:</strong> 1101 Van Ness Avenue, San Francisco, CA 94109<br>
           <strong>Zone:</strong> B - ZONE B — From 21st &amp; Judah: N Judah eastbound to Van Ness station → walk north on Van Ness ~10 min or 47/49 bus north to 1101 Van Ness. ~35-45 min. CPMC runs a Civic Center BART shuttle (B Line). Confirm via SFMTA.<br>
           <strong>Live planners:</strong> <a href="https://www.sfmta.com" target="_blank" rel="noopener">SFMTA</a> | <a href="https://www.511.org" target="_blank" rel="noopener">511.org</a>
         </div>
         <div class="copy-box">
           <button class="btn btn-sm copy-btn" onclick="copyText('transit-text', this)">Copy</button>
-          <pre id="transit-text">From: 21st Ave & Judah St, San Francisco, CA 94122 (Judah & 21st Ave, N Judah)
+          <pre id="transit-text">From: 21st Ave &amp; Judah St, San Francisco, CA 94122 (Judah &amp; 21st Ave, N Judah)
 To: 1101 Van Ness Avenue, San Francisco, CA 94109
 Route: ZONE B — From 21st &amp; Judah: N Judah eastbound to Van Ness station → walk north on Van Ness ~10 min or 47/49 bus north to 1101 Van Ness. ~35-45 min. CPMC runs a Civic Center BART shuttle (B Line). Confirm via SFMTA.
 Employer: Sutter Health — CPMC Van Ness Campus
@@ -284,7 +370,7 @@ Check live times on SFMTA (sfmta.com) or 511.org before an interview; night and 
     <section class="block" id="verify">
       <div class="card">
         <h2 class="sec">Verification - what was checked and how</h2>
-        <p class="sec-sub">Nothing here is inferred. Where the official source did not say something, this page says so instead of guessing.</p>
+        <p class="sec-sub">Nothing inferred. Official sources only, with direct links for manual review. Pass 8 adds tailored screening + ATS guide.</p>
         <ul class="clean">
           <li><strong>Employer</strong>: Sutter Health — CPMC Van Ness Campus - official source https://www.sutterhealth.org/find-location/facility/cpmc-van-ness-campus-1043247265</li>
           <li><strong>Position</strong>: Laboratory Assistant — Clinical Lab Support (entry)</li>
@@ -294,26 +380,30 @@ Check live times on SFMTA (sfmta.com) or 511.org before an interview; night and 
           <li><strong>Apply channel</strong>: Official Sutter Health jobs portal (direct) - direct employer only; no recruiter, no staffing firm, no fee</li>
           <li><strong>What the posting asks for</strong>: Entry lab support; specimen handling, data entry, safety; CLS roles need CA license.</li>
           <li><strong>Match score 66%</strong>: Moderate-good — entry lab assistant fits your GLP/sample-prep background; licensed roles do not (flag).</li>
-          <li><strong>Documents</strong>: Resume, cover letter and intro email on this page contain only r&eacute;sum&eacute; facts plus the wording of this posting. No commute, transit or address information appears in them; that stays in the &quot;Getting there&quot; section.</li>
+          <li><strong>Direct Apply Link (official, for manual review)</strong>: <a href="https://jobs.sutterhealth.org/us/en" target="_blank" rel="noopener">https://jobs.sutterhealth.org/us/en</a> — Official Sutter Health jobs portal (direct)</li>
+          <li><strong>Official Site (for manual review)</strong>: <a href="https://www.sutterhealth.org/find-location/facility/cpmc-van-ness-campus-1043247265" target="_blank" rel="noopener">https://www.sutterhealth.org/find-location/facility/cpmc-van-ness-campus-1043247265</a></li>
+          <li><strong>Kit ZIP (download & submit)</strong>: <a href="../assets/kits/job-27_kit.zip" download>../assets/kits/job-27_kit.zip</a> — contains resume PDF+TXT+DOCX, cover PDF+TXT+DOCX, email TXT, tailored screening, autofill answers, profile JSON, README</li>
+          <li><strong>Tailored Screening</strong>: <a href="../assets/screening/job-27_screening.txt" download>../assets/screening/job-27_screening.txt</a> — Q&A tailored to this job, honest No where needed</li>
+          <li><strong>Documents</strong>: Resume, cover letter and intro email on this page contain only resume facts plus wording of this posting. No commute/transit/address in them; that stays in 'Getting there'.</li>
         </ul>
         <div class="callout red">
           <strong>Watch-outs:</strong> Clinical Lab Scientist roles require California CLS license — target Lab Assistant / support titles only.
         </div>
-        <p><a href="../index.html" class="btn">&larr; Back to all 120 jobs</a> <a href="https://www.sutterhealth.org/find-location/facility/cpmc-van-ness-campus-1043247265" target="_blank" rel="noopener" class="btn btn-primary">Open official careers page</a></p>
+        <p><a href="../index.html" class="btn">&larr; Back to all 120 jobs</a> <a href="https://www.sutterhealth.org/find-location/facility/cpmc-van-ness-campus-1043247265" target="_blank" rel="noopener" class="btn btn-primary">Open official careers page</a> <a href="https://jobs.sutterhealth.org/us/en" target="_blank" rel="noopener" class="btn btn-primary">Apply direct →</a></p>
       </div>
     </section>
 
     <section class="block" id="tracker">
       <div class="card">
         <h2 class="sec">My application tracker (saved on this device)</h2>
-        <p class="sec-sub">Marked steps are stored in your browser only - nothing is uploaded anywhere.</p>
+        <p class="sec-sub">Marked steps are stored in your browser only - nothing uploaded.</p>
         <div id="tracker-widget-job-27"></div>
       </div>
     </section>
 
     <footer>
-      <p>JobSearchSF - job-27 - Sutter Health — CPMC Van Ness Campus - verification snapshot <span id="today"></span>. Apply through the official employer portal only. No recruiters, no fees, no guesses.</p>
-      <p><a href="../index.html">&larr; Back to main list</a> | <a href="https://www.sutterhealth.org/find-location/facility/cpmc-van-ness-campus-1043247265" target="_blank" rel="noopener">Official careers page</a> | <a href="https://jobs.sutterhealth.org/us/en" target="_blank" rel="noopener">Apply direct</a></p>
+      <p>JobSearchSF - job-27 - Sutter Health — CPMC Van Ness Campus - verification snapshot <span id="today"></span>. Apply through official employer portal only. No recruiters, no fees, no guesses. Pass 8 Easy Apply: One-Click = Kit ZIP download + official ATS open.</p>
+      <p><a href="../index.html">&larr; Back to main list</a> | <a href="https://www.sutterhealth.org/find-location/facility/cpmc-van-ness-campus-1043247265" target="_blank" rel="noopener">Official careers page</a> | <a href="https://jobs.sutterhealth.org/us/en" target="_blank" rel="noopener">Apply direct</a> | <a href="../assets/kits/job-27_kit.zip" download>📦 Kit ZIP</a> | <a href="../assets/screening/job-27_screening.txt" download>📋 Screening</a></p>
     </footer>
   </main>
   <script src="../assets/js/tracker.js"></script>

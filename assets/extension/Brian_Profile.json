@@ -1,0 +1,95 @@
+{
+  "personal": {
+    "firstName": "Brian",
+    "lastName": "",
+    "fullName": "Brian",
+    "email": "Brian.j1274@gmail.com",
+    "phone": "(707) 596-8503",
+    "phoneDigits": "7075968503",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94122",
+    "addressLine": "21st Ave & Judah St, San Francisco, CA 94122",
+    "locationShort": "San Francisco, CA 94122",
+    "workAuthorization": "Authorized to work in the US, no sponsorship required",
+    "willingToRelocate": "No - SF only, N Judah commutable",
+    "linkedin": "",
+    "portfolio": ""
+  },
+  "summary": "B.S. Chemistry (UC Santa Cruz, 2011) with hands-on bench experience in analytical and preparative chemistry: HPLC and chromatographic purification, NMR and UV-Vis characterization, sample preparation and extraction, and QC documentation under GLP.",
+  "education": [
+    {
+      "degree": "B.S. Chemistry",
+      "school": "University of California, Santa Cruz",
+      "location": "Santa Cruz, CA",
+      "start": "2007",
+      "end": "2011",
+      "gpa": "",
+      "details": "Research Assistant, Yat Li's Lab: gallium nitride cells via chemical vapor deposition, sample prep, characterization, data analysis. Publication: 14-Aminocamptothecins — ACS J. Med. Chem., Feb 2011"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Lab Assistant",
+      "company": "Quintara Biosciences",
+      "location": "San Francisco Bay Area",
+      "start": "Jan 2012",
+      "end": "May 2012",
+      "description": "Ran laboratory procedures under GLP, including sample preparation and accurate data recording. Carried out QC checks and documented results. Maintained lab equipment and safety compliance."
+    },
+    {
+      "title": "Lab Intern",
+      "company": "MicroConstants",
+      "location": "San Diego, CA",
+      "start": "Aug 2011",
+      "end": "Dec 2011",
+      "description": "Prepared samples by extraction and ran chromatography on QC bench. Performed spectroscopic analysis, recorded and interpreted output. Helped move paper lab records into electronic systems and supported QC."
+    },
+    {
+      "title": "Summer Medicinal Chemistry Intern",
+      "company": "Threshold Pharmaceuticals",
+      "location": "San Francisco Bay Area",
+      "start": "Jun 2011",
+      "end": "Aug 2011",
+      "description": "Synthesized organic compounds for drug-development program. Purified compounds and followed purity by HPLC and NMR. Contributed to experimental design, reaction troubleshooting and data interpretation."
+    },
+    {
+      "title": "Property Manager (contract)",
+      "company": "Self-employed / Contract",
+      "location": "San Francisco, CA",
+      "start": "May 2012",
+      "end": "Present",
+      "description": "Run paperwork side of residential operations: compliance records, contracts, receipts and reporting. Track budgets and expenses, vendor, maintenance and supply schedules. Handle tenant and contractor communication with paper trail."
+    }
+  ],
+  "skills": [
+    "HPLC",
+    "Spectroscopy (NMR, UV-Vis)",
+    "Chromatography (column, flash, HPLC)",
+    "Sample Preparation & Extraction",
+    "QC & Data Analysis",
+    "GLP",
+    "Electronic Lab Records / LIMS-style entry",
+    "Buffer and Reagent Preparation",
+    "Titration and pH adjustment",
+    "Instrument Maintenance and Troubleshooting",
+    "MS Office / Excel",
+    "Organizational / Financial Management"
+  ],
+  "publication": "14-Aminocamptothecins: Their Synthesis, Preclinical Activity, and Potential Use for Cancer Treatment — ACS J. Med. Chem., Feb 2011",
+  "certifications": [],
+  "commonATSAnswers": {
+    "howDidYouHear": "Company website",
+    "workAuthUS": "Yes, authorized to work in the US",
+    "requireSponsorship": "No",
+    "willingToWorkOnsite": "Yes, SF on-site",
+    "startDate": "Short notice / 2 weeks",
+    "salaryExpectation": "Per posting range / negotiable (entry RA range)",
+    "noticePeriod": "2 weeks if needed, otherwise short notice",
+    "remotePreference": "On-site SF preferred (N Judah commutable)",
+    "relocation": "No, SF-based",
+    "driverLicense": "Yes, CA driver's license (if required)",
+    "veteran": "No",
+    "disability": "No / Prefer not to say"
+  }
+}

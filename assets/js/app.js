@@ -1,4 +1,4 @@
-/* JobSearchSF — rendering & filtering (pure client-side) — 100 verified entries */
+/* JobSearchSF — rendering & filtering (pure client-side) — 120 verified entries — Pass 7 Easy Apply */
 (function () {
   const STATUS_META = {
     "recently-posted": { cls: "badge recently-posted", label: "Recently posted" },
@@ -14,15 +14,19 @@
     D:   { cls: "badge zoneD", label: "Zone D — Longest (Bayview)" },
     Flagged: { cls: "badge zoneFlagged", label: "Flagged" }
   };
-  const ZONE_ORDER = { A: 0, "A/B": 1, B: 2, "B/C": 3, C: 4, D: 5 };
+  const ZONE_ORDER = { A: 0, "A/B": 1, B: 2, "B/C": 3, C: 4, D: 5, Flagged: 9 };
 
   function esc(s) {
     return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
-  // applyLink fields contain "URL — search instructions"; extract clean URL for href
   function cleanUrl(s) {
-    const m = String(s || "").match(/https?:\/\/[^\s\u2014\u2013>\"\]]+/);
-    return m ? m[0] : "#";
+    const text = String(s || "");
+    const urls = text.match(/https?:\/\/[^\s"' >\]]+/g);
+    if (!urls || !urls.length) return "#";
+    // Prefer specific ATS patterns
+    const pref = urls.filter(u => /jpf|greenhouse\.io|lever\.co|ashbyhq|smartrecruiters|ultipro|aprecruit|brassring|myworkday/i.test(u));
+    const chosen = pref.length ? pref[0] : urls[0];
+    return chosen.replace(/[.,)]+$/, "");
   }
   function scoreBadge(score) {
     if (score >= 85) return '<span class="badge score-high">' + esc(score) + '% match</span>';
@@ -56,13 +60,19 @@
     const zm = ZONE_META[j.commuteZone] || ZONE_META.C;
     const verifiedBadge = j.verified ? '<span class="badge verified">✓ Verified</span>' : '<span class="badge flag">Unverified</span>';
     const applyUrl = cleanUrl(j.applyLink);
+    const officialUrl = j.officialLink || "#";
+    const kitUrl = "assets/kits/" + j.id + "_kit.zip";
+    const resumePdf = "assets/resume/" + j.id + "_resume.pdf";
+    const resumeDocx = "assets/docx/" + j.id + "_resume.docx";
+    const screeningPath = "assets/screening/" + j.id + "_screening.txt";
     return (
       '<tr data-id="' + esc(j.id) + '">' +
         '<td><div class="company">' + esc(j.company) + '</div><div class="role">' + esc(j.position) + '</div><div style="margin-top:6px"><span class="' + st.cls + '">' + esc(st.label) + '</span> <span class="' + zm.cls + '">' + esc(zm.label.split(" — ")[0]) + '</span>' + batchBadge(j) + '</div></td>' +
         '<td>' + verifiedBadge + '<div style="margin-top:6px;font-size:.78rem;color:#5f6f81">' + esc(j.verificationMethod || "Official site + address") + '</div></td>' +
         '<td>' + scoreBadge(j.matchScore || 0) + '<div style="margin-top:6px;font-size:.80rem">' + esc(j.fit ? j.fit.slice(0,90) + "..." : "") + '</div></td>' +
-        '<td><a href="' + esc(j.officialLink) + '" target="_blank" rel="noopener" class="btn btn-sm">Official site</a><div style="margin-top:6px;font-size:.78rem"><a href="' + esc(applyUrl) + '" target="_blank" rel="noopener">Apply direct →</a><br>' + esc(String(j.applyLink).slice(0,60)) + '...</div></td>' +
-        '<td><a href="' + esc(j.subpage) + '" class="btn btn-sm btn-primary">Apply guide →</a><div style="margin-top:6px;font-size:.78rem">📍 ' + esc(j.location) + '</div></td>' +
+        '<td><button onclick="easyApply(\'' + esc(j.id) + '\')" class="btn btn-sm btn-primary" style="background:#16a34a">⚡ One-Click</button> <a href="' + esc(kitUrl) + '" class="btn btn-sm btn-primary" download>📦 Kit ZIP</a><div style="margin-top:6px;display:flex;flex-wrap:wrap;gap:4px"><a href="' + esc(resumePdf) + '" class="btn btn-sm" download>PDF</a><a href="' + esc(resumeDocx) + '" class="btn btn-sm" download>DOCX</a><a href="' + esc(screeningPath) + '" class="btn btn-sm" download>Screening</a></div><div style="margin-top:6px;font-size:.76rem;color:var(--muted)">One-Click = Download Kit + Open Official Apply</div></td>' +
+        '<td><a href="' + esc(officialUrl) + '" target="_blank" rel="noopener" class="btn btn-sm">Official site</a><div style="margin-top:6px;font-size:.78rem"><a href="' + esc(applyUrl) + '" target="_blank" rel="noopener"><strong>Apply direct →</strong></a><br><span style="word-break:break-all">' + esc(applyUrl.slice(0,70)) + '...</span><br><span style="font-size:.72rem;color:var(--muted)">' + esc(j.applyChannel || "") + '</span></div></td>' +
+        '<td><a href="' + esc(j.subpage) + '" class="btn btn-sm btn-primary">⚡ Easy Apply →</a><div style="margin-top:6px;font-size:.78rem">📍 ' + esc(j.location) + '</div></td>' +
         '<td>' + trackerCell(j) + '</td>' +
       '</tr>'
     );
@@ -73,6 +83,12 @@
     const zm = ZONE_META[j.commuteZone] || ZONE_META.C;
     const verifiedBadge = j.verified ? '<span class="badge verified">✓ Verified — official site + SF address</span>' : '';
     const applyUrl = cleanUrl(j.applyLink);
+    const officialUrl = j.officialLink || "#";
+    const kitUrl = "assets/kits/" + j.id + "_kit.zip";
+    const resumePdf = "assets/resume/" + j.id + "_resume.pdf";
+    const coverPdf = "assets/cover/" + j.id + "_cover.pdf";
+    const resumeDocx = "assets/docx/" + j.id + "_resume.docx";
+    const coverDocx = "assets/docx/" + j.id + "_cover.docx";
     let flag = "";
     if (j.flag) flag = '<div class="flag-note">⚠ ' + esc(j.flag) + "</div>";
     return (
@@ -87,7 +103,7 @@
           '<div class="field"><div class="lbl">Status & verification</div><div class="val">' + esc(j.statusNote) + '<br><br><strong>Verified:</strong> ' + esc(j.verificationMethod) + '</div></div>' +
           '<div class="field"><div class="lbl">Transit from ~21st & Judah (N Judah + bus)</div><div class="val">' + esc(j.route) + '</div></div>' +
           '<div class="field"><div class="lbl">Fit & requirements</div><div class="val"><strong>Match:</strong> ' + esc(j.matchScore) + '% — ' + esc(j.fit) + '<br><br><strong>Req:</strong> ' + esc(j.requirements) + '</div></div>' +
-          '<div class="field apply"><div class="lbl">Apply directly (official)</div><div class="val"><strong>' + esc(j.applyChannel) + '</strong><br><a href="' + esc(applyUrl) + '" target="_blank" rel="noopener">Apply direct →</a><br>' + esc(j.applyLink) + '<br><br><a href="' + esc(j.subpage) + '" class="btn btn-primary btn-sm">Open step-by-step apply guide →</a><br><br><a href="' + esc(j.officialLink) + '" target="_blank" rel="noopener">' + esc(j.officialLink) + '</a></div></div>' +
+          '<div class="field apply"><div class="lbl">⚡ Easy Apply — Download & Submit (Pass 7)</div><div class="val"><a href="' + esc(kitUrl) + '" class="btn btn-primary btn-sm" download>📦 Download Kit ZIP</a> <a href="' + esc(applyUrl) + '" target="_blank" rel="noopener" class="btn btn-primary btn-sm">🚀 Apply direct →</a><br><br><div style="display:flex;flex-wrap:wrap;gap:6px"><a href="' + esc(resumePdf) + '" class="btn btn-sm" download>Resume PDF</a><a href="' + esc(resumeDocx) + '" class="btn btn-sm" download>Resume DOCX</a><a href="' + esc(coverPdf) + '" class="btn btn-sm" download>Cover PDF</a><a href="' + esc(coverDocx) + '" class="btn btn-sm" download>Cover DOCX</a></div><br><strong>' + esc(j.applyChannel) + '</strong><br><a href="' + esc(applyUrl) + '" target="_blank" rel="noopener">' + esc(applyUrl) + '</a><br><br><a href="' + esc(j.subpage) + '" class="btn btn-primary btn-sm">Open ⚡ Easy Apply guide →</a><br><br><a href="' + esc(officialUrl) + '" target="_blank" rel="noopener">' + esc(officialUrl) + '</a><br><br><span style="font-size:.78rem;color:var(--muted)">Kit includes resume PDF+TXT+DOCX, cover PDF+TXT+DOCX, email TXT, Screening_Answers.txt, Brian_Profile.json, README with direct link. No typing needed.</span></div></div>' +
         "</div>" +
         flag +
         sourcesHtml(j.sources) +
@@ -107,7 +123,7 @@
     if (container) {
       container.innerHTML = list.map(jobCard).join("");
     }
-    if (countEl) countEl.textContent = list.length + " verified rows (re-verify live postings before applying)";
+    if (countEl) countEl.textContent = list.length + " verified rows — each with Kit ZIP + direct official apply link (re-verify live before applying)";
     if (tableCountEl) tableCountEl.textContent = list.length + " jobs";
     if (window.JobTracker) window.JobTracker.renderSummary();
 
@@ -130,7 +146,9 @@
     if (top10 && window.JOBS_DATA) {
       const best = window.JOBS_DATA.slice().sort(function (a, b) { return (b.matchScore || 0) - (a.matchScore || 0); }).slice(0, 10);
       top10.innerHTML = best.map(function (j, i) {
-        return '<li><a href="' + esc(j.subpage) + '"><strong>' + esc(j.company) + '</strong> — ' + esc(j.position.split(" — ")[0]) + '</a> <span class="badge score-high">' + esc(j.matchScore) + '%</span></li>';
+        const kit = "assets/kits/" + j.id + "_kit.zip";
+        const applyUrl = cleanUrl(j.applyLink);
+        return '<li><a href="' + esc(j.subpage) + '"><strong>' + esc(j.company) + '</strong> — ' + esc(j.position.split(" — ")[0]) + '</a> <span class="badge score-high">' + esc(j.matchScore) + '%</span> <a href="' + esc(kit) + '" class="btn btn-sm" download>📦 Kit</a> <a href="' + esc(applyUrl) + '" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Apply direct →</a></li>';
       }).join("");
     }
   }
@@ -157,7 +175,6 @@
       list = list.filter(function (j) { return j.status === f.status; });
     }
     if (f.zone && f.zone !== "all") {
-      // Zone filter matches base letter: A matches A and A/B; B matches B, A/B, B/C; etc.
       list = list.filter(function (j) {
         return String(j.commuteZone || "").split("/").indexOf(f.zone) !== -1;
       });
@@ -172,7 +189,6 @@
         return (j.company + " " + j.position + " " + j.location + " " + j.fit + " " + j.requirements).toLowerCase().includes(q);
       });
     }
-    // sort (copy first)
     list = list.slice();
     if (f.sort === "match") {
       list.sort(function (a, b) { return (b.matchScore || 0) - (a.matchScore || 0); });
@@ -220,9 +236,14 @@
     const csvBtn = document.getElementById("export-csv");
     if (csvBtn) {
       csvBtn.addEventListener("click", function () {
-        const rows = [["id", "company", "position", "matchScore", "zone", "status", "location", "officialLink", "applyLink", "subpage"]];
+        const rows = [["id", "company", "position", "matchScore", "zone", "status", "location", "officialLink", "applyLink", "kitZip", "resumePDF", "resumeDOCX", "coverPDF", "coverDOCX", "subpage"]];
         (lastList || []).forEach(function (j) {
-          rows.push([j.id, j.company, j.position, j.matchScore, j.commuteZone, j.status, j.location, j.officialLink, j.applyLink, j.subpage]);
+          const kit = "assets/kits/" + j.id + "_kit.zip";
+          const rpdf = "assets/resume/" + j.id + "_resume.pdf";
+          const rdocx = "assets/docx/" + j.id + "_resume.docx";
+          const cpdf = "assets/cover/" + j.id + "_cover.pdf";
+          const cdocx = "assets/docx/" + j.id + "_cover.docx";
+          rows.push([j.id, j.company, j.position, j.matchScore, j.commuteZone, j.status, j.location, j.officialLink, j.applyLink, kit, rpdf, rdocx, cpdf, cdocx, j.subpage]);
         });
         const csv = "\uFEFF" + rows.map(function (r) {
           return r.map(function (c) { return '"' + String(c == null ? "" : c).replace(/"/g, '""') + '"'; }).join(",");
@@ -230,7 +251,7 @@
         const blob = new Blob([csv], { type: "text/csv;charset=utf-8" });
         const a = document.createElement("a");
         a.href = URL.createObjectURL(blob);
-        a.download = "jobsearchsf-export.csv";
+        a.download = "jobsearchsf-export-pass7.csv";
         document.body.appendChild(a);
         a.click();
         setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500);
@@ -240,3 +261,23 @@
     if (el) el.textContent = new Date().toISOString().slice(0, 10);
   });
 })();
+
+window.easyApply = function(id){
+  const kitUrl = 'assets/kits/'+id+'_kit.zip';
+  const job = (window.JOBS_DATA||[]).find(j=>j.id===id);
+  const applyUrl = job ? (function(s){
+    const text = String(s||'');
+    const urls = text.match(/https?:\/\/[^\s"' >\]]+/g);
+    if(!urls) return '#';
+    const pref = urls.filter(u => /jpf|greenhouse\.io|lever\.co|ashbyhq|smartrecruiters|ultipro|aprecruit|brassring|myworkday/i.test(u));
+    const chosen = pref.length ? pref[0] : urls[0];
+    return chosen.replace(/[.,)]+$/, '');
+  })(job.applyLink) : '#';
+  const a = document.createElement('a');
+  a.href = kitUrl;
+  a.download = id+'_kit.zip';
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(()=>{ a.remove(); }, 500);
+  if(applyUrl && applyUrl!=='#') window.open(applyUrl, '_blank', 'noopener');
+};

@@ -1,0 +1,9 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body{font-family:sans-serif;width:280px;padding:12px}button{background:#16a34a;color:#fff;border:0;padding:10px 14px;border-radius:8px;width:100%;cursor:pointer} .note{font-size:.8rem;color:#666;margin-top:8px}</style></head><body><h3>JobSearchSF Easy Apply</h3><p>Draft autofill — review before submit. ATS does NOT detect autofill.</p><button id="fill">Autofill This Page</button><div class="note" id="status"></div><script>
+document.getElementById('fill').onclick=()=>{
+  chrome.tabs.query({active:true,currentWindow:true}, tabs=>{
+    chrome.tabs.sendMessage(tabs[0].id, {action:'autofill'}, resp=>{
+      document.getElementById('status').textContent = resp ? `Filled ${resp.filled} fields — review!` : 'No response — reload page';
+    });
+  });
+};
+</script></body></html>
