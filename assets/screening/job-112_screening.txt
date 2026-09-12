@@ -1,0 +1,58 @@
+TAILORED SCREENING ANSWERS — job-112 — University of California, San Francisco - School of Dentistry - Cell & Tissue Biology (Bush Lab) — Junior / Assistant / Associate Specialist - Neural crest and developmental biology (JPF06050)
+Official: https://aprecruit.ucsf.edu/JPF06050
+Direct Apply (verified): https://aprecruit.ucsf.edu/JPF06050
+Match Score: 68%
+
+=== COPY-PASTE BLOCKS FOR ATS ===
+Name: Brian
+Email: Brian.j1274@gmail.com
+Phone: (707) 596-8503
+Location: San Francisco, CA 94122
+Work Auth: Authorized to work in US, no sponsorship
+How heard: Company website
+On-site SF: Yes
+Start: Short notice / 2 weeks
+Salary: Per posting range / negotiable
+
+EDUCATION:
+UC Santa Cruz — B.S. Chemistry 2007-2011 — Research Assistant Yat Li Lab (GaN CVD) — Publication ACS J Med Chem Feb 2011
+
+EXPERIENCE:
+- Lab Assistant, Quintara Biosciences, Jan-May 2012 — GLP, sample prep, data recording, QC, equipment maintenance
+- Lab Intern, MicroConstants, Aug-Dec 2011 — sample extraction, chromatography, spectroscopy, electronic records, QC
+- Summer Med Chem Intern, Threshold Pharmaceuticals, Jun-Aug 2011 — organic synthesis, purification, NMR, HPLC
+- Property Manager contract, SF, May 2012-Present — compliance records, budgets, vendor schedules
+
+SKILLS: HPLC, Spectroscopy (NMR, UV-Vis), Chromatography, Sample Prep, QC & Data Analysis, GLP, MS Office, Buffer Prep, Titration, Instrument Maintenance, Electronic Lab Records / LIMS-style
+
+=== JOB-SPECIFIC HONEST ANSWERS ===
+Role core: Baccalaureate or 4+ years research experience at Junior rank; imaging and molecular methods per posting.
+
+Techniques this posting mentions:
+- GC-MS: Not mentioned in this posting core, but answer honestly if asked: HPLC/NMR/UV-Vis yes, GC-MS no, willing to train
+- ICP-MS: Not mentioned
+- LIMS: Mention LIMS-style records if asked
+- Cell culture: Not core
+- Mouse/animal: Not core
+- CPT / Pharmacy Tech license: Not required
+
+General screening guidance (honest, no hallucinations):
+- If asked about GC-MS/ICP-MS/LIMS/cell culture/mouse/CPT: answer No where you haven't done it, and immediately add what you HAVE done (HPLC, NMR, UV-Vis, chromatography, sample prep, GLP, QC, electronic records) + willing to train.
+- Salary: Per posting range / negotiable
+- Start date: Short notice / 2 weeks
+- References: 2-3 supervisor/PI (Quintara, MicroConstants, Threshold or UCSC Yat Li Lab) — ask permission first
+- Driver license: Yes if required
+- Relocation: Already in SF, on-site yes
+
+Flag for this job: No irregularity found; re-verify live before applying
+
+=== HOW TO APPLY (1-Click) ===
+1. Download Kit ZIP (contains resume PDF+DOCX+TXT, cover PDF+DOCX+TXT, email TXT, this screening file, profile JSON, README)
+2. Open Direct Apply link: https://aprecruit.ucsf.edu/JPF06050
+3. Upload resume DOCX (Workday) or PDF (Greenhouse/Lever/Ashby) + cover
+4. Copy-paste from this file for screening questions
+5. Submit + save confirmation in tracker (localStorage)
+
+Official sources for manual review:
+- Official site: https://aprecruit.ucsf.edu/JPF06050
+- Direct apply: https://aprecruit.ucsf.edu/JPF06050

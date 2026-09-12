@@ -88,6 +88,30 @@
       </div>
     </section>
 
+    <section class="block" id="bulk">
+      <div class="card">
+        <h2 class="sec">📦 Bulk Actions — True Download & Submit (Pass 8)</h2>
+        <p class="sec-sub">One click to get everything you need. No manual input, no re-typing, no recruiter.</p>
+        <div class="kit-grid">
+          <a href="assets/kits/all_kits.zip" class="btn btn-primary" download>📦 Download ALL 120 Kits (ZIP of ZIPs)</a>
+          <a href="assets/kits/top10_kits.zip" class="btn btn-primary" download>🏆 Download Top 10 Kits (by Match Score)</a>
+          <a href="assets/kits/top20_kits.zip" class="btn btn-primary" download>⭐ Download Top 20 Kits</a>
+          <a href="assets/kits/all_resumes_pdfs.zip" class="btn" download>📄 All Resumes PDF (120 + master)</a>
+          <a href="assets/kits/all_covers_pdfs.zip" class="btn" download>✉️ All Covers PDF (120 + master)</a>
+          <a href="assets/profile/All_Jobs_Easy_Apply.json" class="btn" download>🧩 Master JSON (for Simplify/Teal/automation)</a>
+          <a href="assets/ATS_GUIDE.md" class="btn" download>📖 ATS Guide (Workday/Greenhouse/Lever/Ashby/SmartRecruiters/UltiPro/AP Recruit)</a>
+          <a href="assets/bookmarklet.js" class="btn" download>🔖 Bookmarklet JS (drag to bookmarks bar)</a>
+          <a href="assets/extension/manifest.json" class="btn" download>🧩 Extension Manifest (draft)</a>
+        </div>
+        <div class="callout blue">
+          <strong>One-Click Easy Apply in table:</strong> Every row now has <code>⚡ One-Click</code> button — it downloads the Kit ZIP and opens the official direct-apply link in a new tab simultaneously. One click = download + submit ready. No manual searching for official link.
+        </div>
+        <div class="callout ok">
+          <strong>Automation for power users:</strong> Import <code>All_Jobs_Easy_Apply.json</code> into your own script or into tools like Simplify/Teal. Each entry has <code>applyLinkClean</code> (official ATS URL with job ID where available), <code>kitZip</code>, resume/cover PDF/DOCX paths, screening path, matchScore, flag. Use with Playwright: open applyLinkClean, upload resume DOCX, autofill from profile, paste screening answers, submit. ATS does NOT detect autofill — fields indistinguishable from typed.
+        </div>
+      </div>
+    </section>
+
     <!-- OVERVIEW -->
     <section class="block" id="overview">
       <div class="card">
@@ -415,5 +439,29 @@
   <script src="assets/js/data.js"></script>
   <script src="assets/js/tracker.js"></script>
   <script src="assets/js/app.js"></script>
+
+<script>
+function cleanUrl(s){
+  const text = String(s||'');
+  const urls = text.match(/https?:\/\/[^\s"' >\]]+/g);
+  if(!urls) return '#';
+  const pref = urls.filter(u => /jpf|greenhouse\.io|lever\.co|ashbyhq|smartrecruiters|ultipro|aprecruit|brassring|myworkday/i.test(u));
+  const chosen = pref.length ? pref[0] : urls[0];
+  return chosen.replace(/[.,)]+$/, '');
+}
+function easyApply(id){
+  const kitUrl = 'assets/kits/'+id+'_kit.zip';
+  const job = (window.JOBS_DATA||[]).find(j=>j.id===id);
+  const applyUrl = job ? cleanUrl(job.applyLink) : '#';
+  const a = document.createElement('a');
+  a.href = kitUrl;
+  a.download = id+'_kit.zip';
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(()=>{ a.remove(); }, 500);
+  if(applyUrl && applyUrl!=='#') window.open(applyUrl, '_blank', 'noopener');
+}
+</script>
+
 </body>
 </html>

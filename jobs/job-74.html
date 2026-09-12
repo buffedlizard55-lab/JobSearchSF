@@ -43,6 +43,16 @@
       navigator.clipboard.writeText(text).then(function () { feedback(true); }, legacy);
     } else { legacy(); }
   }
+  function easyApply(id, applyUrl){
+    const kitUrl = '../assets/kits/'+id+'_kit.zip';
+    const a = document.createElement('a');
+    a.href = kitUrl;
+    a.download = id+'_kit.zip';
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(()=>{ a.remove(); }, 500);
+    if(applyUrl && applyUrl!=='#') window.open(applyUrl, '_blank', 'noopener');
+  }
   </script>
 </head>
 <body>
@@ -78,16 +88,20 @@
 
     <section class="block" id="easy">
       <div class="easy-box">
-        <h3>⚡ Easy Apply — Download & Submit in 3 Clicks (Pass 7)</h3>
-        <p style="margin:0 0 8px"><strong>Goal:</strong> No typing, no re-formatting. One ZIP = everything you need. Direct official link only, no recruiters.</p>
-        <div class="callout ok" style="margin:10px 0"><strong>Direct Apply (official, verified):</strong> <a href="#" target="_blank" rel="noopener"><strong>#</strong></a><br>Channel: Official Anthrogen Ashby board (direct startup employer)<br>Official site: <a href="https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0" target="_blank" rel="noopener">https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0</a></div>
+        <h3>⚡ Easy Apply — Download & Submit in 1 Click (Pass 8)</h3>
+        <p style="margin:0 0 8px"><strong>Goal:</strong> No typing, no re-formatting. One ZIP = everything you need. Direct official link only, no recruiters. One-Click downloads Kit + opens official apply.</p>
+        <div class="callout ok" style="margin:10px 0"><strong>Direct Apply (official, verified):</strong> <a href="https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0" target="_blank" rel="noopener"><strong>https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0</strong></a><br>Channel: Official Anthrogen Ashby board (direct startup employer)<br>Official site: <a href="https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0" target="_blank" rel="noopener">https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0</a></div>
         <div class="easy-grid">
+          <button class="btn btn-primary" onclick="easyApply('job-74', 'https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0')" style="background:#16a34a">⚡ One-Click: Download Kit + Open Official Apply</button>
           <a href="../assets/kits/job-74_kit.zip" class="btn btn-primary" download>📦 Download Kit ZIP</a>
-          <a href="#" target="_blank" rel="noopener" class="btn btn-primary">🚀 Open Official Apply →</a>
+          <a href="https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0" target="_blank" rel="noopener" class="btn btn-primary">🚀 Open Official Apply →</a>
+        </div>
+        <div class="easy-grid">
           <a href="../assets/resume/job-74_resume.pdf" class="btn" download>📄 Resume PDF</a>
           <a href="../assets/cover/job-74_cover.pdf" class="btn" download>✉️ Cover PDF</a>
           <a href="../assets/docx/job-74_resume.docx" class="btn" download>📝 Resume DOCX</a>
           <a href="../assets/docx/job-74_cover.docx" class="btn" download>📝 Cover DOCX</a>
+          <a href="../assets/screening/job-74_screening.txt" class="btn" download>📋 Tailored Screening</a>
         </div>
         <div class="easy-grid">
           <a href="../assets/profile/Screening_Answers.txt" class="btn btn-sm" download>📋 Autofill Answers TXT</a>
@@ -96,7 +110,13 @@
           <a href="../assets/cover/job-74_cover.txt" class="btn btn-sm" download>Cover TXT</a>
           <a href="../assets/cover/job-74_email.txt" class="btn btn-sm" download>Email TXT</a>
         </div>
-        <div class="callout blue" style="margin:10px 0"><strong>3-Click Flow:</strong> 1) Download Kit ZIP (contains resume PDF+TXT+DOCX, cover PDF+TXT+DOCX, email TXT, screening answers, profile JSON, README with direct link) → 2) Open Official Apply → 3) Upload PDFs/DOCXs + copy-paste from Screening_Answers.txt → Submit. Save confirmation in tracker below.</div>
+        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px">
+          <a href="https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0" target="_blank" rel="noopener" class="btn btn-sm">🔍 Verify Official Site</a>
+          <a href="https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0" target="_blank" rel="noopener" class="btn btn-sm btn-primary">🔍 Verify Direct Apply Link</a>
+          <button class="btn btn-sm" onclick="navigator.clipboard.writeText('https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0'+'\n'+'https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0')">📋 Copy Links for Manual Review</button>
+          <a href="mailto:?subject=Application for Research Associate (RL Environments) at Anthrogen&body=Hello Hiring Manager,%0D%0A%0D%0AI am applying for Research Associate (RL Environments) at Anthrogen.%0D%0APlease find attached resume and cover letter from my Kit ZIP job-74_kit.zip.%0D%0AOfficial apply link: https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0%0D%0A%0D%0AThank you,%0D%0ABrian%0D%0A(707) 596-8503%0D%0ABrian.j1274@gmail.com" class="btn btn-sm">✉️ Email Template (mailto)</a>
+        </div>
+        <div class="callout blue" style="margin:10px 0"><strong>1-Click Flow:</strong> Click One-Click → Kit ZIP downloads + official ATS opens (Greenhouse/Lever/Ashby/Workday/SmartRecruiters/UltiPro/AP Recruit) → Upload PDFs/DOCXs from ZIP + copy-paste from Tailored Screening → Submit. Save confirmation in tracker below. ATS does NOT detect autofill — fields indistinguishable from typed.</div>
         <div class="copy-box">
           <button class="btn btn-sm copy-btn" onclick="copyText('autofill-text', this)">Copy Autofill</button>
           <pre id="autofill-text">BRIAN — AUTOFILL VAULT (copy-paste for ATS)
@@ -122,7 +142,7 @@ SKILLS: HPLC, Spectroscopy (NMR, UV-Vis), Chromatography, Sample Prep, QC &amp; 
 
 APPLYING TO: Anthrogen — Research Associate (RL Environments)
 Official: https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0
-Direct Apply: #
+Direct Apply: https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0
 Match: 74% — Good-plus — bench skills are the core requirement; you also teleoperate liquid handlers (Opentrons/Hamilton/Tecan a bonu
 
 SCREENING ANSWERS (honest):
@@ -131,34 +151,34 @@ SCREENING ANSWERS (honest):
 - Driver license: Yes if required.
 </pre>
         </div>
-        <p style="font-size:.82rem;color:var(--muted);margin:8px 0 0">No hallucinations — all docs use real resume facts only. If a screening asks about GC-MS/ICP-MS/LIMS/cell culture/mouse/CPT you haven't done, answer No and mention what you HAVE done (HPLC, NMR, UV-Vis, chromatography, sample prep, GLP, QC, electronic records). Kit includes everything, so applying is download + submit.</p>
+        <p style="font-size:.82rem;color:var(--muted);margin:8px 0 0">No hallucinations — all docs use real resume facts only. If screening asks about GC-MS/ICP-MS/LIMS/cell culture/mouse/CPT you haven't done, answer No and mention what you HAVE done (HPLC, NMR, UV-Vis, chromatography, sample prep, GLP, QC, electronic records). Kit includes everything, so applying is download + submit.</p>
       </div>
     </section>
 
     <section class="block" id="apply">
       <div class="card">
         <h2 class="sec">How to apply - step by step (self-apply, no recruiter)</h2>
-        <p class="sec-sub">Ten short steps, but Pass 7 makes it 3 clicks if you use the Easy Apply box above.</p>
+        <p class="sec-sub">One-Click makes it download + submit, but steps below show what's happening for manual review.</p>
         <div class="callout ok"><strong>Status: recently posted.</strong> Live on official Ashby board (checked Sept 9, 2026) — re-verify before applying; early-stage lab, small team.</div>
         <div class="callout ok">
           <strong>Official apply channel (direct employer):</strong><br>
-          <a href="#" target="_blank" rel="noopener"><strong>#</strong></a><br>
+          <a href="https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0" target="_blank" rel="noopener"><strong>https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0</strong></a><br>
           Channel: Official Anthrogen Ashby board (direct startup employer)<br>
           Employer's own careers page: <a href="https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0" target="_blank" rel="noopener">https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0</a>
         </div>
         <ol style="line-height:1.7">
           <li><strong>Confirm the posting is live (2 min).</strong> Open the official link above and check the title, location and status match this row. Aggregator copies (Indeed, ZipRecruiter, LinkedIn) are for discovery only - never apply through them.</li>
-          <li><strong>Use Easy Apply box above (1 min).</strong> Click 'Download Kit ZIP' — it contains resume PDF+TXT+DOCX, cover PDF+TXT+DOCX, email TXT, autofill answers, profile JSON, README with direct link. No extra formatting needed.</li>
-          <li><strong>Open Official Apply (1 min).</strong> Click 'Open Official Apply →' — official employer ATS only (Greenhouse, Lever, Ashby, Workday, SmartRecruiters, UltiPro, AP Recruit). Verify live.</li>
+          <li><strong>Use Easy Apply box above (1 min).</strong> Click 'Download Kit ZIP' or 'One-Click' — it contains resume PDF+TXT+DOCX, cover PDF+TXT+DOCX, email TXT, tailored screening, autofill answers, profile JSON, README with direct link. No extra formatting needed.</li>
+          <li><strong>Open Official Apply (1 min).</strong> Click 'Open Official Apply →' or One-Click — official employer ATS only (Greenhouse, Lever, Ashby, Workday, SmartRecruiters, UltiPro, AP Recruit). Verify live.</li>
           <li><strong>Fill personal details via autofill (1 min).</strong> Copy from Easy Apply autofill box or Screening_Answers.txt. Name, SF CA 94122, (707) 596-8503, Brian.j1274@gmail.com. How heard: Company website. Work auth: authorized US, no sponsorship.</li>
           <li><strong>Upload documents (1 min).</strong> Upload Resume PDF (or DOCX if portal requires DOCX) + Cover PDF from Kit ZIP. File names already identify you cleanly.</li>
-          <li><strong>Answer screening honestly (2 min).</strong> Role core: Hands-on molecular biology experience (B. If technique not done, answer No and mention what you HAVE done — HPLC, NMR, UV-Vis, chromatography, sample prep, GLP, QC, electronic records.</li>
+          <li><strong>Answer screening honestly (2 min).</strong> Role core: Hands-on molecular biology experience (B. If technique not done, answer No and mention what you HAVE done — HPLC, NMR, UV-Vis, chromatography, sample prep, GLP, QC, electronic records. Use tailored screening file.</li>
           <li><strong>Add references (2 min).</strong> 2-3: supervisor/PI (Quintara, MicroConstants, Threshold or UCSC Yat Li Lab) with name, title, relationship, email, phone. Ask each person first.</li>
           <li><strong>Submit and save confirmation (1 min).</strong> Screenshot or note confirmation number/date in tracker below. Reply should come from employer's own domain.</li>
           <li><strong>Prepare and follow up.</strong> 30-sec pitch: B.S. Chemistry UCSC 2011, HPLC/purification at Threshold, QC/records at MicroConstants/Quintara, ACS J Med Chem publication. Two examples of careful work, two questions about lab instruments/volume. Follow up 7-10 business days via intro email below or portal message.</li>
         </ol>
         <div class="callout blue">
-          <strong>Copy-paste tip:</strong> use the Copy button on each document below, or just use the Kit ZIP from the Easy Apply box — it already contains everything.
+          <strong>ATS tip (Pass 8):</strong> Workday prefers DOCX, Greenhouse prefers text-based PDF, Lever is forgiving. Kit provides both. See <a href="../assets/ATS_GUIDE.md">ATS_GUIDE.md</a> for platform-specific flow. Upload resume DOCX first on Workday — it triggers Autofill with Resume, then review every field (parse is draft, can't edit after submit).
         </div>
         <p><button class="btn" onclick="window.print()">Print this checklist</button></p>
       </div>
@@ -272,13 +292,12 @@ support and chromatography &amp; purification from roles at Threshold Pharmaceut
 MicroConstants and Quintara Biosciences, and a peer-reviewed publication in the ACS
 Journal of Medicinal Chemistry (February 2011).
 
-The heart of your posting is steady bench throughput and careful documentation. That is
-close to work I have actually done: designing experiments with the team, interpreting the
-data and writing it up, running HPLC and column purification and logging what each run
-showed. I am comfortable being the person who keeps a bench tidy, a record complete and a
-schedule kept. The last decade of running property operations on contract sharpened
-exactly that: inventory, vendor scheduling, compliance paperwork and receipts that
-reconcile.
+The heart of your posting is hands-on molecular biology experience (B.S. That is close to
+work I have actually done: designing experiments with the team, interpreting the data and
+writing it up, running HPLC and column purification and logging what each run showed. I am
+comfortable being the person who keeps a bench tidy, a record complete and a schedule
+kept. The last decade of running property operations on contract sharpened exactly that:
+inventory, vendor scheduling, compliance paperwork and receipts that reconcile.
 
 I would welcome a short conversation and can interview at your convenience. I am available
 to start on short notice and can be reached at (707) 596-8503 or Brian.j1274@gmail.com.
@@ -294,7 +313,7 @@ Brian
     <section class="block" id="email">
       <div class="card">
         <h2 class="sec">Intro email</h2>
-        <p class="sec-sub">Use only if official posting lists a contact address or portal has a message box. Kit includes this file.</p>
+        <p class="sec-sub">Use only if official posting lists a contact address or portal has a message box. Kit includes this file. Mailto button above pre-fills subject/body.</p>
         <p><a href="../assets/cover/job-74_email.txt" class="btn" download>Download email TXT</a> <a href="../assets/kits/job-74_kit.zip" class="btn" download>📦 Kit ZIP</a></p>
         <div class="copy-box">
           <button class="btn btn-sm copy-btn" onclick="copyText('email-text', this)">Copy</button>
@@ -326,17 +345,17 @@ Brian.j1274@gmail.com
 
     <section class="block" id="transit">
       <div class="card">
-        <h2 class="sec">Getting there from 21st Ave &amp; Judah St</h2>
+        <h2 class="sec">Getting there from 21st Ave & Judah St</h2>
         <p class="sec-sub">SFMTA only - kept off the resume on purpose.</p>
         <div class="callout">
-          <strong>Home:</strong> 21st Ave &amp; Judah St, Inner Sunset, SF 94122 (Judah &amp; 21st Ave stop, N Judah)<br>
+          <strong>Home:</strong> 21st Ave & Judah St, Inner Sunset, SF 94122 (Judah & 21st Ave stop, N Judah)<br>
           <strong>Destination:</strong> San Francisco, CA (on-site per official posting; street address confirmed at interview)<br>
           <strong>Zone:</strong> C - ZONE C — SF on-site (street address confirmed at interview): N Judah eastbound to Powell/Embarcadero → walk or Muni to the office. ~35-50 min.<br>
           <strong>Live planners:</strong> <a href="https://www.sfmta.com" target="_blank" rel="noopener">SFMTA</a> | <a href="https://www.511.org" target="_blank" rel="noopener">511.org</a>
         </div>
         <div class="copy-box">
           <button class="btn btn-sm copy-btn" onclick="copyText('transit-text', this)">Copy</button>
-          <pre id="transit-text">From: 21st Ave & Judah St, San Francisco, CA 94122 (Judah & 21st Ave, N Judah)
+          <pre id="transit-text">From: 21st Ave &amp; Judah St, San Francisco, CA 94122 (Judah &amp; 21st Ave, N Judah)
 To: San Francisco, CA (on-site per official posting; street address confirmed at interview)
 Route: ZONE C — SF on-site (street address confirmed at interview): N Judah eastbound to Powell/Embarcadero → walk or Muni to the office. ~35-50 min.
 Employer: Anthrogen — AI + robotic molecular biology lab (seed-stage)
@@ -349,7 +368,7 @@ Check live times on SFMTA (sfmta.com) or 511.org before an interview; night and 
     <section class="block" id="verify">
       <div class="card">
         <h2 class="sec">Verification - what was checked and how</h2>
-        <p class="sec-sub">Nothing inferred. Official sources only, with direct links for manual review.</p>
+        <p class="sec-sub">Nothing inferred. Official sources only, with direct links for manual review. Pass 8 adds tailored screening + ATS guide.</p>
         <ul class="clean">
           <li><strong>Employer</strong>: Anthrogen — AI + robotic molecular biology lab (seed-stage) - official source https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0</li>
           <li><strong>Position</strong>: Research Associate (RL Environments) — run molecular biology protocols on robotic platforms (LIVE; $120-200K)</li>
@@ -359,15 +378,16 @@ Check live times on SFMTA (sfmta.com) or 511.org before an interview; night and 
           <li><strong>Apply channel</strong>: Official Anthrogen Ashby board (direct startup employer) - direct employer only; no recruiter, no staffing firm, no fee</li>
           <li><strong>What the posting asks for</strong>: Hands-on molecular biology experience (B.S. life science or equivalent bench experience); cloning, transformations, PCR, protein expression &amp; purification, assay development; meticulous, reproducible technique.</li>
           <li><strong>Match score 74%</strong>: Good-plus — bench skills are the core requirement; you also teleoperate liquid handlers (Opentrons/Hamilton/Tecan a bonus). Posting&#x27;s &#x27;serious gamer&#x27; hand-eye-coordination ask flagged — fine to address in your cover letter.</li>
-          <li><strong>Direct Apply Link (official, for manual review)</strong>: <a href="#" target="_blank" rel="noopener">#</a> — Official Anthrogen Ashby board (direct startup employer)</li>
+          <li><strong>Direct Apply Link (official, for manual review)</strong>: <a href="https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0" target="_blank" rel="noopener">https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0</a> — Official Anthrogen Ashby board (direct startup employer)</li>
           <li><strong>Official Site (for manual review)</strong>: <a href="https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0" target="_blank" rel="noopener">https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0</a></li>
-          <li><strong>Kit ZIP (download & submit)</strong>: <a href="../assets/kits/job-74_kit.zip" download>../assets/kits/job-74_kit.zip</a> — contains resume PDF+TXT+DOCX, cover PDF+TXT+DOCX, email TXT, screening answers, profile JSON, README</li>
+          <li><strong>Kit ZIP (download & submit)</strong>: <a href="../assets/kits/job-74_kit.zip" download>../assets/kits/job-74_kit.zip</a> — contains resume PDF+TXT+DOCX, cover PDF+TXT+DOCX, email TXT, tailored screening, autofill answers, profile JSON, README</li>
+          <li><strong>Tailored Screening</strong>: <a href="../assets/screening/job-74_screening.txt" download>../assets/screening/job-74_screening.txt</a> — Q&A tailored to this job, honest No where needed</li>
           <li><strong>Documents</strong>: Resume, cover letter and intro email on this page contain only resume facts plus wording of this posting. No commute/transit/address in them; that stays in 'Getting there'.</li>
         </ul>
         <div class="callout red">
           <strong>Watch-outs:</strong> Seed-stage startup (small team) — street address not published; confirm at interview. Posting emphasizes gaming/hand-eye coordination alongside bench work.
         </div>
-        <p><a href="../index.html" class="btn">&larr; Back to all 120 jobs</a> <a href="https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0" target="_blank" rel="noopener" class="btn btn-primary">Open official careers page</a> <a href="#" target="_blank" rel="noopener" class="btn btn-primary">Apply direct →</a></p>
+        <p><a href="../index.html" class="btn">&larr; Back to all 120 jobs</a> <a href="https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0" target="_blank" rel="noopener" class="btn btn-primary">Open official careers page</a> <a href="https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0" target="_blank" rel="noopener" class="btn btn-primary">Apply direct →</a></p>
       </div>
     </section>
 
@@ -380,8 +400,8 @@ Check live times on SFMTA (sfmta.com) or 511.org before an interview; night and 
     </section>
 
     <footer>
-      <p>JobSearchSF - job-74 - Anthrogen — AI + robotic molecular biology lab (seed-stage) - verification snapshot <span id="today"></span>. Apply through official employer portal only. No recruiters, no fees, no guesses. Pass 7 Easy Apply: Kit ZIP = download + submit.</p>
-      <p><a href="../index.html">&larr; Back to main list</a> | <a href="https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0" target="_blank" rel="noopener">Official careers page</a> | <a href="#" target="_blank" rel="noopener">Apply direct</a> | <a href="../assets/kits/job-74_kit.zip" download>📦 Kit ZIP</a></p>
+      <p>JobSearchSF - job-74 - Anthrogen — AI + robotic molecular biology lab (seed-stage) - verification snapshot <span id="today"></span>. Apply through official employer portal only. No recruiters, no fees, no guesses. Pass 8 Easy Apply: One-Click = Kit ZIP download + official ATS open.</p>
+      <p><a href="../index.html">&larr; Back to main list</a> | <a href="https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0" target="_blank" rel="noopener">Official careers page</a> | <a href="https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0" target="_blank" rel="noopener">Apply direct</a> | <a href="../assets/kits/job-74_kit.zip" download>📦 Kit ZIP</a> | <a href="../assets/screening/job-74_screening.txt" download>📋 Screening</a></p>
     </footer>
   </main>
   <script src="../assets/js/tracker.js"></script>

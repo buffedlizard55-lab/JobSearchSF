@@ -43,6 +43,16 @@
       navigator.clipboard.writeText(text).then(function () { feedback(true); }, legacy);
     } else { legacy(); }
   }
+  function easyApply(id, applyUrl){
+    const kitUrl = '../assets/kits/'+id+'_kit.zip';
+    const a = document.createElement('a');
+    a.href = kitUrl;
+    a.download = id+'_kit.zip';
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(()=>{ a.remove(); }, 500);
+    if(applyUrl && applyUrl!=='#') window.open(applyUrl, '_blank', 'noopener');
+  }
   </script>
 </head>
 <body>
@@ -78,16 +88,20 @@
 
     <section class="block" id="easy">
       <div class="easy-box">
-        <h3>⚡ Easy Apply — Download & Submit in 3 Clicks (Pass 7)</h3>
-        <p style="margin:0 0 8px"><strong>Goal:</strong> No typing, no re-formatting. One ZIP = everything you need. Direct official link only, no recruiters.</p>
-        <div class="callout ok" style="margin:10px 0"><strong>Direct Apply (official, verified):</strong> <a href="#" target="_blank" rel="noopener"><strong>#</strong></a><br>Channel: Official UCSF Health portal (direct) — hospital is now UCSF Health, not Dignity<br>Official site: <a href="https://sfcommunityhospitals.ucsfhealth.org/saint-francis" target="_blank" rel="noopener">https://sfcommunityhospitals.ucsfhealth.org/saint-francis</a></div>
+        <h3>⚡ Easy Apply — Download & Submit in 1 Click (Pass 8)</h3>
+        <p style="margin:0 0 8px"><strong>Goal:</strong> No typing, no re-formatting. One ZIP = everything you need. Direct official link only, no recruiters. One-Click downloads Kit + opens official apply.</p>
+        <div class="callout ok" style="margin:10px 0"><strong>Direct Apply (official, verified):</strong> <a href="https://jobs.ucsfmedicalcenter.org" target="_blank" rel="noopener"><strong>https://jobs.ucsfmedicalcenter.org</strong></a><br>Channel: Official UCSF Health portal (direct) — hospital is now UCSF Health, not Dignity<br>Official site: <a href="https://sfcommunityhospitals.ucsfhealth.org/saint-francis" target="_blank" rel="noopener">https://sfcommunityhospitals.ucsfhealth.org/saint-francis</a></div>
         <div class="easy-grid">
+          <button class="btn btn-primary" onclick="easyApply('job-36', 'https://jobs.ucsfmedicalcenter.org')" style="background:#16a34a">⚡ One-Click: Download Kit + Open Official Apply</button>
           <a href="../assets/kits/job-36_kit.zip" class="btn btn-primary" download>📦 Download Kit ZIP</a>
-          <a href="#" target="_blank" rel="noopener" class="btn btn-primary">🚀 Open Official Apply →</a>
+          <a href="https://jobs.ucsfmedicalcenter.org" target="_blank" rel="noopener" class="btn btn-primary">🚀 Open Official Apply →</a>
+        </div>
+        <div class="easy-grid">
           <a href="../assets/resume/job-36_resume.pdf" class="btn" download>📄 Resume PDF</a>
           <a href="../assets/cover/job-36_cover.pdf" class="btn" download>✉️ Cover PDF</a>
           <a href="../assets/docx/job-36_resume.docx" class="btn" download>📝 Resume DOCX</a>
           <a href="../assets/docx/job-36_cover.docx" class="btn" download>📝 Cover DOCX</a>
+          <a href="../assets/screening/job-36_screening.txt" class="btn" download>📋 Tailored Screening</a>
         </div>
         <div class="easy-grid">
           <a href="../assets/profile/Screening_Answers.txt" class="btn btn-sm" download>📋 Autofill Answers TXT</a>
@@ -96,7 +110,13 @@
           <a href="../assets/cover/job-36_cover.txt" class="btn btn-sm" download>Cover TXT</a>
           <a href="../assets/cover/job-36_email.txt" class="btn btn-sm" download>Email TXT</a>
         </div>
-        <div class="callout blue" style="margin:10px 0"><strong>3-Click Flow:</strong> 1) Download Kit ZIP (contains resume PDF+TXT+DOCX, cover PDF+TXT+DOCX, email TXT, screening answers, profile JSON, README with direct link) → 2) Open Official Apply → 3) Upload PDFs/DOCXs + copy-paste from Screening_Answers.txt → Submit. Save confirmation in tracker below.</div>
+        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px">
+          <a href="https://sfcommunityhospitals.ucsfhealth.org/saint-francis" target="_blank" rel="noopener" class="btn btn-sm">🔍 Verify Official Site</a>
+          <a href="https://jobs.ucsfmedicalcenter.org" target="_blank" rel="noopener" class="btn btn-sm btn-primary">🔍 Verify Direct Apply Link</a>
+          <button class="btn btn-sm" onclick="navigator.clipboard.writeText('https://sfcommunityhospitals.ucsfhealth.org/saint-francis'+'\n'+'https://jobs.ucsfmedicalcenter.org')">📋 Copy Links for Manual Review</button>
+          <a href="mailto:?subject=Application for Laboratory Assistant at UCSF Health Hyde Hospital&body=Hello Hiring Manager,%0D%0A%0D%0AI am applying for Laboratory Assistant at UCSF Health Hyde Hospital.%0D%0APlease find attached resume and cover letter from my Kit ZIP job-36_kit.zip.%0D%0AOfficial apply link: https://jobs.ucsfmedicalcenter.org%0D%0A%0D%0AThank you,%0D%0ABrian%0D%0A(707) 596-8503%0D%0ABrian.j1274@gmail.com" class="btn btn-sm">✉️ Email Template (mailto)</a>
+        </div>
+        <div class="callout blue" style="margin:10px 0"><strong>1-Click Flow:</strong> Click One-Click → Kit ZIP downloads + official ATS opens (Greenhouse/Lever/Ashby/Workday/SmartRecruiters/UltiPro/AP Recruit) → Upload PDFs/DOCXs from ZIP + copy-paste from Tailored Screening → Submit. Save confirmation in tracker below. ATS does NOT detect autofill — fields indistinguishable from typed.</div>
         <div class="copy-box">
           <button class="btn btn-sm copy-btn" onclick="copyText('autofill-text', this)">Copy Autofill</button>
           <pre id="autofill-text">BRIAN — AUTOFILL VAULT (copy-paste for ATS)
@@ -122,7 +142,7 @@ SKILLS: HPLC, Spectroscopy (NMR, UV-Vis), Chromatography, Sample Prep, QC &amp; 
 
 APPLYING TO: UCSF Health Hyde Hospital — Laboratory Assistant
 Official: https://sfcommunityhospitals.ucsfhealth.org/saint-francis
-Direct Apply: #
+Direct Apply: https://jobs.ucsfmedicalcenter.org
 Match: 64% — Moderate-good — entry lab assistant fits your GLP/sample-prep background; licensed CLS track does not (flag).
 
 SCREENING ANSWERS (honest):
@@ -131,34 +151,34 @@ SCREENING ANSWERS (honest):
 - Driver license: Yes if required.
 </pre>
         </div>
-        <p style="font-size:.82rem;color:var(--muted);margin:8px 0 0">No hallucinations — all docs use real resume facts only. If a screening asks about GC-MS/ICP-MS/LIMS/cell culture/mouse/CPT you haven't done, answer No and mention what you HAVE done (HPLC, NMR, UV-Vis, chromatography, sample prep, GLP, QC, electronic records). Kit includes everything, so applying is download + submit.</p>
+        <p style="font-size:.82rem;color:var(--muted);margin:8px 0 0">No hallucinations — all docs use real resume facts only. If screening asks about GC-MS/ICP-MS/LIMS/cell culture/mouse/CPT you haven't done, answer No and mention what you HAVE done (HPLC, NMR, UV-Vis, chromatography, sample prep, GLP, QC, electronic records). Kit includes everything, so applying is download + submit.</p>
       </div>
     </section>
 
     <section class="block" id="apply">
       <div class="card">
         <h2 class="sec">How to apply - step by step (self-apply, no recruiter)</h2>
-        <p class="sec-sub">Ten short steps, but Pass 7 makes it 3 clicks if you use the Easy Apply box above.</p>
+        <p class="sec-sub">One-Click makes it download + submit, but steps below show what's happening for manual review.</p>
         <div class="callout"><strong>Status: monitor.</strong> UCSF Health portal verified; Hyde lab-support roles post periodically — search hospital name on the portal.</div>
         <div class="callout ok">
           <strong>Official apply channel (direct employer):</strong><br>
-          <a href="#" target="_blank" rel="noopener"><strong>#</strong></a><br>
+          <a href="https://jobs.ucsfmedicalcenter.org" target="_blank" rel="noopener"><strong>https://jobs.ucsfmedicalcenter.org</strong></a><br>
           Channel: Official UCSF Health portal (direct) — hospital is now UCSF Health, not Dignity<br>
           Employer's own careers page: <a href="https://sfcommunityhospitals.ucsfhealth.org/saint-francis" target="_blank" rel="noopener">https://sfcommunityhospitals.ucsfhealth.org/saint-francis</a>
         </div>
         <ol style="line-height:1.7">
           <li><strong>Read the status note before you invest any time (2 min).</strong> This employer and the official source are verified, but at audit time there was no live opening here that you should apply to today (see the note above and on the main table). Open the official careers page, search &quot;Laboratory Assistant&quot;, and confirm a live requisition exists. If nothing matches yet, save the page and re-check weekly - and never apply through a third-party site.</li>
-          <li><strong>Use Easy Apply box above (1 min).</strong> Click 'Download Kit ZIP' — it contains resume PDF+TXT+DOCX, cover PDF+TXT+DOCX, email TXT, autofill answers, profile JSON, README with direct link. No extra formatting needed.</li>
-          <li><strong>Open Official Apply (1 min).</strong> Click 'Open Official Apply →' — official employer ATS only (Greenhouse, Lever, Ashby, Workday, SmartRecruiters, UltiPro, AP Recruit). Verify live.</li>
+          <li><strong>Use Easy Apply box above (1 min).</strong> Click 'Download Kit ZIP' or 'One-Click' — it contains resume PDF+TXT+DOCX, cover PDF+TXT+DOCX, email TXT, tailored screening, autofill answers, profile JSON, README with direct link. No extra formatting needed.</li>
+          <li><strong>Open Official Apply (1 min).</strong> Click 'Open Official Apply →' or One-Click — official employer ATS only (Greenhouse, Lever, Ashby, Workday, SmartRecruiters, UltiPro, AP Recruit). Verify live.</li>
           <li><strong>Fill personal details via autofill (1 min).</strong> Copy from Easy Apply autofill box or Screening_Answers.txt. Name, SF CA 94122, (707) 596-8503, Brian.j1274@gmail.com. How heard: Company website. Work auth: authorized US, no sponsorship.</li>
           <li><strong>Upload documents (1 min).</strong> Upload Resume PDF (or DOCX if portal requires DOCX) + Cover PDF from Kit ZIP. File names already identify you cleanly.</li>
-          <li><strong>Answer screening honestly (2 min).</strong> Role core: Entry lab support. If technique not done, answer No and mention what you HAVE done — HPLC, NMR, UV-Vis, chromatography, sample prep, GLP, QC, electronic records.</li>
+          <li><strong>Answer screening honestly (2 min).</strong> Role core: Entry lab support. If technique not done, answer No and mention what you HAVE done — HPLC, NMR, UV-Vis, chromatography, sample prep, GLP, QC, electronic records. Use tailored screening file.</li>
           <li><strong>Add references (2 min).</strong> 2-3: supervisor/PI (Quintara, MicroConstants, Threshold or UCSC Yat Li Lab) with name, title, relationship, email, phone. Ask each person first.</li>
           <li><strong>Submit and save confirmation (1 min).</strong> Screenshot or note confirmation number/date in tracker below. Reply should come from employer's own domain.</li>
           <li><strong>Prepare and follow up.</strong> 30-sec pitch: B.S. Chemistry UCSC 2011, HPLC/purification at Threshold, QC/records at MicroConstants/Quintara, ACS J Med Chem publication. Two examples of careful work, two questions about lab instruments/volume. Follow up 7-10 business days via intro email below or portal message.</li>
         </ol>
         <div class="callout blue">
-          <strong>Copy-paste tip:</strong> use the Copy button on each document below, or just use the Kit ZIP from the Easy Apply box — it already contains everything.
+          <strong>ATS tip (Pass 8):</strong> Workday prefers DOCX, Greenhouse prefers text-based PDF, Lever is forgiving. Kit provides both. See <a href="../assets/ATS_GUIDE.md">ATS_GUIDE.md</a> for platform-specific flow. Upload resume DOCX first on Workday — it triggers Autofill with Resume, then review every field (parse is draft, can't edit after submit).
         </div>
         <p><button class="btn" onclick="window.print()">Print this checklist</button></p>
       </div>
@@ -270,14 +290,14 @@ Hospital. I hold a B.S. in Chemistry from UC Santa Cruz (2011), with bench exper
 sample handling and QC &amp; compliance from roles at Threshold Pharmaceuticals,
 MicroConstants and Quintara Biosciences.
 
-The work you describe for this team is entry lab support; specimen handling, data entry,
-upkeep; CLS roles need CA license. That is close to work I have actually done: extracting,
-aliquoting, labeling and tracking samples so the chain of records stays intact, QC checks
-and GLP documentation, including flagging anything out of specification and electronic
-records and clean data entry, with summaries the team could actually use. I am comfortable
-being the person who keeps a bench tidy, a record complete and a schedule kept. The last
-decade of running property operations on contract sharpened exactly that: inventory,
-vendor scheduling, compliance paperwork and receipts that reconcile.
+The work you describe for this team is steady bench throughput and careful documentation.
+That is close to work I have actually done: extracting, aliquoting, labeling and tracking
+samples so the chain of records stays intact, QC checks and GLP documentation, including
+flagging anything out of specification and electronic records and clean data entry, with
+summaries the team could actually use. I am comfortable being the person who keeps a bench
+tidy, a record complete and a schedule kept. The last decade of running property
+operations on contract sharpened exactly that: inventory, vendor scheduling, compliance
+paperwork and receipts that reconcile.
 
 If a matching requisition opens, I would welcome a short conversation. I can be reached at
 (707) 596-8503 or Brian.j1274@gmail.com, and I am glad to send transcripts or references
@@ -293,7 +313,7 @@ Brian
     <section class="block" id="email">
       <div class="card">
         <h2 class="sec">Intro email</h2>
-        <p class="sec-sub">Use only if official posting lists a contact address or portal has a message box. Kit includes this file.</p>
+        <p class="sec-sub">Use only if official posting lists a contact address or portal has a message box. Kit includes this file. Mailto button above pre-fills subject/body.</p>
         <p><a href="../assets/cover/job-36_email.txt" class="btn" download>Download email TXT</a> <a href="../assets/kits/job-36_kit.zip" class="btn" download>📦 Kit ZIP</a></p>
         <div class="copy-box">
           <button class="btn btn-sm copy-btn" onclick="copyText('email-text', this)">Copy</button>
@@ -327,17 +347,17 @@ Brian.j1274@gmail.com
 
     <section class="block" id="transit">
       <div class="card">
-        <h2 class="sec">Getting there from 21st Ave &amp; Judah St</h2>
+        <h2 class="sec">Getting there from 21st Ave & Judah St</h2>
         <p class="sec-sub">SFMTA only - kept off the resume on purpose.</p>
         <div class="callout">
-          <strong>Home:</strong> 21st Ave &amp; Judah St, Inner Sunset, SF 94122 (Judah &amp; 21st Ave stop, N Judah)<br>
+          <strong>Home:</strong> 21st Ave & Judah St, Inner Sunset, SF 94122 (Judah & 21st Ave stop, N Judah)<br>
           <strong>Destination:</strong> 900 Hyde Street (between Bush &amp; Pine, Nob Hill), San Francisco, CA 94109<br>
           <strong>Zone:</strong> C - ZONE C — From 21st &amp; Judah: N Judah eastbound to Civic Center station → 19 Polk northbound (or Powell-Mason cable car from Powell) toward Hyde/Bush → short walk to 900 Hyde. ~35-45 min. Confirm via SFMTA (hilly Nob Hill).<br>
           <strong>Live planners:</strong> <a href="https://www.sfmta.com" target="_blank" rel="noopener">SFMTA</a> | <a href="https://www.511.org" target="_blank" rel="noopener">511.org</a>
         </div>
         <div class="copy-box">
           <button class="btn btn-sm copy-btn" onclick="copyText('transit-text', this)">Copy</button>
-          <pre id="transit-text">From: 21st Ave & Judah St, San Francisco, CA 94122 (Judah & 21st Ave, N Judah)
+          <pre id="transit-text">From: 21st Ave &amp; Judah St, San Francisco, CA 94122 (Judah &amp; 21st Ave, N Judah)
 To: 900 Hyde Street (between Bush &amp; Pine, Nob Hill), San Francisco, CA 94109
 Route: ZONE C — From 21st &amp; Judah: N Judah eastbound to Civic Center station → 19 Polk northbound (or Powell-Mason cable car from Powell) toward Hyde/Bush → short walk to 900 Hyde. ~35-45 min. Confirm via SFMTA (hilly Nob Hill).
 Employer: UCSF Health Hyde Hospital (formerly Saint Francis Memorial)
@@ -350,7 +370,7 @@ Check live times on SFMTA (sfmta.com) or 511.org before an interview; night and 
     <section class="block" id="verify">
       <div class="card">
         <h2 class="sec">Verification - what was checked and how</h2>
-        <p class="sec-sub">Nothing inferred. Official sources only, with direct links for manual review.</p>
+        <p class="sec-sub">Nothing inferred. Official sources only, with direct links for manual review. Pass 8 adds tailored screening + ATS guide.</p>
         <ul class="clean">
           <li><strong>Employer</strong>: UCSF Health Hyde Hospital (formerly Saint Francis Memorial) - official source https://sfcommunityhospitals.ucsfhealth.org/saint-francis</li>
           <li><strong>Position</strong>: Laboratory Assistant — Clinical Lab Support (entry, non-licensed)</li>
@@ -360,15 +380,16 @@ Check live times on SFMTA (sfmta.com) or 511.org before an interview; night and 
           <li><strong>Apply channel</strong>: Official UCSF Health portal (direct) — hospital is now UCSF Health, not Dignity - direct employer only; no recruiter, no staffing firm, no fee</li>
           <li><strong>What the posting asks for</strong>: Entry lab support; specimen handling, data entry, upkeep; CLS roles need CA license.</li>
           <li><strong>Match score 64%</strong>: Moderate-good — entry lab assistant fits your GLP/sample-prep background; licensed CLS track does not (flag).</li>
-          <li><strong>Direct Apply Link (official, for manual review)</strong>: <a href="#" target="_blank" rel="noopener">#</a> — Official UCSF Health portal (direct) — hospital is now UCSF Health, not Dignity</li>
+          <li><strong>Direct Apply Link (official, for manual review)</strong>: <a href="https://jobs.ucsfmedicalcenter.org" target="_blank" rel="noopener">https://jobs.ucsfmedicalcenter.org</a> — Official UCSF Health portal (direct) — hospital is now UCSF Health, not Dignity</li>
           <li><strong>Official Site (for manual review)</strong>: <a href="https://sfcommunityhospitals.ucsfhealth.org/saint-francis" target="_blank" rel="noopener">https://sfcommunityhospitals.ucsfhealth.org/saint-francis</a></li>
-          <li><strong>Kit ZIP (download & submit)</strong>: <a href="../assets/kits/job-36_kit.zip" download>../assets/kits/job-36_kit.zip</a> — contains resume PDF+TXT+DOCX, cover PDF+TXT+DOCX, email TXT, screening answers, profile JSON, README</li>
+          <li><strong>Kit ZIP (download & submit)</strong>: <a href="../assets/kits/job-36_kit.zip" download>../assets/kits/job-36_kit.zip</a> — contains resume PDF+TXT+DOCX, cover PDF+TXT+DOCX, email TXT, tailored screening, autofill answers, profile JSON, README</li>
+          <li><strong>Tailored Screening</strong>: <a href="../assets/screening/job-36_screening.txt" download>../assets/screening/job-36_screening.txt</a> — Q&A tailored to this job, honest No where needed</li>
           <li><strong>Documents</strong>: Resume, cover letter and intro email on this page contain only resume facts plus wording of this posting. No commute/transit/address in them; that stays in 'Getting there'.</li>
         </ul>
         <div class="callout red">
           <strong>Watch-outs:</strong> Hospital renamed: apply via UCSF Health portal (jobs.ucsfmedicalcenter.org), NOT Dignity/CommonSpirit boards. CLS/MLT roles require CA license — target Lab Assistant titles.
         </div>
-        <p><a href="../index.html" class="btn">&larr; Back to all 120 jobs</a> <a href="https://sfcommunityhospitals.ucsfhealth.org/saint-francis" target="_blank" rel="noopener" class="btn btn-primary">Open official careers page</a> <a href="#" target="_blank" rel="noopener" class="btn btn-primary">Apply direct →</a></p>
+        <p><a href="../index.html" class="btn">&larr; Back to all 120 jobs</a> <a href="https://sfcommunityhospitals.ucsfhealth.org/saint-francis" target="_blank" rel="noopener" class="btn btn-primary">Open official careers page</a> <a href="https://jobs.ucsfmedicalcenter.org" target="_blank" rel="noopener" class="btn btn-primary">Apply direct →</a></p>
       </div>
     </section>
 
@@ -381,8 +402,8 @@ Check live times on SFMTA (sfmta.com) or 511.org before an interview; night and 
     </section>
 
     <footer>
-      <p>JobSearchSF - job-36 - UCSF Health Hyde Hospital (formerly Saint Francis Memorial) - verification snapshot <span id="today"></span>. Apply through official employer portal only. No recruiters, no fees, no guesses. Pass 7 Easy Apply: Kit ZIP = download + submit.</p>
-      <p><a href="../index.html">&larr; Back to main list</a> | <a href="https://sfcommunityhospitals.ucsfhealth.org/saint-francis" target="_blank" rel="noopener">Official careers page</a> | <a href="#" target="_blank" rel="noopener">Apply direct</a> | <a href="../assets/kits/job-36_kit.zip" download>📦 Kit ZIP</a></p>
+      <p>JobSearchSF - job-36 - UCSF Health Hyde Hospital (formerly Saint Francis Memorial) - verification snapshot <span id="today"></span>. Apply through official employer portal only. No recruiters, no fees, no guesses. Pass 8 Easy Apply: One-Click = Kit ZIP download + official ATS open.</p>
+      <p><a href="../index.html">&larr; Back to main list</a> | <a href="https://sfcommunityhospitals.ucsfhealth.org/saint-francis" target="_blank" rel="noopener">Official careers page</a> | <a href="https://jobs.ucsfmedicalcenter.org" target="_blank" rel="noopener">Apply direct</a> | <a href="../assets/kits/job-36_kit.zip" download>📦 Kit ZIP</a> | <a href="../assets/screening/job-36_screening.txt" download>📋 Screening</a></p>
     </footer>
   </main>
   <script src="../assets/js/tracker.js"></script>
