@@ -1,0 +1,3376 @@
+{
+  "generated_at": "2026-09-12T23:15:42.788140+00:00",
+  "mode": "live_read_only",
+  "submission_enabled": false,
+  "applications_submitted": 0,
+  "limitations": [
+    "HTTP 200 is reachability, not proof of vacancy or employer authenticity.",
+    "Legacy employer domains are seeds, not newly certified identities.",
+    "Keyword overlap is not full requirements verification.",
+    "No complete legal name or primary profile evidence available.",
+    "No credentials, CAPTCHA bypass, or applications sent."
+  ],
+  "summary": {
+    "legacy_entries": 120,
+    "api_listings": 0,
+    "potential_matches": 0,
+    "ready_to_submit": 0
+  },
+  "profile_audit": [
+    {
+      "field": "$.personal.firstName",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.personal.lastName",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "MISSING"
+    },
+    {
+      "field": "$.personal.fullName",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.personal.email",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.personal.phone",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.personal.phoneDigits",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.personal.city",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.personal.state",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.personal.zip",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.personal.addressLine",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.personal.locationShort",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.personal.workAuthorization",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "DO_NOT_AUTOFILL_WITHOUT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.personal.willingToRelocate",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.personal.linkedin",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "MISSING"
+    },
+    {
+      "field": "$.personal.portfolio",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "MISSING"
+    },
+    {
+      "field": "$.summary",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.education[0].degree",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.education[0].school",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.education[0].location",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.education[0].start",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.education[0].end",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.education[0].gpa",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "MISSING"
+    },
+    {
+      "field": "$.education[0].details",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.experience[0].title",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.experience[0].company",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.experience[0].location",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.experience[0].start",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.experience[0].end",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.experience[0].description",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.experience[1].title",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.experience[1].company",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.experience[1].location",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.experience[1].start",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.experience[1].end",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.experience[1].description",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.experience[2].title",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.experience[2].company",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.experience[2].location",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.experience[2].start",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.experience[2].end",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.experience[2].description",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.experience[3].title",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.experience[3].company",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.experience[3].location",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.experience[3].start",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.experience[3].end",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.experience[3].description",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.skills[0]",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.skills[1]",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.skills[2]",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.skills[3]",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.skills[4]",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.skills[5]",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.skills[6]",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.skills[7]",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.skills[8]",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.skills[9]",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.skills[10]",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.skills[11]",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.publication",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "DO_NOT_AUTOFILL_WITHOUT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.commonATSAnswers.howDidYouHear",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.commonATSAnswers.workAuthUS",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "DO_NOT_AUTOFILL_WITHOUT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.commonATSAnswers.requireSponsorship",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "DO_NOT_AUTOFILL_WITHOUT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.commonATSAnswers.willingToWorkOnsite",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.commonATSAnswers.startDate",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "DO_NOT_AUTOFILL_WITHOUT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.commonATSAnswers.salaryExpectation",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "DO_NOT_AUTOFILL_WITHOUT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.commonATSAnswers.noticePeriod",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "DO_NOT_AUTOFILL_WITHOUT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.commonATSAnswers.remotePreference",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.commonATSAnswers.relocation",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "SOURCE_IS_EXISTING_PROFILE_NOT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.commonATSAnswers.driverLicense",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "DO_NOT_AUTOFILL_WITHOUT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.commonATSAnswers.veteran",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "DO_NOT_AUTOFILL_WITHOUT_PRIMARY_EVIDENCE"
+    },
+    {
+      "field": "$.commonATSAnswers.disability",
+      "source": "assets/profile/Brian_Profile.json",
+      "flag": "DO_NOT_AUTOFILL_WITHOUT_PRIMARY_EVIDENCE"
+    }
+  ],
+  "legacy_audit": [
+    {
+      "id": "job-01",
+      "company": "UCSF \u2014 Department of Pharmaceutical Chemistry",
+      "title": "Staff Research Associate I/II \u2014 Drug Metabolism and Pharmacokinetics (small-molecule synthesis & analysis)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-01",
+      "official_url": "https://careers.ucsf.edu",
+      "apply_url": "https://aprecruit.ucsf.edu",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-02",
+      "company": "UCSF \u2014 Department of Cellular & Molecular Pharmacology",
+      "title": "Staff Research Associate I \u2014 Chemical Biology of Cardiometabolic Disease (HPLC / assay development)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-02",
+      "official_url": "https://careers.ucsf.edu",
+      "apply_url": "https://careers.ucsf.edu",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-03",
+      "company": "UCSF \u2014 Neurology / Memory and Aging Center",
+      "title": "Junior Specialist \u2014 Research Assistant, Chemistry-adjacent translational research",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-03",
+      "official_url": "https://aprecruit.ucsf.edu",
+      "apply_url": "https://aprecruit.ucsf.edu",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-04",
+      "company": "Gladstone Institutes \u2014 Jain Lab",
+      "title": "Research Associate I \u2014 Oxygen and Vitamin Metabolism (molecular biology / biochemistry)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-04",
+      "official_url": "https://gladstone.org/careers",
+      "apply_url": "https://gladstone.wd503.myworkdayjobs.com/careers",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-05",
+      "company": "Gladstone Institutes \u2014 Ramani Lab / Genomic Immunology",
+      "title": "Research Associate I \u2014 Genomic Immunology / Systems Biology (sample prep, NGS library)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-05",
+      "official_url": "https://gladstone.org/careers",
+      "apply_url": "https://gladstone.wd503.myworkdayjobs.com/careers",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-06",
+      "company": "Gladstone Institutes \u2014 Core Facilities",
+      "title": "Research Associate I/II \u2014 Assay Development & Drug Discovery / Mass Spectrometry Core",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-06",
+      "official_url": "https://gladstone.org/science/cores",
+      "apply_url": "https://gladstone.wd503.myworkdayjobs.com/careers",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-07",
+      "company": "Chan Zuckerberg Biohub San Francisco",
+      "title": "Research Associate \u2014 Molecular and Cell Biology (CELLxSTATE / OpenCell)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-07",
+      "official_url": "https://www.czbiohub.org/careers",
+      "apply_url": "https://job-boards.greenhouse.io/biohub",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-08",
+      "company": "Chan Zuckerberg Biohub San Francisco",
+      "title": "Research Associate \u2014 Genomics Platform (bulk, single-cell, spatial transcriptomics)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-08",
+      "official_url": "https://www.czbiohub.org/careers",
+      "apply_url": "https://job-boards.greenhouse.io/biohub",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-09",
+      "company": "Vitalant Research Institute (formerly Blood Systems Research Institute)",
+      "title": "Research Associate I \u2014 Research Operations Core (sample processing, assay support)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-09",
+      "official_url": "https://www.vitalant.org/about-us/careers",
+      "apply_url": "https://vitalant.wd12.myworkdayjobs.com/Careers",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-10",
+      "company": "Vitalant Research Institute",
+      "title": "Research Associate II \u2014 Molecular Biology / Transfusion Medicine",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-10",
+      "official_url": "https://www.vitalant.org/about-us/careers",
+      "apply_url": "https://vitalant.wd12.myworkdayjobs.com/Careers",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-11",
+      "company": "NCIRE \u2014 The Veterans Health Research Institute (SF VA affiliate)",
+      "title": "Staff Research Associate I \u2014 Nayak Lab (Microbiome, analytical chemistry, genomics)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-11",
+      "official_url": "https://www.ncire.org/careers",
+      "apply_url": "https://recruiting.ultipro.com/NOR1032NCIRE/JobBoard/82cac330-9aa5-417d-9b64-568d383f4ea0/",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-12",
+      "company": "NCIRE \u2014 SF VA Health Care System",
+      "title": "Staff Research Associate II \u2014 Aging / Neuroscience Research (data & lab support)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-12",
+      "official_url": "https://www.ncire.org/careers",
+      "apply_url": "https://recruiting.ultipro.com/NOR1032NCIRE/JobBoard/82cac330-9aa5-417d-9b64-568d383f4ea0/",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Federal affiliation \u2014 U.S. citizenship preferred; background check, vaccines required per SF VA."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-13",
+      "company": "Anresco Laboratories",
+      "title": "Laboratory Technician \u2014 Food & Cannabis Chemistry (sample prep, extractions)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-13",
+      "official_url": "https://anresco.com/careers",
+      "apply_url": "https://anresco.com/careers",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Long commute Zone D from Sunset; Bayview industrial area; weigh carefully."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-14",
+      "company": "Anresco Laboratories",
+      "title": "Laboratory Analyst \u2014 Chemistry (Heavy Metals via ICP-MS, HPLC, wet chemistry)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-14",
+      "official_url": "https://anresco.com/careers",
+      "apply_url": "https://anresco.com/careers",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Long commute Zone D; industrial Bayview."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-15",
+      "company": "Vir Biotechnology",
+      "title": "Research Associate II, In Vivo \u2014 Infectious Disease / Oncology (lab support, sample prep)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-15",
+      "official_url": "https://www.vir.bio/careers/jobs/",
+      "apply_url": "https://job-boards.greenhouse.io/virbiotechnologyinc",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: In vivo experience required \u2014 your chemistry background is not a direct match, but lab fundamentals help."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-16",
+      "company": "Twist Bioscience",
+      "title": "Research Associate \u2014 Synthetic Biology / DNA Synthesis (analytical chemistry, QC)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-16",
+      "official_url": "https://www.twistbioscience.com/company/careers",
+      "apply_url": "https://www.twistbioscience.com/company/careers",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Check location \u2014 some Twist roles now in South San Francisco (longer commute, BART + shuttle). SF address still legally registered."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-17",
+      "company": "City & County of San Francisco \u2014 SFPUC",
+      "title": "Chemist (Job Class 2486) \u2014 Water Quality Laboratory (GC-MS, ICP, HPLC)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-17",
+      "official_url": "https://careers.sf.gov/classifications/?classCode=2486",
+      "apply_url": "https://careers.sf.gov",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Civil-service exam windows are time-limited; must watch for next opening."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-18",
+      "company": "City & County of San Francisco \u2014 SFDPH Public Health Lab",
+      "title": "Laboratory Technician II (Class 2416) \u2014 Public Health Laboratory",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-18",
+      "official_url": "https://careers.sf.gov/classifications/?classCode=2416",
+      "apply_url": "https://careers.sf.gov",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-19",
+      "company": "Kaiser Permanente \u2014 San Francisco Medical Center",
+      "title": "Laboratory Assistant \u2014 Clinical Lab Support (entry, non-licensed)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-19",
+      "official_url": "https://kaiserpermanentejobs.org",
+      "apply_url": "https://kaiserpermanentejobs.org",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Clinical Lab Scientist / MLT roles require California CLS license \u2014 focus on Lab Assistant titles."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-20",
+      "company": "UCSF Medical Center / UCSF Health",
+      "title": "Laboratory Assistant / Laboratory Helper \u2014 Clinical & Research Labs (entry)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-20",
+      "official_url": "https://jobs.ucsfmedicalcenter.org",
+      "apply_url": "https://jobs.ucsfmedicalcenter.org",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Clinical Lab Scientist roles require CA CLS license \u2014 entry assistant/helper does not."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-21",
+      "company": "San Francisco State University \u2014 Dept. of Chemistry & Biochemistry",
+      "title": "Instructional Support Technician / Research Support (chemistry teaching & research labs)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-21",
+      "official_url": "https://chemistry.sfsu.edu/",
+      "apply_url": "https://careers.pageuppeople.com/873/sf/en-us/search-results",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-22",
+      "company": "University of San Francisco \u2014 Department of Chemistry",
+      "title": "Laboratory Manager / Research Technician (Harney Science Center chemistry labs)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-22",
+      "official_url": "https://www.usfca.edu/hr",
+      "apply_url": "https://usfca.wd5.myworkdayjobs.com/USF_Staff",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-23",
+      "company": "City College of San Francisco \u2014 Sciences / Laboratory Support",
+      "title": "Laboratory Technician / Technical Instructional Aide (science labs, Ocean Campus)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-23",
+      "official_url": "https://www.ccsf.edu/about-ccsf/administration/human-resources/jobs-ccsf",
+      "apply_url": "https://jobs.ccsf.edu/postings/search",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: The live lab-manager posting seen is in the Art Department \u2014 search 'Laboratory' for science-lab roles specifically."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-24",
+      "company": "California Academy of Sciences \u2014 Institute for Biodiversity Science (IBSS)",
+      "title": "Research Lab / Collections Support (Center for Comparative Genomics, specimen prep)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-24",
+      "official_url": "https://www.calacademy.org/careers",
+      "apply_url": "https://job-boards.greenhouse.io/californiaacademyofsciences",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Current board is senior-heavy; entry roles are periodic \u2014 set Greenhouse job alert rather than expecting an immediate opening."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-25",
+      "company": "UCSF Health Stanyan Hospital (formerly St. Mary's Medical Center)",
+      "title": "Laboratory Assistant \u2014 Clinical Lab Support (entry, non-licensed)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-25",
+      "official_url": "https://sfcommunityhospitals.ucsfhealth.org/st-marys",
+      "apply_url": "https://jobs.ucsfmedicalcenter.org",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Hospital renamed: apply via UCSF Health portal (jobs.ucsfmedicalcenter.org), NOT Dignity/CommonSpirit boards. CLS/MLT roles require CA license \u2014 target Lab Assistant titles."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-26",
+      "company": "Sutter Health \u2014 CPMC Davies Campus",
+      "title": "Pathology Laboratory Assistant II (specimen handling, chemicals, lab support)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-26",
+      "official_url": "https://www.sutterhealth.org/find-location/facility/cpmc-davies-campus",
+      "apply_url": "https://jobs.sutterhealth.org/us/en",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-27",
+      "company": "Sutter Health \u2014 CPMC Van Ness Campus",
+      "title": "Laboratory Assistant \u2014 Clinical Lab Support (entry)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-27",
+      "official_url": "https://www.sutterhealth.org/find-location/facility/cpmc-van-ness-campus-1043247265",
+      "apply_url": "https://jobs.sutterhealth.org/us/en",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Clinical Lab Scientist roles require California CLS license \u2014 target Lab Assistant / support titles only."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-28",
+      "company": "Chinese Hospital \u2014 Clinical Laboratory (Chinatown main campus)",
+      "title": "Clinical Laboratory Technician (Non-Testing Personnel) \u2014 specimen collection & lab support",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-28",
+      "official_url": "https://chinesehospital-sf.org/job-opportunities/",
+      "apply_url": "https://chinesehospital-sf.org/job/clinicallabtech/",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: REQUIRES California CPT-1/CPT-2 phlebotomy license \u2014 do not apply without it (or while in a CPT program). Also requires nights/weekends/holiday availability. Sunset clinic (1800 31st Ave, 94122) is in your zip but main lab is Chinatown."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-29",
+      "company": "UCSF at Zuckerberg San Francisco General (ZSFG) \u2014 Research",
+      "title": "Staff Research Associate I/II \u2014 Clinical & translational research support",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-29",
+      "official_url": "https://zsfg.ucsf.edu/about-ucsf-zsfg",
+      "apply_url": "https://careers.ucsf.edu",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Two employers share this campus: UCSF research staff apply via careers.ucsf.edu; City/DPH clinical staff via careers.sf.gov \u2014 use the right portal for the posting."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-30",
+      "company": "SFVA Health Care System (federal) \u2014 Clinical & Research Labs",
+      "title": "Biological Science Technician / Medical Technician (federal direct-hire)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-30",
+      "official_url": "https://www.va.gov/san-francisco-health-care/work-with-us/jobs-and-careers/",
+      "apply_url": "https://www.usajobs.gov/",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Federal hiring: US citizenship generally required; background check, drug screening, vaccines; hiring process is slower (weeks-months). This is direct federal employment, separate from NCIRE (jobs 11-12)."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-31",
+      "company": "Quest Diagnostics \u2014 San Francisco patient & lab services",
+      "title": "Specimen Processor / Laboratory Assistant (entry clinical support)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-31",
+      "official_url": "https://careers.questdiagnostics.com/",
+      "apply_url": "https://careers.questdiagnostics.com/search-jobs",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: SF locations are mostly patient service centers (phlebotomy); major testing labs are outside SF \u2014 verify 'San Francisco, CA' in the location field of each posting. Beware fake-Quest-job scams (Quest posts a fraud warning on its careers page) \u2014 apply only via careers.questdiagnostics.com."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-32",
+      "company": "Labcorp \u2014 San Francisco locations",
+      "title": "Laboratory Assistant / Patient Service Support (entry)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-32",
+      "official_url": "https://careers.labcorp.com/global/en",
+      "apply_url": "https://careers.labcorp.com/global/search-results",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: SF locations are patient service centers; major labs are outside SF \u2014 verify 'San Francisco, CA' location on each posting. Apply only via careers.labcorp.com."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-33",
+      "company": "City & County of San Francisco \u2014 SFPUC (Water Quality)",
+      "title": "Water Quality Technician (Class 2481) \u2014 field & lab water/wastewater analyses",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-33",
+      "official_url": "https://careers.sf.gov/classifications/?classCode=2481",
+      "apply_url": "https://careers.sf.gov",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Requires valid CA driver's license; some positions may require Water Distribution Operator D1 cert. Civil-service exam windows are time-limited."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-34",
+      "company": "SFPD Forensic Services Division \u2014 Crime Lab (Chemical Analysis)",
+      "title": "Criminalist I (Class 8259) \u2014 entry-level forensic chemistry (Chemical Analysis section)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-34",
+      "official_url": "https://careers.sf.gov/classifications/?classCode=8259",
+      "apply_url": "https://careers.sf.gov",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Zone D long commute from Sunset. Law-enforcement hiring: background check/polygraph likely, on-call/standby + weekend shifts possible, court testimony duty. Exam windows close fast (days-weeks)."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-35",
+      "company": "Laguna Honda Hospital & Rehabilitation Center (City/DPH)",
+      "title": "Laboratory / Clinical Support (hospital lab assistant & aide roles)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-35",
+      "official_url": "https://www.sf.gov/location--laguna-honda-hospital-and-rehabilitation-center",
+      "apply_url": "https://careers.sf.gov",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Clinical Lab Scientist roles require CA CLS license \u2014 target Lab Technician/Assistant/Aide titles. Hospital roles may require TB screening, N95 fit testing, vaccines."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-36",
+      "company": "UCSF Health Hyde Hospital (formerly Saint Francis Memorial)",
+      "title": "Laboratory Assistant \u2014 Clinical Lab Support (entry, non-licensed)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-36",
+      "official_url": "https://sfcommunityhospitals.ucsfhealth.org/saint-francis",
+      "apply_url": "https://jobs.ucsfmedicalcenter.org",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Hospital renamed: apply via UCSF Health portal (jobs.ucsfmedicalcenter.org), NOT Dignity/CommonSpirit boards. CLS/MLT roles require CA license \u2014 target Lab Assistant titles."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-37",
+      "company": "San Francisco Unified School District (SFUSD)",
+      "title": "Science Laboratory / Classroom Support (classified staff, e.g., science prep technician)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-37",
+      "official_url": "https://careers.sfusd.edu/",
+      "apply_url": "https://jobs.redroverk12.com/org/sfusd",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Exact title varies by school ('Science Technician', 'Lab Assistant', aide roles) \u2014 read each posting's site + duties. Requires working with students + background clearance. Red Rover is SFUSD's official hiring system (like Workday), not a third-party recruiter."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-38",
+      "company": "Exploratorium \u2014 Museum of Science, Art & Human Perception",
+      "title": "Exhibit / Science Technician (hands-on science support & maintenance)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-38",
+      "official_url": "https://www.exploratorium.edu/about/jobs",
+      "apply_url": "https://www.exploratorium.edu/about/jobs/current-openings",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Not bench chemistry \u2014 exhibit/prototype shop + public-floor science support. Consider as a science-adjacent bridge only if bench roles stall. Easiest commute on the list (direct N Judah)."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-39",
+      "company": "SF Office of the Chief Medical Examiner \u2014 Forensic Laboratory Division",
+      "title": "Forensic Laboratory Analyst (Class 2403) \u2014 drug/poison screens, extractions, chromatography",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-39",
+      "official_url": "https://careers.sf.gov/classifications/?classCode=2403&setId=COMMN",
+      "apply_url": "https://careers.sf.gov",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Zone D long commute. Requires CA driver's license. Forensic setting: background check, biohazard/decomposed-case exposure, unpleasant odors, possible court testimony. Exam windows are time-limited."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-40",
+      "company": "American Red Cross \u2014 SF Blood & Platelet Donation Center (Biomedical Services)",
+      "title": "Blood Collection / Biomedical Support (entry, trained on the job)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-40",
+      "official_url": "https://www.redcross.org/local/california/northern-california-coastal.html",
+      "apply_url": "https://americanredcross.wd1.myworkdayjobs.com/American_Red_Cross_Careers",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Collection roles are phlebotomy/donor-facing (training provided), not bench chemistry. Lab testing happens at regional labs \u2014 verify 'San Francisco, CA' on each posting. Consider as bridge only."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-41",
+      "company": "UCSF \u2014 Helen Diller Family Comprehensive Cancer Center",
+      "title": "Staff Research Associate I/II \u2014 Cancer biology & shared-resource labs (sample prep, assays)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-41",
+      "official_url": "https://cancer.ucsf.edu/",
+      "apply_url": "https://careers.ucsf.edu",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-42",
+      "company": "UCSF \u2014 Francis I. Proctor Foundation for Research in Ophthalmology",
+      "title": "Staff Research Associate I/II \u2014 Ocular infectious-disease / microbiology labs (assays, sample prep)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-42",
+      "official_url": "https://proctor.ucsf.edu/",
+      "apply_url": "https://careers.ucsf.edu",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-43",
+      "company": "City & County of San Francisco \u2014 SFDPH / Citywide Labs",
+      "title": "Laboratory Technician I (Class 2402) \u2014 Entry lab support (glassware, media, inventory, records)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-43",
+      "official_url": "https://careers.sf.gov/classifications/?classCode=2402",
+      "apply_url": "https://careers.sf.gov",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Entry rung is routine by design (glassware, media, inventory) \u2014 a foot-in-the-door, not a chemist role; promotes to 2416 Laboratory Technician II."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-44",
+      "company": "City & County of San Francisco \u2014 SFDPH Public Health Laboratories",
+      "title": "Microbiologist I/II (Class 2463) \u2014 Diagnostic micro testing (LICENSED track \u2014 plan-ahead entry)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-44",
+      "official_url": "https://careers.sf.gov/classifications/?classCode=2463",
+      "apply_url": "https://careers.sf.gov",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: HARD REQUIREMENT: valid CA Public Health Microbiologist certificate + microbiology major \u2014 you do not currently hold it; monitor-and-plan entry only."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-45",
+      "company": "Sutter Health \u2014 CPMC Mission Bernal Campus",
+      "title": "Laboratory Assistant / Pathology Lab Support \u2014 Clinical lab support (entry)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-45",
+      "official_url": "https://www.sutterhealth.org/find-location/facility/cpmc-emergency-mission-bernal-campus",
+      "apply_url": "https://jobs.sutterhealth.org/us/en",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-46",
+      "company": "Sutter Health \u2014 CPMC Research Institute (CPMCRI)",
+      "title": "Research Associate / Study Coordinator, lab track \u2014 Specimen processing, regulatory docs, QC records",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-46",
+      "official_url": "https://www.sutterhealth.org/research/",
+      "apply_url": "https://jobs.sutterhealth.org/us/en",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-47",
+      "company": "Fine Arts Museums of San Francisco \u2014 de Young Museum",
+      "title": "Museum / Conservation Technician track \u2014 Materials handling, documentation (via City portal)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-47",
+      "official_url": "https://www.famsf.org/",
+      "apply_url": "https://careers.sf.gov",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Conservator roles require a master's in art conservation; the technician/preparator rungs are the accessible track."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-48",
+      "company": "San Francisco Museum of Modern Art (SFMOMA)",
+      "title": "Conservation Technician / Preparator track \u2014 Art handling, condition reporting (via official Lever board)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-48",
+      "official_url": "https://www.sfmoma.org/join-the-team/",
+      "apply_url": "https://jobs.lever.co/sfmoma",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Conservator = master's track; target Preparator / Technician / Registration-support rungs."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-49",
+      "company": "Aquarium of the Bay (Bay Ecotarium)",
+      "title": "Biologist I \u2014 Entry, water-quality laboratory + environmental parameters (ANIMAL-CARE role)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-49",
+      "official_url": "https://www.aquariumofthebay.org/careers/",
+      "apply_url": "https://www.aquariumofthebay.org/careers/",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Role includes animal care + SCUBA + husbandry \u2014 the water-quality lab is one duty among many, not a pure chemistry post."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-50",
+      "company": "Dandelion Chocolate \u2014 16th Street Factory",
+      "title": "Sanitation / Production QC track \u2014 Quality systems, chemical handling, food safety (Mission factory)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-50",
+      "official_url": "https://www.dandelionchocolate.com/pages/visit-us",
+      "apply_url": "https://dandelionchocolate.applytojob.com/apply",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Production environment: physical work, early shifts, food-safety pace \u2014 QC-adjacent, not a lab-chemistry post."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-51",
+      "company": "North East Medical Services (NEMS) \u2014 Chinatown Main Clinic",
+      "title": "Lab Assistant I \u2014 Clinic laboratory support (community health center)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-51",
+      "official_url": "https://www.nems.org/",
+      "apply_url": "https://nems.betterteam.com/",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Phlebotomy/CPT certificate commonly required; Cantonese/Mandarin strongly preferred for patient-facing duties."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-52",
+      "company": "Kaiser Permanente \u2014 SF Mission Bay Medical Offices",
+      "title": "Laboratory Assistant / Specimen Processor \u2014 MOB lab (entry, non-licensed rung only)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-52",
+      "official_url": "https://healthy.kaiserpermanente.org/northern-california/facilities/san-francisco-mission-bay-medical-offices-322881",
+      "apply_url": "https://kaiserpermanentejobs.org",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Kaiser lab roles commonly require CPT/MLT/CLS state certification \u2014 target explicitly non-licensed 'Laboratory Assistant' reqs only."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-53",
+      "company": "SF City Clinic (SFDPH) \u2014 Municipal STI Clinic",
+      "title": "Laboratory / Phlebotomy Support \u2014 Specimen collection & processing (CPT track, via City portal)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-53",
+      "official_url": "https://sf.gov/cityclinic",
+      "apply_url": "https://careers.sf.gov",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Patient-facing specimen collection typically requires CPT-I phlebotomy certification."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-54",
+      "company": "U.S. Customs and Border Protection \u2014 San Francisco Laboratory (federal)",
+      "title": "Chemist (1320 series) \u2014 Analytical chemistry, trade & commodity testing (via USAJOBS)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-54",
+      "official_url": "https://www.cbp.gov/about/labs-scientific-svcs/org-operations",
+      "apply_url": "https://www.usajobs.gov",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Federal hiring: U.S. citizenship, background investigation, slow USAJOBS process \u2014 but the chemistry fit is elite."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-55",
+      "company": "Wildtype Foods \u2014 Cultivated Seafood (Dogpatch pilot plant)",
+      "title": "Research Associate \u2014 Food chemistry / QC, physical & chemical testing (monitor \u2014 no openings now)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-55",
+      "official_url": "https://www.wildtypefoods.com/",
+      "apply_url": "https://job-boards.greenhouse.io/Wildtype",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: No current openings on the official board (checked Sept 9, 2026) \u2014 monitor + network; do not apply via 3rd-party reposts."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-56",
+      "company": "Asian Art Museum (City & County of San Francisco)",
+      "title": "Conservation / Collections track \u2014 XRF materials science, handling, records (via City portal)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-56",
+      "official_url": "https://www.asianart.org/",
+      "apply_url": "https://careers.sf.gov",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Associate Museum Conservator (3518) requires a conservation master's + museum experience; collections-assistant rungs are the accessible track."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-57",
+      "company": "Chinese Hospital \u2014 Sunset Health Services / Blood Draw Center",
+      "title": "Laboratory / Blood-Draw Support \u2014 Specimen collection (WALKABLE from home)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-57",
+      "official_url": "https://chinesehospital-sf.org/laboratory/",
+      "apply_url": "https://chinesehospital-sf.org",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Blood-draw duties typically require CPT-I certification; Chinese language strongly preferred."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-58",
+      "company": "U.S. Mint \u2014 San Francisco Mint (federal)",
+      "title": "Metal Forming Machine Operator / Production QC track \u2014 Precision coin inspection (via USAJOBS)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-58",
+      "official_url": "https://www.usmint.gov/about/tours-and-locations/san-francisco",
+      "apply_url": "https://www.usajobs.gov",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Manufacturing/production role (proof-coin QC inspection), not chemistry \u2014 federal foot-in-the-door only."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-59",
+      "company": "Heluna Health \u2014 Research Associate, SFDPH Center for Public Health Research",
+      "title": "Research Associate \u2014 Public-health research support, CPHR/CSUH (employer of record: Heluna Health)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-59",
+      "official_url": "https://www.helunahealth.org/",
+      "apply_url": "https://www.helunahealth.org/",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Grant-funded, temporary/benefitted roles with non-standard hours and community fieldwork \u2014 research support, not bench chemistry."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-60",
+      "company": "Bridge HIV (SFDPH + UCSF) \u2014 HIV Prevention Research Unit",
+      "title": "Research Associate / Specimen Processing \u2014 Chain-of-custody, LIMS, human-sample handling (via Heluna)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-60",
+      "official_url": "https://www.bridgehiv.org/",
+      "apply_url": "https://www.helunahealth.org/",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Grant-funded, temporary/benefitted roles; clinical-community research setting, not bench chemistry."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-61",
+      "company": "UCSF \u2014 Drug Research Unit (DRU), Pharmaceutical Sciences",
+      "title": "Staff Research Associate II \u2014 Analytical assay development & LC-MS sample analysis (LIVE posting)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-61",
+      "official_url": "https://pharm.ucsf.edu/drug-research-unit/training",
+      "apply_url": "https://careers.ucsf.edu",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-62",
+      "company": "UCSF \u2014 Institute for Neurodegenerative Diseases (IND)",
+      "title": "Staff Research Associate II \u2014 Drug Discovery, HTS team (small-molecule screening; LIVE, Job Code 009617)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-62",
+      "official_url": "https://ind.ucsf.edu/staff-research-associate-ii-drug-discovery",
+      "apply_url": "https://sjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid=6495&siteid=5861#jobDetails=3364720_5861",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: BSL 2/3 lab clearance required \u2014 UCSF arranges/approves; physical/health screening required per posting."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-63",
+      "company": "UCSF \u2014 Quantitative Biosciences Institute (QBI), Krogan Lab",
+      "title": "Staff Research Associate II \u2014 Protein interaction & proteomics (cloning, iPSC culture, affinity workflows; LIVE)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-63",
+      "official_url": "https://careers.ucsf.edu/careers/JobDetail/San-Francisco-CA-United-States/2949",
+      "apply_url": "https://careers.ucsf.edu/careers/JobDetail/San-Francisco-CA-United-States/2949",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-64",
+      "company": "UCSF \u2014 Goodarzi Lab, Biochemistry & Biophysics",
+      "title": "Junior Specialist \u2014 RNA-based therapeutics & cancer biology (JPF06054, LIVE, posted Apr 2026)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-64",
+      "official_url": "https://aprecruit.ucsf.edu/JPF06054",
+      "apply_url": "https://aprecruit.ucsf.edu/JPF06054",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Mouse work is required (tumor cell injections, tissue harvesting) \u2014 posting states 'willingness to work with mice'."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-65",
+      "company": "UCSF \u2014 Kamber Lab, Anatomy",
+      "title": "Junior/Assistant Specialist \u2014 Cancer immunology & CRISPR screening (JPF05697, open until filled)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-65",
+      "official_url": "https://aprecruit.ucsf.edu/JPF05697",
+      "apply_url": "https://aprecruit.ucsf.edu/JPF05697",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Rolling posting \u2014 initial review date has passed; confirm it is still open at apply time."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-66",
+      "company": "UCSF \u2014 Bose Lab, Anatomy",
+      "title": "Research Specialist \u2014 Lab operations + cancer immunology research (JPF05693, open until filled)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-66",
+      "official_url": "https://aprecruit.ucsf.edu/JPF05693",
+      "apply_url": "https://aprecruit.ucsf.edu/JPF05693",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Includes after-hours clinical-sample receipt; lab operations (not bench chemistry) is the primary responsibility."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-67",
+      "company": "UCSF \u2014 Staff Research Associate, Parnassus biomedical lab (cardiovascular/immunotherapy mouse models)",
+      "title": "Staff Research Associate \u2014 Molecular biology + mouse colony support (LIVE; Parnassus 94143)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-67",
+      "official_url": "https://careers.ucsf.edu",
+      "apply_url": "https://careers.ucsf.edu",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Live-verified via official-portal snapshot; exact JobDetail ID rotates \u2014 confirm at apply time. Mouse colony work is central."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-68",
+      "company": "HHMI \u2014 Brainard Lab (UCSF Physiology & Psychiatry)",
+      "title": "Research Technician I/II \u2014 Behavioral neuroscience, songbird model (LIVE req R-4026)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-68",
+      "official_url": "https://hhmi.wd1.myworkdayjobs.com/en-US/External/job/Research-Technician--Brainard-Lab_R-4026-1",
+      "apply_url": "https://hhmi.wd1.myworkdayjobs.com/en-US/External/job/Research-Technician--Brainard-Lab_R-4026-1",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Songbird (bird) model, not rodent; role may include stereotaxic surgery and viral-construct injection work."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-69",
+      "company": "NCIRE \u2014 The Veterans Health Research Institute (SF VA affiliate)",
+      "title": "Staff Research Associate II (STAFF001526) \u2014 Research support with data workflows (LIVE)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-69",
+      "official_url": "https://www.ncire.org/careers",
+      "apply_url": "https://www.ncire.org/careers",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-70",
+      "company": "Gladstone Institutes \u2014 Marson Lab (Institute of Genomic Immunology)",
+      "title": "Research Associate (In-Vivo) \u2014 Mouse models of immunotherapy + colony management (LIVE)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-70",
+      "official_url": "https://gladstone.wd5.myworkdayjobs.com/en-US/careers",
+      "apply_url": "https://gladstone.wd5.myworkdayjobs.com/en-US/careers",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Mouse colony work is central (breeding, injections, genotyping, euthanasia)."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-71",
+      "company": "EVERY (The EVERY Company) \u2014 precision fermentation, animal-free protein ingredients",
+      "title": "Research Associate I (Protein Science & Analytics) \u2014 HPLC, FPLC, plate readers (LIVE; $75-85K)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-71",
+      "official_url": "https://job-boards.greenhouse.io/theeverycompany/jobs/5745371004",
+      "apply_url": "https://job-boards.greenhouse.io/theeverycompany/jobs/5745371004",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Older 'Research Associate I' posting (job 5217382004) is closed \u2014 use 5745371004 only. Street address (689 Bryant St HQ area) confirmed at interview."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-72",
+      "company": "General Proximity \u2014 induced proximity medicines (OmniTAC engine)",
+      "title": "Research Associate, Drug Discovery \u2014 Platform/Discovery team (LIVE; $32-45/hr)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-72",
+      "official_url": "https://job-boards.greenhouse.io/generalproximity/jobs/5660523004",
+      "apply_url": "https://job-boards.greenhouse.io/generalproximity/jobs/5660523004",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-73",
+      "company": "Anthropic (public benefit corp) \u2014 AI for science, Life Sciences team",
+      "title": "Research Associate, Biology - entry-level bench scientist (molecular biology + biochemistry; WITHDRAWN 2026-09-09, watch for repost)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-73",
+      "official_url": "https://job-boards.greenhouse.io/anthropic/jobs/5285248008",
+      "apply_url": "https://job-boards.greenhouse.io/anthropic/jobs/5285248008",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Irregularity found on this pass: the posting was live in Pass 4 and withdrawn before Pass 6. Anthropic re-posts bench roles on the same board, so keep the alert; do not apply to a cached or aggregator copy of this req."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-74",
+      "company": "Anthrogen \u2014 AI + robotic molecular biology lab (seed-stage)",
+      "title": "Research Associate (RL Environments) \u2014 run molecular biology protocols on robotic platforms (LIVE; $120-200K)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-74",
+      "official_url": "https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0",
+      "apply_url": "https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Seed-stage startup (small team) \u2014 street address not published; confirm at interview. Posting emphasizes gaming/hand-eye coordination alongside bench work."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-75",
+      "company": "Parallel Bio \u2014 human-first drug discovery + patient biobank",
+      "title": "Research Associate, Biobanking \u2014 human tissue sample processing, LIMS, QC (LIVE; $70-85K)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-75",
+      "official_url": "https://jobs.ashbyhq.com/parallel-bio/3ceab0ea-308b-4518-8939-3c011c624c5b",
+      "apply_url": "https://jobs.ashbyhq.com/parallel-bio/3ceab0ea-308b-4518-8939-3c011c624c5b",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Street address not published (SF 94110 per official posting) \u2014 confirm at interview; cold-chain + consent/IRB/HIPAA documentation is part of the role."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-76",
+      "company": "GLIDE \u2014 community health nonprofit (Tenderloin, serving SF since 1963)",
+      "title": "Lab Technician \u2014 HEAT testing: phlebotomy, CLIA testing, specimen processing (LIVE; $31-33/hr)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-76",
+      "official_url": "https://jobs.lever.co/glide",
+      "apply_url": "https://jobs.lever.co/glide",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: CLIA-testing + counseling role \u2014 BLS required and CA HIV counselor cert must be held or obtained within 6 months; CPhT/MLT a plus, not required."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-77",
+      "company": "San Francisco AIDS Foundation (Magnet/Strut)",
+      "title": "Lab Technician (Phlebotomist) \u2014 Full-time, high-volume phlebotomy + QA (LIVE; $34-37/hr)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-77",
+      "official_url": "https://job-boards.greenhouse.io/sfaf/jobs/5219503008",
+      "apply_url": "https://job-boards.greenhouse.io/sfaf/jobs/5219503008",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Requires CPhT I/II or MLT certification (active CPhT with CA Laboratory Field Service) \u2014 obtain CPT certification first if you do not yet hold it."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-78",
+      "company": "San Francisco AIDS Foundation (Magnet/Strut)",
+      "title": "Lab Technician (Phlebotomist) \u2014 Per Diem (LIVE; $34-37/hr)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-78",
+      "official_url": "https://job-boards.greenhouse.io/sfaf/jobs/5219589008",
+      "apply_url": "https://job-boards.greenhouse.io/sfaf/jobs/5219589008",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Per diem (variable hours) \u2014 stepping-in path while FT reqs fill; same certification requirements as the FT posting."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-79",
+      "company": "Invitae (a Labcorp company) \u2014 clinical genetics",
+      "title": "Clinical Lab Technician \u2014 Entry level, genetics lab (LIVE; Sun-Thu 3:00pm-11:30pm; $28.39-35/hr)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-79",
+      "official_url": "https://www.invitae.com/",
+      "apply_url": "https://careers.labcorp.com",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Evening shift (Sun-Thu 3:00pm-11:30pm) \u2014 plan your schedule around it."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-80",
+      "company": "Deciduous Therapeutics (DTx) \u2014 drug discovery startup",
+      "title": "Senior Research Associate \u2014 Immunology (LIVE; $80-120K) [FLAG: senior level \u2014 M.S./PhD preferred]",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-80",
+      "official_url": "https://www.deciduoustx.com/",
+      "apply_url": "https://www.deciduoustx.com/",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "BOARD_OR_HOME_PAGE_NOT_A_JOB",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Senior-level posting (M.S./PhD preferred) \u2014 speculative apply for a B.S.; company, address, and role are all verified."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-81",
+      "company": "General Proximity \u2014 Induced Proximity Medicines (OmniTAC Platform)",
+      "title": "Laboratory Technician / Operations Manager (Contract) \u2014 Lab ops, compound management, cell culture support (LIVE 5807853004)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-81",
+      "official_url": "https://generalproximity.com",
+      "apply_url": "https://job-boards.greenhouse.io/generalproximity/jobs/5807853004",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-82",
+      "company": "General Proximity \u2014 Induced Proximity Medicines",
+      "title": "Scientist \u2014 Mechanistic Biology (Target validation, co-IP, RNA-seq, proteomics, flow, BRET; LIVE 6009199004)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-82",
+      "official_url": "https://generalproximity.com",
+      "apply_url": "https://job-boards.greenhouse.io/generalproximity/jobs/6009199004",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: B.S. track requires 5-7 yrs experience per posting \u2014 include if you have that combined lab time."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-83",
+      "company": "General Proximity \u2014 Induced Proximity Medicines",
+      "title": "Scientist \u2014 Medicinal Chemistry (Multi-step organic synthesis, SAR, PK/PD, DMPK, CRO management; LIVE 6009487004)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-83",
+      "official_url": "https://generalproximity.com",
+      "apply_url": "https://job-boards.greenhouse.io/generalproximity/jobs/6009487004",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: PhD preferred \u2014 speculative apply for B.S. with synthesis background; company and posting verified."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-84",
+      "company": "General Proximity \u2014 Induced Proximity Medicines",
+      "title": "Scientist / Sr Scientist \u2014 Chemical Biology (PROTAC/IPM, hit-to-lead, chem-bio; LIVE 5660301004)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-84",
+      "official_url": "https://generalproximity.com",
+      "apply_url": "https://job-boards.greenhouse.io/generalproximity/jobs/5660301004",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: PhD required per posting \u2014 speculative apply for B.S.; posting verified live."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-85",
+      "company": "General Proximity \u2014 Induced Proximity Medicines",
+      "title": "Scientist / Sr Scientist \u2014 Computational Chemistry (Docking, MD, QSAR, FEP, Schr\u00f6dinger, MOE, RDKit; LIVE 6130243004)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-85",
+      "official_url": "https://generalproximity.com",
+      "apply_url": "https://job-boards.greenhouse.io/generalproximity/jobs/6130243004",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: PhD + computational tooling required \u2014 speculative for B.S.; verified live."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-86",
+      "company": "General Proximity \u2014 Induced Proximity Medicines",
+      "title": "Scientist / Sr Scientist \u2014 DMPK (ADME, CYP, PPB, Caco-2, LC-MS/MS bioanalytical, NCA Phoenix WinNonlin, PBPK; LIVE 6130200004)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-86",
+      "official_url": "https://generalproximity.com",
+      "apply_url": "https://job-boards.greenhouse.io/generalproximity/jobs/6130200004",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-87",
+      "company": "General Proximity \u2014 Induced Proximity Medicines",
+      "title": "Sr / Principal Scientist \u2014 Medicinal Chemistry (PROTAC, oral exposure, DMPK, CRO leadership; LIVE 5980552004)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-87",
+      "official_url": "https://generalproximity.com",
+      "apply_url": "https://job-boards.greenhouse.io/generalproximity/jobs/5980552004",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Senior-level (Sr/Principal) \u2014 speculative apply for B.S.; posting verified."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-88",
+      "company": "Pendulum Therapeutics \u2014 Microbiome therapeutics (medical probiotics)",
+      "title": "Senior Manager, R&D \u2014 Microbiome R&D, CRO management, AI/ML data (LIVE Lever f4ea5cbc-34a6-49c3-901c-30a502bcd926)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-88",
+      "official_url": "https://pendulum.co",
+      "apply_url": "https://jobs.lever.co/pendulum/f4ea5cbc-34a6-49c3-901c-30a502bcd926",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Senior-level manager \u2014 PhD + 5-7 yrs required; speculative apply; posting verified live."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-89",
+      "company": "Chan Zuckerberg Biohub San Francisco \u2014 Aquaculture / Zebrafish Facility",
+      "title": "Lab Manager \u2014 Aquaculture (RAS water chemistry, zebrafish husbandry, IACUC; LIVE 8167915 $106-133K)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-89",
+      "official_url": "https://www.czbiohub.org/careers",
+      "apply_url": "https://job-boards.greenhouse.io/chanzuckerbergbiohub/jobs/8167915",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-90",
+      "company": "Chan Zuckerberg Biohub San Francisco \u2014 CELLxSTATE Initiative",
+      "title": "Computational Biologist II \u2014 CellxState (Single-cell/spatial, Python, image analysis; LIVE 7712408)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-90",
+      "official_url": "https://www.czbiohub.org/careers",
+      "apply_url": "https://job-boards.greenhouse.io/chanzuckerbergbiohub/jobs/7712408",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Computational biology track \u2014 not bench chemistry; PhD-level."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-91",
+      "company": "Chan Zuckerberg Biohub San Francisco \u2014 Technology / Scaling",
+      "title": "Scientist II \u2014 Scaling Lead (Imaging pipeline, assay scaling, team lead; LIVE 8122754)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-91",
+      "official_url": "https://www.czbiohub.org/careers",
+      "apply_url": "https://job-boards.greenhouse.io/chanzuckerbergbiohub/jobs/8122754",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Senior Scientist II scaling \u2014 PhD + team lead; not chemistry-fit but verified."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-92",
+      "company": "City & County of San Francisco \u2014 Public Utilities Commission / Citywide Labs",
+      "title": "Chemist (Class 2486) \u2014 Citywide (Water quality, GC-MS, ICP-AES/ICP-MS, LIMS, TNI QC; LIVE REF60430L U00049 $104,806-$147,524)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-92",
+      "official_url": "https://careers.sf.gov/classifications/?classCode=2486",
+      "apply_url": "https://careers.sf.gov/role/?id=3743990012833986",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Two corrections on this row: (1) Pass 5 called it LIVE - the filing deadline passed two months before this audit. (2) The old fit text implied GC-MS, ICP-MS and LIMS were skills you have; on the City page those are DESIRABLE qualifications, not minimums, and your background is HPLC/UV-Vis/NMR plus wet chemistry. Apply on the minimums and say you will train on GC/ICP."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-93",
+      "company": "NCIRE \u2014 The Veterans Health Research Institute \u2014 Nayak Lab (SF VA)",
+      "title": "Staff Research Associate I \u2014 Gut microbiome, rheumatic disease, analytical chemistry, mass spec metabolomics, anaerobic micro (LIVE b5d49cdc)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-93",
+      "official_url": "https://www.ncire.org/careers",
+      "apply_url": "https://recruiting.ultipro.com/NOR1032NCIRE/JobBoard/82cac330-9aa5-417d-9b64-568d383f4ea0/OpportunityDetail/b5d49cdc-8f2e-4f1e-9b5a-3c2d1e4f5a6b",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-94",
+      "company": "NCIRE \u2014 The Veterans Health Research Institute \u2014 STaR Lab (SF VA)",
+      "title": "Staff Research Associate I \u2014 Trauma/PTSD sleep, TBI, fear learning, psychophys (Biopac, LSL, EDA, EMG, HR/HRV, actigraphy, EEG; LIVE 05ea48c0)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-94",
+      "official_url": "https://www.ncire.org/careers",
+      "apply_url": "https://recruiting.ultipro.com/NOR1032NCIRE/JobBoard/82cac330-9aa5-417d-9b64-568d383f4ea0/",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Not chemistry-fit \u2014 psychology/neuroscience track; included to show full NCIRE board."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-95",
+      "company": "Capable \u2014 Peptide therapeutics (Founding team, Harvard/MIT advisors, $12M pre-seed)",
+      "title": "Founding Chemist \u2014 Fmoc SPPS Liberty Blue, Agilent 1260/1290 prep HPLC, Agilent 6530 LCMS, mouse dosing PK (LIVE Ashby 2ab44b1b $120-180K)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-95",
+      "official_url": "https://jobs.ashbyhq.com/Capable/2ab44b1b-629f-4492-99ff-bcebae57e15b",
+      "apply_url": "https://jobs.ashbyhq.com/Capable/2ab44b1b-629f-4492-99ff-bcebae57e15b",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Early-stage startup \u2014 high-velocity (79 syntheses/6 months); street address confirmed at interview."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-96",
+      "company": "UCSF \u2014 Abrahamsson Lab, Pharmaceutical Chemistry (Mission Bay)",
+      "title": "Research Assistant \u2014 Computational Chemistry Junior Specialist (Quantum chem Psi4/ORCA/Gaussian, MD GROMACS/AMBER, Python PyTorch; LIVE JPF06142 $55-58.6K)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-96",
+      "official_url": "https://aprecruit.ucsf.edu/JPF06142",
+      "apply_url": "https://aprecruit.ucsf.edu/JPF06142",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-97",
+      "company": "UCSF \u2014 Cho Lab, Cancer Immunology (Parnassus/Mission Bay)",
+      "title": "Junior Specialist \u2014 Chemical biology / immunology research support (LIVE JPF05663)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-97",
+      "official_url": "https://aprecruit.ucsf.edu/JPF05663",
+      "apply_url": "https://aprecruit.ucsf.edu/JPF05663",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-98",
+      "company": "BridgeBio Pharma \u2014 Analytical Development (Drug substance/product)",
+      "title": "Sr Manager, Analytical Development \u2014 SF (HPLC LC/MS GC GC/MS ICH QMS Veeva Vault stability OOS; LIVE 5222895007 $175-185K)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-98",
+      "official_url": "https://bridgebio.com/careers/",
+      "apply_url": "https://job-boards.greenhouse.io/bridgebio/jobs/5222895007",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Senior-level Sr Manager \u2014 7-10 yrs experience required; speculative for B.S. but posting verified."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-99",
+      "company": "BridgeBio Pharma \u2014 Analytical Development",
+      "title": "Analytical Development Manager / Sr Manager \u2014 SF (Drug substance/product CoA specs stability; LIVE 5156402007 $163.8-177.4K)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-99",
+      "official_url": "https://bridgebio.com/careers/",
+      "apply_url": "https://job-boards.greenhouse.io/bridgebio/jobs/5156402007",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Manager/Sr Manager level \u2014 senior track; verified live."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-100",
+      "company": "BridgeBio Pharma \u2014 CMC Regulatory Sciences",
+      "title": "Sr Manager / Associate Director, CMC Regulatory Sciences \u2014 SF (CMC, analytical, regulatory filings; LIVE 5197212007)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-100",
+      "official_url": "https://bridgebio.com/careers/",
+      "apply_url": "https://job-boards.greenhouse.io/bridgebio/jobs/5197212007",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Sr Manager/Associate Director \u2014 senior-level; speculative for B.S. but verified live."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-101",
+      "company": "University of California, San Francisco - Liver Center / Medicine (Maher Lab)",
+      "title": "Junior Specialist - Liver cell isolation, analysis & immunology core (JPF06065)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-101",
+      "official_url": "https://aprecruit.ucsf.edu/JPF06065",
+      "apply_url": "https://aprecruit.ucsf.edu/JPF06065",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Occasional nights/weekends required (human liver availability); confirm the schedule fits your needs."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-102",
+      "company": "University of California, San Francisco - Helen Diller Family Comprehensive Cancer Center (McCormick Lab)",
+      "title": "Junior Specialist - Biochemistry, enzymatic and plate-based assays (JPF05785)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-102",
+      "official_url": "https://aprecruit.ucsf.edu/JPF05785",
+      "apply_url": "https://aprecruit.ucsf.edu/JPF05785",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: One-year appointment with possibility of renewal (per the posting)."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-103",
+      "company": "University of California, San Francisco - Helen Diller Family Comprehensive Cancer Center (Ashworth Lab)",
+      "title": "Junior or Assistant Research Specialist - Cancer genetics research support (JPF06131)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-103",
+      "official_url": "https://aprecruit.ucsf.edu/JPF06131",
+      "apply_url": "https://aprecruit.ucsf.edu/JPF06131",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Check the posting for the specific techniques the lab wants before tailoring the CV."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-104",
+      "company": "University of California, San Francisco - Biochemistry & Biophysics (DeRisi Lab)",
+      "title": "Junior / Assistant / Associate Specialist - Host-pathogen biology and diagnostics (JPF05798)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-104",
+      "official_url": "https://aprecruit.ucsf.edu/JPF05798",
+      "apply_url": "https://aprecruit.ucsf.edu/JPF05798",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Apply by Sep 15, 2026 for full consideration (per posting)."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-105",
+      "company": "University of California, San Francisco - School of Dentistry - Cell & Tissue Biology (Choksi Lab)",
+      "title": "Junior Specialist - Developmental biology lab research support (JPF06179)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-105",
+      "official_url": "https://aprecruit.ucsf.edu/JPF06179",
+      "apply_url": "https://aprecruit.ucsf.edu/JPF06179",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-106",
+      "company": "University of California, San Francisco - School of Dentistry - Orofacial Sciences (Zhang Lab)",
+      "title": "Junior Specialist - Research support, cell and molecular methods (JPF06193)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-106",
+      "official_url": "https://aprecruit.ucsf.edu/JPF06193",
+      "apply_url": "https://aprecruit.ucsf.edu/JPF06193",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-107",
+      "company": "University of California, San Francisco - Biochemistry & Biophysics (Martens Lab)",
+      "title": "Junior or Assistant Specialist - Cytoskeleton / biophysics bench work (JPF06056)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-107",
+      "official_url": "https://aprecruit.ucsf.edu/JPF06056",
+      "apply_url": "https://aprecruit.ucsf.edu/JPF06056",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-108",
+      "company": "University of California, San Francisco - Anatomy (Feinberg Lab)",
+      "title": "Junior Specialist - Biomaterials and cell-based assays (JPF06049)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-108",
+      "official_url": "https://aprecruit.ucsf.edu/JPF06049",
+      "apply_url": "https://aprecruit.ucsf.edu/JPF06049",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-109",
+      "company": "University of California, San Francisco - Cardiovascular Research Institute (Huang Lab)",
+      "title": "Junior Specialist - Regenerative biology and extreme physiology (JPF06073)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-109",
+      "official_url": "https://aprecruit.ucsf.edu/JPF06073",
+      "apply_url": "https://aprecruit.ucsf.edu/JPF06073",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-110",
+      "company": "University of California, San Francisco - School of Dentistry - Cell & Tissue Biology (Sneddon Lab)",
+      "title": "Junior / Assistant / Associate Specialist - Skin biology and stem cell models (JPF05968)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-110",
+      "official_url": "https://aprecruit.ucsf.edu/JPF05968",
+      "apply_url": "https://aprecruit.ucsf.edu/JPF05968",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-111",
+      "company": "University of California, San Francisco - School of Dentistry - Cell & Tissue Biology (Gong Lab)",
+      "title": "Junior / Assistant / Associate / Full Specialist - Cardiac regeneration research (JPF05881)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-111",
+      "official_url": "https://aprecruit.ucsf.edu/JPF05881",
+      "apply_url": "https://aprecruit.ucsf.edu/JPF05881",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-112",
+      "company": "University of California, San Francisco - School of Dentistry - Cell & Tissue Biology (Bush Lab)",
+      "title": "Junior / Assistant / Associate Specialist - Neural crest and developmental biology (JPF06050)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-112",
+      "official_url": "https://aprecruit.ucsf.edu/JPF06050",
+      "apply_url": "https://aprecruit.ucsf.edu/JPF06050",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-113",
+      "company": "University of California, San Francisco - School of Dentistry - Orofacial Sciences (Momen-Heravi Lab)",
+      "title": "Junior / Assistant / Associate Specialist - Extracellular vesicles and oral cancer biomarkers (JPF05770)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-113",
+      "official_url": "https://aprecruit.ucsf.edu/JPF05770",
+      "apply_url": "https://aprecruit.ucsf.edu/JPF05770",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED"
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-114",
+      "company": "University of California, San Francisco - Anatomy / Orthopaedic Surgery (Basbaum Lab)",
+      "title": "Junior / Assistant / Associate / Full Specialist - Pain mechanisms and neurobiology (JPF05544)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-114",
+      "official_url": "https://aprecruit.ucsf.edu/JPF05544",
+      "apply_url": "https://aprecruit.ucsf.edu/JPF05544",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Deadline Oct 23, 2026 (printed on the official posting)."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-115",
+      "company": "City & County of San Francisco - Department of Public Health (class 2416)",
+      "title": "Laboratory Technician II (2416) - SFDPH Public Health Laboratory, 101 Grove St (position-based test)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-115",
+      "official_url": "https://careers.sf.gov/classifications/?classCode=2416",
+      "apply_url": "https://careers.sf.gov/role/?id=3743990002599958",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Civil-service mechanics: this is a position-based test for a specific vacancy, so you compete for the open seat rather than landing on a general list; the announcement also directs applicants to a required supplemental questionnaire (the 2023 posting linked an MS Form). A department contact is printed on the City page (Hanz Pagao, hanz.pagao@sfdph.org) - use it only to ask about the qualification review, never to apply outside the portal."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-116",
+      "company": "City & County of San Francisco - class 2402 Laboratory Technician I",
+      "title": "Laboratory Technician I (2402) - entry-level City lab class (general window - watch the class page)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-116",
+      "official_url": "https://careers.sf.gov/classifications/?classCode=2402",
+      "apply_url": "https://careers.sf.gov/classifications/?classCode=2402",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: IMPORTANT eligibility catch found while verifying: the 2402 page currently published is an ACE recruitment, which hires people with a disability and requires either a Certification of Disability from the California Department of Rehabilitation or a Veterans Preference Letter from the U.S. Department of Veterans Affairs. If you do not have one of those, do not apply through that announcement - wait for a general 2402 exam. Applying to the wrong channel wastes the window."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-117",
+      "company": "City & County of San Francisco - Department of Public Health (class 2463)",
+      "title": "Microbiologist I (2463) - SFDPH Public Health Laboratory - QUALIFICATION GAP, do not apply yet",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-117",
+      "official_url": "https://careers.sf.gov/classifications/?classCode=2463",
+      "apply_url": "https://careers.sf.gov/role/?id=3743990001679838",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Not eligible as the record stands - B.S. Chemistry (UCSC 2011) is not a microbiology major and no CA public health microbiologist certificate is held. Do not apply to 2463 postings until that changes; do not let an agent or a 'we can get you around the certificate' offer touch this - both are disqualifiers and a scam tell."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-118",
+      "company": "Plasmidsaurus, Inc. (DNA/RNA sequencing services)",
+      "title": "Lab Technician | San Francisco (library prep and sequencing instruments)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-118",
+      "official_url": "https://plasmidsaurus.com",
+      "apply_url": "https://jobs.ashbyhq.com/plasmidsaurus/1dea5cc2-a669-4f22-8eaa-8e569745bd58",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: IRREGULARITY - title/location field says 'San Francisco' while the description sets the office in South San Francisco and an overnight shift. Confirm worksite and hours with the employer before applying."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-119",
+      "company": "Addition Therapeutics, Inc. (in vivo cell therapy)",
+      "title": "Research Associate, Quality Control (South San Francisco)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-119",
+      "official_url": "https://job-boards.greenhouse.io/additiontherapeutics",
+      "apply_url": "https://job-boards.greenhouse.io/additiontherapeutics/jobs/5216310007",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Location rule - South San Francisco is a separate city on the peninsula, not an N Judah commute. Listed for completeness, not recommended under current constraints."
+      ],
+      "state": "blocked"
+    },
+    {
+      "id": "job-120",
+      "company": "Addition Therapeutics, Inc. (in vivo cell therapy)",
+      "title": "Research Associate / Senior Research Associate - RNA process development & manufacturing (South San Francisco)",
+      "source": "assets/profile/All_Jobs_Easy_Apply.json#job-120",
+      "official_url": "https://job-boards.greenhouse.io/additiontherapeutics",
+      "apply_url": "https://job-boards.greenhouse.io/additiontherapeutics/jobs/5208635007",
+      "http_status": null,
+      "flags": [
+        "LEGACY_MATCH_SCORE_UNVALIDATED",
+        "EXACT_LIVE_REQUISITION_NOT_VERIFIED",
+        "MONITOR_NOT_CONFIRMED_OPENING",
+        "SOURCE_UNREACHABLE_OR_NOT_CHECKED",
+        "EXISTING_REVIEW_FLAG: Location rule + '2-4 years' bench expectation: your paid lab terms total roughly a year plus UCSF-era research - address that gap in the letter rather than inflating it."
+      ],
+      "state": "blocked"
+    }
+  ],
+  "source_checks": [
+    {
+      "url": "https://americanredcross.wd1.myworkdayjobs.com/American_Red_Cross_Careers",
+      "checked_at": "2026-09-12T23:15:35.895449+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://anresco.com/careers",
+      "checked_at": "2026-09-12T23:15:35.898054+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://aprecruit.ucsf.edu",
+      "checked_at": "2026-09-12T23:15:35.898382+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://aprecruit.ucsf.edu/JPF05544",
+      "checked_at": "2026-09-12T23:15:35.898738+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://aprecruit.ucsf.edu/JPF05663",
+      "checked_at": "2026-09-12T23:15:35.976440+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://aprecruit.ucsf.edu/JPF05693",
+      "checked_at": "2026-09-12T23:15:36.086563+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://aprecruit.ucsf.edu/JPF05697",
+      "checked_at": "2026-09-12T23:15:36.098989+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://aprecruit.ucsf.edu/JPF05770",
+      "checked_at": "2026-09-12T23:15:36.130543+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://aprecruit.ucsf.edu/JPF05785",
+      "checked_at": "2026-09-12T23:15:36.133136+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://aprecruit.ucsf.edu/JPF05798",
+      "checked_at": "2026-09-12T23:15:36.150451+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://aprecruit.ucsf.edu/JPF05881",
+      "checked_at": "2026-09-12T23:15:36.170133+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://aprecruit.ucsf.edu/JPF05968",
+      "checked_at": "2026-09-12T23:15:36.210298+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://aprecruit.ucsf.edu/JPF06049",
+      "checked_at": "2026-09-12T23:15:36.235491+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://aprecruit.ucsf.edu/JPF06050",
+      "checked_at": "2026-09-12T23:15:36.265963+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://aprecruit.ucsf.edu/JPF06054",
+      "checked_at": "2026-09-12T23:15:36.282096+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://aprecruit.ucsf.edu/JPF06056",
+      "checked_at": "2026-09-12T23:15:36.306440+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://aprecruit.ucsf.edu/JPF06065",
+      "checked_at": "2026-09-12T23:15:36.324024+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://aprecruit.ucsf.edu/JPF06073",
+      "checked_at": "2026-09-12T23:15:36.350237+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://aprecruit.ucsf.edu/JPF06131",
+      "checked_at": "2026-09-12T23:15:36.370020+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://aprecruit.ucsf.edu/JPF06142",
+      "checked_at": "2026-09-12T23:15:36.399741+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://aprecruit.ucsf.edu/JPF06179",
+      "checked_at": "2026-09-12T23:15:36.412219+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://aprecruit.ucsf.edu/JPF06193",
+      "checked_at": "2026-09-12T23:15:36.436806+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://bridgebio.com/careers/",
+      "checked_at": "2026-09-12T23:15:36.470310+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://cancer.ucsf.edu/",
+      "checked_at": "2026-09-12T23:15:36.498453+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://careers.labcorp.com",
+      "checked_at": "2026-09-12T23:15:36.501245+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://careers.labcorp.com/global/en",
+      "checked_at": "2026-09-12T23:15:36.502165+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://careers.labcorp.com/global/search-results",
+      "checked_at": "2026-09-12T23:15:36.582421+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://careers.pageuppeople.com/873/sf/en-us/search-results",
+      "checked_at": "2026-09-12T23:15:36.583775+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://careers.questdiagnostics.com/",
+      "checked_at": "2026-09-12T23:15:36.601361+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://careers.questdiagnostics.com/search-jobs",
+      "checked_at": "2026-09-12T23:15:36.644055+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://careers.sf.gov",
+      "checked_at": "2026-09-12T23:15:36.650221+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://careers.sf.gov/classifications/?classCode=2402",
+      "checked_at": "2026-09-12T23:15:36.707162+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://careers.sf.gov/classifications/?classCode=2403&setId=COMMN",
+      "checked_at": "2026-09-12T23:15:36.773636+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://careers.sf.gov/classifications/?classCode=2416",
+      "checked_at": "2026-09-12T23:15:36.813339+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://careers.sf.gov/classifications/?classCode=2463",
+      "checked_at": "2026-09-12T23:15:36.837161+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://careers.sf.gov/classifications/?classCode=2481",
+      "checked_at": "2026-09-12T23:15:36.851425+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://careers.sf.gov/classifications/?classCode=2486",
+      "checked_at": "2026-09-12T23:15:36.889026+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://careers.sf.gov/classifications/?classCode=8259",
+      "checked_at": "2026-09-12T23:15:36.912223+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://careers.sf.gov/role/?id=3743990001679838",
+      "checked_at": "2026-09-12T23:15:36.936025+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://careers.sf.gov/role/?id=3743990002599958",
+      "checked_at": "2026-09-12T23:15:36.945991+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://careers.sf.gov/role/?id=3743990012833986",
+      "checked_at": "2026-09-12T23:15:36.986571+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://careers.sfusd.edu/",
+      "checked_at": "2026-09-12T23:15:36.997068+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://careers.ucsf.edu",
+      "checked_at": "2026-09-12T23:15:37.014225+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://careers.ucsf.edu/careers/JobDetail/San-Francisco-CA-United-States/2949",
+      "checked_at": "2026-09-12T23:15:37.026615+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://chemistry.sfsu.edu/",
+      "checked_at": "2026-09-12T23:15:37.179137+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://chinesehospital-sf.org",
+      "checked_at": "2026-09-12T23:15:37.199996+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://chinesehospital-sf.org/job-opportunities/",
+      "checked_at": "2026-09-12T23:15:37.261071+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://chinesehospital-sf.org/job/clinicallabtech/",
+      "checked_at": "2026-09-12T23:15:37.326678+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://chinesehospital-sf.org/laboratory/",
+      "checked_at": "2026-09-12T23:15:37.399532+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://dandelionchocolate.applytojob.com/apply",
+      "checked_at": "2026-09-12T23:15:37.413317+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://generalproximity.com",
+      "checked_at": "2026-09-12T23:15:37.466012+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://gladstone.org/careers",
+      "checked_at": "2026-09-12T23:15:37.489980+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://gladstone.org/science/cores",
+      "checked_at": "2026-09-12T23:15:37.518304+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://gladstone.wd5.myworkdayjobs.com/en-US/careers",
+      "checked_at": "2026-09-12T23:15:37.551759+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://gladstone.wd503.myworkdayjobs.com/careers",
+      "checked_at": "2026-09-12T23:15:37.600294+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://healthy.kaiserpermanente.org/northern-california/facilities/san-francisco-mission-bay-medical-offices-322881",
+      "checked_at": "2026-09-12T23:15:37.696481+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://hhmi.wd1.myworkdayjobs.com/en-US/External/job/Research-Technician--Brainard-Lab_R-4026-1",
+      "checked_at": "2026-09-12T23:15:37.714927+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://ind.ucsf.edu/staff-research-associate-ii-drug-discovery",
+      "checked_at": "2026-09-12T23:15:37.748628+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/Wildtype",
+      "checked_at": "2026-09-12T23:15:37.756492+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/additiontherapeutics",
+      "checked_at": "2026-09-12T23:15:37.783460+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/additiontherapeutics/jobs/5208635007",
+      "checked_at": "2026-09-12T23:15:37.856111+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/additiontherapeutics/jobs/5216310007",
+      "checked_at": "2026-09-12T23:15:37.882532+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5285248008",
+      "checked_at": "2026-09-12T23:15:37.893492+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/biohub",
+      "checked_at": "2026-09-12T23:15:37.902071+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/bridgebio/jobs/5156402007",
+      "checked_at": "2026-09-12T23:15:37.918016+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/bridgebio/jobs/5197212007",
+      "checked_at": "2026-09-12T23:15:37.990319+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/bridgebio/jobs/5222895007",
+      "checked_at": "2026-09-12T23:15:37.995281+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/californiaacademyofsciences",
+      "checked_at": "2026-09-12T23:15:37.997579+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/chanzuckerbergbiohub/jobs/7712408",
+      "checked_at": "2026-09-12T23:15:38.065554+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/chanzuckerbergbiohub/jobs/8122754",
+      "checked_at": "2026-09-12T23:15:38.078267+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/chanzuckerbergbiohub/jobs/8167915",
+      "checked_at": "2026-09-12T23:15:38.084181+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/generalproximity/jobs/5660301004",
+      "checked_at": "2026-09-12T23:15:38.145937+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/generalproximity/jobs/5660523004",
+      "checked_at": "2026-09-12T23:15:38.158181+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/generalproximity/jobs/5807853004",
+      "checked_at": "2026-09-12T23:15:38.170254+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/generalproximity/jobs/5980552004",
+      "checked_at": "2026-09-12T23:15:38.206389+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/generalproximity/jobs/6009199004",
+      "checked_at": "2026-09-12T23:15:38.230222+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/generalproximity/jobs/6009487004",
+      "checked_at": "2026-09-12T23:15:38.241879+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/generalproximity/jobs/6130200004",
+      "checked_at": "2026-09-12T23:15:38.270331+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/generalproximity/jobs/6130243004",
+      "checked_at": "2026-09-12T23:15:38.297954+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/sfaf/jobs/5219503008",
+      "checked_at": "2026-09-12T23:15:38.326442+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/sfaf/jobs/5219589008",
+      "checked_at": "2026-09-12T23:15:38.327400+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/theeverycompany/jobs/5745371004",
+      "checked_at": "2026-09-12T23:15:38.381279+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/virbiotechnologyinc",
+      "checked_at": "2026-09-12T23:15:38.383428+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/Capable/2ab44b1b-629f-4492-99ff-bcebae57e15b",
+      "checked_at": "2026-09-12T23:15:38.401988+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/anthrogen/16b4c75b-d9d3-4cff-9184-20d476371ea0",
+      "checked_at": "2026-09-12T23:15:38.441983+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/parallel-bio/3ceab0ea-308b-4518-8939-3c011c624c5b",
+      "checked_at": "2026-09-12T23:15:38.455998+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/plasmidsaurus/1dea5cc2-a669-4f22-8eaa-8e569745bd58",
+      "checked_at": "2026-09-12T23:15:38.474561+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://jobs.ccsf.edu/postings/search",
+      "checked_at": "2026-09-12T23:15:38.514690+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://jobs.lever.co/glide",
+      "checked_at": "2026-09-12T23:15:38.538509+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://jobs.lever.co/pendulum/f4ea5cbc-34a6-49c3-901c-30a502bcd926",
+      "checked_at": "2026-09-12T23:15:38.556407+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://jobs.lever.co/sfmoma",
+      "checked_at": "2026-09-12T23:15:38.648696+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://jobs.redroverk12.com/org/sfusd",
+      "checked_at": "2026-09-12T23:15:38.661389+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://jobs.sutterhealth.org/us/en",
+      "checked_at": "2026-09-12T23:15:38.713413+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://jobs.ucsfmedicalcenter.org",
+      "checked_at": "2026-09-12T23:15:38.717710+00:00",
+      "status": null,
+      "error": "gaierror: [Errno -2] Name or service not known"
+    },
+    {
+      "url": "https://kaiserpermanentejobs.org",
+      "checked_at": "2026-09-12T23:15:38.742001+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://nems.betterteam.com/",
+      "checked_at": "2026-09-12T23:15:38.787052+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://pendulum.co",
+      "checked_at": "2026-09-12T23:15:38.856413+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://pharm.ucsf.edu/drug-research-unit/training",
+      "checked_at": "2026-09-12T23:15:38.945519+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://plasmidsaurus.com",
+      "checked_at": "2026-09-12T23:15:38.977986+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://proctor.ucsf.edu/",
+      "checked_at": "2026-09-12T23:15:39.020008+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://recruiting.ultipro.com/NOR1032NCIRE/JobBoard/82cac330-9aa5-417d-9b64-568d383f4ea0/",
+      "checked_at": "2026-09-12T23:15:39.063457+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://recruiting.ultipro.com/NOR1032NCIRE/JobBoard/82cac330-9aa5-417d-9b64-568d383f4ea0/OpportunityDetail/b5d49cdc-8f2e-4f1e-9b5a-3c2d1e4f5a6b",
+      "checked_at": "2026-09-12T23:15:39.066715+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://sf.gov/cityclinic",
+      "checked_at": "2026-09-12T23:15:39.139081+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://sfcommunityhospitals.ucsfhealth.org/saint-francis",
+      "checked_at": "2026-09-12T23:15:39.164064+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://sfcommunityhospitals.ucsfhealth.org/st-marys",
+      "checked_at": "2026-09-12T23:15:39.213896+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://sjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid=6495&siteid=5861#jobDetails=3364720_5861",
+      "checked_at": "2026-09-12T23:15:39.220864+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://usfca.wd5.myworkdayjobs.com/USF_Staff",
+      "checked_at": "2026-09-12T23:15:39.244796+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://vitalant.wd12.myworkdayjobs.com/Careers",
+      "checked_at": "2026-09-12T23:15:39.261332+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.aquariumofthebay.org/careers/",
+      "checked_at": "2026-09-12T23:15:39.299512+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.asianart.org/",
+      "checked_at": "2026-09-12T23:15:39.317082+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.bridgehiv.org/",
+      "checked_at": "2026-09-12T23:15:39.348908+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.calacademy.org/careers",
+      "checked_at": "2026-09-12T23:15:39.478601+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.cbp.gov/about/labs-scientific-svcs/org-operations",
+      "checked_at": "2026-09-12T23:15:39.502124+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.ccsf.edu/about-ccsf/administration/human-resources/jobs-ccsf",
+      "checked_at": "2026-09-12T23:15:39.548984+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.czbiohub.org/careers",
+      "checked_at": "2026-09-12T23:15:39.589251+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.dandelionchocolate.com/pages/visit-us",
+      "checked_at": "2026-09-12T23:15:39.591489+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.deciduoustx.com/",
+      "checked_at": "2026-09-12T23:15:39.627157+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.exploratorium.edu/about/jobs",
+      "checked_at": "2026-09-12T23:15:39.802259+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.exploratorium.edu/about/jobs/current-openings",
+      "checked_at": "2026-09-12T23:15:39.816093+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.famsf.org/",
+      "checked_at": "2026-09-12T23:15:39.881242+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.helunahealth.org/",
+      "checked_at": "2026-09-12T23:15:39.905589+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.invitae.com/",
+      "checked_at": "2026-09-12T23:15:39.918037+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.ncire.org/careers",
+      "checked_at": "2026-09-12T23:15:40.023340+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.nems.org/",
+      "checked_at": "2026-09-12T23:15:40.039109+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.redcross.org/local/california/northern-california-coastal.html",
+      "checked_at": "2026-09-12T23:15:40.253128+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.sf.gov/location--laguna-honda-hospital-and-rehabilitation-center",
+      "checked_at": "2026-09-12T23:15:40.299799+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.sfmoma.org/join-the-team/",
+      "checked_at": "2026-09-12T23:15:40.369840+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.sutterhealth.org/find-location/facility/cpmc-davies-campus",
+      "checked_at": "2026-09-12T23:15:40.456345+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.sutterhealth.org/find-location/facility/cpmc-emergency-mission-bernal-campus",
+      "checked_at": "2026-09-12T23:15:40.500657+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.sutterhealth.org/find-location/facility/cpmc-van-ness-campus-1043247265",
+      "checked_at": "2026-09-12T23:15:40.533669+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.sutterhealth.org/research/",
+      "checked_at": "2026-09-12T23:15:40.566453+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.twistbioscience.com/company/careers",
+      "checked_at": "2026-09-12T23:15:40.588428+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.usajobs.gov",
+      "checked_at": "2026-09-12T23:15:40.612650+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.usajobs.gov/",
+      "checked_at": "2026-09-12T23:15:40.689320+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.usfca.edu/hr",
+      "checked_at": "2026-09-12T23:15:40.709313+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.usmint.gov/about/tours-and-locations/san-francisco",
+      "checked_at": "2026-09-12T23:15:40.729614+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.va.gov/san-francisco-health-care/work-with-us/jobs-and-careers/",
+      "checked_at": "2026-09-12T23:15:40.748495+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.vir.bio/careers/jobs/",
+      "checked_at": "2026-09-12T23:15:40.764692+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.vitalant.org/about-us/careers",
+      "checked_at": "2026-09-12T23:15:40.841464+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.wildtypefoods.com/",
+      "checked_at": "2026-09-12T23:15:40.905742+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    },
+    {
+      "url": "https://zsfg.ucsf.edu/about-ucsf-zsfg",
+      "checked_at": "2026-09-12T23:15:40.998386+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>"
+    }
+  ],
+  "board_checks": [
+    {
+      "url": "https://api.ashbyhq.com/posting-api/job-board/Capable",
+      "checked_at": "2026-09-12T23:15:42.072504+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>",
+      "platform": "ashby",
+      "board": "Capable",
+      "documentation": "https://developers.ashbyhq.com/docs/public-job-posting-api"
+    },
+    {
+      "url": "https://api.ashbyhq.com/posting-api/job-board/anthrogen",
+      "checked_at": "2026-09-12T23:15:42.127248+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>",
+      "platform": "ashby",
+      "board": "anthrogen",
+      "documentation": "https://developers.ashbyhq.com/docs/public-job-posting-api"
+    },
+    {
+      "url": "https://api.ashbyhq.com/posting-api/job-board/parallel-bio",
+      "checked_at": "2026-09-12T23:15:42.180471+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>",
+      "platform": "ashby",
+      "board": "parallel-bio",
+      "documentation": "https://developers.ashbyhq.com/docs/public-job-posting-api"
+    },
+    {
+      "url": "https://api.ashbyhq.com/posting-api/job-board/plasmidsaurus",
+      "checked_at": "2026-09-12T23:15:42.225061+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>",
+      "platform": "ashby",
+      "board": "plasmidsaurus",
+      "documentation": "https://developers.ashbyhq.com/docs/public-job-posting-api"
+    },
+    {
+      "url": "https://boards-api.greenhouse.io/v1/boards/Wildtype/jobs?content=true",
+      "checked_at": "2026-09-12T23:15:42.257837+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>",
+      "platform": "greenhouse",
+      "board": "Wildtype",
+      "documentation": "https://docs.greenhouse.io/job-board.html"
+    },
+    {
+      "url": "https://boards-api.greenhouse.io/v1/boards/additiontherapeutics/jobs?content=true",
+      "checked_at": "2026-09-12T23:15:42.326433+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>",
+      "platform": "greenhouse",
+      "board": "additiontherapeutics",
+      "documentation": "https://docs.greenhouse.io/job-board.html"
+    },
+    {
+      "url": "https://boards-api.greenhouse.io/v1/boards/anthropic/jobs?content=true",
+      "checked_at": "2026-09-12T23:15:42.359692+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>",
+      "platform": "greenhouse",
+      "board": "anthropic",
+      "documentation": "https://docs.greenhouse.io/job-board.html"
+    },
+    {
+      "url": "https://boards-api.greenhouse.io/v1/boards/biohub/jobs?content=true",
+      "checked_at": "2026-09-12T23:15:42.410991+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>",
+      "platform": "greenhouse",
+      "board": "biohub",
+      "documentation": "https://docs.greenhouse.io/job-board.html"
+    },
+    {
+      "url": "https://boards-api.greenhouse.io/v1/boards/bridgebio/jobs?content=true",
+      "checked_at": "2026-09-12T23:15:42.443577+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>",
+      "platform": "greenhouse",
+      "board": "bridgebio",
+      "documentation": "https://docs.greenhouse.io/job-board.html"
+    },
+    {
+      "url": "https://boards-api.greenhouse.io/v1/boards/californiaacademyofsciences/jobs?content=true",
+      "checked_at": "2026-09-12T23:15:42.490363+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>",
+      "platform": "greenhouse",
+      "board": "californiaacademyofsciences",
+      "documentation": "https://docs.greenhouse.io/job-board.html"
+    },
+    {
+      "url": "https://boards-api.greenhouse.io/v1/boards/chanzuckerbergbiohub/jobs?content=true",
+      "checked_at": "2026-09-12T23:15:42.524111+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>",
+      "platform": "greenhouse",
+      "board": "chanzuckerbergbiohub",
+      "documentation": "https://docs.greenhouse.io/job-board.html"
+    },
+    {
+      "url": "https://boards-api.greenhouse.io/v1/boards/generalproximity/jobs?content=true",
+      "checked_at": "2026-09-12T23:15:42.556930+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>",
+      "platform": "greenhouse",
+      "board": "generalproximity",
+      "documentation": "https://docs.greenhouse.io/job-board.html"
+    },
+    {
+      "url": "https://boards-api.greenhouse.io/v1/boards/sfaf/jobs?content=true",
+      "checked_at": "2026-09-12T23:15:42.589537+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>",
+      "platform": "greenhouse",
+      "board": "sfaf",
+      "documentation": "https://docs.greenhouse.io/job-board.html"
+    },
+    {
+      "url": "https://boards-api.greenhouse.io/v1/boards/theeverycompany/jobs?content=true",
+      "checked_at": "2026-09-12T23:15:42.622188+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>",
+      "platform": "greenhouse",
+      "board": "theeverycompany",
+      "documentation": "https://docs.greenhouse.io/job-board.html"
+    },
+    {
+      "url": "https://boards-api.greenhouse.io/v1/boards/virbiotechnologyinc/jobs?content=true",
+      "checked_at": "2026-09-12T23:15:42.654847+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>",
+      "platform": "greenhouse",
+      "board": "virbiotechnologyinc",
+      "documentation": "https://docs.greenhouse.io/job-board.html"
+    },
+    {
+      "url": "https://api.lever.co/v0/postings/glide?mode=json",
+      "checked_at": "2026-09-12T23:15:42.688014+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>",
+      "platform": "lever",
+      "board": "glide",
+      "documentation": "https://github.com/lever/postings-api"
+    },
+    {
+      "url": "https://api.lever.co/v0/postings/pendulum?mode=json",
+      "checked_at": "2026-09-12T23:15:42.720699+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>",
+      "platform": "lever",
+      "board": "pendulum",
+      "documentation": "https://github.com/lever/postings-api"
+    },
+    {
+      "url": "https://api.lever.co/v0/postings/sfmoma?mode=json",
+      "checked_at": "2026-09-12T23:15:42.754103+00:00",
+      "status": null,
+      "error": "URLError: <urlopen error TLS/SSL connection has been closed (EOF) (_ssl.c:992)>",
+      "platform": "lever",
+      "board": "sfmoma",
+      "documentation": "https://github.com/lever/postings-api"
+    }
+  ],
+  "queue": []
+}
