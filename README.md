@@ -1,3 +1,14 @@
+# JobSearchSF — evidence-first autonomous application readiness
+
+> **September 12, 2026 correction:** The historical “120 verified jobs” claims below are legacy inventory, not proof of 120 current openings. Existing screening answers and kits are not independently evidenced. **No applications have been submitted; submission is not enabled.**
+>
+> New: [readiness dashboard](assets/verification/autonomy-report.html), [official-source findings](automation/official-source-review.md), and [implementation / roadmap](automation/README.md).
+>
+> Run without interactive input: `python -m automation.audit --live`. Tests: `python -m unittest discover -s tests -v`.
+> The initial Python network run encountered TLS errors, recorded in the report; official pages were separately reviewed using web retrieval. A scheduled audit workflow is included but is not deployed/active. No false successful verification or submission is reported.
+
+## Historical documentation (superseded where it claims live verification)
+
 # JobSearchSF 🧪 — 120 Verified SF Chemistry & Lab Jobs (N Judah Commute)
 
 A clean, GitHub Pages site for **120 verified San Francisco chemistry / research / lab-science opportunities** (20 Pass 1 + 20 Pass 2 + 20 Pass 3 + 20 Pass 4 + 20 Pass 5 + 20 Pass 6, verified against official employer sources Sept 9-10, 2026), ranked by **SFMTA public transit from 21st Ave & Judah St (Inner Sunset)**, with **official direct-apply links, match scores, and step-by-step apply guides**.

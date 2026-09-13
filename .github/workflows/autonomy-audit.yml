@@ -1,0 +1,38 @@
+name: Evidence-first job audit
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 16 * * *'
+  push:
+    branches: [arena/01a097e5-jobsearchsf]
+    paths:
+      - 'automation/**'
+      - 'tests/**'
+      - 'assets/profile/All_Jobs_Easy_Apply.json'
+      - '.github/workflows/autonomy-audit.yml'
+permissions:
+  contents: read
+concurrency:
+  group: job-evidence-audit-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test audit and safety gates
+        run: python -m unittest discover -s tests -v
+      - name: Read-only discovery and verification
+        run: python -m automation.audit --live
+      - name: Save redacted evidence reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: job-evidence-audit
+          path: |
+            assets/verification/autonomy-report.json
+            assets/verification/autonomy-report.html
+          retention-days: 14

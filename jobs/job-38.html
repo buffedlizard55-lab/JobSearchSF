@@ -56,6 +56,7 @@
   </script>
 </head>
 <body>
+  <aside style="padding:18px;background:#fff3dc;color:#493414;border-bottom:2px solid #b66513" aria-label="Verification warning"><strong>Legacy lead — not a freshly verified vacancy.</strong> Match scores, screening answers, and document claims below are unvalidated drafts. No autonomous application has been sent. <a href="../assets/verification/autonomy-report.html">See the row-by-row audit and blockers</a>.</aside>
   <header class="topbar">
     <div class="wrap">
       <div>
@@ -407,7 +408,7 @@ Check live times on SFMTA (sfmta.com) or 511.org before an interview; night and 
   </main>
   <script src="../assets/js/tracker.js"></script>
   <script>
-    document.getElementById('today').textContent = new Date().toISOString().slice(0,10);
+    document.getElementById('today').textContent = 'legacy snapshot — see dated audit';
     JobTracker.mount('tracker-widget-job-38', 'job-38');
   </script>
 </body>

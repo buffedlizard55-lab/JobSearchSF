@@ -48,7 +48,7 @@
       const u = s.url || "#";
       return '<li>' + esc(s.label) + ' — <a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(u) + '</a></li>';
     }).join("");
-    return '<div class="sources"><strong>Sources for manual review (official verified):</strong><ul>' + items + "</ul></div>";
+    return '<div class="sources"><strong>Legacy source links (revalidation required):</strong><ul>' + items + "</ul></div>";
   }
   function trackerCell(j) {
     if (window.JobTracker) return window.JobTracker.selectHtml(j.id);
@@ -58,7 +58,7 @@
   function jobRow(j) {
     const st = STATUS_META[j.status] || STATUS_META.monitor;
     const zm = ZONE_META[j.commuteZone] || ZONE_META.C;
-    const verifiedBadge = j.verified ? '<span class="badge verified">✓ Verified</span>' : '<span class="badge flag">Unverified</span>';
+    const verifiedBadge = '<span class="badge flag">Legacy lead — recheck</span>';
     const applyUrl = cleanUrl(j.applyLink);
     const officialUrl = j.officialLink || "#";
     const kitUrl = "assets/kits/" + j.id + "_kit.zip";
@@ -81,7 +81,7 @@
   function jobCard(j) {
     const st = STATUS_META[j.status] || STATUS_META.monitor;
     const zm = ZONE_META[j.commuteZone] || ZONE_META.C;
-    const verifiedBadge = j.verified ? '<span class="badge verified">✓ Verified — official site + SF address</span>' : '';
+    const verifiedBadge = '<span class="badge flag">Live vacancy not verified</span>';
     const applyUrl = cleanUrl(j.applyLink);
     const officialUrl = j.officialLink || "#";
     const kitUrl = "assets/kits/" + j.id + "_kit.zip";
@@ -100,7 +100,7 @@
           '<div class="meta-row"><span>📍 ' + esc(j.location) + '</span><span>🏢 ' + esc(j.company) + '</span></div>' +
         "</div>" +
         '<div class="grid">' +
-          '<div class="field"><div class="lbl">Status & verification</div><div class="val">' + esc(j.statusNote) + '<br><br><strong>Verified:</strong> ' + esc(j.verificationMethod) + '</div></div>' +
+          '<div class="field"><div class="lbl">Status & verification</div><div class="val">' + esc(j.statusNote) + '<br><br><strong>Legacy verification claim:</strong> ' + esc(j.verificationMethod) + '</div></div>' +
           '<div class="field"><div class="lbl">Transit from ~21st & Judah (N Judah + bus)</div><div class="val">' + esc(j.route) + '</div></div>' +
           '<div class="field"><div class="lbl">Fit & requirements</div><div class="val"><strong>Match:</strong> ' + esc(j.matchScore) + '% — ' + esc(j.fit) + '<br><br><strong>Req:</strong> ' + esc(j.requirements) + '</div></div>' +
           '<div class="field apply"><div class="lbl">⚡ Easy Apply — Download & Submit (Pass 7)</div><div class="val"><a href="' + esc(kitUrl) + '" class="btn btn-primary btn-sm" download>📦 Download Kit ZIP</a> <a href="' + esc(applyUrl) + '" target="_blank" rel="noopener" class="btn btn-primary btn-sm">🚀 Apply direct →</a><br><br><div style="display:flex;flex-wrap:wrap;gap:6px"><a href="' + esc(resumePdf) + '" class="btn btn-sm" download>Resume PDF</a><a href="' + esc(resumeDocx) + '" class="btn btn-sm" download>Resume DOCX</a><a href="' + esc(coverPdf) + '" class="btn btn-sm" download>Cover PDF</a><a href="' + esc(coverDocx) + '" class="btn btn-sm" download>Cover DOCX</a></div><br><strong>' + esc(j.applyChannel) + '</strong><br><a href="' + esc(applyUrl) + '" target="_blank" rel="noopener">' + esc(applyUrl) + '</a><br><br><a href="' + esc(j.subpage) + '" class="btn btn-primary btn-sm">Open ⚡ Easy Apply guide →</a><br><br><a href="' + esc(officialUrl) + '" target="_blank" rel="noopener">' + esc(officialUrl) + '</a><br><br><span style="font-size:.78rem;color:var(--muted)">Kit includes resume PDF+TXT+DOCX, cover PDF+TXT+DOCX, email TXT, Screening_Answers.txt, Brian_Profile.json, README with direct link. No typing needed.</span></div></div>' +
@@ -123,7 +123,7 @@
     if (container) {
       container.innerHTML = list.map(jobCard).join("");
     }
-    if (countEl) countEl.textContent = list.length + " verified rows — each with Kit ZIP + direct official apply link (re-verify live before applying)";
+    if (countEl) countEl.textContent = list.length + " legacy leads — current openings and profile answers require verification";
     if (tableCountEl) tableCountEl.textContent = list.length + " jobs";
     if (window.JobTracker) window.JobTracker.renderSummary();
 
